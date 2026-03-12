@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandgroupofschools.org -DEMO Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - DEMO Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -118,7 +118,7 @@
             background: #2c3e50;
         }
         #datetime {
-            color: blue;
+            color:blue;
             font-size: 18px;
             font-weight: bold;
             text-align: center;
@@ -135,7 +135,7 @@
         }
         #header {
             padding: 20px;
-            background: linear-gradient(to right, blue, aqua);
+            background: linear-gradient(to right,blue, fuchsia);
             color: white;
             border-bottom: 5px solid #ff9800;
         }
@@ -467,16 +467,138 @@
             50% { opacity: 0.5; }
             100% { opacity: 1; }
         }
+
+         .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: aqua;
+            padding: 10px 0;
+        }
+    
+        /* Moving text animation */
+        .marquee-text {
+            display: inline-block;
+            color: fuchsia;
+            font-size: 24px;
+            font-weight: bold;
+            animation: marquee 10s linear infinite;
+        }
+
+        /* Keyframes for moving text */
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+
+        /* Logo container - makes it a flex container for horizontal layout */
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Style for the center/main logo */
+#logo img:not(.logo-left img):not(.logo-right img) {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Left logo container */
+.logo-left {
+    flex: 0 0 auto;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+/* Right logo container */
+.logo-right {
+    flex: 0 0 auto;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+/* Logo images inside left and right containers */
+.logo-left img,
+.logo-right img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for left and right logos */
+.logo-left img:hover,
+.logo-right img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    #logo {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+    
+    #logo img:not(.logo-left img):not(.logo-right img) {
+        position: static;
+        transform: none;
+        margin: 10px auto;
+    }
+    
+    .logo-left, .logo-right {
+        margin: 5px 0;
+    }
+    
+    .logo-left img,
+    .logo-right img {
+        max-width: 80px;
+    }
+}
+
+
+
     </style>
 </head>
 <body oncontextmenu="return false">
     <div id="header">
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
+                 <div class="marquee-container">
+        <span class="marquee-text">CANAANLAND  GROUP OF SCHOOLS :  GOD IS OUR STRENGTH</span>
+    </div>
         </div>
         <div id="logo">
             <img src="img/Ctemplogo.png" alt="COLLEGE CBT PORTAL">
+
+               <div class="logo-left">
+                <img src="img/9ja1.png" alt="Nigeria Logo" >
+            </div>
+
+            <div class="logo-right">
+                <img src="img/nappps1.png" alt="NAPPS Logo" >
+            </div>
         </div>
+
+           
+            
+
         <div id="student-info">
             <center><strong>ATTENTION! CLICK ON SUBMIT BUTTON BEFORE YOUR TIME IS UP TO SAVE YOUR SCORE</strong></center>
             <center><p id="datetime"></p></center>
@@ -489,15 +611,10 @@
           <h2 id="username">Student Name</h2>
            </div>
 
-        <!--<img id="userImage" src="img/default_user.jpg" alt="Student Image" style="width:120px; height:120px; border-radius:50%; border:3px solid #008000; display:block; margin:0 auto;">
-      
-            <center><img id="userImage"><br><br></center>
-             <img id="userImage" src="img/default_user.jpg" alt="Student Image">
-            <center>Hello: <span id="userName"></span></center>
-        </div>-->
+     
 
     
-        <center><h3>CANAANLAND MODEL GROUP OF SCHOOLS EKUTE QUARTERS  ADO EKITI </h3></center> 
+        <center><h3>CANAANLAND  GROUP OF SCHOOLS EKUTE QUARTERS  ADO EKITI </h3></center> 
         <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
@@ -507,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;"> DEMO - SS2 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  DEMO - SS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -572,10 +689,14 @@
         <p id="answeredLabel">Answered: 0/5</p>
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
+             <div class="marquee-container">
+        <span class="marquee-text"> DEMO PRACTICE FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+    </div>
    
     <div class="windows-activate">
-        <p> &copy; cbt.canaanlandgroupofschools.org</p>
+        <p> &copy; cbt.<span style="color: red;">canaanlandmodelgroupof</span><span style="color: green;">schools</span>.org</p>
     </div>
+
 
     <script>
            // Get stored username and image from sessionStorage
@@ -584,181 +705,110 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-        {
-          id: 1,
-          question: "Find the set of prime factors of 12",
-          options: { A: "3", B: "2, 3", C: "3, 4", D: "2, 6" },
-          answer: "B",
-          image: null
+ {
+          "id": 1,
+          "question": "Solve: x² - 5x + 6 = 0",
+          "options": { "A": "x=2 or 3", "B": "x=2 or 4", "C": "x=3 or 4", "D": "x=1 or 6" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 2,
-          question: "Which of the following is not a prime number?",
-          options: { A: "3", B: "5", C: "7", D: "9" },
-          answer: "D",
-          image: null
+          "id": 2,
+          "question": "The gradient of the line y = 3x - 2 is:",
+          "options": { "A": "3", "B": "-2", "C": "1", "D": "2" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 3,
-          question: "Find the highest common factor (H.C.F) of 20, 12 and 28.",
-          options: { A: "2", B: "4", C: "8", D: "12" },
-          answer: "A",
-          image: null
+          "id": 3,
+          "question": "If sin θ = 0.6, find cos θ",
+          "options": { "A": "0.8", "B": "0.4", "C": "0.6", "D": "0.2" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 4,
-          question: "Find the sum of 124.3, 0.275 and 74.06 (correct to one decimal place)",
-          options: { A: "198.6", B: "198.7", C: "892.0", D: "892.4" },
-          answer: "A",
-          image: null
+          "id": 4,
+          "question": "The sum of the interior angles of a pentagon is:",
+          "options": { "A": "540°", "B": "360°", "C": "720°", "D": "1080°" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 5,
-          question: "What is the place value of 9 in the number 624.93?",
-          options: { A: "hundred", B: "tens", C: "units", D: "tenths" },
-          answer: "D",
-          image: null
+          "id": 5,
+          "question": "Evaluate: log₂ 8",
+          "options": { "A": "3", "B": "4", "C": "2", "D": "1" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 6,
-          question: "Find the lowest common multiple (L.C.M) of 4, 5 and 6",
-          options: { A: "20", B: "24", C: "30", D: "60" },
-          answer: "D",
-          image: null
+          "id": 6,
+          "question": "The roots of the equation x² - 9 = 0 are:",
+          "options": { "A": "±3", "B": "±9", "C": "±√3", "D": "3 only" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 7,
-          question: "Evaluate 0.25 × 0.06, correct to three decimal places.",
-          options: { A: "0.001", B: "0.02", C: "0.015", D: "0.075" },
-          answer: "C",
-          image: null
+          "id": 7,
+          "question": "The distance between points (0,0) and (3,4) is:",
+          "options": { "A": "5", "B": "7", "C": "1", "D": "12" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 8,
-          question: "Express 1/8 as a decimal fraction",
-          options: { A: "0.125", B: "0.375", C: "0.625", D: "0.750" },
-          answer: "C",
-          image: null
+          "id": 8,
+          "question": "The value of tan 45° is:",
+          "options": { "A": "1", "B": "0", "C": "√2", "D": "√3" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 9,
-          question: "Simplify 3/4 − 1/2 + 1/3",
-          options: { A: "11/12", B: "7/12", C: "5/6", D: "1" },
-          answer: "B",
-          image: null
+          "id": 9,
+          "question": "If y = 2x² + 3x, find dy/dx",
+          "options": { "A": "4x+3", "B": "4x", "C": "2x+3", "D": "6x" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 10,
-          question: "Express 2/5 as a decimal fraction",
-          options: { A: "0.4", B: "0.04", C: "0.004", D: "0.0004" },
-          answer: "B",
-          image: null
-        },
-        {
-          id: 11,
-          question: "Correct 0.003858 to three significant figures.",
-          options: { A: "0.00385", B: "0.00386", C: "0.0039", D: "386" },
-          answer: "B",
-          image: null
-        },
-        {
-          id: 12,
-          question: "Evaluate 0.37 × 7",
-          options: { A: "0.259", B: "2.590", C: "25.900", D: "259.000" },
-          answer: "A",
-          image: null
-        },
-        {
-          id: 13,
-          question: "Express 12/18 to its lowest term",
-          options: { A: "2", B: "2/3", C: "4/6", D: "1/3" },
-          answer: "C",
-          image: null
-        },
-        {
-          id: 14,
-          question: "HELP = _____ (using code A=1, B=2 ... Z=26)",
-          options: { A: "7, 4, 8, 9", B: "10, 5, 9, 11", C: "8, 5, 12, 16", D: "4, 5, 6, 15" },
-          answer: "C",
-          image: null
-        },
-        {
-          id: 15,
-          question: "SIT = _____",
-          options: { A: "16, 17, 19", B: "5, 22, 1", C: "20, 14, 25", D: "19, 9, 20" },
-          answer: "D",
-          image: null
-        },
-        {
-          id: 16,
-          question: "FAITH = _____",
-          options: { A: "6, 1, 9, 20, 8", B: "20, 9, 8, 1, 6", C: "10, 12, 14, 16, 18", D: "1, 2, 3, 4, 5" },
-          answer: "A",
-          image: null
-        },
-        {
-          id: 17,
-          question: "SAVE = _____",
-          options: { A: "19, 2, 20, 5", B: "19, 1, 22, 5", C: "26, 12, 3, 5", D: "7, 8, 10, 11" },
-          answer: "B",
-          image: null
-        },
-        {
-          id: 18,
-          question: "2, 5, 14, 9, 14 = ______",
-          options: { A: "BENIN", B: "BAMIM", C: "BENAN", D: "BEMAM" },
-          answer: "A",
-          image: null
-        },
-        {
-          id: 19,
-          question: "13, 1, 14 = _____",
-          options: { A: "NAM", B: "MAP", C: "MAN", D: "PAM" },
-          answer: "C",
-          image: null
-        },
-        {
-          id: 20,
-          question: "3, 18, 25 = _____",
-          options: { A: "CAP", B: "CRY", C: "CAN", D: "CAT" },
-          answer: "B",
-          image: null
+          "id": 10,
+          "question": "The area of a sector of a circle radius 7cm and angle 60° is (π=22/7):",
+          "options": { "A": "25.67 cm²", "B": "154 cm²", "C": "77 cm²", "D": "38.5 cm²" },
+          "answer": "A",
+          "image": null
         }
 ];
 
 
         const staticTheoryQuestions = [
       {
-        id: 1,
-        question: "Express the following in words: (i): 40037 (ii): 208045 (iii): 1000009", 
-      
-        marks: 10,
-        image: null
-      },
-      {
-        id: 2,
-        question: "Use the number line to solve the following: (i): +2 + 5 = ___ (ii): +6 - 3 = ___ (iii): -5 + 3 = ___",
-        marks: 10,
-        image: null
-      },
-      {
-        id: 3,
-        question: "Answer the following: (i): Find the H.C.F of 9, 12, 18 (ii): Find the L.C.M of 10, 20, 30",  
-        marks: 10,
-        image: null
-      },
-      {
-        id: 4,
-        question: "Convert the following to base 10: (i): 11011₂ to base 10   (ii): 121₃ to base 10", 
-        marks: 10,
-        image: null
-      },
-      {
-        id: 5,
-        question: "Simplify the expression: i: ( 3/4 ÷ 1/2 ) + ( 5/6 + 1/3 )",    
-        marks: 10,
-        image: null
-      }
+          "id": 1,
+          "question": "\n(a) Solve the quadratic equation 2x² - 5x - 3 = 0. \n\n(b) Find the vertex of the parabola y = x² - 4x + 3.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "\n(a) A ladder 10m long leans against a wall. If the foot is 6m from the wall, find the height reached. \n\n(b) From a point on the ground, the angle of elevation of a tower is 30°. If the point is 50m from the base, find the height of the tower.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "\n(a) Differentiate y = (2x+1)(x-3). \n\n(b) Find the integral of 3x² dx.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "\n(a) In triangle ABC, angle A=30°, angle B=60°, side AB=10cm. Find side BC using sine rule. \n\n(b) Calculate the area of the triangle.",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "\n(a) Find the equation of the line through (1,2) perpendicular to y = 2x + 3. \n\n(b) Find the midpoint of the line joining (3,5) and (7,9).",
+          "marks": 10,
+          "image": null
+        }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -777,34 +827,11 @@
                 const examInfoText = examInfoElement.textContent;
                 // Parse the text to extract subject and class
                 // This is a simple example - adjust based on your actual text format
-                localStorage.setItem('examSubject', 'EXAMINATION');
-                localStorage.setItem('examClass', 'RERSULT');
+                localStorage.setItem('examSubject', 'EXAM');
+                localStorage.setItem('examClass', 'RESULT');
             }
-            localStorage.setItem('examTerm', 'FIRST TERM 2025/2026');
-             /*let username = sessionStorage.getItem('username');
-             const userImage = sessionStorage.getItem('image');
-            document.getElementById("usernameDisplay").innerText = "WELCOME:" + " " + username;
-            document.getElementById('userImage').src = "img/student.png";
-            document.getElementById('userName').innerText = username;
-            document.getElementById('userImage').src = userImage;
-
-
-            const username = sessionStorage.getItem('username') || 'Student';
-            const userImageFile = sessionStorage.getItem('image');
-            const userImagePath = userImageFile ? `img/${userImageFile}` : 'img/default_user.jpg';
-
-            // Set username
-            const usernameElements = [document.getElementById('userName'), document.getElementById('usernameDisplay')];
-            usernameElements.forEach(el => { if(el) el.innerText = username; });
-
-            // Set user image
-            const userImageElement = document.getElementById('userImage');
-            if(userImageElement){
-                userImageElement.src = userImagePath;
-                userImageElement.onerror = function(){
-                    this.src = 'img/default_user.jpg'; // fallback if image not found
-                };
-            }*/
+            localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
+      
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');
 
@@ -814,9 +841,10 @@
                   document.getElementById('username').innerText = username;
                   
               
-                document.getElementById('userImage').src =
-              'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');
+                /*document.getElementById('userImage').src =
+              'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');*/
                 }
+            document.getElementById('userImage').src = sessionStorage.getItem('image') || 'img/default_user.jpg';
            
             // Load static questions
             questions = staticObjectivesQuestions;
@@ -1090,7 +1118,7 @@
             alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
             window.location.href = "results.html";
     }*/
-       function showResult() {
+       /*function showResult() {
                     clearInterval(timerInterval);
                     let score = 0;
                     questions.forEach((q, i) => {
@@ -1109,7 +1137,7 @@
                     localStorage.setItem("pendingUsername", username);
                    
                     // ✅ Get exam info from sessionStorage or use default
-                    const examInfo = sessionStorage.getItem('examInfo') || 'EXAMINATION - RERSULT (FIRST TERM)';
+                    const examInfo = sessionStorage.getItem('examInfo') || 'EXAMINATION - RERSULT (2ND TERM)';
                     localStorage.setItem("examInfo", examInfo);
                    
                     // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
@@ -1117,7 +1145,68 @@
                    
                     alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
                     window.location.href = "results.html";
-        }
+        }*/
+
+            function showResult() {
+                    clearInterval(timerInterval);
+                    let score = 0;
+                    questions.forEach((q, i) => {
+                        if (userAnswers[i] === q.answer) score++;
+                    });
+                    
+                    const username = sessionStorage.getItem('username') || "Guest";
+                    const cls = sessionStorage.getItem('class');
+                    const sub = sessionStorage.getItem('subject');
+                    
+                    localStorage.setItem("examUser", username);
+                    localStorage.setItem("examScore", score);
+                    localStorage.setItem("totalQuestions", questions.length);
+                    localStorage.setItem("pendingClass", cls);
+                    localStorage.setItem("pendingSubject", sub);
+                    localStorage.setItem("pendingUsername", username);
+                    
+                    // ✅ Get exam info from sessionStorage or use default
+                    const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
+                    localStorage.setItem("examInfo", examInfo);
+                    
+                    // ✅ Secretly download score details to downloads folder
+                    const scoreDetails = {
+                        username: username,
+                        class: cls,
+                        subject: sub,
+                        score: score,
+                        totalQuestions: questions.length,
+                        percentage: ((score / questions.length) * 100).toFixed(2) + '%',
+                        examInfo: examInfo,
+                        timestamp: new Date().toISOString(),
+                        userAnswers: userAnswers,
+                        correctAnswers: questions.map(q => q.answer)
+                    };
+                    
+                    // Create a blob with the data
+                    const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
+                    const url = URL.createObjectURL(blob);
+                    
+                    // Create a hidden anchor element and trigger download
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `exam_results_${username}_${new Date().getTime()}.json`;
+                    a.style.display = 'none';
+                    document.body.appendChild(a);
+                    a.click();
+                    
+                    // Clean up
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    
+                    // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
+                    console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
+                    
+                    alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
+                    window.location.href = "results.html";
+                }
+
+
 
             // Add these helper functions to your exam page
             function getExamAttempts(cls) {
