@@ -706,179 +706,131 @@
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
         {
-          id: 1,
-          question: "Find the set of prime factors of 12",
-          options: { A: "3", B: "2, 3", C: "3, 4", D: "2, 6" },
-          answer: "B",
-          image: null
-        },
-        {
-          id: 2,
-          question: "Which of the following is not a prime number?",
-          options: { A: "3", B: "5", C: "7", D: "9" },
-          answer: "D",
-          image: null
-        },
-        {
-          id: 3,
-          question: "Find the highest common factor (H.C.F) of 20, 12 and 28.",
-          options: { A: "2", B: "4", C: "8", D: "12" },
-          answer: "A",
-          image: null
-        },
-        {
-          id: 4,
-          question: "Find the sum of 124.3, 0.275 and 74.06 (correct to one decimal place)",
-          options: { A: "198.6", B: "198.7", C: "892.0", D: "892.4" },
-          answer: "A",
-          image: null
-        },
-        {
-          id: 5,
-          question: "What is the place value of 9 in the number 624.93?",
-          options: { A: "hundred", B: "tens", C: "units", D: "tenths" },
-          answer: "D",
-          image: null
-        },
-        {
-          id: 6,
-          question: "Find the lowest common multiple (L.C.M) of 4, 5 and 6",
-          options: { A: "20", B: "24", C: "30", D: "60" },
-          answer: "D",
-          image: null
-        },
-        {
-          id: 7,
-          question: "Evaluate 0.25 × 0.06, correct to three decimal places.",
-          options: { A: "0.001", B: "0.02", C: "0.015", D: "0.075" },
-          answer: "C",
-          image: null
-        },
-        {
-          id: 8,
-          question: "Express 1/8 as a decimal fraction",
-          options: { A: "0.125", B: "0.375", C: "0.625", D: "0.750" },
-          answer: "C",
-          image: null
-        },
-        {
-          id: 9,
-          question: "Simplify 3/4 − 1/2 + 1/3",
-          options: { A: "11/12", B: "7/12", C: "5/6", D: "1" },
-          answer: "B",
-          image: null
-        },
-        {
-          id: 10,
-          question: "Express 2/5 as a decimal fraction",
-          options: { A: "0.4", B: "0.04", C: "0.004", D: "0.0004" },
-          answer: "B",
-          image: null
-        },
-        {
-          id: 11,
-          question: "Correct 0.003858 to three significant figures.",
-          options: { A: "0.00385", B: "0.00386", C: "0.0039", D: "386" },
-          answer: "B",
-          image: null
-        },
-        {
-          id: 12,
-          question: "Evaluate 0.37 × 7",
-          options: { A: "0.259", B: "2.590", C: "25.900", D: "259.000" },
-          answer: "A",
-          image: null
-        },
-        {
-          id: 13,
-          question: "Express 12/18 to its lowest term",
-          options: { A: "2", B: "2/3", C: "4/6", D: "1/3" },
-          answer: "C",
-          image: null
-        },
-        {
-          id: 14,
-          question: "HELP = _____ (using code A=1, B=2 ... Z=26)",
-          options: { A: "7, 4, 8, 9", B: "10, 5, 9, 11", C: "8, 5, 12, 16", D: "4, 5, 6, 15" },
-          answer: "C",
-          image: null
-        },
-        {
-          id: 15,
-          question: "SIT = _____",
-          options: { A: "16, 17, 19", B: "5, 22, 1", C: "20, 14, 25", D: "19, 9, 20" },
-          answer: "D",
-          image: null
-        },
-        {
-          id: 16,
-          question: "FAITH = _____",
-          options: { A: "6, 1, 9, 20, 8", B: "20, 9, 8, 1, 6", C: "10, 12, 14, 16, 18", D: "1, 2, 3, 4, 5" },
-          answer: "A",
-          image: null
-        },
-        {
-          id: 17,
-          question: "SAVE = _____",
-          options: { A: "19, 2, 20, 5", B: "19, 1, 22, 5", C: "26, 12, 3, 5", D: "7, 8, 10, 11" },
-          answer: "B",
-          image: null
-        },
-        {
-          id: 18,
-          question: "2, 5, 14, 9, 14 = ______",
-          options: { A: "BENIN", B: "BAMIM", C: "BENAN", D: "BEMAM" },
-          answer: "A",
-          image: null
-        },
-        {
-          id: 19,
-          question: "13, 1, 14 = _____",
-          options: { A: "NAM", B: "MAP", C: "MAN", D: "PAM" },
-          answer: "C",
-          image: null
-        },
-        {
-          id: 20,
-          question: "3, 18, 25 = _____",
-          options: { A: "CAP", B: "CRY", C: "CAN", D: "CAT" },
-          answer: "B",
-          image: null
-        }
+        "id": 1,
+        "question": "Simplify: 2/3 + 1/4",
+        "options": { "A": "11/12", "B": "3/7", "C": "1/2", "D": "5/12" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 2,
+        "question": "Solve for x: 2x - 5 = 7",
+        "options": { "A": "6", "B": "5", "C": "4", "D": "3" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 3,
+        "question": "The place value of 7 in 3752 is:",
+        "options": { "A": "hundreds", "B": "thousands", "C": "tens", "D": "units" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 4,
+        "question": "Express 0.75 as a fraction in simplest form.",
+        "options": { "A": "3/4", "B": "1/2", "C": "2/3", "D": "5/8" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 5,
+        "question": "The area of a square of side 5cm is:",
+        "options": { "A": "25 cm²", "B": "20 cm²", "C": "15 cm²", "D": "10 cm²" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 6,
+        "question": "Choose the correct spelling:",
+        "options": { "A": "accommodation", "B": "accomodation", "C": "acommodation", "D": "accomodation" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 7,
+        "question": "The word 'benevolent' means:",
+        "options": { "A": "kind", "B": "angry", "C": "sad", "D": "tired" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 8,
+        "question": "Which of these is a noun?",
+        "options": { "A": "happiness", "B": "run", "C": "beautiful", "D": "quickly" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 9,
+        "question": "The plural of 'child' is:",
+        "options": { "A": "children", "B": "childs", "C": "childrens", "D": "childes" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 10,
+        "question": "Choose the correct sentence:",
+        "options": { "A": "She don't like it.", "B": "She doesn't likes it.", "C": "She doesn't like it.", "D": "She do not like it." },
+        "answer": "C",
+        "image": null
+      },
+      {
+        "id": 11,
+        "question": "What does CPU stand for?",
+        "options": { "A": "Central Processing Unit", "B": "Computer Personal Unit", "C": "Central Program Unit", "D": "Control Processing Unit" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 12,
+        "question": "Which of these is an input device?",
+        "options": { "A": "Keyboard", "B": "Monitor", "C": "Printer", "D": "Speaker" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 13,
+        "question": "The brain of the computer is the:",
+        "options": { "A": "CPU", "B": "RAM", "C": "Hard disk", "D": "Motherboard" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 14,
+        "question": "One kilobyte (KB) is equal to:",
+        "options": { "A": "1024 bytes", "B": "1000 bytes", "C": "1024 bits", "D": "1000 bits" },
+        "answer": "A",
+        "image": null
+      },
+      {
+        "id": 15,
+        "question": "Which of these is an output device?",
+        "options": { "A": "Speaker", "B": "Mouse", "C": "Scanner", "D": "Microphone" },
+        "answer": "A",
+        "image": null
+      }
 ];
 
 
         const staticTheoryQuestions = [
-      {
-        id: 1,
-        question: "Express the following in words: (i): 40037 (ii): 208045 (iii): 1000009", 
-      
-        marks: 10,
-        image: null
+    {
+        "id": 1,
+        "question": "(Mathematics) (a) Add 234 and 567. (b) Subtract 189 from 400. (c) Multiply 23 by 15.",
+        "marks": 10,
+        "image": null
       },
       {
-        id: 2,
-        question: "Use the number line to solve the following: (i): +2 + 5 = ___ (ii): +6 - 3 = ___ (iii): -5 + 3 = ___",
-        marks: 10,
-        image: null
+        "id": 2,
+        "question": "(English) (a) Write a short paragraph about your best friend. (b) Underline the nouns in your paragraph. (c) Write the opposite of: tall, happy, fast.",
+        "marks": 10,
+        "image": null
       },
       {
-        id: 3,
-        question: "Answer the following: (i): Find the H.C.F of 9, 12, 18 (ii): Find the L.C.M of 10, 20, 30",  
-        marks: 10,
-        image: null
-      },
-      {
-        id: 4,
-        question: "Convert the following to base 10: (i): 11011₂ to base 10   (ii): 121₃ to base 10", 
-        marks: 10,
-        image: null
-      },
-      {
-        id: 5,
-        question: "Simplify the expression: i: ( 3/4 ÷ 1/2 ) + ( 5/6 + 1/3 )",    
-        marks: 10,
-        image: null
+        "id": 3,
+        "question": "(Computer Studies) (a) List four parts of a computer. (b) What is the function of a monitor? (c) Name two input devices.",
+        "marks": 10,
+        "image": null
       }
 ];
         // ================== APPLICATION VARIABLES ==================
