@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandgroupofschools.org</title>
+    <title>cbt.canaanlandchools.org</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Keep all your existing styles intact */
@@ -271,15 +271,14 @@
             color: #0c5460;
         }
     </style>
-</head>
-<body>
+ <body oncontextmenu="return false;">
     <div class="container">
         <header>
-            <button class="admin-btn" onclick="goToAdmin()">Admin Panel</button>
+            <!--<button class="admin-btn" onclick="goToAdmin()">Admin Panel</button>-->
             <button class="logout-btn" onclick="logout()">Logout</button>
             <div class="logo-container">
                 <div class="logo">
-                    <img src="img/wisdom_logo1.jpg" alt="School Logo">
+                    <img src="img/Ctemplogo.png" alt="School Logo">
                 </div>
             </div>
             <p>2025/2026 SECOND TERM COMPUTER BASED TEST EXAMINATION</p>
@@ -298,7 +297,7 @@
                 <div class="section-body">
                     <label>Select Class:</label>
                     <select id="classSelect" onchange="updateAttemptStatus()">
-                        <option value="">-- Select Class --</option>
+                          <option value="">-- Select Class --</option>
                         <option value="ss1">SS1 (Senior Secondary School 1)</option>
                         <option value="ss2">SS2 (Senior Secondary School 2)</option>
                         <option value="ss3">SS3 (Senior Secondary School 3)</option>
@@ -312,10 +311,10 @@
                     <label>Select Subject:</label>
                     <select id="subjectSelect" onchange="updateAttemptStatus()">
                         <option value="">-- Select Subject --</option>
-                           <option value="demo">Demo</option>
+                         <option value="demo">Demo</option>
                          <option value="mathematics">Mathematics</option>
                         <option value="english_language">English Language</option>
-                        <option value="citizenship_education">Citizenship Education</option>
+                        <option value="citizenship_education">Citizenship And Heritage Studies</option>
                         <option value="physics">Physics</option>
                         <option value="digital_technology">Digital & Computer Technology</option>
                         <option value="economics">Economics</option>
@@ -331,11 +330,14 @@
                         <option value="commerce">Commerce</option>
                         <option value="literature_in_english">Literature in English</option>
                         <option value="marketing">Marketing</option>
+                        <option value="fashion_design_and_garment_making">Fashion Design| Garment Making</option>
                         <option value="fine_art">Fine Art</option>
-                        <option value="phonics">Phonics</option>
+                        <option value="computer_hardware">computer_hardware</option>
                         <option value="further_mathematics">Further Mathematics</option>
                         <option value="music">Music</option>
                         <option value="history">Nigerian History</option>
+                        <option value="agricultural_science">Agricultural Science</option>
+                       
                     </select>
                 </div>
             </div>
@@ -367,7 +369,7 @@
         </center>
        
         <div class="windows-activate">
-            <p>&copy; 2025 cbt.canaanlandgroupofschools.org</p>
+            <p>&copy; 2026 cbt.canaanlandgroupodschools.org</p>
         </div>
     </div>
 
@@ -385,7 +387,8 @@
         document.getElementById('user').innerText = username || 'Student';
         document.getElementById('userImage').src = imageName ? 'img/' + imageName : 'img/default_user.jpg';
 
-        const subjectPasswords = {
+       
+         const subjectPasswords = {
               demo:"demo",
               mathematics: "math123",                                                              
               english_language: "eng123",                                                           
@@ -406,13 +409,14 @@
               literature_in_english: "lit123",                                                               
               marketing: "mkt123",                                                               
               fine_art: "art123",                                                              
-              phonics: "pho123",                                                          
+              computer_hardware: "abc123",                                                          
               further_mathematics: "fmath123",                                                              
               music: "mus123",
-              history:"his123"
+              history:"his123",
+              fashion_design_and_garment_making:"fas123",
+              agricultural_science: "agr123"
         };
 
-  
 
         // ✅ Mark exam as completed
         function markExamCompleted(cls, sub, username) {
@@ -424,7 +428,6 @@
             saveExamAttempts(cls, attempts);
         }
 
-        
         // ✅ Enhanced attempt tracking system
         function getExamAttempts(cls) {
             const key = `${cls}_exam_attempts`;
@@ -462,134 +465,110 @@
             }
         }
 
-        // 🚀 Updated start exam function
-        /*function startExam() {
+        function startExam() {
             const cls = document.getElementById("classSelect").value.toLowerCase();
             const sub = document.getElementById("subjectSelect").value.toLowerCase();
             const type = document.getElementById("typeSelect").value.toLowerCase();
             const pass = document.getElementById("examPassword").value.trim();
-           
+
             if (!cls || !sub || !pass) {
                 alert("Please complete all selections before starting your exam.");
                 return;
             }
-           
-            const correctPassword = subjectPasswords[sub];
+
+            // Fix for social_studies key (note the underscore vs space in the original object)
+            const subKey = sub.replace(/\s+/g, '_').toLowerCase();
+            
+            const correctPassword = subjectPasswords[subKey] || subjectPasswords[sub];
+            
             if (pass !== correctPassword) {
                 alert("❌ Incorrect password for this subject!");
                 return;
             }
-           
-            // ✅ Check if already completed before redirecting
+
+            // Check completed exam
             if (hasCompletedExam(cls, sub, username)) {
                 alert("⚠️ You have already completed this exam.");
                 window.location.href = "exam_attempted.html";
                 return;
             }
-           
-            // 🧠 Not completed → allow to start exam
+
+            // Save data
             sessionStorage.setItem("class", cls);
             sessionStorage.setItem("subject", sub);
             sessionStorage.setItem("type", type);
-            sessionStorage.setItem("examInfo", `${formatSubjectName(sub)} - ${cls.toUpperCase()} (FIRST TERM)`);
-           
-            // Store in localStorage for results page
+            sessionStorage.setItem("examInfo", `${formatSubjectName(sub)} - ${cls.toUpperCase()} (SECOND TERM)`);
+
             localStorage.setItem("examClass", cls);
             localStorage.setItem("examSubject", formatSubjectName(sub));
-            localStorage.setItem("pendingAttempt", "true"); // Mark that attempt is pending confirmation
+            localStorage.setItem("pendingAttempt", "true");
 
-            const redirectUrl = `${cls}_${sub}_exam.html`; // Your existing exam page
-            alert(`✅ Access granted! Redirecting to exam...`);
-            window.location.href = redirectUrl;
-        }*/
-         function startExam() {
-		    const cls = document.getElementById("classSelect").value.toLowerCase();
-		    const sub = document.getElementById("subjectSelect").value.toLowerCase();
-		    const type = document.getElementById("typeSelect").value.toLowerCase();
-		    const pass = document.getElementById("examPassword").value.trim();
+            // Fix the filename pattern for garment_making - ensure consistent naming
+            let subjectFilename = sub;
+            
+            // Handle special cases for filename generation
+            if (sub === 'garment_making') {
+                subjectFilename = 'garment_making';
+            } else if (sub === 'social_Studies') {
+                subjectFilename = 'social_studies';
+            }else if (sub === 'agricultural_science') {
+                subjectFilename = 'agricultural_science';
+            }
+            
+            
+            const redirectUrl = `${cls}_${subjectFilename}_exam.html`;
 
-		    if (!cls || !sub || !pass) {
-		        alert("Please complete all selections before starting your exam.");
-		        return;
-		    }
-
-		    const correctPassword = subjectPasswords[sub];
-		    if (pass !== correctPassword) {
-		        alert("❌ Incorrect password for this subject!");
-		        return;
-		    }
-
-		    // Check completed exam
-		    if (hasCompletedExam(cls, sub, username)) {
-		        alert("⚠️ You have already completed this exam.");
-		        window.location.href = "exam_attempted.html";
-		        return;
-		    }
-
-		    // Save data
-		    sessionStorage.setItem("class", cls);
-		    sessionStorage.setItem("subject", sub);
-		    sessionStorage.setItem("type", type);
-		    sessionStorage.setItem("examInfo", `${formatSubjectName(sub)} - ${cls.toUpperCase()} (FIRST TERM)`);
-
-		    localStorage.setItem("examClass", cls);
-		    localStorage.setItem("examSubject", formatSubjectName(sub));
-		    localStorage.setItem("pendingAttempt", "true");
-
-		    const redirectUrl = `${cls}_${sub}_exam.html`;
-
-		    // 🔍 CHECK IF THE FILE EXISTS BEFORE REDIRECTING
-		    fetch(redirectUrl, { method: "HEAD" })
-		        .then(response => {
-		            if (response.ok) {
-		                // File exists → redirect normally
-		                alert(`✅ Access granted! Redirecting to exam...`);
-		                window.location.href = redirectUrl;
-		            } else {
-		                // File missing → send user to landing page
-		                alert("⚠️ Exam page not available yet. Redirecting...");
-		                window.location.href = "landing.html";
-		            }
-		        })
-		        .catch(() => {
-		            // If fetch fails completely
-		            alert("⚠️ Exam page not available yet. Redirecting...");
-		            window.location.href = "landing.html";
-		        });
-		}
-
-
-
-        function formatSubjectName(subject) {
-            const subjectMap = {
-              'mathematics':  'mathematics',                                                                                
-              'english_language':'english_language',                                                                             
-              'citizenship_education':'citizenship_education',                                                                              
-              'physics':'physics',                                                                                 
-              'digital_technology':'digital_technology',                                                                             
-              'economics':'economics',                                                                                
-              'livestock_farming':'livestock_farming',                                                                                  
-              'chemistry':'chemistry',                                                                                 
-              'biology':'biology',                                                                              
-              'cultural_art':'cultural_art',                                                                                 
-              'yoruba':'yoruba',                                                                                 
-              'geography':'geography',                                                                                
-              'crs':'crs',                                                                                 
-              'account':'account',                                                                                 
-              'government':'government',                                                                                 
-              'commerce':'commerce',                                                                                
-              'literature_in_english':'literatur english',                                                                                 
-              'marketing':'marketing',                                                                                 
-              'fine_art':'fine_art',                                                                                
-              'phonics':'phonics',                                                                            
-              'further_mathematics':'further_mathematics',                                                                                
-              'music':'music',                                 
-              'history':'history',
-              'demo':'demo'
-            };
-           
-            return subjectMap[subject] || subject.charAt(0).toUpperCase() + subject.slice(1).replace(/_/g, ' ');
+            // 🔍 CHECK IF THE FILE EXISTS BEFORE REDIRECTING
+            fetch(redirectUrl, { method: "HEAD" })
+                .then(response => {
+                    if (response.ok) {
+                        // File exists → redirect normally
+                        alert(`✅ Access granted! Redirecting to exam...`);
+                        window.location.href = redirectUrl;
+                    } else {
+                        // File missing → send user to landing page
+                        alert("⚠️ Exam page not available yet. Redirecting...");
+                        window.location.href = "landing.html";
+                    }
+                })
+                .catch(() => {
+                    // If fetch fails completely
+                    alert("⚠️ Exam page not available yet. Redirecting...");
+                    window.location.href = "landing.html";
+                });
         }
+          function formatSubjectName(subject) {
+                    const subjectMap = {
+                      'mathematics':  'mathematics',                                                                                
+                      'english_language':'english_language',                                                                             
+                      'citizenship_education':'citizenship_education',                                                                              
+                      'physics':'physics',                                                                                 
+                      'digital_technology':'digital_technology',                                                                             
+                      'economics':'economics',                                                                                
+                      'livestock_farming':'livestock_farming',                                                                                  
+                      'chemistry':'chemistry',                                                                                 
+                      'biology':'biology',                                                                              
+                      'cultural_art':'cultural_art',                                                                                 
+                      'yoruba':'yoruba',                                                                                 
+                      'geography':'geography',                                                                                
+                      'crs':'crs',                                                                                 
+                      'account':'account',                                                                                 
+                      'government':'government',                                                                                 
+                      'commerce':'commerce',                                                                                
+                      'literature_in_english':'literature english',                                                                                 
+                      'marketing':'marketing',                                                                                 
+                      'fine_art':'fine_art',                                                                                
+                      'computer_hardware':'computer_hardware',                                                                            
+                      'further_mathematics':'further_mathematics',                                                                                
+                      'music':'music',                                 
+                      'history':'history',
+                      'demo':'demo',
+                      'fashion_design_and_garment_making':'fashion_design_and_garment_making',
+                      'agricultural_science':'Agricultural Science'
+                    };
+                   
+                    return subjectMap[subject] || subject.charAt(0).toUpperCase() + subject.slice(1).replace(/_/g, ' ');
+                }
 
         function logout() {
             sessionStorage.clear();
@@ -602,4 +581,3 @@
     </script>
 </body>
 </html>
-

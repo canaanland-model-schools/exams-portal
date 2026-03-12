@@ -468,6 +468,10 @@
             100% { opacity: 1; }
         }
 
+
+
+
+
          .marquee-container {
             width: 100%;
             overflow: hidden;
@@ -611,7 +615,12 @@
           <h2 id="username">Student Name</h2>
            </div>
 
-     
+        <!--<img id="userImage" src="img/default_user.jpg" alt="Student Image" style="width:120px; height:120px; border-radius:50%; border:3px solid #008000; display:block; margin:0 auto;">
+      
+            <center><img id="userImage"><br><br></center>
+             <img id="userImage" src="img/default_user.jpg" alt="Student Image">
+            <center>Hello: <span id="userName"></span></center>
+        </div>-->
 
     
         <center><h3>CANAANLAND  GROUP OF SCHOOLS EKUTE QUARTERS  ADO EKITI </h3></center> 
@@ -690,7 +699,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> DEMO PRACTICE FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text">2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -902,7 +911,30 @@
                 localStorage.setItem('examClass', 'RESULT');
             }
             localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
-      
+             /*let username = sessionStorage.getItem('username');
+             const userImage = sessionStorage.getItem('image');
+            document.getElementById("usernameDisplay").innerText = "WELCOME:" + " " + username;
+            document.getElementById('userImage').src = "img/student.png";
+            document.getElementById('userName').innerText = username;
+            document.getElementById('userImage').src = userImage;
+
+
+            const username = sessionStorage.getItem('username') || 'Student';
+            const userImageFile = sessionStorage.getItem('image');
+            const userImagePath = userImageFile ? `img/${userImageFile}` : 'img/default_user.jpg';
+
+            // Set username
+            const usernameElements = [document.getElementById('userName'), document.getElementById('usernameDisplay')];
+            usernameElements.forEach(el => { if(el) el.innerText = username; });
+
+            // Set user image
+            const userImageElement = document.getElementById('userImage');
+            if(userImageElement){
+                userImageElement.src = userImagePath;
+                userImageElement.onerror = function(){
+                    this.src = 'img/default_user.jpg'; // fallback if image not found
+                };
+            }*/
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');
 
@@ -912,10 +944,9 @@
                   document.getElementById('username').innerText = username;
                   
               
-                /*document.getElementById('userImage').src =
-              'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');*/
+                document.getElementById('userImage').src =
+              'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');
                 }
-            document.getElementById('userImage').src = sessionStorage.getItem('image') || 'img/default_user.jpg';
            
             // Load static questions
             questions = staticObjectivesQuestions;

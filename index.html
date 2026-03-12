@@ -128,16 +128,14 @@
         }
     </style>
 </head>
-<body oncontextmenu="return false">
+<body oncontextmenu="return false;">
   <div class="container-xxxl center">
     <div>
       <img src="img/Ctemplogo.png" style="margin-bottom:15px; width: 400px; height: 120px" />
     </div>
 
-  
-    
     <div class="login-container">
-        <h3><label style="color: red; font-size: 25px;">CANAANLAND CBT PORTAL</label></h3>
+        <h3><label style="color: red; font-size: 25px;">CBT PORTAL</label></h3>
         <p class="subtitle"  style="color: lime; font-size: 15px;">Please sign in to your account</p>
        
         <form id="loginForm">
@@ -162,145 +160,146 @@
             <div class="error-message" id="errorMessage">
                 Invalid username or password. Please try again.
             </div>
-            <label style="color: lime; font-size: 25px;">CANAANLAND CBT PORTAL</label>
+            <label style="color: lime; font-size: 25px;">CBT PORTAL</label>
         </form>
-       
-    
     </div>
 
     <script>
-                const users = [
-                                               
-                                                                //JSS1 BOYS 
-                                {username: "FELIX VICTOR", password: "cmgs101", image: "cmgs101.jpg"},
-                                {username: "ALPHA TRINITY", password: "cmgs102", image: "cmgs102.jpg"}, 
-                                {username: "OGUNDIPE SEUN", password: "cmgs103", image: "cmgs103.jpg"},
-                                {username: "ABIODUN DARASIMI", password: "cmgs104", image: "cmgs104.jpg"},
-                                {username: "IBEGBU EMMANUEL", password: "cmgs105", image: "cmgs105.jpg"},
-                                {username: "AJAYI CONVENANT", password: "cmgs106", image: "cmgs106.jpg"},
-                                {username: "FADIREPO ELIZABETH", password: "cmgs107", image: "cmgs107.jpg"},
+        const users = [
+            // JSS1 BOYS (All Paid)
+            {username: "felix victor", password: "cmgs101", image: "cmgs101.jpg", paid: true},
+            {username: "alpha trinity", password: "cmgs102", image: "cmgs102.jpg", paid: true},
+            {username: "ogundipe seun", password: "cmgs103", image: "cmgs103.jpg", paid: true},
+            {username: "abiodun darasimi", password: "cmgs104", image: "cmgs104.jpg", paid: true},
+            {username: "ibegbu emmanuel", password: "cmgs105", image: "cmgs105.jpg", paid: true},
+            {username: "ajayi convenant", password: "cmgs106", image: "cmgs106.jpg", paid: true},
+            {username: "fadirepo elizabeth", password: "cmgs107", image: "cmgs107.jpg", paid: true},
 
+            // JSS1 GIRLS (Mix of paid/unpaid)
+            {username: "david grace", password: "cmgs108", image: "cmgs108.jpg", paid: true},
+            {username: "adepoju kemisola", password: "cmgs109", image: "cmgs109.jpg", paid: true},
+            {username: "ayodele adeife peace", password: "cmgs110", image: "cmgs110.jpg", paid: true},
+            {username: "fakorede fikayo esther", password: "cmgs111", image: "cmgs111.jpg", paid: true},
+            {username: "adewunmi darasimi", password: "cmgs112", image: "cmgs112.jpg", paid: true},
 
-                                //JSS1 GIRLS
+            // JSS2 BOYS (All Paid)
+            {username: "ojo ayomide", password: "cmgs201", image: "cmgs201.jpg", paid: true},
+            {username: "olatise excel", password: "cmgs202", image: "cmgs202.jpg", paid: true},
+            {username: "adewunmi tunmise", password: "cmgs203", image: "cmgs203.jpg", paid: true},
+            {username: "eyebiokin tobiloba", password: "cmgs204", image: "cmgs204.jpg", paid: true},
+            {username: "oluwafemi nifemi", password: "cmgs205", image: "cmgs205.jpg", paid: true},
+            {username: "oluwatuyi olamide", password: "cmgs206", image: "cmgs206.jpg", paid: true},
+            {username: "abiodun praise", password: "cmgs207", image: "cmgs207.jpg", paid: true},
+            {username: "adejumo adenike", password: "cmgs208", image: "cmgs208.jpg", paid: true},
+            {username: "david mercy", password: "cmgs209", image: "cmgs209.jpg", paid: true},
+            {username: "olusanya semilore", password: "cmgs210", image: "cmgs210.jpg", paid: true},
+            {username: "ajibola demilade", password: "cmgs211", image: "cmgs211.jpg", paid: true},
+            {username: "afeni dunusinmi", password: "cmgs212", image: "cmgs212.jpg", paid: true},
+            {username: "bashiru qudus", password: "cmgs213", image: "cmgs213.jpg", paid: true},
+            {username: "owolabi olamide", password: "cmgs214", image: "cmgs214.jpg", paid: true},
+            {username: "erinfolami precious", password: "cmgs215", image: "cmgs215.jpg", paid: true},
+            {username: "ajiboye aanu", password: "cmgs216", image: "cmgs216.jpg", paid: true},
+            {username: "isa godiya", password: "cmgs217", image: "cmgs217.jpg", paid: true},
 
-                                {username: "DAVID GRACE", password: "cmgs108", image: "cmgs108.jpg"},
-                                {username: "ADEPOJU KEMISOLA", password: "cmgs109", image: "cmgs109.jpg"}, 
-                                {username: "AYODELE ADEIFE PEACE", password: "cmgs110", image: "cmgs110.jpg"},
-                                {username: "FAKOREDE FIKAYO ESTHER", password: "cmgs111", image: "cmgs111.jpg"},
-                                {username: "ADEWUNMI DARASIMI", password: "cmgs112", image: "cmgs112.jpg"},
+            // JSS3 BOYS (Mix of paid/unpaid)
+            {username: "abdullah kehinde", password: "cmgs301", image: "cmgs301.jpg", paid: true},
+            {username: "abiodun paul", password: "cmgs302", image: "cmgs302.jpg", paid: true},
+            {username: "aluko taiwo", password: "cmgs303", image: "cmgs303.jpg", paid: true},
+            {username: "ojo emmanuel", password: "cmgs304", image: "cmgs304.jpg", paid: true},
+            {username: "olajide daniel", password: "cmgs305", image: "cmgs305.jpg", paid: true},
+            {username: "olanrewaju isreal", password: "cmgs306", image: "cmgs306.jpg", paid: true},
+            {username: "olatunji samuel", password: "cmgs307", image: "cmgs307.jpg", paid: true},
+            {username: "harris peace", password: "cmgs308", image: "cmgs308.jpg", paid: true},
+            {username: "abdullah taiwo", password: "cmgs309", image: "cmgs309.jpg", paid: true},
+            {username: "adejumo azeezat", password: "cmgs310", image: "cmgs310.jpg", paid: true},
+            {username: "ajogo esther", password: "cmgs311", image: "cmgs311.jpg", paid: true},
+            {username: "alonge ayanfeoluwa", password: "cmgs312", image: "cmgs312.jpg", paid: true},
+            {username: "aluko kehinde", password: "cmgs313", image: "cmgs313.jpg", paid: true},
+            {username: "asaolu sefunmi", password: "cmgs314", image: "cmgs314.jpg", paid: true},
+            {username: "ayodele sekemi", password: "cmgs315", image: "cmgs315.jpg", paid: true},
+            {username: "isa godiya", password: "cmgs316", image: "cmgs316.jpg", paid: true},
+            {username: "okunola darasimi", password: "cmgs317", image: "cmgs317.jpg", paid: true},
+            {username: "oyinloye ibironke", password: "cmgs318", image: "cmgs318.jpg", paid: true},
+            {username: "sesan ojo wisdom", password: "cmgs319", image: "cmgs319.jpg", paid: true},
 
+            // SS1 (All Paid)
+            {username: "john goodness", password: "cmgs401", image: "cmgs401.jpg", paid: true},
+            {username: "ibegbu cynthia", password: "cmgs402", image: "cmgs402.jpg", paid: true},
+            {username: "eniafe success", password: "cmgs403", image: "cmgs403.jpg", paid: true},
+            {username: "isa hauwa kezia", password: "cmgs404", image: "cmgs404.jpg", paid: true},
+            {username: "best daniel", password: "cmgs405", image: "cmgs405.jpg", paid: true},
+            {username: "ogundana henry", password: "cmgs406", image: "cmgs406.jpg", paid: true},
+            {username: "olamide oluwaseun", password: "cmgs407", image: "cmgs407.jpg", paid: true},
 
+            // SS2 (Mix of paid/unpaid)
+            {username: "aluko crown", password: "cmgs501", image: "cmgs501.jpg", paid: true},
+            {username: "adejumo sodiq", password: "cmgs502", image: "cmgs502.jpg", paid: true},
+            {username: "ambrose godwin", password: "cmgs503", image: "cmgs503.jpg", paid: true},
+            {username: "bello george", password: "cmgs504", image: "cmgs504.jpg", paid: true},
+            {username: "fadirepo semilore", password: "cmgs505", image: "cmgs505.jpg", paid: true},
+            {username: "oke david", password: "cmgs506", image: "cmgs506.jpg", paid: true},
+            {username: "adeoye divine", password: "cmgs507", image: "cmgs507.jpg", paid: true},
+            {username: "awobiye eniola", password: "cmgs508", image: "cmgs508.jpg", paid: true},
+            {username: "kayode racheal", password: "cmgs509", image: "cmgs509.jpg", paid: true},
+            {username: "ojo eniope", password: "cmgs510", image: "cmgs510.jpg", paid: true},
+            {username: "ogundipe blessing", password: "cmgs511", image: "cmgs511.jpg", paid: true},
+            {username: "olanrewaju hepzibah", password: "cmgs512", image: "cmgs512.jpg", paid: true},
+            {username: "osasono desola", password: "cmgs513", image: "cmgs513.jpg", paid: true},
 
-
-                                //JSS2 BOYS 
-                                {username: "OJO AYOMIDE",  password: "cmgs201", image: "cmgs201.jpg"},
-                                {username: "OLATISE EXCEL", password: "cmgs202", image: "cmgs202.jpg"}, 
-                                {username: "ADEWUNMI TUNMISE", password: "cmgs203", image: "cmgs203.jpg"},
-                                {username: "EYEBIOKIN TOBILOBA", password: "cmgs204", image: "cmgs204.jpg"},
-                                {username: "OLUWAFEMI NIFEMI", password: "cmgs205", image: "cmgs205.jpg"},
-                                {username: "OLUWATUYI OLAMIDE", password: "cmgs206", image: "cmgs206.jpg"},
-                                {username: "ABIODUN PRAISE", password: "cmgs207", image: "cmgs207.jpg"},
-                                {username: "ADEJUMO ADENIKE", password: "cmgs208", image: "cmgs208.jpg"},
-                                {username: "DAVID MERCY", password: "cmgs209", image: "cmgs209.jpg"},
-                                {username: "OLUSANYA SEMILORE", password: "cmgs210", image: "cmgs210.jpg"},
-                                {username: "AJIBOLA DEMILADE", password: "cmgs211", image: "cmgs211.jpg"},
-                                {username: "AFENI DUNUSINMI", password: "cmgs212", image: "cmgs212.jpg"},
-                                {username: "BASHIRU QUDUS", password: "cmgs213", image: "cmgs213.jpg"},
-                                {username: "OWOLABI OLAMIDE", password: "cmgs214", image: "cmgs214.jpg"},
-                                {username: "ERINFOLAMI PRECIOUS", password: "cmgs215", image: "cmgs215.jpg"},
-                                {username: "AJIBOYE AANU", password: "cmgs216", image: "cmgs216.jpg"},
-                                {username: "ISA GODIYA AYOMIKUN", password: "cmgs217", image: "cmgs217.jpg"},
-
-
-                                 
-                                //JSS3 BOYS
-                                {username: "ABDULLAH KEHINDE", password: "cmgs301", image: "cmgs301.jpg"},
-                                {username: "ABIODUN PAUL", password: "cmgs302", image: "cmgs302.jpg"},
-                                {username: "ALUKO RICHARD TAIWO", password: "cmgs303", image: "cmgs303.jpg"},
-                                {username: "OJO EMMANUEL", password: "cmgs304", image: "cmgs304.jpg"},
-                                {username: "OLAJIDE DANIEL", password: "cmgs305", image: "cmgs305.jpg"},
-                                {username: "OLANREWAJU ISREAL", password: "cmgs306", image: "cmgs306.jpg"},
-                                {username: "OLATUNJI SAMUEL", password: "cmgs307", image: "cmgs307.jpg"},
-                                {username: "HARRIS PEACE", password: "cmgs308", image: "cmgs308.jpg"},
-
-
-                                {username: "ABDULLAH TAIWO", password: "cmgs309", image: "cmgs309.jpg"},
-                                {username: "ADEJUMO AZEEZAT", password: "cmgs310", image: "cmgs310.jpg"},
-                                {username: "AJOGO ESTHER", password: "cmgs311", image: "cmgs311.jpg"}, 
-                                {username: "ALONGE AYANFEOLUWA", password: "cmgs312", image: "cmgs312.jpg"},
-                                {username: "ALUKO RICHARD KEHINDE", password: "cmgs313", image: "cmgs313.jpg"},
-                                {username: "ASAOLU SEFUNMI", password: "cmgs314", image: "cmgs314.jpg"},
-                                {username: "AYODELE SEKEMI", password: "cmgs315", image: "cmgs315.jpg"},
-                                {username: "ISA GODIYA", password: "cmgs316", image: "cmgs316.jpg"},
-                                {username: "OKUNOLA DARASIMI", password: "cmgs317", image: "cmgs317.jpg"},
-                                {username: "OYINLOYE IBIRONKE", password: "cmgs318", image: "cmgs318.jpg"},
-                                {username: "SESAN OJO WISDOM", password: "cmgs319", image: "cmgs319.jpg"},
-
-
-                                //SS1 BOYS 
-                                {username: "JOHN GOODNESS", password: "cmgs401", image: "cmgs401.jpg" },
-                                {username: "IBEGBU CYNTHIA", password: "cmgs402", image: "cmgs402.jpg" },
-                                {username: "ENIAFE SUCCESS", password: "cmgs403", image: "cmgs403.jpg" },
-                                {username: "ISA HAUWA KEZIA", password: "cmgs404", image: "cmgs404.jpg" },
-                                {username: "BEST DANIEL", password: "cmgs405", image: "cmgs405.jpg" },
-                                {username: "OGUNDANA HENRY", password: "cmgs406", image: "cmgs406.jpg" }, 
-                                {username: "OLAMIDE OLUWASEUN", password: "cmgs407", image: "cmgs407.jpg" }, 
-
-
-
-                                //SS2 BOYS 
-                                {username: "ALUKO CROWN RICHARD", password: "cmgs501", image: "cmgs501.jpg"},
-                                {username: "ADEJUMO SODIQ", password: "cmgs502", image: "cmgs502.jpg"},
-                                {username: "AMBROSE GODWIN", password: "cmgs503", image: "cmgs503.jpg"},
-                                {username: "BELLO GEORGE", password: "cmgs504", image: "cmgs504.jpg"},
-                                {username: "FADIREPO SEMILORE", password: "cmgs505", image: "cmgs505.jpg"},
-                                {username: "OKE DAVID", password: "cmgs506", image: "cmgs506.jpg"},
-
-                                //SS2 GIRLS
-                                {username: "ADEOYE DIVINE", password: "cmgs507", image: "cmgs507.jpg"},
-                                {username: "AWOBIYE ENIOLA", password: "cmgs508", image: "cmgs508.jpg"},
-                                {username: "KAYODE RACHEAL", password: "cmgs509", image: "cmgs509.jpg"},
-                                {username: "OJO ENIOPE", password: "cmgs510", image: "cmgs510.jpg"}, 
-                                {username: "OGUNDIPE BLESSING", password: "cmgs511", image: "cmgs511.jpg"},
-                                {username: "OLANREWAJU HEPZIBAH", password: "cmgs512", image: "cmgs512.jpg"},
-                                {username: "OSASONO ARIKE DESOLA", password: "cmgs513", image: "cmgs513.jpg"},
-
-
-                                //SS3 BOYS 
-                                {username: "OLTUNJI EMMANUEL", password: "cmgs601", image: "cmgs601.jpg"},
-                                {username: "ADEWUNMI NIFEMI", password: "cmgs602", image: "cmgs602.jpg"}, 
-                                {username: "OLUWAFEMI OLUWATOMIWA", password: "cmgs603", image: "cmgs603.jpg"},
-                                {username: "FOLUSO BOLUWATITO", password: "cmgs604", image: "cmgs604.jpg"},
-                                {username: "ADEJUMO AZEEZ", password: "cmgs605", image: "cmgs605.jpg"},
-
-                                //SS3 GIRLS
-                                {username: "AJAYI SANDRA", password: "cmgs606", image: "cmgs606.jpg"},
-                                {username: "OMOLE SEFUNMI", password: "cmgs607", image: "cmgs607.jpg"},
-                                {username: "AYEBEGAN AYOBAMI", password: "cmgs608", image: "cmgs608.jpg"},
-                                {username: "OJO SUCCESS", password: "cmgs609", image: "cmgs609.jpg"},      
-                                // ADMIN (optional)
-                                { username: "admin", password: "admin", image: "admin.png" }
-            ];
+            // SS3 (All Paid)
+            {username: "oltunji emmanuel", password: "cmgs601", image: "cmgs601.jpg", paid: true},
+            {username: "adewunmi nifemi", password: "cmgs602", image: "cmgs602.jpg", paid: true},
+            {username: "oluwafemi oluwatomiwa", password: "cmgs603", image: "cmgs603.jpg", paid: true},
+            {username: "foluso boluwatito", password: "cmgs604", image: "cmgs604.jpg", paid: true},
+            {username: "adejumo azeez", password: "cmgs605", image: "cmgs605.jpg", paid: true},
+            {username: "ajayi sandra", password: "cmgs606", image: "cmgs606.jpg", paid: true},
+            {username: "omole sefunmi", password: "cmgs607", image: "cmgs607.jpg", paid: true},
+            {username: "ayebegan ayobami", password: "cmgs608", image: "cmgs608.jpg", paid: true},
+            {username: "ojo success", password: "cmgs609", image: "cmgs609.jpg", paid: true},
+            
+            // ADMIN (always paid)
+            {username: "admin", password: "admin", image: "admin.png", paid: true}
+        ];
 
         // Handle form submission
-       /* document.getElementById('loginForm').addEventListener('submit', function(event) {
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault();
            
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
+            const username = document.getElementById('username').value.toLowerCase().trim();
+            const password = document.getElementById('password').value.trim();
             const errorMessage = document.getElementById('errorMessage');
+            const altCheck = document.getElementById('altLoginCheck');
            
-            // Check if credentials match any user
+            // Check if credentials match any user (case-insensitive username match)
             const matchedUser = users.find(user =>
-                user.username === username && user.password === password
+                user.username.toLowerCase() === username && user.password === password
             );
-           
-            if (matchedUser) {
-                // Store user data in sessionStorage for the instructions page
+          if (matchedUser) {
+                // Check if user has paid
+                if (matchedUser.paid === false) {
+                    alert("⚠️ You have not paid your school fees. You are not allowed access to the report portal.\n\nPlease contact the school administration to regularize your payment.");
+                    window.location.href = 'Debtors.html';
+                    //return; // Stop execution, don't redirect
+                }
+       
+         
+                            
+                // User has paid, proceed with login
+                // Store user data in sessionStorage for the main page to use
                 sessionStorage.setItem('loggedInUser', JSON.stringify(matchedUser));
-               
-                // Redirect to instructions page
-                window.location.href = 'instructions1.html';
+                sessionStorage.setItem('username', matchedUser.username);
+                sessionStorage.setItem('image', `img/${matchedUser.image}`); // Add img/ prefix
+                
+                console.log("✅ Login successful for paid user:", matchedUser.username);
+                
+                // Check if alt login checkbox is checked
+                if (altCheck.checked) {
+                    console.log("🔄 Running alternate validation...");
+                    validateLoginComparison(username, password);
+                } else {
+                    // Redirect to the main page
+                    window.location.href = 'final_instructions.html';
+                }
             } else {
                 // Show error message
                 errorMessage.style.display = 'block';
@@ -308,66 +307,38 @@
                 // Clear password field
                 document.getElementById('password').value = '';
             }
-        });*/
+        });
 
-
-
-          // FIRST LOGIN METHOD (loggedInUser)
-            // =============================
-            document.getElementById('loginForm').addEventListener('submit', function(event) {
-              event.preventDefault();
-
-              const username = document.getElementById('username').value.trim();
-              const password = document.getElementById('password').value.trim();
-              const errorMessage = document.getElementById('errorMessage');
-              const altCheck = document.getElementById('altLoginCheck');
-
-              // --- Primary validation ---
-              const matchedUser = users.find(user =>
-                user.username === username && user.password === password
-              );
-
-              if (matchedUser) {
-                sessionStorage.setItem('loggedInUser', JSON.stringify(matchedUser));
-                console.log("✅ Primary validation passed");
-
-                // --- If checkbox is checked, also run alternate validation ---
-                if (altCheck.checked) {
-                  console.log("🔄 Running alternate validation...");
-                  validateLoginComparison(username, password);
-                } else {
-                  // Go to instructions1.html for main validation only
-                  window.location.href = 'final_instruction.html';
-                }
-
-              } else {
-                errorMessage.style.display = 'block';
-                document.getElementById('password').value = '';
-              }
-            });
-
-            // =============================
-            // SECOND LOGIN METHOD (for comparison)
-            // =============================
-            function validateLoginComparison(username, password) {
-              if (!username || !password) {
+        // =============================
+        // SECOND LOGIN METHOD (for comparison)
+        // =============================
+        function validateLoginComparison(username, password) {
+            if (!username || !password) {
                 alert("Please enter both username and password.");
                 return;
-              }
-
-              const user = users.find(
-                (u) => u.username.toLowerCase() === username.toLowerCase() && u.password === password
-              );
-
-              if (user) {
-                sessionStorage.setItem('username', user.username);
-                sessionStorage.setItem('image', user.image);
-                console.log("✅ Alternate validation passed");
-                window.location.href = 'final_instruction.html';
-              } else {
-                alert("Invalid username or password in alternate check.");
-              }
             }
+
+            const user = users.find(
+                (u) => u.username.toLowerCase() === username.toLowerCase() && u.password === password
+            );
+
+            if (user) {
+                // Check if user has paid
+                if (user.paid === false) {
+                    alert("⚠️ You have not paid your school fees. You are not allowed access to the report portal.\n\nPlease contact the school administration to regularize your payment.");
+                       window.location.href = "Debtors.html";
+                    return;
+                }
+                
+                // Store again to ensure both formats are available
+                sessionStorage.setItem('username', user.username);
+                sessionStorage.setItem('image', `img/${user.image}`); // Add img/ prefix
+                console.log("✅ Alternate validation passed for paid user");
+                window.location.href = 'final_instruction.html';
+            } else {
+                alert("Invalid username or password in alternate check.");
+            }
+        }
 
     </script>
 </body>

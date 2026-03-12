@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandchools.org</title>
+    <title>cbt.canaanlandmodelschools.org</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Keep all your existing styles intact */
@@ -271,7 +271,8 @@
             color: #0c5460;
         }
     </style>
- <body oncontextmenu="return false;">
+</head>
+<body oncontextmenu="return false;">
     <div class="container">
         <header>
             <!--<button class="admin-btn" onclick="goToAdmin()">Admin Panel</button>-->
@@ -285,7 +286,7 @@
         </header>
        
         <div class="welcome-message">
-            <img id="userImage" src="img/default_user.png" alt="Student Photo"><br>
+            <img id="userImage" src="img/default_user.jpg" alt="Student Photo"><br>
             <h2>WELCOME: <span id="user">Student</span></h2>
             <div id="attemptStatus" class="attempt-status"></div>
         </div>
@@ -301,9 +302,7 @@
                         <option value="jss1">JSS1 (Junior Secondary School 1)</option>
                         <option value="jss2">JSS2 (Junior Secondary School 2)</option>
                         <option value="jss3">JSS3 (Junior Secondary School 3)</option>
-                        <!--<option value="ss1">SS1 (Senior Secondary School 1)</option>
-                        <option value="ss2">SS2 (Senior Secondary School 2)</option>
-                        <option value="ss3">SS3 (Senior Secondary School 3)</option>-->
+                        
                     </select>
                 </div>
             </div>
@@ -317,13 +316,14 @@
                         <option value="demo">Demo</option>
                         <option value="mathematics">Mathematics</option>
                         <option value="english_language">English Language</option>
-                        <option value="english_literature">Literature in English</option>
+                        <!--<option value="english_literature">Literature in English</option>-->
                         <option value="intermediate_science">Intermediate Science</option>
-                        <option value="digital_technology">Digital Technology</option>
+                        <option value="digital_technology">Digital & Computer Technology</option>
+                        <!--<option value="basic_technology">Basic Technology</option>-->
+                        <option value="fashion_design_and_garment_making">Fashion Design| Garment Making</option>
                         <option value="home_economics">Home Economics</option>
                         <option value="livestock_farming">Livestock Farming</option>
-                        <option value="social_Studies">Social | Citizenship Studies</option>
-                        <option value="computer_hardware">Computer Hardware and Gsm Repair</option>
+                        <option value="social_Studies">Social  |  Citizenship Studies</option>
                         <option value="business_studies">Business Studies</option>
                         <option value="cultural_and_creative_art">Cultural & Creative Art</option>
                         <option value="yoruba">Yoruba</option>
@@ -331,11 +331,9 @@
                         <option value="crs">Christian Religious Studies</option>
                         <option value="french">French</option>
                         <option value="music">Music</option>
-                        <option value="phonics">Phonics</option>
-                        <option value="history">Nigeria History</option>
+                        <option value="phonics">Phonics | Diction</option>
+                        <option value="nigerian_history"> History</option>
                         <!--<option value="ekiti_values">Ekiti Values</option>-->
-                        <option value="garment_making">Fashion Design | Garment Making</option>
-                       
                     </select>
                 </div>
             </div>
@@ -367,206 +365,253 @@
         </center>
        
         <div class="windows-activate">
-            <p>&copy; 2026 cbt.canaanlandgroupodschools.org</p>
+            <p>&copy; 2026 cbt.canaanlandmodelschools.org</p>
         </div>
     </div>
 
-    <script>
-        const username = sessionStorage.getItem('username');
-        const imageName = sessionStorage.getItem('image');
-        const password = sessionStorage.getItem('password');
-       
-        // Redirect if not logged in
-        if (!username) {
-            alert("Please log in first.");
-            window.location.href = "index.html";
+
+
+<script>
+    const username = sessionStorage.getItem('username');
+    const imageName = sessionStorage.getItem('image');
+    const password = sessionStorage.getItem('password');
+    
+    // Redirect if not logged in
+    if (!username) {
+        alert("Please log in first.");
+        window.location.href = "index.html";
+    }
+    
+    document.getElementById('user').innerText = username || 'Student';
+    /* 🔧 CHANGE: Use imageName directly (already contains 'img/') instead of adding extra 'img/' prefix */
+    document.getElementById('userImage').src = imageName || 'img/default_user.jpg';
+
+
+
+    // ✅ UPDATED: Different passwords for each class and subject combination
+            const classSubjectPasswords = {
+                jss1: {
+                    demo: "9b2f7c",
+                    mathematics: "x8q3r5",
+                    english_language: "p4t9k1",
+                    english_literature: "m6v2w8",
+                    intermediate_science: "j5h7s3",
+                    digital_technology: "n1d4z9",
+                    basic_technology: "n2e5y8",
+                    home_economics: "l8c6b2",
+                    livestock_farming: "a3f5y7",
+                    social_studies: "e9g2q4",
+                    business_studies: "r7k1m6",
+                    cultural_and_creative_art: "t2w8p3",
+                    yoruba: "y5n7b9",
+                    phe: "v4c2x6",
+                    crs: "s8d1f3",
+                    french: "z6h9l5",
+                    music: "q3m7p2",
+                    phonics: "w1b4t8",
+                    nigerian_history: "k9j2r7",
+                    ekiti_values: "f5v3n6",
+                   fashion_design_and_garment_making: "h5i7s5"
+                },
+                jss2: {
+                    demo: "4r9t2x",
+                    mathematics: "s7p1k8",
+                    english_language: "b3w6m9",
+                    english_literature: "d5v2c7",
+                    intermediate_science: "h8t4q1",
+                    basic_technology: "m4t7s6",
+                    digital_technology: "j2z6r9",
+                    home_economics: "l7x3p5",
+                    livestock_farming: "m9b1w4",
+                    social_studies: "q5k8t2",
+                    business_studies: "r3n6v9",
+                    cultural_and_creative_art: "t8f1c4",
+                    yoruba: "w2y7m5",
+                    phe: "x6g9s3",
+                    crs: "z4b8p1",
+                    french: "c1m7t6",
+                    music: "v5r3k9",
+                    phonics: "n8d2w7",
+                    nigerian_history: "p9h4q6",
+                    ekiti_values: "k3s8b2",
+                    fashion_design_and_garment_making: "g6n7s4"
+                },
+                jss3: {
+                    demo: "7m3q9p",
+                    mathematics: "t2v6k8",
+                    english_language: "b8w1c5",
+                    english_literature: "d4r9s2",
+                    intermediate_science: "f7n3m6",
+                    basic_technology: "g4vji8",
+                    digital_technology: "h5x8t1",
+                    home_economics: "j2q7b9",
+                    livestock_farming: "l6v4p8",
+                    social_studies: "n9m2c3",
+                    business_studies: "p5t8r4",
+                    cultural_and_creative_art: "r1w6s9",
+                    yoruba: "t3k7v2",
+                    phe: "v8d4b1",
+                    crs: "x6f9m5",
+                    french: "z2p7q3",
+                    music: "c4h8t9",
+                    phonics: "q9b3n6",
+                    nigerian_history: "s5m1r8",
+                    ekiti_values: "w7k4d2",
+                    fashion_design_and_garment_making: "b8s4k5"
+                }
+            };
+
+    // ✅ Mark exam as completed
+    function markExamCompleted(cls, sub, username) {
+        const attempts = getExamAttempts(cls);
+        if (!attempts[username]) {
+            attempts[username] = {};
         }
-       
-        document.getElementById('user').innerText = username || 'Student';
-        document.getElementById('userImage').src = imageName ? 'img/' + imageName : 'img/default_user.jpg';
+        attempts[username][sub] = true;
+        saveExamAttempts(cls, attempts);
+    }
 
-        const subjectPasswords = {
-            demo: "demo",
-            mathematics: "math123",
-            english_language: "eng456",
-            english_literature: "lit456",
-            intermediate_science: "sci456",
-            digital_technology: "tec456",
-            home_economics: "eco456",
-            livestock_farming: "liv456",
-            social_studies: "soc456",
-            business_studies: "bus456",
-            cultural_and_creative_art: "cul456",
-            yoruba: "yor456",
-            phe: "phe456",
-            crs: "crs456",
-            french: "fre456",
-            music: "mus456",
-            phonics: "pho456",
-            history: "his456",
-            computer_hardware: "chd123",
-            ekiti_values: "ekt123",
-            garment_making: "fas123"
-              // Fixed password key
-        };
+    // ✅ Enhanced attempt tracking system
+    function getExamAttempts(cls) {
+        const key = `${cls}_exam_attempts`;
+        const stored = localStorage.getItem(key);
+        return stored ? JSON.parse(stored) : {};
+    }
 
-        // ✅ Mark exam as completed
-        function markExamCompleted(cls, sub, username) {
-            const attempts = getExamAttempts(cls);
-            if (!attempts[username]) {
-                attempts[username] = {};
-            }
-            attempts[username][sub] = true;
-            saveExamAttempts(cls, attempts);
+    function saveExamAttempts(cls, data) {
+        const key = `${cls}_exam_attempts`;
+        localStorage.setItem(key, JSON.stringify(data));
+    }
+
+    function hasCompletedExam(cls, sub, username) {
+        const attempts = getExamAttempts(cls);
+        return attempts[username] && attempts[username][sub] === true;
+    }
+
+    function updateAttemptStatus() {
+        const cls = document.getElementById("classSelect").value.toLowerCase();
+        const sub = document.getElementById("subjectSelect").value.toLowerCase();
+        const statusElement = document.getElementById("attemptStatus");
+        
+        if (!cls || !sub) {
+            statusElement.innerHTML = "Please select both class and subject";
+            statusElement.className = "attempt-status";
+            return;
+        }
+        
+        if (hasCompletedExam(cls, sub, username)) {
+            statusElement.innerHTML = "❌ You have already completed this exam.";
+            statusElement.className = "attempt-status completed";
+        } else {
+            statusElement.innerHTML = "✅ This exam is available for you to take";
+            statusElement.className = "attempt-status available";
+        }
+    }
+
+    function startExam() {
+        const cls = document.getElementById("classSelect").value.toLowerCase();
+        const sub = document.getElementById("subjectSelect").value.toLowerCase();
+        const type = document.getElementById("typeSelect").value.toLowerCase();
+        const pass = document.getElementById("examPassword").value.trim();
+
+        if (!cls || !sub || !pass) {
+            alert("Please complete all selections before starting your exam.");
+            return;
         }
 
-        // ✅ Enhanced attempt tracking system
-        function getExamAttempts(cls) {
-            const key = `${cls}_exam_attempts`;
-            const stored = localStorage.getItem(key);
-            return stored ? JSON.parse(stored) : {};
+        // ✅ UPDATED: Get password for specific class and subject
+        const classPasswords = classSubjectPasswords[cls];
+        if (!classPasswords) {
+            alert("❌ Invalid class selected!");
+            return;
         }
 
-        function saveExamAttempts(cls, data) {
-            const key = `${cls}_exam_attempts`;
-            localStorage.setItem(key, JSON.stringify(data));
+        const correctPassword = classPasswords[sub];
+        if (!correctPassword) {
+            alert("❌ No password configured for this subject in the selected class!");
+            return;
         }
 
-        function hasCompletedExam(cls, sub, username) {
-            const attempts = getExamAttempts(cls);
-            return attempts[username] && attempts[username][sub] === true;
+        if (pass !== correctPassword) {
+            alert("❌ Incorrect password for this class and subject combination!");
+            return;
         }
 
-        function updateAttemptStatus() {
-            const cls = document.getElementById("classSelect").value.toLowerCase();
-            const sub = document.getElementById("subjectSelect").value.toLowerCase();
-            const statusElement = document.getElementById("attemptStatus");
-           
-            if (!cls || !sub) {
-                statusElement.innerHTML = "Please select both class and subject";
-                statusElement.className = "attempt-status";
-                return;
-            }
-           
-            if (hasCompletedExam(cls, sub, username)) {
-                statusElement.innerHTML = "❌ You have already completed this exam.";
-                statusElement.className = "attempt-status completed";
-            } else {
-                statusElement.innerHTML = "✅ This exam is available for you to take";
-                statusElement.className = "attempt-status available";
-            }
+        // Check completed exam
+        if (hasCompletedExam(cls, sub, username)) {
+            alert("⚠️ You have already completed this exam.");
+            window.location.href = "exam_attempted.html";
+            return;
         }
 
-        function startExam() {
-            const cls = document.getElementById("classSelect").value.toLowerCase();
-            const sub = document.getElementById("subjectSelect").value.toLowerCase();
-            const type = document.getElementById("typeSelect").value.toLowerCase();
-            const pass = document.getElementById("examPassword").value.trim();
+        // Save data
+        sessionStorage.setItem("class", cls);
+        sessionStorage.setItem("subject", sub);
+        sessionStorage.setItem("type", type);
+        sessionStorage.setItem("examInfo", `${formatSubjectName(sub)} - ${cls.toUpperCase()} (FIRST TERM)`);
 
-            if (!cls || !sub || !pass) {
-                alert("Please complete all selections before starting your exam.");
-                return;
-            }
+        localStorage.setItem("examClass", cls);
+        localStorage.setItem("examSubject", formatSubjectName(sub));
+        localStorage.setItem("pendingAttempt", "true");
 
-            // Fix for social_studies key (note the underscore vs space in the original object)
-            const subKey = sub.replace(/\s+/g, '_').toLowerCase();
-            
-            const correctPassword = subjectPasswords[subKey] || subjectPasswords[sub];
-            
-            if (pass !== correctPassword) {
-                alert("❌ Incorrect password for this subject!");
-                return;
-            }
+        const redirectUrl = `${cls}_${sub}_exam.html`;
 
-            // Check completed exam
-            if (hasCompletedExam(cls, sub, username)) {
-                alert("⚠️ You have already completed this exam.");
-                window.location.href = "exam_attempted.html";
-                return;
-            }
-
-            // Save data
-            sessionStorage.setItem("class", cls);
-            sessionStorage.setItem("subject", sub);
-            sessionStorage.setItem("type", type);
-            sessionStorage.setItem("examInfo", `${formatSubjectName(sub)} - ${cls.toUpperCase()} (SECOND TERM)`);
-
-            localStorage.setItem("examClass", cls);
-            localStorage.setItem("examSubject", formatSubjectName(sub));
-            localStorage.setItem("pendingAttempt", "true");
-
-            // Fix the filename pattern for garment_making - ensure consistent naming
-            let subjectFilename = sub;
-            
-            // Handle special cases for filename generation
-            if (sub === 'garment_making') {
-                subjectFilename = 'garment_making';
-            } else if (sub === 'social_Studies') {
-                subjectFilename = 'social_studies';
-            }else if (sub === 'computer_hardware') {
-                subjectFilename = 'computer_hardware';
-            }
-            
-            
-            const redirectUrl = `${cls}_${subjectFilename}_exam.html`;
-
-            // 🔍 CHECK IF THE FILE EXISTS BEFORE REDIRECTING
-            fetch(redirectUrl, { method: "HEAD" })
-                .then(response => {
-                    if (response.ok) {
-                        // File exists → redirect normally
-                        alert(`✅ Access granted! Redirecting to exam...`);
-                        window.location.href = redirectUrl;
-                    } else {
-                        // File missing → send user to landing page
-                        alert("⚠️ Exam page not available yet. Redirecting...");
-                        window.location.href = "landing.html";
-                    }
-                })
-                .catch(() => {
-                    // If fetch fails completely
+        // 🔍 CHECK IF THE FILE EXISTS BEFORE REDIRECTING
+        fetch(redirectUrl, { method: "HEAD" })
+            .then(response => {
+                if (response.ok) {
+                    // File exists → redirect normally
+                    alert(`✅ Access granted! Redirecting to exam...`);
+                    window.location.href = redirectUrl;
+                } else {
+                    // File missing → send user to landing page
                     alert("⚠️ Exam page not available yet. Redirecting...");
                     window.location.href = "landing.html";
-                });
-        }
+                }
+            })
+            .catch(() => {
+                // If fetch fails completely
+                alert("⚠️ Exam page not available yet. Redirecting...");
+                window.location.href = "landing.html";
+            });
+    }
 
-        function formatSubjectName(subject) {
-            const subjectMap = {
-                'demo': 'Demo',
-                'mathematics': 'Mathematics',
-                'english_language': 'English Language',
-                'english_literature': 'Literature in English',
-                'intermediate_science': 'Intermediate Science',
-                'digital_technology': 'Digital & Computer Technology',
-                'home_economics': 'Home Economics',
-                'livestock_farming': 'Livestock Farming',
-                'social_studies': 'Social Studies',
-                'social_Studies': 'Social Studies', // Added for consistency
-                'business_studies': 'Business Studies',
-                'cultural_and_creative_art': 'Cultural & Creative Art',
-                'yoruba': 'Yoruba',
-                'phe': 'Physical Health Education',
-                'crs': 'Christian Religious Studies',
-                'french': 'French',
-                'music': 'Music',
-                'phonics': 'Phonics',
-                'history': 'Nigeria History',
-                'ekiti_values': 'Ekiti Values',
-                'garment_making': 'Fashion Design | Garment Making',
-                'computer_hardware': 'Computer Hardware and Gsm Repair'
-            };
-           
-            return subjectMap[subject] || subject.charAt(0).toUpperCase() + subject.slice(1).replace(/_/g, ' ');
-        }
+    function formatSubjectName(subject) {
+        const subjectMap = {
+            'demo': 'demo',
+            'mathematics': 'Mathematics',
+            'english_language': 'English Language',
+            'english_literature': 'Literature in English',
+            'intermediate_science': 'Intermediate Science',
+            'digital_technology': 'Digital & Computer Technology',
+            'home_economics': 'Home Economics',
+            'livestock_farming': 'Livestock Farming',
+            'social_studies': 'Social Studies',
+            'business_studies': 'Business Studies',
+            'cultural_and_creative_art': 'Cultural & Creative Art',
+            'yoruba': 'Yoruba',
+            'phe': 'Physical Health Education',
+            'crs': 'Christian Religious Studies',
+            'french': 'French',
+            'music': 'Music',
+            'phonics': 'Phonics',
+            'nigerian_history': 'Nigeria History',
+            'ekiti_values': 'Ekiti Values',
+            'citizenship_studies': 'Citizenship Studies',
+            'fashion_design_and_garment_making': 'Fashion Design| Garment Making'
+        };
+        
+        return subjectMap[subject] || subject.charAt(0).toUpperCase() + subject.slice(1).replace(/_/g, ' ');
+    }
 
-        function logout() {
-            sessionStorage.clear();
-            window.location.href = 'index.html';
-        }
+    function logout() {
+        sessionStorage.clear();
+        window.location.href = 'index.html';
+    }
 
-        function goToAdmin() {
-            window.location.href = 'admin.html';
-        }
-    </script>
+    function goToAdmin() {
+        window.location.href = 'admin.html';
+    }
+</script>
 </body>
 </html>
