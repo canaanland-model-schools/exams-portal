@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdomschools.org - Exam Results</title>
+    <title>cbt.canaanlandmodelschools.org - Exam Results</title>
     <style>
         * {
             margin: 0;
@@ -44,7 +44,7 @@
         }
        
         header {
-            background: linear-gradient(to right, #4a0080, #8a2be2);
+            background: linear-gradient(to right, blue, aqua);
             color: white;
             padding: 20px 0;
             border-bottom: 5px solid #ff9800;
@@ -61,7 +61,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('img/mainlogo.png') no-repeat center center;
+            background: url('img/Ctemplogo.png') no-repeat center center;
             background-size: 200px 200px;
             opacity: 0.1;
             z-index: 0;
@@ -88,7 +88,7 @@
         }
        
         .exam-info-header {
-            background: linear-gradient(135deg, #4a0080, #8a2be2);
+            background: linear-gradient(blue, aqua, fuchsia);
             color: white;
             padding: 20px;
             text-align: center;
@@ -415,6 +415,47 @@
         .score-message {
             animation: fadeInUp 0.8s ease-out 0.5s both;
         }
+
+        .logout-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+         .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: aqua;
+            padding: 10px 0;
+        }
+    
+        /* Moving text animation */
+        .marquee-text {
+            display: inline-block;
+            color: fuchsia;
+            font-size: 24px;
+            font-weight: bold;
+            animation: marquee 10s linear infinite;
+        }
+
+        /* Keyframes for moving text */
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -422,13 +463,17 @@
    
     <header>
         <div class="logo-container">
-            <img src="img/mainlogo.png" alt="School Logo">
-            <div class="school-name">WISDOM SCHOOLS</div>
+            <img src="img/Ctemplogo.png" alt="School Logo">
+            <div class="school-name">CANAANLAND MODEL  SCHOOLS</div>
         </div>
+         <button class="logout-btn" onclick="logout()">Logout</button>
     </header>
    
     <div class="container">
+        <div class="marquee-container">
+        <span class="marquee-text">CANAANLAND  GROUP OF SCHOOLS :  GOD IS OUR STRENGTH</span></div>
         <div class="exam-info-header">
+               
             <h2 id="examInfoHeader">EXAMINATION RESULTS</h2>
             <p id="examDetails">Loading exam information...</p>
         </div>
@@ -449,7 +494,7 @@
         <div class="confirmation-section" id="confirmationSection">
             <div class="confirmation-message">
                 📝 <strong>Important:</strong> Please confirm your exam attempt by clicking the button below.
-                This will mark your exam as completed and you won't be able to retake it.
+                This will mark your exam as completed.
             </div>
             <button class="btn btn-success" onclick="confirmAttempt()">
                 <i class="fa-solid fa-check-circle"></i> OK
@@ -458,89 +503,21 @@
        
         <div class="score-container">
             <h2 class="score-title">EXAMINATION RESULT</h2>
-            <div id="scoreCircle" class="score-circle" style="background: linear-gradient(135deg, #4a0080, #8a2be2);">
+            <div id="scoreCircle" class="score-circle" style="background: linear-gradient(blue, aqua, fuchsia);">
                 <span id="scoreValue">0</span>/<span id="totalQuestions">0</span>
             </div>
             <div id="scorePercentage" class="score-percentage">0%</div>
             <div id="performanceMessage" class="performance-message" style="background-color: #e0e0e0; color: #333;">Performance Loading...</div>
         </div>
        
-        <div class="details-container">
-            <div class="detail-card">
-                <h3>Performance Details</h3>
-                <div class="detail-item">
-                    <span class="detail-label">Correct Answers:</span>
-                    <span id="detailCorrect" class="detail-value">0</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Incorrect Answers:</span>
-                    <span id="detailIncorrect" class="detail-value">0</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Total Questions:</span>
-                    <span id="detailTotal" class="detail-value">0</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Percentage:</span>
-                    <span id="detailPercentage" class="detail-value">0%</span>
-                </div>
-            </div>
-           
-            <div class="detail-card">
-                <h3>Grading Information</h3>
-                <div class="detail-item">
-                    <span class="detail-label">Pass Mark:</span>
-                    <span class="detail-value">50%</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Excellent:</span>
-                    <span class="detail-value">80% and above</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Good:</span>
-                    <span class="detail-value">60% - 79%</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Fair:</span>
-                    <span class="detail-value">50% - 59%</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Needs Improvement:</span>
-                    <span class="detail-value">Below 50%</span>
-                </div>
-            </div>
-           
-            <div class="detail-card">
-                <h3>Next Steps</h3>
-                <div class="detail-item">
-                    <span class="detail-label">Review Answers:</span>
-                    <span class="detail-value">Analyze incorrect responses</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Study Areas:</span>
-                    <span class="detail-value">Focus on weak topics</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Practice:</span>
-                    <span class="detail-value">Take more practice tests</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label">Progress:</span>
-                    <span class="detail-value">Track your improvement</span>
-                </div>
-            </div>
-        </div>
+        
        
-        <div class="actions-container">
-            <button id="printBtn" class="btn">Print Result</button>
-            <button id="dashboardBtn"  onclick="confirmAttempt()" class="btn btn-secondary">Sign Out</button>
-           
-        </div>
+       
     </div>
    
     <footer>
-        <p>&copy; 2025 cbt.wisdomschools.org - All rights reserved</p>
-        <p>Computer-Based Testing Portal - Wisdom Schools</p>
+        <p>&copy; 2026 cbt.canaanland model schools.org - All rights reserved</p>
+        <p>Computer-Based Testing Portal - canaanland model Schools</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
@@ -590,7 +567,8 @@
             document.getElementById("confirmationSection").style.display = "none";
            
             // Show success message
-            alert("✅ Your exam attempt has been confirmed successfully!\n\nYou have completed this exam and cannot retake it.");
+            alert("✅ Your exam attempt has been confirmed successfully!\n\nYou have completed this exam .");
+            window.location.href = "index.html";
         }
 
         // Get data from localStorage
@@ -607,6 +585,7 @@
             // Get student information
             const username = localStorage.getItem('examUser') || sessionStorage.getItem('username') || 'Student';
             const userImage = sessionStorage.getItem('image') || 'default_user.jpg';
+            //document.getElementById('userImage').src = sessionStorage.getItem('image') || 'img/default_user.jpg';
            
             // Get exam results
             const score = localStorage.getItem('examScore') || 0;
@@ -686,6 +665,13 @@
                 window.location.href = 'index.html';
             });
         });
+
+
+        function logout() {
+          
+                window.location.href = "index.html";
+            
+        }
     </script>
 </body>
 </html>
