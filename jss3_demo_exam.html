@@ -1169,7 +1169,7 @@
                     window.location.href = "results.html";
         }*/
 
-          function showResult() {
+         /* function showResult() {
         clearInterval(timerInterval);
         let score = 0;
         questions.forEach((q, i) => {
@@ -1236,7 +1236,82 @@
         
         alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
         window.location.href = "results.html";
-     }
+     }*/
+
+        
+        function showResult() {
+            clearInterval(timerInterval);
+            let score = 0;
+            questions.forEach((q, i) => {
+                if (userAnswers[i] === q.answer) score++;
+            });
+            
+            const username = sessionStorage.getItem('username') || "Guest";
+            const cls = sessionStorage.getItem('class');
+            const sub = sessionStorage.getItem('subject');
+            
+            localStorage.setItem("examUser", username);
+            localStorage.setItem("examScore", score);
+            localStorage.setItem("totalQuestions", questions.length);
+            localStorage.setItem("pendingClass", cls);
+            localStorage.setItem("pendingSubject", sub);
+            localStorage.setItem("pendingUsername", username);
+            
+            const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
+            localStorage.setItem("examInfo", examInfo);
+            
+            // Build the record
+            const record = {
+                username: username,
+                class: cls,
+                subject: sub,
+                score: score,
+                totalQuestions: questions.length,
+                percentage: ((score / questions.length) * 100).toFixed(2) + '%',
+                examInfo: examInfo,
+                timestamp: new Date().toISOString()
+            };
+            
+            // ------------------ 🌐 SEND TO GOOGLE SHEETS ------------------
+            const API_URL = 'https://script.google.com/macros/s/AKfycbzW4zlbuW16fAFRcwg4ow8b6IAQEp4e2zIqLjL7zhdkkHvEDrDwwxT0PX46dwBIiXgm'; // ← paste your web app URL here
+            
+            fetch(API_URL, {
+                method: 'POST',
+                mode: 'no-cors',        // required because Apps Script doesn't send CORS headers
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(record)
+            }).catch(err => console.error('Failed to send to cloud:', err));
+            // ---------------------------------------------------------------
+            
+            // (Optional) Keep local backup
+            let records = JSON.parse(localStorage.getItem('examRecords') || '[]');
+            records.push(record);
+            localStorage.setItem('examRecords', JSON.stringify(records));
+            
+            // Download JSON (your existing code)
+            const scoreDetails = {
+                ...record,
+                userAnswers: userAnswers,
+                correctAnswers: questions.map(q => q.answer)
+            };
+            
+            const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `exam_results_${username}_${new Date().getTime()}.json`;
+            a.style.display = 'none';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            console.log(`Exam completed. Waiting for confirmation.`);
+            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results.`);
+            window.location.href = "results.html";
+        }
+
+
 
             // Add these helper functions to your exam page
             function getExamAttempts(cls) {
