@@ -265,6 +265,7 @@
     <!-- action buttons (export / email) -->
     <div class="btn-group" style="margin-bottom: 10px;">
         <button class="btn btn-outline btn-sm" id="exportJsonBtn">📥 Export filtered as JSON</button>
+            <button class="btn btn-outline btn-sm" id="exportCsvBtn">📥 Export CSV</button>
         <button class="btn btn-outline btn-sm" id="emailCsvBtn">📧 Send filtered via email</button>
         <span style="flex:1"></span>
         <span id="recordCount" style="color:#475569; align-self:center; font-size:0.95rem;">0 records</span>
@@ -299,302 +300,6 @@
   
 
 <script>
-    /*(function() {
-        // ----- helpers to read/write records -----
-        function getStoredRecords() {
-            try {
-                return JSON.parse(localStorage.getItem('examRecords') || '[]');
-            } catch (e) {
-                return [];
-            }
-        }
-
-        // ---------- render table (filtered) ----------
-        const tbody = document.getElementById('tableBody');
-        const filterUsername = document.getElementById('filterUsername');
-        const filterSubject = document.getElementById('filterSubject');
-        const clearBtn = document.getElementById('clearFiltersBtn');
-        const exportJsonBtn = document.getElementById('exportJsonBtn');
-        const emailCsvBtn = document.getElementById('emailCsvBtn');
-        const recordCountSpan = document.getElementById('recordCount');
-
-        let allRecords = getStoredRecords();  // raw data
-
-        // If no real records, add some demo samples for better UX (optional)
-        if (allRecords.length === 0) {
-            // provide dummy entries so table isn't empty (remove if you want pure empty)
-            allRecords = [
-                { username: "john_doe", class: "SS2", subject: "Mathematics", score: 18, totalQuestions: 20, percentage: "90.00%", examInfo: "TEST - RESULT (SECOND TERM)", timestamp: "2025-03-10T10:30:00.000Z" },
-                { username: "alice_w", class: "SS1", subject: "English", score: 13, totalQuestions: 15, percentage: "86.67%", examInfo: "MOCK EXAM", timestamp: "2025-03-12T14:15:00.000Z" },
-                { username: "emma_s", class: "SS3", subject: "Physics", score: 24, totalQuestions: 30, percentage: "80.00%", examInfo: "SECOND TERM TEST", timestamp: "2025-03-05T09:45:00.000Z" },
-                { username: "chris", class: "SS2", subject: "Chemistry", score: 28, totalQuestions: 30, percentage: "93.33%", examInfo: "FINAL PRACTICAL", timestamp: "2025-02-28T12:00:00.000Z" }
-            ];
-            // store them back so they persist (optional, but good for demo)
-            localStorage.setItem('examRecords', JSON.stringify(allRecords));
-        }
-
-        // filter function
-        function filterRecords(records) {
-            const userFilter = filterUsername.value.trim().toLowerCase();
-            const subjFilter = filterSubject.value.trim().toLowerCase();
-            return records.filter(rec => {
-                const matchUser = userFilter === '' || (rec.username && rec.username.toLowerCase().includes(userFilter));
-                const matchSubj = subjFilter === '' || (rec.subject && rec.subject.toLowerCase().includes(subjFilter));
-                return matchUser && matchSubj;
-            });
-        }
-
-        function renderTable() {
-            const filtered = filterRecords(allRecords);
-            if (filtered.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="8" class="empty-state">🔍 No matching records</td></tr>`;
-                recordCountSpan.innerText = '0 records';
-                return;
-            }
-
-            let html = '';
-            filtered.forEach(rec => {
-                // safeguard missing fields
-                const username = rec.username || '—';
-                const cls = rec.class || '—';
-                const subject = rec.subject || '—';
-                const score = rec.score ?? '?';
-                const total = rec.totalQuestions ?? '?';
-                const percentage = rec.percentage || ((rec.score && rec.totalQuestions) ? ((rec.score/rec.totalQuestions)*100).toFixed(2)+'%' : '—');
-                const examInfo = rec.examInfo || '—';
-                let dateStr = '—';
-                if (rec.timestamp) {
-                    try {
-                        const d = new Date(rec.timestamp);
-                        dateStr = d.toLocaleString('en-GB', { timeZone: 'UTC' }) + ' UTC';
-                    } catch { dateStr = rec.timestamp; }
-                }
-
-                html += `<tr>
-                    <td><strong>${escapeHtml(username)}</strong></td>
-                    <td>${escapeHtml(cls)}</td>
-                    <td>${escapeHtml(subject)}</td>
-                    <td><span class="score-badge">${escapeHtml(score)}</span></td>
-                    <td>${escapeHtml(total)}</td>
-                    <td class="percentage">${escapeHtml(percentage)}</td>
-                    <td>${escapeHtml(examInfo)}</td>
-                    <td style="font-size:0.85rem; color:#4b5563;">${escapeHtml(dateStr)}</td>
-                </tr>`;
-            });
-            tbody.innerHTML = html;
-            recordCountSpan.innerText = `${filtered.length} record${filtered.length !== 1 ? 's' : ''}`;
-        }
-
-        // simple escape to avoid XSS (just in case)
-        function escapeHtml(unsafe) {
-            if (unsafe === undefined || unsafe === null) return '';
-            return String(unsafe).replace(/[&<>"']/g, function(m) {
-                if (m === '&') return '&amp;'; if (m === '<') return '&lt;'; if (m === '>') return '&gt;';
-                if (m === '"') return '&quot;'; return '&#039;';
-            });
-        }
-
-        // ------ event listeners -----
-        filterUsername.addEventListener('input', renderTable);
-        filterSubject.addEventListener('input', renderTable);
-        clearBtn.addEventListener('click', function() {
-            filterUsername.value = '';
-            filterSubject.value = '';
-            renderTable();
-        });
-
-        // ------ export filtered as JSON -----
-        exportJsonBtn.addEventListener('click', function() {
-            const filtered = filterRecords(allRecords);
-            if (filtered.length === 0) {
-                alert('No records to export (filtered list is empty)');
-                return;
-            }
-            const dataStr = JSON.stringify(filtered, null, 2);
-            const blob = new Blob([dataStr], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `exam_records_filtered_${new Date().toISOString().slice(0,10)}.json`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        });
-
-        // ------ send via email (as CSV in body) -----
-        function recordsToCsv(records) {
-            // header
-            const headers = ['Username','Class','Subject','Score','Total','Percentage','ExamInfo','Timestamp'];
-            const rows = records.map(r => [
-                r.username || '',
-                r.class || '',
-                r.subject || '',
-                r.score ?? '',
-                r.totalQuestions ?? '',
-                r.percentage || '',
-                r.examInfo || '',
-                r.timestamp || ''
-            ].map(cell => {
-                // escape quotes and wrap in quotes if contains comma or quote
-                const str = String(cell).replace(/"/g, '""');
-                return str.includes(',') || str.includes('"') || str.includes('\n') ? `"${str}"` : str;
-            }).join(','));
-            return [headers.join(','), ...rows].join('\n');
-        }
-
-        emailCsvBtn.addEventListener('click', function() {
-            const filtered = filterRecords(allRecords);
-            if (filtered.length === 0) {
-                alert('No records to send (filtered list empty)');
-                return;
-            }
-
-            const csvData = recordsToCsv(filtered);
-            const subject = encodeURIComponent('Exam records export');
-            const body = encodeURIComponent(`Filtered exam records:\n\n${csvData}\n\n-- sent from records.html`);
-            window.location.href = `mailto:?subject=${subject}&body=${body}`;
-        });
-
-        // initial render
-        renderTable();
-
-        // optional: listen to localStorage changes from other tabs (so data refreshes)
-        window.addEventListener('storage', function(e) {
-            if (e.key === 'examRecords') {
-                allRecords = getStoredRecords();
-                renderTable();
-            }
-        });
-
-        // also update if records changed in same tab (e.g., user added manually)
-        // we could observe but not necessary; user can refresh.
-    })();*/
-
-                /*(function() {
-                    const API_URL = 'https://script.google.com/macros/s/AKfycbzW4zlbuW16fAFRcwg4ow8b6IAQEp4e2zIqLjL7zhdkkHvEDrDwwxT0PX46dwBIiXgm'; // ← same URL as above
-
-                    const tbody = document.getElementById('tableBody');
-                    const filterUsername = document.getElementById('filterUsername');
-                    const filterSubject = document.getElementById('filterSubject');
-                    const clearBtn = document.getElementById('clearFiltersBtn');
-                    const exportJsonBtn = document.getElementById('exportJsonBtn');
-                    const emailCsvBtn = document.getElementById('emailCsvBtn');
-                    const recordCountSpan = document.getElementById('recordCount');
-
-                    let allRecords = [];
-
-                    async function loadRecords() {
-                        try {
-                            const response = await fetch(API_URL);
-                            const data = await response.json();
-                            allRecords = Array.isArray(data) ? data : [];
-                        } catch (err) {
-                            console.error('Failed to load records:', err);
-                            allRecords = [];
-                        }
-                        renderTable();
-                    }
-
-                    function filterRecords(records) {
-                        const userFilter = filterUsername.value.trim().toLowerCase();
-                        const subjFilter = filterSubject.value.trim().toLowerCase();
-                        return records.filter(rec => {
-                            const matchUser = !userFilter || (rec.username && rec.username.toLowerCase().includes(userFilter));
-                            const matchSubj = !subjFilter || (rec.subject && rec.subject.toLowerCase().includes(subjFilter));
-                            return matchUser && matchSubj;
-                        });
-                    }
-
-                    function renderTable() {
-                        const filtered = filterRecords(allRecords);
-                        if (filtered.length === 0) {
-                            tbody.innerHTML = `<tr><td colspan="8" class="empty-state">🔍 No matching records</td></tr>`;
-                            recordCountSpan.innerText = '0 records';
-                            return;
-                        }
-
-                        let html = '';
-                        filtered.forEach(rec => {
-                            const username = rec.username || '—';
-                            const cls = rec.class || '—';
-                            const subject = rec.subject || '—';
-                            const score = rec.score ?? '?';
-                            const total = rec.totalQuestions ?? '?';
-                            const percentage = rec.percentage || '—';
-                            const examInfo = rec.examInfo || '—';
-                            let dateStr = '—';
-                            if (rec.timestamp) {
-                                try {
-                                    const d = new Date(rec.timestamp);
-                                    dateStr = d.toLocaleString('en-GB', { timeZone: 'UTC' }) + ' UTC';
-                                } catch { dateStr = rec.timestamp; }
-                            }
-
-                            html += `<tr>
-                                <td><strong>${escapeHtml(username)}</strong></td>
-                                <td>${escapeHtml(cls)}</td>
-                                <td>${escapeHtml(subject)}</td>
-                                <td><span class="score-badge">${escapeHtml(score)}</span></td>
-                                <td>${escapeHtml(total)}</td>
-                                <td class="percentage">${escapeHtml(percentage)}</td>
-                                <td>${escapeHtml(examInfo)}</td>
-                                <td style="font-size:0.85rem;">${escapeHtml(dateStr)}</td>
-                            </tr>`;
-                        });
-                        tbody.innerHTML = html;
-                        recordCountSpan.innerText = `${filtered.length} record${filtered.length !== 1 ? 's' : ''}`;
-                    }
-
-                    function escapeHtml(unsafe) {
-                        if (!unsafe) return '';
-                        return String(unsafe).replace(/[&<>"']/g, function(m) {
-                            if (m === '&') return '&amp;';
-                            if (m === '<') return '&lt;';
-                            if (m === '>') return '&gt;';
-                            if (m === '"') return '&quot;';
-                            return '&#039;';
-                        });
-                    }
-
-                    filterUsername.addEventListener('input', renderTable);
-                    filterSubject.addEventListener('input', renderTable);
-                    clearBtn.addEventListener('click', () => {
-                        filterUsername.value = '';
-                        filterSubject.value = '';
-                        renderTable();
-                    });
-
-                    exportJsonBtn.addEventListener('click', () => {
-                        const filtered = filterRecords(allRecords);
-                        if (!filtered.length) return alert('No records to export');
-                        const blob = new Blob([JSON.stringify(filtered, null, 2)], { type: 'application/json' });
-                        const url = URL.createObjectURL(blob);
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = `exam_records_${new Date().toISOString().slice(0,10)}.json`;
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                        URL.revokeObjectURL(url);
-                    });
-
-                    emailCsvBtn.addEventListener('click', () => {
-                        const filtered = filterRecords(allRecords);
-                        if (!filtered.length) return alert('No records to send');
-                        const headers = ['Username','Class','Subject','Score','Total','Percentage','ExamInfo','Timestamp'];
-                        const rows = filtered.map(r => [
-                            r.username, r.class, r.subject, r.score, r.totalQuestions, r.percentage, r.examInfo, r.timestamp
-                        ].map(cell => {
-                            const str = String(cell || '').replace(/"/g, '""');
-                            return str.includes(',') ? `"${str}"` : str;
-                        }).join(','));
-                        const csv = [headers.join(','), ...rows].join('\n');
-                        window.location.href = `mailto:?subject=${encodeURIComponent('Exam records')}&body=${encodeURIComponent(csv)}`;
-                    });
-
-                    loadRecords();
-                })();*/
 
                 <script>
                 (function() {
@@ -750,6 +455,33 @@
                     // Start loading
                     loadRecords();
                 })();
+                // Add this function
+                function downloadCSV(csv, filename) {
+                    const blob = new Blob([csv], { type: 'text/csv' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }
+
+                // Add a new button in HTML: <button id="exportCsvBtn">📥 Download as CSV</button>
+                document.getElementById('exportCsvBtn').addEventListener('click', () => {
+                    const filtered = filterRecords(allRecords);
+                    if (!filtered.length) return alert('No records to export');
+                    const headers = ['Username','Class','Subject','Score','Total','Percentage','ExamInfo','Timestamp'];
+                    const rows = filtered.map(r => [
+                        r.username, r.class, r.subject, r.score, r.totalQuestions, r.percentage, r.examInfo, r.timestamp
+                    ].map(cell => {
+                        const str = String(cell || '').replace(/"/g, '""');
+                        return str.includes(',') ? `"${str}"` : str;
+                    }).join(','));
+                    const csv = [headers.join(','), ...rows].join('\n');
+                    downloadCSV(csv, `exam_records_${new Date().toISOString().slice(0,10)}.csv`);
+                });
 
 
 
