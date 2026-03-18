@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - JSS3 INTERMEDIATE SCIENCE Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - DIGITAL TECHNOLOGY Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  JSS3 INTERMEDIATE SCIENCE- JSS3 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  DIGITAL TECHNOLOGY - SS1 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> JSS3 INTERMEDIATE SCIENCE FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> DIGITAL TECHNOLOGY  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -699,660 +699,641 @@
 
 
     <script>
-           // Get stored username and image from sessionStorage
-       
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
- {
-                            "id": 1,
-                            "question": "The basic unit of life is the ______.",
-                            "options": {
-                              "A": "tissue",
-                              "B": "organ",
-                              "C": "cell",
-                              "D": "system"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 2,
-                            "question": "Who proposed the cell theory?",
-                            "options": {
-                              "A": "Robert Hooke",
-                              "B": "Schleiden and Schwann",
-                              "C": "Louis Pasteur",
-                              "D": "Charles Darwin"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 3,
-                            "question": "The control center of the cell is the ______.",
-                            "options": {
-                              "A": "mitochondria",
-                              "B": "nucleus",
-                              "C": "cytoplasm",
-                              "D": "cell wall"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 4,
-                            "question": "Which organelle is responsible for producing energy?",
-                            "options": {
-                              "A": "Ribosome",
-                              "B": "Chloroplast",
-                              "C": "Mitochondria",
-                              "D": "Vacuole"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 5,
-                            "question": "Plant cells have ______, which animal cells do not have.",
-                            "options": {
-                              "A": "cell membrane",
-                              "B": "chloroplasts",
-                              "C": "cytoplasm",
-                              "D": "nucleus"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 6,
-                            "question": "A group of similar cells performing a specific function is called ______.",
-                            "options": {
-                              "A": "an organ",
-                              "B": "a tissue",
-                              "C": "an organism",
-                              "D": "a system"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 7,
-                            "question": "Which of these is an example of a tissue?",
-                            "options": {
-                              "A": "Heart",
-                              "B": "Brain",
-                              "C": "Muscle",
-                              "D": "Lungs"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 8,
-                            "question": "The heart is an example of ______.",
-                            "options": {
-                              "A": "a tissue",
-                              "B": "an organ",
-                              "C": "a cell",
-                              "D": "a system"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 9,
-                            "question": "The circulatory system is made up of ______.",
-                            "options": {
-                              "A": "heart, blood, blood vessels",
-                              "B": "brain, nerves, spinal cord",
-                              "C": "mouth, stomach, intestines",
-                              "D": "kidneys, bladder, urethra"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 10,
-                            "question": "Heredity is the passing of traits from ______ to ______.",
-                            "options": {
-                              "A": "parents; offspring",
-                              "B": "friends; friends",
-                              "C": "teachers; students",
-                              "D": "environment; organism"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 11,
-                            "question": "Which of these is an inherited trait?",
-                            "options": {
-                              "A": "Scar",
-                              "B": "Hair color",
-                              "C": "Broken bone",
-                              "D": "Tattoo"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 12,
-                            "question": "Variation is important because it ______.",
-                            "options": {
-                              "A": "makes all organisms the same",
-                              "B": "helps species adapt to changes",
-                              "C": "reduces survival chances",
-                              "D": "is caused only by the environment"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 13,
-                            "question": "A gene is a unit of ______.",
-                            "options": {
-                              "A": "heredity",
-                              "B": "energy",
-                              "C": "matter",
-                              "D": "adaptation"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 14,
-                            "question": "Adaptation helps organisms to ______.",
-                            "options": {
-                              "A": "become extinct",
-                              "B": "survive in their environment",
-                              "C": "lose their traits",
-                              "D": "grow smaller"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 15,
-                            "question": "A camel's hump is an example of ______ adaptation.",
-                            "options": {
-                              "A": "behavioral",
-                              "B": "structural",
-                              "C": "physiological",
-                              "D": "seasonal"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 16,
-                            "question": "Birds migrating to warmer regions is a ______ adaptation.",
-                            "options": {
-                              "A": "structural",
-                              "B": "behavioral",
-                              "C": "functional",
-                              "D": "genetic"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 17,
-                            "question": "The smallest particle of an element is called ______.",
-                            "options": {
-                              "A": "molecule",
-                              "B": "atom",
-                              "C": "compound",
-                              "D": "ion"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 18,
-                            "question": "The nucleus of an atom contains ______.",
-                            "options": {
-                              "A": "protons and electrons",
-                              "B": "protons and neutrons",
-                              "C": "neutrons and electrons",
-                              "D": "electrons only"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 19,
-                            "question": "Which of these is a compound?",
-                            "options": {
-                              "A": "Oxygen (O₂)",
-                              "B": "Water (H₂O)",
-                              "C": "Nitrogen (N₂)",
-                              "D": "Hydrogen (H₂)"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 20,
-                            "question": "The chemical symbol for gold is ______.",
-                            "options": {
-                              "A": "Go",
-                              "B": "Gd",
-                              "C": "Au",
-                              "D": "Ag"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 21,
-                            "question": "A mixture can be separated by ______.",
-                            "options": {
-                              "A": "chemical reaction",
-                              "B": "physical means",
-                              "C": "heating only",
-                              "D": "burning"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 22,
-                            "question": "Which of these is a physical change?",
-                            "options": {
-                              "A": "Burning wood",
-                              "B": "Rusting iron",
-                              "C": "Melting ice",
-                              "D": "Cooking food"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 23,
-                            "question": "A chemical change is always ______.",
-                            "options": {
-                              "A": "reversible",
-                              "B": "irreversible",
-                              "C": "temporary",
-                              "D": "physical"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 24,
-                            "question": "Which gas makes up about 78% of the air?",
-                            "options": {
-                              "A": "Oxygen",
-                              "B": "Nitrogen",
-                              "C": "Carbon dioxide",
-                              "D": "Argon"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 25,
-                            "question": "The process of removing impurities from water is called ______.",
-                            "options": {
-                              "A": "filtration",
-                              "B": "sedimentation",
-                              "C": "purification",
-                              "D": "distillation"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 26,
-                            "question": "Air pressure ______ with increase in altitude.",
-                            "options": {
-                              "A": "increases",
-                              "B": "decreases",
-                              "C": "remains constant",
-                              "D": "becomes zero"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 27,
-                            "question": "Microorganisms that cause diseases are called ______.",
-                            "options": {
-                              "A": "pathogens",
-                              "B": "vitamins",
-                              "C": "antibiotics",
-                              "D": "vaccines"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 28,
-                            "question": "Which of these is a viral disease?",
-                            "options": {
-                              "A": "Tuberculosis",
-                              "B": "Malaria",
-                              "C": "Cholera",
-                              "D": "Influenza"
-                            },
-                            "answer": "D",
-                            "image": null
-                          },
-                          {
-                            "id": 29,
-                            "question": "Vaccination helps to ______.",
-                            "options": {
-                              "A": "cure diseases",
-                              "B": "prevent diseases",
-                              "C": "spread diseases",
-                              "D": "cause diseases"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 30,
-                            "question": "Boiling water is a method of ______.",
-                            "options": {
-                              "A": "water conservation",
-                              "B": "water purification",
-                              "C": "air purification",
-                              "D": "soil conservation"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 31,
-                            "question": "The cell wall is found in ______.",
-                            "options": {
-                              "A": "animal cells only",
-                              "B": "plant cells only",
-                              "C": "both plant and animal cells",
-                              "D": "bacterial cells only"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 32,
-                            "question": "The powerhouse of the cell is the ______.",
-                            "options": {
-                              "A": "ribosome",
-                              "B": "nucleus",
-                              "C": "mitochondria",
-                              "D": "chloroplast"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 33,
-                            "question": "Which of these is NOT a part of the cell theory?",
-                            "options": {
-                              "A": "All living things are made of cells.",
-                              "B": "Cells come from pre-existing cells.",
-                              "C": "Cells are the basic unit of life.",
-                              "D": "All cells have a nucleus."
-                            },
-                            "answer": "D",
-                            "image": null
-                          },
-                          {
-                            "id": 34,
-                            "question": "Epithelial tissue is found in ______.",
-                            "options": {
-                              "A": "the skin",
-                              "B": "the heart",
-                              "C": "the brain",
-                              "D": "the bones"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 35,
-                            "question": "The digestive system includes ______.",
-                            "options": {
-                              "A": "heart and lungs",
-                              "B": "stomach and intestines",
-                              "C": "brain and nerves",
-                              "D": "kidneys and bladder"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 36,
-                            "question": "Traits like language and skills are ______ traits.",
-                            "options": {
-                              "A": "inherited",
-                              "B": "acquired",
-                              "C": "genetic",
-                              "D": "dominant"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 37,
-                            "question": "The first generation of a cross between two purebred plants is called ______.",
-                            "options": {
-                              "A": "F1 generation",
-                              "B": "P generation",
-                              "C": "F2 generation",
-                              "D": "hybrid generation"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 38,
-                            "question": "A desert plant like cactus has thick stems to ______.",
-                            "options": {
-                              "A": "store water",
-                              "B": "attract insects",
-                              "C": "absorb sunlight",
-                              "D": "release oxygen"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 39,
-                            "question": "The atomic number tells us the number of ______ in an atom.",
-                            "options": {
-                              "A": "electrons",
-                              "B": "protons",
-                              "C": "neutrons",
-                              "D": "nuclei"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 40,
-                            "question": "Two or more atoms chemically combined form a ______.",
-                            "options": {
-                              "A": "mixture",
-                              "B": "molecule",
-                              "C": "solution",
-                              "D": "suspension"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 41,
-                            "question": "Which of these is a chemical change?",
-                            "options": {
-                              "A": "Dissolving sugar in water",
-                              "B": "Tearing paper",
-                              "C": "Burning paper",
-                              "D": "Freezing water"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 42,
-                            "question": "The process by which plants make food is called ______.",
-                            "options": {
-                              "A": "respiration",
-                              "B": "photosynthesis",
-                              "C": "transpiration",
-                              "D": "digestion"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 43,
-                            "question": "Which gas is needed for respiration?",
-                            "options": {
-                              "A": "Nitrogen",
-                              "B": "Oxygen",
-                              "C": "Carbon dioxide",
-                              "D": "Hydrogen"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 44,
-                            "question": "A disease spread by mosquitoes is ______.",
-                            "options": {
-                              "A": "cholera",
-                              "B": "typhoid",
-                              "C": "malaria",
-                              "D": "tuberculosis"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 45,
-                            "question": "Personal hygiene helps to prevent ______.",
-                            "options": {
-                              "A": "genetic diseases",
-                              "B": "infectious diseases",
-                              "C": "inherited traits",
-                              "D": "adaptation"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 46,
-                            "question": "The green pigment in plants is ______.",
-                            "options": {
-                              "A": "chlorophyll",
-                              "B": "chloroplast",
-                              "C": "cytoplasm",
-                              "D": "carotenoid"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 47,
-                            "question": "An example of a reversible change is ______.",
-                            "options": {
-                              "A": "burning of wood",
-                              "B": "melting of ice",
-                              "C": "rusting of iron",
-                              "D": "cooking of egg"
-                            },
-                            "answer": "B",
-                            "image": null
-                          },
-                          {
-                            "id": 48,
-                            "question": "The formula for sodium chloride is ______.",
-                            "options": {
-                              "A": "NaCl",
-                              "B": "KCl",
-                              "C": "HCl",
-                              "D": "H₂O"
-                            },
-                            "answer": "A",
-                            "image": null
-                          },
-                          {
-                            "id": 49,
-                            "question": "Which of these is a communicable disease?",
-                            "options": {
-                              "A": "Diabetes",
-                              "B": "Hypertension",
-                              "C": "Measles",
-                              "D": "Asthma"
-                            },
-                            "answer": "C",
-                            "image": null
-                          },
-                          {
-                            "id": 50,
-                            "question": "The process of converting a liquid to a gas is called ______.",
-                            "options": {
-                              "A": "condensation",
-                              "B": "evaporation",
-                              "C": "sublimation",
-                              "D": "freezing"
-                            },
-                            "answer": "B",
-                            "image": null
-                          }
-];
+       {
+          "id": 1,
+          "question": "Which of these is a type of computer network that covers a small geographical area like a school?",
+          "options": {
+            "A": "LAN",
+            "B": "WAN",
+            "C": "MAN",
+            "D": "PAN"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "A network that spans a city or large campus is called a ______.",
+          "options": {
+            "A": "LAN",
+            "B": "WAN",
+            "C": "MAN",
+            "D": "VPN"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "Which of these is NOT a network component?",
+          "options": {
+            "A": "Router",
+            "B": "Modem",
+            "C": "USB cable",
+            "D": "Switch"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "The internet is an example of a ______.",
+          "options": {
+            "A": "LAN",
+            "B": "WAN",
+            "C": "MAN",
+            "D": "PAN"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "A device that connects multiple networks and directs data packets is a ______.",
+          "options": {
+            "A": "Hub",
+            "B": "Switch",
+            "C": "Router",
+            "D": "Modem"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "Which internet service allows you to access websites?",
+          "options": {
+            "A": "FTP",
+            "B": "HTTP",
+            "C": "Email",
+            "D": "VoIP"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "Google Chrome and Firefox are examples of ______.",
+          "options": {
+            "A": "Search engines",
+            "B": "Web browsers",
+            "C": "Operating systems",
+            "D": "Applications"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Google, Bing, and Yahoo are primarily known as ______.",
+          "options": {
+            "A": "Web browsers",
+            "B": "Search engines",
+            "C": "Social media",
+            "D": "Email clients"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "Which of these is essential for good email etiquette?",
+          "options": {
+            "A": "Using all caps",
+            "B": "Clear subject line",
+            "C": "Informal greetings",
+            "D": "No signature"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "An example of instant messaging platform is ______.",
+          "options": {
+            "A": "WhatsApp",
+            "B": "YouTube",
+            "C": "Wikipedia",
+            "D": "PowerPoint"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "Video conferencing tools include all EXCEPT ______.",
+          "options": {
+            "A": "Zoom",
+            "B": "Microsoft Teams",
+            "C": "Google Meet",
+            "D": "Microsoft Word"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Which storage type is directly inside the computer?",
+          "options": {
+            "A": "Cloud storage",
+            "B": "Internal hard drive",
+            "C": "USB flash drive",
+            "D": "External SSD"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "One advantage of cloud computing is ______.",
+          "options": {
+            "A": "High initial cost",
+            "B": "Need for physical storage",
+            "C": "Accessibility from anywhere",
+            "D": "Limited storage space"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Regularly saving copies of data to prevent loss is called ______.",
+          "options": {
+            "A": "Data mining",
+            "B": "Data backup",
+            "C": "Data compression",
+            "D": "Data encryption"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "Dropbox and Google Drive are examples of ______.",
+          "options": {
+            "A": "Antivirus software",
+            "B": "Cloud storage services",
+            "C": "Web browsers",
+            "D": "Operating systems"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Cybersecurity primarily aims to protect ______.",
+          "options": {
+            "A": "Physical buildings",
+            "B": "Digital data and systems",
+            "C": "Financial investments only",
+            "D": "Social media accounts only"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "Malicious software designed to damage computers is called ______.",
+          "options": {
+            "A": "Firewall",
+            "B": "Malware",
+            "C": "Encryption",
+            "D": "Backup"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "A cyber attack that tricks people into revealing sensitive information is ______.",
+          "options": {
+            "A": "Phishing",
+            "B": "Spamming",
+            "C": "Networking",
+            "D": "Programming"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "Unauthorized access to computer systems is known as ______.",
+          "options": {
+            "A": "Browsing",
+            "B": "Hacking",
+            "C": "Downloading",
+            "D": "Streaming"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "Which is a common type of malware?",
+          "options": {
+            "A": "Router",
+            "B": "Virus",
+            "C": "Modem",
+            "D": "Browser"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "A cybersecurity tool that monitors and controls incoming/outgoing network traffic is a ______.",
+          "options": {
+            "A": "Password manager",
+            "B": "Antivirus",
+            "C": "Firewall",
+            "D": "Backup software"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "Software designed to detect and remove malware is ______.",
+          "options": {
+            "A": "Word processor",
+            "B": "Antivirus",
+            "C": "Spreadsheet",
+            "D": "Browser extension"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "A strong password should ideally ______.",
+          "options": {
+            "A": "Be your name",
+            "B": "Include only letters",
+            "C": "Be long and complex",
+            "D": "Be written down publicly"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "Two-Factor Authentication (2FA) adds security by requiring ______.",
+          "options": {
+            "A": "Two passwords",
+            "B": "Two usernames",
+            "C": "Two forms of verification",
+            "D": "Two email addresses"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Responsible use of digital technology includes ______.",
+          "options": {
+            "A": "Sharing passwords",
+            "B": "Posting harmful content",
+            "C": "Respecting others online",
+            "D": "Ignoring privacy settings"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "The act of using technology to harass or threaten someone is ______.",
+          "options": {
+            "A": "Networking",
+            "B": "Cyberbullying",
+            "C": "Phishing",
+            "D": "Blogging"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "Which law in Nigeria deals with data protection?",
+          "options": {
+            "A": "NDPR",
+            "B": "NITDA",
+            "C": "CBN Act",
+            "D": "EFCC Act"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "Data privacy means protecting ______.",
+          "options": {
+            "A": "Physical property",
+            "B": "Personal information",
+            "C": "Public data only",
+            "D": "Computer hardware"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "Social media platforms allow users to ______.",
+          "options": {
+            "A": "Only read news",
+            "B": "Create and share content",
+            "C": "Only send emails",
+            "D": "Store data offline"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "A risk of social media is ______.",
+          "options": {
+            "A": "Making friends",
+            "B": "Identity theft",
+            "C": "Learning new things",
+            "D": "Professional networking"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "A responsible digital citizen should ______.",
+          "options": {
+            "A": "Spread unverified news",
+            "B": "Respect copyrights",
+            "C": "Use fake identities",
+            "D": "Ignore privacy policies"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "Which network connects computers across countries?",
+          "options": {
+            "A": "LAN",
+            "B": "WAN",
+            "C": "PAN",
+            "D": "MAN"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "The full meaning of URL is ______.",
+          "options": {
+            "A": "Uniform Resource Locator",
+            "B": "Universal Resource Link",
+            "C": "United Resource Library",
+            "D": "Uniform Retrieval Link"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "HTTP stands for ______.",
+          "options": {
+            "A": "HyperText Transfer Protocol",
+            "B": "High Tech Transfer Process",
+            "C": "Hyper Transfer Text Protocol",
+            "D": "High Transfer Text Process"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "In an email address \"user@domain.com\", the \"@\" symbol separates ______.",
+          "options": {
+            "A": "Name and surname",
+            "B": "User and domain",
+            "C": "Country and city",
+            "D": "Protocol and site"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "\"BCC\" in email means ______.",
+          "options": {
+            "A": "Basic Carbon Copy",
+            "B": "Blind Carbon Copy",
+            "C": "Broad Carbon Copy",
+            "D": "Binary Carbon Copy"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "SSD stands for ______.",
+          "options": {
+            "A": "Solid State Drive",
+            "B": "Super Storage Device",
+            "C": "System Storage Drive",
+            "D": "Simple Saving Disk"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "Ransomware is a type of ______.",
+          "options": {
+            "A": "Backup software",
+            "B": "Malware",
+            "C": "Firewall",
+            "D": "Browser"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "A secret word or phrase used to gain access to a system is a ______.",
+          "options": {
+            "A": "Username",
+            "B": "Password",
+            "C": "Firewall",
+            "D": "Protocol"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "Updating software regularly helps to fix ______.",
+          "options": {
+            "A": "Hardware faults",
+            "B": "Security vulnerabilities",
+            "C": "Internet speed",
+            "D": "Power supply"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "Which is an example of a social media platform?",
+          "options": {
+            "A": "Microsoft Excel",
+            "B": "Facebook",
+            "C": "Google Search",
+            "D": "Adobe Reader"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "Digital footprint refers to ______.",
+          "options": {
+            "A": "Physical footprints",
+            "B": "Trail of data left online",
+            "C": "Size of hard drive",
+            "D": "Number of devices owned"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "Netiquette is short for ______.",
+          "options": {
+            "A": "Network etiquette",
+            "B": "Net ethics",
+            "C": "Internet etiquette",
+            "D": "Network ethics"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "Which is a benefit of digital storage over paper?",
+          "options": {
+            "A": "Takes more space",
+            "B": "Easier to damage",
+            "C": "Faster search and retrieval",
+            "D": "Higher cost per unit"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "A protocol that provides secure communication over a network is ______.",
+          "options": {
+            "A": "HTTP",
+            "B": "HTTPS",
+            "C": "FTP",
+            "D": "SMTP"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "Which protects against phishing?",
+          "options": {
+            "A": "Opening all email links",
+            "B": "Verifying sender identity",
+            "C": "Sharing personal details",
+            "D": "Using simple passwords"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "Copyright law protects ______.",
+          "options": {
+            "A": "Physical objects only",
+            "B": "Original creative works",
+            "C": "Ideas only",
+            "D": "Public domain content"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "A program that appears useful but contains malicious code is a ______.",
+          "options": {
+            "A": "Trojan horse",
+            "B": "Firewall",
+            "C": "Router",
+            "D": "Browser"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "The practice of making extra copies of data is ______.",
+          "options": {
+            "A": "Data backup",
+            "B": "Data theft",
+            "C": "Data mining",
+            "D": "Data entry"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Digital citizenship involves ______.",
+          "options": {
+            "A": "Using technology responsibly",
+            "B": "Owning many devices",
+            "C": "Avoiding the internet",
+            "D": "Knowing programming only"
+          },
+          "answer": "A",
+          "image": null
+        }
+
+   ];     
 
 
         const staticTheoryQuestions = [
-      {
-                "id": 1,
-                "question": "a. State the three parts of the cell theory. \n\n b. List four differences between plant and animal cells. \n\n c. Explain the function of the mitochondria.",
-                "marks": 12.5,
-                "image": null
-              },
-              {
-                "id": 2,
-                "question": "a. Define the term \"tissue.\" \n\n b. Give two examples of tissues in animals and state their functions. \n\n c. What is an organ system? Give one example.",
-                "marks": 12.5,
-                "image": null
-              },
-              {
-                "id": 3,
-                "question": "a. Differentiate between inherited and acquired traits with two examples each. \n\n b. What is variation? \n\n c. Explain one importance of variation.",
-                "marks": 12.5,
-                "image": null
-              },
-              {
-                "id": 4,
-                "question": "a. What is adaptation? \n\n b. Explain two structural adaptations of a fish for living in water. \n\n c. Give one example of behavioral adaptation in animals.",
-                "marks": 12.5,
-                "image": null
-              },
-              {
-                "id": 5,
-                "question": "a. Draw a labeled diagram of an atom. \n\n b. Differentiate between an element and a compound. \n\n c. Write the chemical formula for water and state its chemical name.",
-                "marks": 12.5,
-                "image": null
-              },
-              {
-                "id": 6,
-                "question": "a. Differentiate between physical and chemical changes with two examples each. \n\n b. What is a reversible change? Give one example. \n\n c. Why is burning of paper considered a chemical change?",
-                "marks": 12.5,
-                "image": null
-              },
-              {
-                "id": 7,
-                "question": "a. Name three common microorganisms that cause diseases. \n\n b. Explain two methods of preventing the spread of malaria. \n\n c. What is vaccination and how does it work?",
-                "marks": 12.5,
-                "image": null
-              }
-];
-       // ================== APPLICATION VARIABLES ==================
+        {
+          "id": 1,
+          "question": "ANSWER ALL QUESTIONS \n\n(a) Define computer network. (2.5 Marks)\n(b) List and explain the classification of computer network by geographic scope. (10 Marks)",
+          "marks": 12.5,
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "(a) Define Network Topology. (2.5 Marks)\n(b) Write short notes on these two types of network topology:\n   (i) Bus Topology\n   (ii) Ring Topology (5 Marks)\n(c) List and explain the two classification of computer network by architecture. (5 Marks)",
+          "marks": 12.5,
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "(a) What is transmission media? (2.5 Marks)\n(b) List two types of transmission media with examples. (2.5 Marks)\n(c) What is protocol? (5 Marks)",
+          "marks": 10,
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "(a) Write short notes on:\n   (i) IP\n   (ii) HTTPS (5 Marks)\n(b) Explain the email flow diagram with its SMTP and IMAP protocol. (10 Marks)",
+          "marks": 15,
+          "image": null
+        }
+      ];
+        // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];

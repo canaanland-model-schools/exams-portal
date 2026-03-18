@@ -857,39 +857,27 @@
             updateTheoryStatus();
         };
        
-                        // ================== TIMER ==================
-            let timeLeft = 60 * 90; // 90 minutes in seconds
-            const timerEl = document.getElementById('timer');
-            const timerInterval = setInterval(() => {
-                const hours = Math.floor(timeLeft / 3600);
-                const minutes = Math.floor((timeLeft % 3600) / 60);
-                const seconds = timeLeft % 60;
-                
-                // Build display string
-                let display = '';
-                if (hours > 0) {
-                    display += `${hours} Hr :`;
-                }
-                if (minutes > 0 || hours > 0) { // show minutes if any hour or minute >0
-                    display += `${minutes} Min : `;
-                }
-                display += `${seconds} Sec`;
-                
-                timerEl.textContent = `Time Remaining: ${display}`;
-                timeLeft--;
-               
-                // Change color when time is running out (less than 5 minutes)
-                if (timeLeft < 300) { // 5 minutes = 300 seconds
-                    timerEl.style.color = 'red';
-                    timerEl.style.animation = 'pulse 1s infinite';
-                }
-               
-                if (timeLeft < 0) {
-                    clearInterval(timerInterval);
-                    alert("Time is up! Your exam will be submitted automatically.");
-                    submitExam();
-                }
-            }, 1000);
+        // ================== TIMER ==================
+        let timeLeft = 60 * 90; // 60 minutes
+        const timerEl = document.getElementById('timer');
+        const timerInterval = setInterval(() => {
+            let min = Math.floor(timeLeft / 60);
+            let sec = timeLeft % 60;
+            timerEl.textContent = `Time Remaining: ${min}:${sec < 10 ? '0' + sec : sec}`;
+            timeLeft--;
+           
+            // Change color when time is running out
+            if (timeLeft < 300) { // 5 minutes
+                timerEl.style.color = 'red';
+                timerEl.style.animation = 'pulse 1s infinite';
+            }
+           
+            if (timeLeft < 0) {
+                clearInterval(timerInterval);
+                alert("Time is up! Your exam will be submitted automatically.");
+                submitExam();
+            }
+        }, 1000);
        
         // ================== SECTION TOGGLE ==================
         function showSection(section) {
