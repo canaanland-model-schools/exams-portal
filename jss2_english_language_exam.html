@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - SS1 MATHEMEMATICS  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - JSS2 ENGLISH LANGUAGE Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS1 MATHEMEMATICS   (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  JSS2 ENGLISH LANGUAGE (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS1 MATHEMEMATICS FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> JSS2 ENGLISH LANGUAGE  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -699,409 +699,421 @@
 
 
     <script>
-           
+           // Get stored username and image from sessionStorage
+       
+       
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                                         
-  {
-    "id": 1,
-    "question": "Simplify 3^4 × 3^2 in index form.",
-    "options": { "A": "3^6", "B": "3^8", "C": "9^6", "D": "3^2" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "Evaluate log_2 8 + log_2 4.",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A triangle with all sides equal is called:",
-    "options": { "A": "Scalene triangle", "B": "Isosceles triangle", "C": "Equilateral triangle", "D": "Right-angled triangle" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "The polygon with 6 sides is known as:",
-    "options": { "A": "Pentagon", "B": "Hexagon", "C": "Heptagon", "D": "Octagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "Solve for x: 2<sup>x</sup> = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "The sum of interior angles of a quadrilateral is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "Express log_10 1000 without logarithm.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "A polygon is said to be regular if:",
-    "options": { "A": "All sides are equal", "B": "All angles are equal", "C": "Both A and B", "D": "None of the above" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "Simplify (a^3 × a^5) / a^4.",
-    "options": { "A": "a^2", "B": "a^4", "C": "a^6", "D": "a^12" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "In a right-angled triangle, the side opposite the right angle is called:",
-    "options": { "A": "Adjacent", "B": "Hypotenuse", "C": "Opposite", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "Simplify (2^3)^4 in index form.",
-    "options": { "A": "2^7", "B": "2^12", "C": "2^1", "D": "2^81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "Solve for x: 4<sup>x</sup> = 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Evaluate log_3 27.",
-    "options": { "A": "2", "B": "3", "C": "9", "D": "81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "If log 2 = 0.3010, what is log 8?",
-    "options": { "A": "0.6020", "B": "0.9030", "C": "1.2040", "D": "0.9542" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A triangle with two equal sides is called:",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "In a right-angled triangle, the side opposite the 30° angle is half the length of the:",
-    "options": { "A": "Adjacent side", "B": "Hypotenuse", "C": "Opposite side", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "The sum of exterior angles of any polygon is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "A regular polygon has 8 sides. What is the measure of each exterior angle?",
-    "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Simplify log_2 8 + log_2 2.",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "What is the name of a 9-sided polygon?",
-    "options": { "A": "Octagon", "B": "Nonagon", "C": "Decagon", "D": "Heptagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Simplify (3^2 × 3^3) / 3^4.",
-    "options": { "A": "3^1", "B": "3^2", "C": "3^5", "D": "3^6" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "If 5^(2x) = 625, find x.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "Evaluate log_5 125.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Given log<sub>a</sub> 2 = 0.5, find a.",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "A triangle has angles 60°, 60°, and 60°. What type of triangle is it?",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "The longest side in a right-angled triangle is called:",
-    "options": { "A": "Opposite", "B": "Adjacent", "C": "Hypotenuse", "D": "Base" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "How many diagonals does a pentagon have?",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "The interior angle of a regular hexagon is:",
-    "options": { "A": "60°", "B": "90°", "C": "120°", "D": "150°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Simplify log 100 - log 10.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "10" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Solve 2^(x+1) = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Which of the following is equal to 8^(2/3)?",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "If log 3 = 0.4771, find log 0.3.",
-    "options": { "A": "0.4771", "B": "1.4771", "C": "-0.5229", "D": "0.5229" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "The angle subtended by a straight line is:",
-    "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "A triangle with sides 3cm, 4cm, 5cm is:",
-    "options": { "A": "Acute-angled", "B": "Obtuse-angled", "C": "Right-angled", "D": "Isosceles" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "The number of sides of a regular polygon whose interior angle is 144°.",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "Simplify (27)^(1/3).",
-    "options": { "A": "3", "B": "6", "C": "9", "D": "27" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Evaluate log_2 32.",
-    "options": { "A": "4", "B": "5", "C": "6", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Which of the following is correct?",
-    "options": { "A": "log a + log b = log (a+b)", "B": "log a - log b = log (a/b)", "C": "log (a^b) = b log a", "D": "Both B and C" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "If the exterior angle of a regular polygon is 30°, how many sides does it have?",
-    "options": { "A": "10", "B": "12", "C": "15", "D": "18" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "The base angles of an isosceles triangle are always:",
-    "options": { "A": "Acute", "B": "Obtuse", "C": "Right", "D": "Equal" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "Simplify (16)^(3/4).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Evaluate log_4 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "In a triangle, if two angles are 45° and 75°, find the third angle.",
-    "options": { "A": "60°", "B": "65°", "C": "70°", "D": "75°" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "A polygon has 10 sides. What is the sum of its interior angles?",
-    "options": { "A": "1080°", "B": "1260°", "C": "1440°", "D": "1620°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Solve for x: 3^(x-1) = 27.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "Given log<sub>a</sub> 27 = 3, find a.",
-    "options": { "A": "3", "B": "9", "C": "27", "D": "81" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "How many sides does a polygon have if each exterior angle is 36°?",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "In a right-angled triangle, the side opposite 60° is related to the hypotenuse by factor:",
-    "options": { "A": "1/2", "B": "√3/2", "C": "√2/2", "D": "1/√2" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Simplify (√8) × (√2).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Which of the following is equal to log 1000?",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  }
-
+                                 {
+          "id": 1,
+          "question": "Which of these is a diphthong?",
+          "options": { "A": "/æ/", "B": "/eɪ/", "C": "/ɪ/", "D": "/ɒ/" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "In reported speech, \"She said, ‘I am coming’\" becomes:",
+          "options": { "A": "She said she was coming.", "B": "She said she is coming.", "C": "She said she came.", "D": "She said she will come." },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "The intonation pattern used in a yes/no question is:",
+          "options": { "A": "Falling", "B": "Rising", "C": "Level", "D": "Rising-falling" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "Choose the correct preposition: He is good ______ Mathematics.",
+          "options": { "A": "at", "B": "in", "C": "on", "D": "for" },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Which word is stressed on the first syllable?",
+          "options": { "A": "import (verb)", "B": "present (noun)", "C": "record (verb)", "D": "permit (verb)" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "Identify the irregular verb:",
+          "options": { "A": "walk", "B": "play", "C": "go", "D": "jump" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "Skimming means reading to get:",
+          "options": { "A": "every detail", "B": "the main idea quickly", "C": "facts only", "D": "opinions only" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Which is a formal letter feature?",
+          "options": { "A": "Use of slang", "B": "Sender's address on the right", "C": "\"Dear Buddy\"", "D": "No date" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "\"I have a ton of homework.\" This is an example of:",
+          "options": { "A": "irony", "B": "euphemism", "C": "hyperbole", "D": "simile" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "The punctuation mark used to end a statement is:",
+          "options": { "A": "comma", "B": "question mark", "C": "full stop", "D": "colon" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "\"The reward of honesty\" is a likely theme in:",
+          "options": { "A": "a science text", "B": "a drama", "C": "a news report", "D": "an advertisement" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Which consonant sound is in \"zip\"?",
+          "options": { "A": "/s/", "B": "/z/", "C": "/ʃ/", "D": "/ʒ/" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "\"He runs quickly.\" The word \"quickly\" is an:",
+          "options": { "A": "adjective", "B": "adverb", "C": "noun", "D": "preposition" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Which is used to separate items in a list?",
+          "options": { "A": "full stop", "B": "comma", "C": "colon", "D": "semi-colon" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "A narrative essay is mainly about:",
+          "options": { "A": "arguing a point", "B": "telling a story", "C": "explaining a process", "D": "describing a place" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "\"Entrepreneurship\" is most related to:",
+          "options": { "A": "farming", "B": "business creation", "C": "teaching", "D": "singing" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "Choose the correct reported request: \"Please help me.\" → She requested that I ______ her.",
+          "options": { "A": "help", "B": "helped", "C": "helps", "D": "helping" },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "Which is a fact?",
+          "options": { "A": "Nigeria is the best country.", "B": "Abuja is the capital of Nigeria.", "C": "English is easy.", "D": "Football is boring." },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "The opposite of \"loose\" is:",
+          "options": { "A": "lose", "B": "tight", "C": "free", "D": "light" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "\"The man, who is tall, left.\" The commas are used to:",
+          "options": { "A": "show possession", "B": "separate clauses", "C": "end a sentence", "D": "introduce a list" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "In the sentence \"She sings well,\" the verb tense is:",
+          "options": { "A": "past", "B": "present", "C": "future", "D": "continuous" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "Which is a formal letter greeting?",
+          "options": { "A": "Hi there,", "B": "Dear Sir,", "C": "Hello friend,", "D": "Hey," },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The main idea of a passage is:",
+          "options": { "A": "a small detail", "B": "the central point", "C": "the title", "D": "the author's name" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "\"He kicked the bucket\" is a/an:",
+          "options": { "A": "irony", "B": "euphemism", "C": "hyperbole", "D": "metaphor" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Which is a consonant sound in \"chaos\"?",
+          "options": { "A": "/k/", "B": "/g/", "C": "/tʃ/", "D": "/dʒ/" },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "A colon can be used to:",
+          "options": { "A": "end a question", "B": "introduce a list", "C": "separate adjectives", "D": "show possession" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "\"I witnessed an accident\" is likely part of a:",
+          "options": { "A": "formal letter", "B": "report", "C": "poem", "D": "play" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "In \"The sun smiled,\" the figure of speech is:",
+          "options": { "A": "simile", "B": "metaphor", "C": "personification", "D": "hyperbole" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "\"She can sing, can't she?\" The intonation on the tag is:",
+          "options": { "A": "rising", "B": "falling", "C": "level", "D": "none" },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Which is a regressive reading habit?",
+          "options": { "A": "reading forward", "B": "skipping words", "C": "going back to reread", "D": "reading aloud" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "The past tense of \"teach\" is:",
+          "options": { "A": "teached", "B": "taught", "C": "teaching", "D": "teaches" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "\"Herbal medicine\" is associated with:",
+          "options": { "A": "factories", "B": "plants", "C": "computers", "D": "cars" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "\"I saw a zebra.\" The sound in \"zebra\" is:",
+          "options": { "A": "/s/", "B": "/z/", "C": "/ʃ/", "D": "/θ/" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "Which punctuation ends a question?",
+          "options": { "A": ".", "B": ",", "C": "?", "D": "!" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "An argumentative essay requires:",
+          "options": { "A": "telling a story", "B": "giving opinions with reasons", "C": "listing events", "D": "describing a scene" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "The theme of a story is its:",
+          "options": { "A": "main message", "B": "setting", "C": "author", "D": "length" },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "\"He said, ‘Close the door.’\" In reported speech:",
+          "options": { "A": "He said close the door.", "B": "He told me to close the door.", "C": "He asked if I closed the door.", "D": "He said I should closed the door." },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "\"Science and Technology\" vocabulary includes:",
+          "options": { "A": "farm, hoe, crop", "B": "computer, internet, software", "C": "market, trader, price", "D": "school, teacher, book" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "A semi-colon is used to:",
+          "options": { "A": "end a sentence", "B": "separate two related sentences", "C": "show excitement", "D": "introduce speech" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "\"My last birthday\" suggests a/an ______ essay.",
+          "options": { "A": "expository", "B": "narrative", "C": "argumentative", "D": "formal letter" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "Which is informal?",
+          "options": { "A": "Yours faithfully,", "B": "Dear Mr. Okoro,", "C": "Hi Kemi,", "D": "To the Chairman," },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "\"He gulped the water.\" The sound in \"gulped\" starts with:",
+          "options": { "A": "/k/", "B": "/g/", "C": "/dʒ/", "D": "/ŋ/" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "In \"She is a singer,\" the \"ng\" sound is:",
+          "options": { "A": "/n/", "B": "/ŋ/", "C": "/ŋg/", "D": "/g/" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "Skimming and scanning help in:",
+          "options": { "A": "slow reading", "B": "speed reading", "C": "writing letters", "D": "memorizing poems" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "\"The meeting\" could be a title for:",
+          "options": { "A": "a story", "B": "a report", "C": "a poem", "D": "a drama" },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "A comma after \"however\" shows:",
+          "options": { "A": "possession", "B": "pause", "C": "question", "D": "end" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "\"Don't vocalize\" means:",
+          "options": { "A": "read silently", "B": "read aloud", "C": "write clearly", "D": "speak loudly" },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "\"Flood menace\" is likely discussed in a letter to:",
+          "options": { "A": "a friend", "B": "the local government", "C": "a parent", "D": "a teacher" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "\"He is taller than me.\" The comparative form is:",
+          "options": { "A": "tall", "B": "taller", "C": "tallest", "D": "talling" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Literature includes all except:",
+          "options": { "A": "prose", "B": "drama", "C": "poetry", "D": "algebra" },
+          "answer": "D",
+          "image": null
+        }
+      
 ];
 
 
         const staticTheoryQuestions = [
-      
-                                       
-                                  {
-                                    "id": 1,
-                                    "question": " (a) Simplify the following expressions completely, leaving your answers in index form where appropriate:\n   i. 5<sup>2</sup> × 5^3 ÷ 5^4\n   ii. ((3^2)^3 × 3^4)/3^5\n   iii. (4a^2b^3) × (2a^3b)\n(b) Solve the following exponential equations:\n   i. Find the value of x if 3^x = 81\n   ii. Solve for y: 2^(2y+1) = 32\n   iii. If 5^n = 125, find n.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 2,
-                                    "question": " (a) Evaluate the following without using calculators, showing all steps:\n   i. log_3 81\n   ii. log_10 10000\n   iii. log_5 125 + log_5 25\n(b) Simplify the following logarithmic expressions:\n   i. log_a 6 + log_a 4 - log_a 3\n   ii. 2 log_2 8 - log_2 16\n   iii. Given that log 2 = 0.3010 and log 3 = 0.4771, find log 6.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 3,
-                                    "question": "(a) State the type of triangle described below and sketch each:\n   i. A triangle with sides 5cm, 5cm, and 8cm.\n   ii. A triangle with angles 45°, 45°, and 90°.\n   iii. A triangle with all sides 6cm.\n   iv. A triangle with sides 3cm, 4cm, and 5cm.\n(b) In  triangle ABC , angle A = 50°, angle B = 70°:\n   i. Calculate angle C.\n   ii. What type of triangle is this based on its angles?\n   iii. If side AB is the longest side, which angle is opposite it?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 4,
-                                    "question": "find the values of the angles with alphabets shown in the diagram below\n and give reasons to support your answers",
-                                    "marks": 10,
-                                    "image": "img/ss2 maths/ss1_math.png"
-                                  },
-                                  {
-                                    "id": 5,
-                                    "question": " (a) Express the following in index form and simplify:\n   i. √16 × ∛27\n   ii. (8^(2/3))\n(b) If log_10 2 = 0.3010 and log_10 3 = 0.4771, find:\n   i. log_10 12\n   ii. log_10 1.5\n(c) A regular polygon has each exterior angle equal to 40°.\n   i. How many sides does the polygon have?\n   ii. What is the name of this polygon?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                   {
-                                    id: 6,
-                                    question: "a. Using ruler and compasses only, construct:\n(i) Angle 60°\n(ii) Angle 30° (by bisecting 60°)\nShow all construction lines clearly. \n b. Construct triangle ABC such that AB = 8cm, AC = 6cm, and BC = 7cm.\n(i) Measure and write down ∠A\n(ii) Construct the bisector of ∠A .",
-                                    marks: 10,
-                                    image: null
-                                  },
-                                         
+      {
+        id: 1,
+        question: "The New Yam Festival is a significant cultural event celebrated by the Igbo people of Nigeria. It marks the end of one farming season and the beginning of another. The festival is usually held in August or September, when the new yams are harvested. During the festival, the community gathers to give thanks to the gods for a bountiful harvest. The highlight of the celebration is the offering of the first yams to the deities and ancestors before anyone else eats them. Traditional dances, music, and colourful attires add to the excitement. The festival not only celebrates agriculture but also strengthens community bonds and cultural identity.\n i. Why is the New Yam Festival celebrated?\nii. List three activities that take place during the festival.\niii. Explain in your own words: 'strengthens community bonds'.\niv.  What does 'bountiful harvest' mean?\nv. Suggest a suitable title if the passage was about another Nigerian festival.", 
 
+           
+      
+        marks: 12,
+        image: null
+      },
+      {
+        id: 2,
+        question: "Write a narrative essay on the topic: 'My Last Birthday Celebration'.\n ii. State two features of a narrative essay.\n iii.Underline the topic sentence in your first paragraph.",
+        marks: 12,
+        image: null
+      },
+      {
+        id: 3,
+        question: "Write a formal letter to the Chairman of your Local Government Area complaining about the poor drainage system in your neighborhood \nii. List three parts of a formal letter.\niii. Why is the date important in a formal letter?",  
+        marks: 12,
+        image: null
+      },
+      {
+        id: 4,
+        question: "Change the following sentences into reported speech:\n(i) 'I am reading a book,' she said.\n(ii) 'Close the window,' he told me.\n(iii) 'Can you help me?' she asked\n Fill in the blanks with the correct prepositions:\n(i) She is good ______ singing.\n(ii) We arrived ______ the school early.\n(iii) He is interested ______ football.\n c.Identify the figure of speech in: 'The stars winked at me. \nd. What is the difference between 'loose' and 'lose'?",
+               
+        marks: 12,
+        image: null
+      },
+      {
+        id: 5,
+        question: "In three sentences, summarize the importance of the New Yam Festival from the comprehension passage \ni. What is the main idea of the passage?\nii. Explain the term 'skimming' in reading.",    
+        marks: 12,
+        image: null
+      },
+      {
+        id: 6,
+        question: "Write an argumentative essay on the topic: 'Herbal Medicines are More Potent than Orthodox Medicines.\nii. Mention two linking words you used in your essay.",
+            
+        marks: 12,
+        image: null
+      },
+      {
+        id: 7,
+        question: "Differentiate between irony, euphemism, and hyperbole with one example each \nii. What is the theme of the drama text, 'The Reward of Honesty'?\niii. Write a short dialogue (between two characters) showing honesty.",
+            
+        marks: 12,
+        image: null
+      }
 ];
-       // ================== APPLICATION VARIABLES ==================
+     
+
+
+  // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1186,142 +1198,23 @@
                         submitExam();
                     }
                 }, 1000);
-
-                            // ================== MATH SYMBOL MAPPING ==================
-            function mapMathSymbol(text) {
-                if (!text) return '';
-                
-                return text
-                    .replace(/&theta;/g, 'θ')
-                    .replace(/&Theta;/g, 'Θ')
-                    .replace(/&pi;/g, 'π')
-                    .replace(/&Pi;/g, 'Π')
-                    .replace(/&alpha;/g, 'α')
-                    .replace(/&beta;/g, 'β')
-                    .replace(/&gamma;/g, 'γ')
-                    .replace(/&delta;/g, 'δ')
-                    .replace(/&epsilon;/g, 'ε')
-                    .replace(/&phi;/g, 'φ')
-                    .replace(/&omega;/g, 'ω')
-                    .replace(/&mu;/g, 'μ')
-                    .replace(/&sigma;/g, 'σ')
-                    .replace(/&lambda;/g, 'λ')
-                    .replace(/&radic;/g, '√')
-                    .replace(/&infin;/g, '∞')
-                    .replace(/&int;/g, '∫')
-                    .replace(/&sum;/g, '∑')
-                    .replace(/&prod;/g, '∏')
-                    .replace(/&part;/g, '∂')
-                    .replace(/&deg;/g, '°')
-                    .replace(/&times;/g, '×')
-                    .replace(/&divide;/g, '÷')
-                    .replace(/&plusmn;/g, '±')
-                    .replace(/&le;/g, '≤')
-                    .replace(/&ge;/g, '≥')
-                    .replace(/&ne;/g, '≠')
-                    .replace(/&frac12;/g, '½')
-                    .replace(/&frac14;/g, '¼')
-                    .replace(/&frac34;/g, '¾')
-                    // Convert plain text powers like ^3 to <sup>3</sup> (only if not already HTML)
-                    .replace(/\^(\d+)/g, '<sup>$1</sup>')
-                    .replace(/\^\(([^)]+)\)/g, '<sup>$1</sup>')
-                    // Convert plain text indices like _3 to <sub>3</sub>
-                    .replace(/_(\d+)/g, '<sub>$1</sub>')
-                    .replace(/_\(([^)]+)\)/g, '<sub>$1</sub>');
+       
+        // ================== SECTION TOGGLE ==================
+        function showSection(section) {
+            currentSection = section;
+            // Update button states
+            document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
+            document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
+           
+            // Show/hide sections
+            document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
+            document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
+           
+            // Update navigation
+            if (section === 'theory') {
+                displayTheoryQuestion();
             }
-
-            // ================== THEORY QUESTIONS ==================
-            function displayTheoryQuestion() {
-                if (theoryQuestions.length === 0) {
-                    document.getElementById('theoryQuestionText').innerHTML = "<p>No theory questions available.</p>";
-                    return;
-                }
-               
-                const tq = theoryQuestions[currentTheory];
-                
-                // Apply math mapping to the question text (including marks)
-                const questionWithMarks = `${currentTheory + 1}. ${tq.question} ${tq.marks ? `[${tq.marks} marks]` : ''}`;
-                document.getElementById('theoryQuestionText').innerHTML = mapMathSymbol(questionWithMarks);
-                    
-                document.getElementById('theoryAnswer').value = theoryAnswers[currentTheory] || "";
-               
-                // Handle theory question image
-                const theoryImageContainer = document.getElementById('theoryImageContainer');
-                if (tq.image) {
-                    // Also apply mapping to the caption if it exists
-                    const caption = tq.imageCaption ? mapMathSymbol(tq.imageCaption) : 'Diagram for question';
-                    theoryImageContainer.innerHTML = `
-                        <div class="theory-image-wrapper">
-                            <img src="${tq.image}" alt="Theory Question Diagram" class="theory-question-image">
-                            <div class="image-caption">${caption}</div>
-                        </div>
-                    `;
-                } else {
-                    theoryImageContainer.innerHTML = '';
-                }
-               
-                updateTheoryStatus();
-            }
-
-            function updateTheoryStatus() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                document.getElementById("theoryStatus").innerText =
-                    `Question ${currentTheory + 1} of ${theoryQuestions.length} | Saved: ${savedCount}/${theoryQuestions.length}`;
-            }
-
-            function saveTheoryAnswer() {
-                const answer = document.getElementById('theoryAnswer').value.trim();
-                theoryAnswers[currentTheory] = answer;
-                localStorage.setItem(`theoryAnswer_${currentTheory}`, answer);
-                updateTheoryStatus();
-                alert("Theory answer saved successfully!");
-            }
-
-            function nextTheoryQuestion() {
-                if (currentTheory < theoryQuestions.length - 1) {
-                    currentTheory++;
-                    displayTheoryQuestion();
-                } else {
-                    alert("You've reached the last theory question.");
-                }
-            }
-
-            function prevTheoryQuestion() {
-                if (currentTheory > 0) {
-                    currentTheory--;
-                    displayTheoryQuestion();
-                }
-            }
-
-            function submitTheoryExam() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                const confirmSubmit = confirm(
-                    `Theory section completed!\n\n` +
-                    `You have answered ${savedCount} out of ${theoryQuestions.length} theory questions.\n\n` +
-                    `Are you sure you want to submit?`
-                );
-               
-                if (confirmSubmit) {
-                    alert("Theory answers submitted successfully!");
-                }
-            }
-                   
-                    // ================== SECTION TOGGLE ==================
-                    function showSection(section) {
-                        currentSection = section;
-                        // Update button states
-                        document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
-                        document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
-                       
-                        // Show/hide sections
-                        document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
-                        document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
-                       
-                        // Update navigation
-                        if (section === 'theory') {
-                            displayTheoryQuestion();
-                        }
-                    }
+        }
        
         // ================== MATH SYMBOL MAPPING ==================
         function mapMathSymbol(text) {
@@ -1565,7 +1458,7 @@
             }
                    
         // ================== THEORY QUESTIONS ==================
-        /*function displayTheoryQuestion() {
+        function displayTheoryQuestion() {
             if (theoryQuestions.length === 0) {
                 document.getElementById('theoryQuestionText').innerText = "No theory questions available.";
                 return;
@@ -1635,7 +1528,7 @@
             if (confirmSubmit) {
                 alert("Theory answers submitted successfully!");
             }
-        }*/
+        }
        
         // ================== DATE & TIME ==================
         function updateDateTime() {
@@ -1729,3 +1622,4 @@
     </script>
 </body>
 </html>
+    

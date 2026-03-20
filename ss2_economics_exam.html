@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - SS1 MATHEMEMATICS  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - SS2 ECONOMICS Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS1 MATHEMEMATICS   (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  SS2 ECONOMICS  (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS1 MATHEMEMATICS FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> SS2 ECONOMICS  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -700,408 +700,659 @@
 
     <script>
            
+      
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                                         
-  {
-    "id": 1,
-    "question": "Simplify 3^4 × 3^2 in index form.",
-    "options": { "A": "3^6", "B": "3^8", "C": "9^6", "D": "3^2" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "Evaluate log_2 8 + log_2 4.",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A triangle with all sides equal is called:",
-    "options": { "A": "Scalene triangle", "B": "Isosceles triangle", "C": "Equilateral triangle", "D": "Right-angled triangle" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "The polygon with 6 sides is known as:",
-    "options": { "A": "Pentagon", "B": "Hexagon", "C": "Heptagon", "D": "Octagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "Solve for x: 2<sup>x</sup> = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "The sum of interior angles of a quadrilateral is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "Express log_10 1000 without logarithm.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "A polygon is said to be regular if:",
-    "options": { "A": "All sides are equal", "B": "All angles are equal", "C": "Both A and B", "D": "None of the above" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "Simplify (a^3 × a^5) / a^4.",
-    "options": { "A": "a^2", "B": "a^4", "C": "a^6", "D": "a^12" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "In a right-angled triangle, the side opposite the right angle is called:",
-    "options": { "A": "Adjacent", "B": "Hypotenuse", "C": "Opposite", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "Simplify (2^3)^4 in index form.",
-    "options": { "A": "2^7", "B": "2^12", "C": "2^1", "D": "2^81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "Solve for x: 4<sup>x</sup> = 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Evaluate log_3 27.",
-    "options": { "A": "2", "B": "3", "C": "9", "D": "81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "If log 2 = 0.3010, what is log 8?",
-    "options": { "A": "0.6020", "B": "0.9030", "C": "1.2040", "D": "0.9542" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A triangle with two equal sides is called:",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "In a right-angled triangle, the side opposite the 30° angle is half the length of the:",
-    "options": { "A": "Adjacent side", "B": "Hypotenuse", "C": "Opposite side", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "The sum of exterior angles of any polygon is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "A regular polygon has 8 sides. What is the measure of each exterior angle?",
-    "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Simplify log_2 8 + log_2 2.",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "What is the name of a 9-sided polygon?",
-    "options": { "A": "Octagon", "B": "Nonagon", "C": "Decagon", "D": "Heptagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Simplify (3^2 × 3^3) / 3^4.",
-    "options": { "A": "3^1", "B": "3^2", "C": "3^5", "D": "3^6" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "If 5^(2x) = 625, find x.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "Evaluate log_5 125.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Given log<sub>a</sub> 2 = 0.5, find a.",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "A triangle has angles 60°, 60°, and 60°. What type of triangle is it?",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "The longest side in a right-angled triangle is called:",
-    "options": { "A": "Opposite", "B": "Adjacent", "C": "Hypotenuse", "D": "Base" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "How many diagonals does a pentagon have?",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "The interior angle of a regular hexagon is:",
-    "options": { "A": "60°", "B": "90°", "C": "120°", "D": "150°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Simplify log 100 - log 10.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "10" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Solve 2^(x+1) = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Which of the following is equal to 8^(2/3)?",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "If log 3 = 0.4771, find log 0.3.",
-    "options": { "A": "0.4771", "B": "1.4771", "C": "-0.5229", "D": "0.5229" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "The angle subtended by a straight line is:",
-    "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "A triangle with sides 3cm, 4cm, 5cm is:",
-    "options": { "A": "Acute-angled", "B": "Obtuse-angled", "C": "Right-angled", "D": "Isosceles" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "The number of sides of a regular polygon whose interior angle is 144°.",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "Simplify (27)^(1/3).",
-    "options": { "A": "3", "B": "6", "C": "9", "D": "27" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Evaluate log_2 32.",
-    "options": { "A": "4", "B": "5", "C": "6", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Which of the following is correct?",
-    "options": { "A": "log a + log b = log (a+b)", "B": "log a - log b = log (a/b)", "C": "log (a^b) = b log a", "D": "Both B and C" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "If the exterior angle of a regular polygon is 30°, how many sides does it have?",
-    "options": { "A": "10", "B": "12", "C": "15", "D": "18" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "The base angles of an isosceles triangle are always:",
-    "options": { "A": "Acute", "B": "Obtuse", "C": "Right", "D": "Equal" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "Simplify (16)^(3/4).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Evaluate log_4 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "In a triangle, if two angles are 45° and 75°, find the third angle.",
-    "options": { "A": "60°", "B": "65°", "C": "70°", "D": "75°" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "A polygon has 10 sides. What is the sum of its interior angles?",
-    "options": { "A": "1080°", "B": "1260°", "C": "1440°", "D": "1620°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Solve for x: 3^(x-1) = 27.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "Given log<sub>a</sub> 27 = 3, find a.",
-    "options": { "A": "3", "B": "9", "C": "27", "D": "81" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "How many sides does a polygon have if each exterior angle is 36°?",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "In a right-angled triangle, the side opposite 60° is related to the hypotenuse by factor:",
-    "options": { "A": "1/2", "B": "√3/2", "C": "√2/2", "D": "1/√2" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Simplify (√8) × (√2).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Which of the following is equal to log 1000?",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  }
-
-];
-
-
-        const staticTheoryQuestions = [
-      
-                                       
-                                  {
+       {
                                     "id": 1,
-                                    "question": " (a) Simplify the following expressions completely, leaving your answers in index form where appropriate:\n   i. 5<sup>2</sup> × 5^3 ÷ 5^4\n   ii. ((3^2)^3 × 3^4)/3^5\n   iii. (4a^2b^3) × (2a^3b)\n(b) Solve the following exponential equations:\n   i. Find the value of x if 3^x = 81\n   ii. Solve for y: 2^(2y+1) = 32\n   iii. If 5^n = 125, find n.",
-                                    "marks": 10,
+                                    "question": "The manufacturing industry is primarily concerned with...",
+                                    "options": {
+                                      "A": "Extracting raw materials",
+                                      "B": "Transforming raw materials into finished goods",
+                                      "C": "Providing financial services",
+                                      "D": "Constructing buildings"
+                                    },
+                                    "answer": "B",
                                     "image": null
                                   },
                                   {
                                     "id": 2,
-                                    "question": " (a) Evaluate the following without using calculators, showing all steps:\n   i. log_3 81\n   ii. log_10 10000\n   iii. log_5 125 + log_5 25\n(b) Simplify the following logarithmic expressions:\n   i. log_a 6 + log_a 4 - log_a 3\n   ii. 2 log_2 8 - log_2 16\n   iii. Given that log 2 = 0.3010 and log 3 = 0.4771, find log 6.",
-                                    "marks": 10,
+                                    "question": "Which of the following is a feature of the construction industry?",
+                                    "options": {
+                                      "A": "High mobility of products",
+                                      "B": "Projects are site-specific and immobile",
+                                      "C": "Produces intangible goods",
+                                      "D": "Requires minimal capital"
+                                    },
+                                    "answer": "B",
                                     "image": null
                                   },
                                   {
                                     "id": 3,
-                                    "question": "(a) State the type of triangle described below and sketch each:\n   i. A triangle with sides 5cm, 5cm, and 8cm.\n   ii. A triangle with angles 45°, 45°, and 90°.\n   iii. A triangle with all sides 6cm.\n   iv. A triangle with sides 3cm, 4cm, and 5cm.\n(b) In  triangle ABC , angle A = 50°, angle B = 70°:\n   i. Calculate angle C.\n   ii. What type of triangle is this based on its angles?\n   iii. If side AB is the longest side, which angle is opposite it?",
-                                    "marks": 10,
+                                    "question": "A major importance of the manufacturing sector to the Nigerian economy is its contribution to...",
+                                    "options": {
+                                      "A": "Reducing population growth",
+                                      "B": "Increasing dependence on imports",
+                                      "C": "Job creation and GDP growth",
+                                      "D": "Decreasing government revenue"
+                                    },
+                                    "answer": "C",
                                     "image": null
                                   },
                                   {
                                     "id": 4,
-                                    "question": "find the values of the angles with alphabets shown in the diagram below\n and give reasons to support your answers",
-                                    "marks": 10,
-                                    "image": "img/ss2 maths/ss1_math.png"
+                                    "question": "Which of these is a common problem facing Nigerian manufacturing industries?",
+                                    "options": {
+                                      "A": "Abundant and cheap electricity",
+                                      "B": "Inadequate infrastructure",
+                                      "C": "Low import duties on raw materials",
+                                      "D": "Lack of market for goods"
+                                    },
+                                    "answer": "B",
+                                    "image": null
                                   },
                                   {
                                     "id": 5,
-                                    "question": " (a) Express the following in index form and simplify:\n   i. √16 × ∛27\n   ii. (8^(2/3))\n(b) If log_10 2 = 0.3010 and log_10 3 = 0.4771, find:\n   i. log_10 12\n   ii. log_10 1.5\n(c) A regular polygon has each exterior angle equal to 40°.\n   i. How many sides does the polygon have?\n   ii. What is the name of this polygon?",
-                                    "marks": 10,
+                                    "question": "The construction industry contributes to economic development by...",
+                                    "options": {
+                                      "A": "Increasing inflation",
+                                      "B": "Providing social infrastructure",
+                                      "C": "Reducing the need for labour",
+                                      "D": "Discouraging foreign investment"
+                                    },
+                                    "answer": "B",
                                     "image": null
                                   },
-                                   {
-                                    id: 6,
-                                    question: "a. Using ruler and compasses only, construct:\n(i) Angle 60°\n(ii) Angle 30° (by bisecting 60°)\nShow all construction lines clearly. \n b. Construct triangle ABC such that AB = 8cm, AC = 6cm, and BC = 7cm.\n(i) Measure and write down ∠A\n(ii) Construct the bisector of ∠A .",
-                                    marks: 10,
-                                    image: null
+                                  {
+                                    "id": 6,
+                                    "question": "Financial markets are markets for...",
+                                    "options": {
+                                      "A": "Buying and selling agricultural products",
+                                      "B": "Trading financial instruments",
+                                      "C": "Hiring construction equipment",
+                                      "D": "Retail shopping"
+                                    },
+                                    "answer": "B",
+                                    "image": null
                                   },
-                                         
+                                  {
+                                    "id": 7,
+                                    "question": "The primary function of a regulatory agency in the financial market is to...",
+                                    "options": {
+                                      "A": "Maximize profits for banks",
+                                      "B": "Ensure stability and protect investors",
+                                      "C": "Set prices for goods",
+                                      "D": "Print currency"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 8,
+                                    "question": "Which of these is a regulatory agency in Nigeria's financial system?",
+                                    "options": {
+                                      "A": "Nigerian Breweries Plc",
+                                      "B": "Central Bank of Nigeria (CBN)",
+                                      "C": "Dangote Group",
+                                      "D": "Ministry of Education"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 9,
+                                    "question": "The CBN's function of controlling the money supply is aimed at...",
+                                    "options": {
+                                      "A": "Maximizing bank profits",
+                                      "B": "Controlling inflation and ensuring price stability",
+                                      "C": "Reducing taxes",
+                                      "D": "Increasing government expenditure"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 10,
+                                    "question": "The NDIC was established primarily to...",
+                                    "options": {
+                                      "A": "Regulate the stock market",
+                                      "B": "Insure bank deposits and protect depositors",
+                                      "C": "Issue import licenses",
+                                      "D": "Manage foreign exchange"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 11,
+                                    "question": "The Securities and Exchange Commission (SEC) regulates the...",
+                                    "options": {
+                                      "A": "Banking sector",
+                                      "B": "Capital market",
+                                      "C": "Insurance industry",
+                                      "D": "Construction sector"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 12,
+                                    "question": "A key role of the Nigerian Stock Exchange (NSE) is to...",
+                                    "options": {
+                                      "A": "Print money",
+                                      "B": "Provide a platform for trading company shares",
+                                      "C": "Insure depositors' funds",
+                                      "D": "Set monetary policy"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 13,
+                                    "question": "The National Insurance Commission (NAICOM) regulates...",
+                                    "options": {
+                                      "A": "Banks",
+                                      "B": "Insurance companies",
+                                      "C": "Microfinance banks",
+                                      "D": "Pension funds"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 14,
+                                    "question": "The Ministry of Finance is responsible for...",
+                                    "options": {
+                                      "A": "Formulating and implementing fiscal policy",
+                                      "B": "Conducting monetary policy",
+                                      "C": "Building roads",
+                                      "D": "Regulating telecommunications"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 15,
+                                    "question": "International trade involves the exchange of goods and services between...",
+                                    "options": {
+                                      "A": "Different states in a country",
+                                      "B": "Different countries",
+                                      "C": "Urban and rural areas",
+                                      "D": "Producers and consumers"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 16,
+                                    "question": "The type of international trade that involves the exchange of goods is called...",
+                                    "options": {
+                                      "A": "Visible trade",
+                                      "B": "Invisible trade",
+                                      "C": "Barter trade",
+                                      "D": "Domestic trade"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 17,
+                                    "question": "Which theory states that a country should specialize in producing goods it can make at a lower absolute cost?",
+                                    "options": {
+                                      "A": "Theory of comparative advantage",
+                                      "B": "Theory of absolute advantage",
+                                      "C": "Factor endowment theory",
+                                      "D": "Theory of diminishing returns"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 18,
+                                    "question": "The theory of comparative advantage is associated with...",
+                                    "options": {
+                                      "A": "Adam Smith",
+                                      "B": "David Ricardo",
+                                      "C": "John Maynard Keynes",
+                                      "D": "Karl Marx"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 19,
+                                    "question": "A major importance of international trade is that it...",
+                                    "options": {
+                                      "A": "Leads to complete self-sufficiency",
+                                      "B": "Allows access to goods not produced domestically",
+                                      "C": "Eliminates all economic problems",
+                                      "D": "Reduces cultural diversity"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 20,
+                                    "question": "An example of an invisible trade item is...",
+                                    "options": {
+                                      "A": "Crude oil",
+                                      "B": "Banking services",
+                                      "C": "Motor vehicles",
+                                      "D": "Agricultural products"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 21,
+                                    "question": "Economic growth refers to an increase in a country's...",
+                                    "options": {
+                                      "A": "Population size",
+                                      "B": "Real output of goods and services",
+                                      "C": "Number of political parties",
+                                      "D": "Land area"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 22,
+                                    "question": "Economic development is broader than economic growth because it includes improvements in...",
+                                    "options": {
+                                      "A": "Only GDP figures",
+                                      "B": "Standard of living, education, and health",
+                                      "C": "Military strength only",
+                                      "D": "Export volumes only"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 23,
+                                    "question": "Which of the following is an indicator of economic development?",
+                                    "options": {
+                                      "A": "High level of illiteracy",
+                                      "B": "Low life expectancy",
+                                      "C": "High per capita income",
+                                      "D": "Poor healthcare facilities"
+                                    },
+                                    "answer": "C",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 24,
+                                    "question": "A problem associated with achieving economic growth in Nigeria is...",
+                                    "options": {
+                                      "A": "High level of technology",
+                                      "B": "Dependence on oil revenue",
+                                      "C": "Skilled labour surplus",
+                                      "D": "Stable political climate"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 25,
+                                    "question": "The Balance of Payments (BOP) is a systematic record of a country's...",
+                                    "options": {
+                                      "A": "Internal debt",
+                                      "B": "External trade and financial transactions",
+                                      "C": "Government budget",
+                                      "D": "Population census"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 26,
+                                    "question": "The current account of the BOP includes transactions in...",
+                                    "options": {
+                                      "A": "Goods, services, and income",
+                                      "B": "Foreign direct investment",
+                                      "C": "Long-term loans",
+                                      "D": "Changes in reserves"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 27,
+                                    "question": "A deficit in the BOP means that...",
+                                    "options": {
+                                      "A": "Exports exceed imports",
+                                      "B": "Imports exceed exports",
+                                      "C": "The budget is balanced",
+                                      "D": "There is no foreign debt"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 28,
+                                    "question": "Which of the following can cause a disequilibrium in the BOP?",
+                                    "options": {
+                                      "A": "Balanced trade",
+                                      "B": "High domestic inflation",
+                                      "C": "Stable exchange rate",
+                                      "D": "Equal savings and investment"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 29,
+                                    "question": "To correct a persistent BOP deficit, a country may...",
+                                    "options": {
+                                      "A": "Increase imports",
+                                      "B": "Devalue its currency",
+                                      "C": "Reduce exports",
+                                      "D": "Encourage capital flight"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 30,
+                                    "question": "The financial account of the BOP records transactions involving...",
+                                    "options": {
+                                      "A": "Trade in goods",
+                                      "B": "Foreign investments and loans",
+                                      "C": "Transportation services",
+                                      "D": "Tourist expenditures"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 31,
+                                    "question": "Which agency is responsible for issuing currency in Nigeria?",
+                                    "options": {
+                                      "A": "Ministry of Finance",
+                                      "B": "Nigerian Stock Exchange",
+                                      "C": "Central Bank of Nigeria",
+                                      "D": "Securities and Exchange Commission"
+                                    },
+                                    "answer": "C",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 32,
+                                    "question": "The insurance industry is regulated by...",
+                                    "options": {
+                                      "A": "NDIC",
+                                      "B": "NAICOM",
+                                      "C": "SEC",
+                                      "D": "CBN"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 33,
+                                    "question": "The \"lender of last resort\" function is performed by the...",
+                                    "options": {
+                                      "A": "Commercial banks",
+                                      "B": "Central Bank",
+                                      "C": "Stock Exchange",
+                                      "D": "Ministry of Trade"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 34,
+                                    "question": "A major challenge faced by regulatory agencies in Nigeria is...",
+                                    "options": {
+                                      "A": "Excessive compliance by operators",
+                                      "B": "Inadequate legal framework",
+                                      "C": "Lack of financial institutions to regulate",
+                                      "D": "Over-funding from government"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 35,
+                                    "question": "The theory that encourages countries to specialize based on opportunity cost is...",
+                                    "options": {
+                                      "A": "Absolute advantage",
+                                      "B": "Comparative advantage",
+                                      "C": "Competitive advantage",
+                                      "D": "Mercantilism"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 36,
+                                    "question": "Visible exports minus visible imports gives the balance on...",
+                                    "options": {
+                                      "A": "Current account",
+                                      "B": "Capital account",
+                                      "C": "Trade account",
+                                      "D": "Financial account"
+                                    },
+                                    "answer": "C",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 37,
+                                    "question": "An increase in a country's real per capita income indicates...",
+                                    "options": {
+                                      "A": "Economic growth",
+                                      "B": "Economic development only",
+                                      "C": "Both growth and development",
+                                      "D": "A decline in living standards"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 38,
+                                    "question": "Which of these is a strategy for promoting economic growth?",
+                                    "options": {
+                                      "A": "Discouraging investment",
+                                      "B": "Improving technology and infrastructure",
+                                      "C": "Increasing population without control",
+                                      "D": "Reducing savings rate"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 39,
+                                    "question": "The component of BOP that shows the flow of official reserves is the...",
+                                    "options": {
+                                      "A": "Current account",
+                                      "B": "Capital account",
+                                      "C": "Financial account",
+                                      "D": "Balancing item"
+                                    },
+                                    "answer": "C",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 40,
+                                    "question": "Devaluation is likely to make a country's exports...",
+                                    "options": {
+                                      "A": "More expensive for foreigners",
+                                      "B": "Cheaper for foreigners",
+                                      "C": "Unchanged in price",
+                                      "D": "Illegal"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 41,
+                                    "question": "The construction industry is closely linked to the performance of the...",
+                                    "options": {
+                                      "A": "Agricultural sector only",
+                                      "B": "Manufacturing and financial sectors",
+                                      "C": "Educational sector only",
+                                      "D": "Entertainment industry"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 42,
+                                    "question": "Which of the following is a role of the Nigerian Stock Exchange?",
+                                    "options": {
+                                      "A": "Mobilizing long-term capital for companies",
+                                      "B": "Printing currency notes",
+                                      "C": "Providing mortgage loans",
+                                      "D": "Regulating insurance companies"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 43,
+                                    "question": "The CBN's monetary policy tools include...",
+                                    "options": {
+                                      "A": "Open market operations",
+                                      "B": "Building hospitals",
+                                      "C": "Setting import quotas",
+                                      "D": "Fixing prices of goods"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 44,
+                                    "question": "A country has a comparative advantage in producing a good if it has a lower...",
+                                    "options": {
+                                      "A": "Absolute cost",
+                                      "B": "Opportunity cost",
+                                      "C": "Money cost",
+                                      "D": "Fixed cost"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 45,
+                                    "question": "The difference between GDP and GNP is that GNP includes...",
+                                    "options": {
+                                      "A": "Net income from abroad",
+                                      "B": "Value of intermediate goods",
+                                      "C": "Transfer payments",
+                                      "D": "Indirect taxes"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 46,
+                                    "question": "An indicator of economic development is...",
+                                    "options": {
+                                      "A": "High unemployment rate",
+                                      "B": "Low literacy rate",
+                                      "C": "High human development index (HDI)",
+                                      "D": "Widespread poverty"
+                                    },
+                                    "answer": "C",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 47,
+                                    "question": "A country experiencing a BOP surplus may...",
+                                    "options": {
+                                      "A": "Encourage more imports",
+                                      "B": "Restrict exports",
+                                      "C": "Appreciate its currency",
+                                      "D": "Increase foreign borrowing"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 48,
+                                    "question": "Tariffs and quotas are measures used to correct BOP deficit by...",
+                                    "options": {
+                                      "A": "Restricting imports",
+                                      "B": "Promoting exports",
+                                      "C": "Encouraging capital inflow",
+                                      "D": "Devaluing currency"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 49,
+                                    "question": "The primary goal of economic development is to improve...",
+                                    "options": {
+                                      "A": "The welfare of the people",
+                                      "B": "Military capability",
+                                      "C": "Political power",
+                                      "D": "Celebrity status"
+                                    },
+                                    "answer": "A",
+                                    "image": null
+                                  },
+                                  {
+                                    "id": 50,
+                                    "question": "The agency that ensures listed companies comply with disclosure requirements is the...",
+                                    "options": {
+                                      "A": "CBN",
+                                      "B": "SEC",
+                                      "C": "NDIC",
+                                      "D": "NSE"
+                                    },
+                                    "answer": "B",
+                                    "image": null
+                                  }
+   ];
 
+        const staticTheoryQuestions = [
+      {
+              "id": 1,
+              "question": "a. Define the term \"manufacturing industry\". \n\n b. Explain THREE importance of the manufacturing sector to the Nigerian economy. \n\n c. Identify THREE major problems faced by the manufacturing industry in Nigeria and suggest one solution to each.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 2,
+              "question": "a. What are financial regulatory agencies? \n\n b. Explain the primary functions of the following agencies:\ni. Central Bank of Nigeria (CBN)\nii. Nigeria Deposit Insurance Corporation (NDIC) \n\n c. State TWO challenges faced by regulatory agencies in performing their duties effectively.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 3,
+              "question": "a. Differentiate between \"economic growth\" and \"economic development\". \n\n b. Outline THREE indicators of economic development. \n\n c. Discuss TWO problems of achieving sustained economic growth in Nigeria and suggest ONE strategy to overcome each problem.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 4,
+              "question": "a. Define \"International Trade\". \n\n b. Explain the theories of Absolute Advantage and Comparative Advantage. \n\n c. Give THREE reasons why countries engage in international trade.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 5,
+              "question": "a. What is the Balance of Payments (BOP)? \n\n b. List and briefly explain the THREE main components of the Balance of Payments. \n\n c. Explain TWO causes and TWO corrective measures for a deficit in the Balance of Payments.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 6,
+              "question": "a. Mention THREE regulatory agencies in the Nigerian financial system apart from the Central Bank. \n\n b. Explain the specific roles of TWO of the agencies mentioned in (a) above. \n\n c. Why is regulation necessary in the financial markets?",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 7,
+              "question": "a. Describe the construction industry. \n\n b. Explain THREE contributions of the construction industry to national development. \n\n c. Highlight TWO problems facing the construction industry in Nigeria.",
+              "marks": 12.5,
+              "image": null
+            }
 ];
-       // ================== APPLICATION VARIABLES ==================
+      
+  // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1186,142 +1437,23 @@
                         submitExam();
                     }
                 }, 1000);
-
-                            // ================== MATH SYMBOL MAPPING ==================
-            function mapMathSymbol(text) {
-                if (!text) return '';
-                
-                return text
-                    .replace(/&theta;/g, 'θ')
-                    .replace(/&Theta;/g, 'Θ')
-                    .replace(/&pi;/g, 'π')
-                    .replace(/&Pi;/g, 'Π')
-                    .replace(/&alpha;/g, 'α')
-                    .replace(/&beta;/g, 'β')
-                    .replace(/&gamma;/g, 'γ')
-                    .replace(/&delta;/g, 'δ')
-                    .replace(/&epsilon;/g, 'ε')
-                    .replace(/&phi;/g, 'φ')
-                    .replace(/&omega;/g, 'ω')
-                    .replace(/&mu;/g, 'μ')
-                    .replace(/&sigma;/g, 'σ')
-                    .replace(/&lambda;/g, 'λ')
-                    .replace(/&radic;/g, '√')
-                    .replace(/&infin;/g, '∞')
-                    .replace(/&int;/g, '∫')
-                    .replace(/&sum;/g, '∑')
-                    .replace(/&prod;/g, '∏')
-                    .replace(/&part;/g, '∂')
-                    .replace(/&deg;/g, '°')
-                    .replace(/&times;/g, '×')
-                    .replace(/&divide;/g, '÷')
-                    .replace(/&plusmn;/g, '±')
-                    .replace(/&le;/g, '≤')
-                    .replace(/&ge;/g, '≥')
-                    .replace(/&ne;/g, '≠')
-                    .replace(/&frac12;/g, '½')
-                    .replace(/&frac14;/g, '¼')
-                    .replace(/&frac34;/g, '¾')
-                    // Convert plain text powers like ^3 to <sup>3</sup> (only if not already HTML)
-                    .replace(/\^(\d+)/g, '<sup>$1</sup>')
-                    .replace(/\^\(([^)]+)\)/g, '<sup>$1</sup>')
-                    // Convert plain text indices like _3 to <sub>3</sub>
-                    .replace(/_(\d+)/g, '<sub>$1</sub>')
-                    .replace(/_\(([^)]+)\)/g, '<sub>$1</sub>');
+       
+        // ================== SECTION TOGGLE ==================
+        function showSection(section) {
+            currentSection = section;
+            // Update button states
+            document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
+            document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
+           
+            // Show/hide sections
+            document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
+            document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
+           
+            // Update navigation
+            if (section === 'theory') {
+                displayTheoryQuestion();
             }
-
-            // ================== THEORY QUESTIONS ==================
-            function displayTheoryQuestion() {
-                if (theoryQuestions.length === 0) {
-                    document.getElementById('theoryQuestionText').innerHTML = "<p>No theory questions available.</p>";
-                    return;
-                }
-               
-                const tq = theoryQuestions[currentTheory];
-                
-                // Apply math mapping to the question text (including marks)
-                const questionWithMarks = `${currentTheory + 1}. ${tq.question} ${tq.marks ? `[${tq.marks} marks]` : ''}`;
-                document.getElementById('theoryQuestionText').innerHTML = mapMathSymbol(questionWithMarks);
-                    
-                document.getElementById('theoryAnswer').value = theoryAnswers[currentTheory] || "";
-               
-                // Handle theory question image
-                const theoryImageContainer = document.getElementById('theoryImageContainer');
-                if (tq.image) {
-                    // Also apply mapping to the caption if it exists
-                    const caption = tq.imageCaption ? mapMathSymbol(tq.imageCaption) : 'Diagram for question';
-                    theoryImageContainer.innerHTML = `
-                        <div class="theory-image-wrapper">
-                            <img src="${tq.image}" alt="Theory Question Diagram" class="theory-question-image">
-                            <div class="image-caption">${caption}</div>
-                        </div>
-                    `;
-                } else {
-                    theoryImageContainer.innerHTML = '';
-                }
-               
-                updateTheoryStatus();
-            }
-
-            function updateTheoryStatus() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                document.getElementById("theoryStatus").innerText =
-                    `Question ${currentTheory + 1} of ${theoryQuestions.length} | Saved: ${savedCount}/${theoryQuestions.length}`;
-            }
-
-            function saveTheoryAnswer() {
-                const answer = document.getElementById('theoryAnswer').value.trim();
-                theoryAnswers[currentTheory] = answer;
-                localStorage.setItem(`theoryAnswer_${currentTheory}`, answer);
-                updateTheoryStatus();
-                alert("Theory answer saved successfully!");
-            }
-
-            function nextTheoryQuestion() {
-                if (currentTheory < theoryQuestions.length - 1) {
-                    currentTheory++;
-                    displayTheoryQuestion();
-                } else {
-                    alert("You've reached the last theory question.");
-                }
-            }
-
-            function prevTheoryQuestion() {
-                if (currentTheory > 0) {
-                    currentTheory--;
-                    displayTheoryQuestion();
-                }
-            }
-
-            function submitTheoryExam() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                const confirmSubmit = confirm(
-                    `Theory section completed!\n\n` +
-                    `You have answered ${savedCount} out of ${theoryQuestions.length} theory questions.\n\n` +
-                    `Are you sure you want to submit?`
-                );
-               
-                if (confirmSubmit) {
-                    alert("Theory answers submitted successfully!");
-                }
-            }
-                   
-                    // ================== SECTION TOGGLE ==================
-                    function showSection(section) {
-                        currentSection = section;
-                        // Update button states
-                        document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
-                        document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
-                       
-                        // Show/hide sections
-                        document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
-                        document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
-                       
-                        // Update navigation
-                        if (section === 'theory') {
-                            displayTheoryQuestion();
-                        }
-                    }
+        }
        
         // ================== MATH SYMBOL MAPPING ==================
         function mapMathSymbol(text) {
@@ -1565,7 +1697,7 @@
             }
                    
         // ================== THEORY QUESTIONS ==================
-        /*function displayTheoryQuestion() {
+        function displayTheoryQuestion() {
             if (theoryQuestions.length === 0) {
                 document.getElementById('theoryQuestionText').innerText = "No theory questions available.";
                 return;
@@ -1635,7 +1767,7 @@
             if (confirmSubmit) {
                 alert("Theory answers submitted successfully!");
             }
-        }*/
+        }
        
         // ================== DATE & TIME ==================
         function updateDateTime() {

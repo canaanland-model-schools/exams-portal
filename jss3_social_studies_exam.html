@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - SS1 MATHEMEMATICS  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - JSS3 SOCIAL| CITIZENSHIP STUDIES Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS1 MATHEMEMATICS   (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  JSS3 SOCIAL| CITIZENSHIP STUDIES-  (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS1 MATHEMEMATICS FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> JSS3 SOCIAL| CITIZENSHIP STUDIES FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -700,408 +700,660 @@
 
     <script>
            
-            
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                                         
-  {
-    "id": 1,
-    "question": "Simplify 3^4 × 3^2 in index form.",
-    "options": { "A": "3^6", "B": "3^8", "C": "9^6", "D": "3^2" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "Evaluate log_2 8 + log_2 4.",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A triangle with all sides equal is called:",
-    "options": { "A": "Scalene triangle", "B": "Isosceles triangle", "C": "Equilateral triangle", "D": "Right-angled triangle" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "The polygon with 6 sides is known as:",
-    "options": { "A": "Pentagon", "B": "Hexagon", "C": "Heptagon", "D": "Octagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "Solve for x: 2<sup>x</sup> = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "The sum of interior angles of a quadrilateral is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "Express log_10 1000 without logarithm.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "A polygon is said to be regular if:",
-    "options": { "A": "All sides are equal", "B": "All angles are equal", "C": "Both A and B", "D": "None of the above" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "Simplify (a^3 × a^5) / a^4.",
-    "options": { "A": "a^2", "B": "a^4", "C": "a^6", "D": "a^12" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "In a right-angled triangle, the side opposite the right angle is called:",
-    "options": { "A": "Adjacent", "B": "Hypotenuse", "C": "Opposite", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "Simplify (2^3)^4 in index form.",
-    "options": { "A": "2^7", "B": "2^12", "C": "2^1", "D": "2^81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "Solve for x: 4<sup>x</sup> = 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Evaluate log_3 27.",
-    "options": { "A": "2", "B": "3", "C": "9", "D": "81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "If log 2 = 0.3010, what is log 8?",
-    "options": { "A": "0.6020", "B": "0.9030", "C": "1.2040", "D": "0.9542" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A triangle with two equal sides is called:",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "In a right-angled triangle, the side opposite the 30° angle is half the length of the:",
-    "options": { "A": "Adjacent side", "B": "Hypotenuse", "C": "Opposite side", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "The sum of exterior angles of any polygon is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "A regular polygon has 8 sides. What is the measure of each exterior angle?",
-    "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Simplify log_2 8 + log_2 2.",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "What is the name of a 9-sided polygon?",
-    "options": { "A": "Octagon", "B": "Nonagon", "C": "Decagon", "D": "Heptagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Simplify (3^2 × 3^3) / 3^4.",
-    "options": { "A": "3^1", "B": "3^2", "C": "3^5", "D": "3^6" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "If 5^(2x) = 625, find x.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "Evaluate log_5 125.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Given log<sub>a</sub> 2 = 0.5, find a.",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "A triangle has angles 60°, 60°, and 60°. What type of triangle is it?",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "The longest side in a right-angled triangle is called:",
-    "options": { "A": "Opposite", "B": "Adjacent", "C": "Hypotenuse", "D": "Base" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "How many diagonals does a pentagon have?",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "The interior angle of a regular hexagon is:",
-    "options": { "A": "60°", "B": "90°", "C": "120°", "D": "150°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Simplify log 100 - log 10.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "10" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Solve 2^(x+1) = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Which of the following is equal to 8^(2/3)?",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "If log 3 = 0.4771, find log 0.3.",
-    "options": { "A": "0.4771", "B": "1.4771", "C": "-0.5229", "D": "0.5229" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "The angle subtended by a straight line is:",
-    "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "A triangle with sides 3cm, 4cm, 5cm is:",
-    "options": { "A": "Acute-angled", "B": "Obtuse-angled", "C": "Right-angled", "D": "Isosceles" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "The number of sides of a regular polygon whose interior angle is 144°.",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "Simplify (27)^(1/3).",
-    "options": { "A": "3", "B": "6", "C": "9", "D": "27" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Evaluate log_2 32.",
-    "options": { "A": "4", "B": "5", "C": "6", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Which of the following is correct?",
-    "options": { "A": "log a + log b = log (a+b)", "B": "log a - log b = log (a/b)", "C": "log (a^b) = b log a", "D": "Both B and C" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "If the exterior angle of a regular polygon is 30°, how many sides does it have?",
-    "options": { "A": "10", "B": "12", "C": "15", "D": "18" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "The base angles of an isosceles triangle are always:",
-    "options": { "A": "Acute", "B": "Obtuse", "C": "Right", "D": "Equal" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "Simplify (16)^(3/4).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Evaluate log_4 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "In a triangle, if two angles are 45° and 75°, find the third angle.",
-    "options": { "A": "60°", "B": "65°", "C": "70°", "D": "75°" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "A polygon has 10 sides. What is the sum of its interior angles?",
-    "options": { "A": "1080°", "B": "1260°", "C": "1440°", "D": "1620°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Solve for x: 3^(x-1) = 27.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "Given log<sub>a</sub> 27 = 3, find a.",
-    "options": { "A": "3", "B": "9", "C": "27", "D": "81" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "How many sides does a polygon have if each exterior angle is 36°?",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "In a right-angled triangle, the side opposite 60° is related to the hypotenuse by factor:",
-    "options": { "A": "1/2", "B": "√3/2", "C": "√2/2", "D": "1/√2" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Simplify (√8) × (√2).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Which of the following is equal to log 1000?",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  }
-
+        {
+          "id": 1,
+          "question": "Poverty in Nigeria is mainly caused by ______.",
+          "options": {
+            "A": "excessive rainfall",
+            "B": "corruption and unemployment",
+            "C": "high literacy rate",
+            "D": "good governance"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Corruption can be defined as ______.",
+          "options": {
+            "A": "honest service",
+            "B": "misuse of public power for private gain",
+            "C": "fair distribution of resources",
+            "D": "transparent leadership"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "Boko Haram insurgency is an example of ______ in Nigeria.",
+          "options": {
+            "A": "economic growth",
+            "B": "political stability",
+            "C": "insecurity",
+            "D": "educational development"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "A refugee is a person who ______.",
+          "options": {
+            "A": "travels for vacation",
+            "B": "flees their country due to persecution or war",
+            "C": "moves within their country",
+            "D": "seeks employment abroad"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "IDP stands for ______.",
+          "options": {
+            "A": "International Development Program",
+            "B": "Internally Displaced Person",
+            "C": "Independent Democratic Party",
+            "D": "Industrial Development Plan"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "Which of these is a cause of internal displacement in Nigeria?",
+          "options": {
+            "A": "Flooding",
+            "B": "Religious tourism",
+            "C": "Sporting events",
+            "D": "Cultural festivals"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "Peace education aims to ______.",
+          "options": {
+            "A": "promote violence",
+            "B": "teach conflict resolution and tolerance",
+            "C": "encourage discrimination",
+            "D": "support war"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Negotiation involves ______.",
+          "options": {
+            "A": "fighting",
+            "B": "discussing to reach an agreement",
+            "C": "imposing one's will",
+            "D": "avoiding communication"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "A mediator is a person who ______.",
+          "options": {
+            "A": "takes sides",
+            "B": "helps parties resolve conflicts",
+            "C": "enforces laws",
+            "D": "ignores disputes"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "Human rights are ______.",
+          "options": {
+            "A": "privileges given by government",
+            "B": "basic entitlements for every human being",
+            "C": "only for rich people",
+            "D": "not important in society"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "The Universal Declaration of Human Rights was adopted by the UN in ______.",
+          "options": {
+            "A": "1945",
+            "B": "1948",
+            "C": "1960",
+            "D": "1984"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Which agency in Nigeria is responsible for human rights protection?",
+          "options": {
+            "A": "NAFDAC",
+            "B": "NHRC",
+            "C": "INEC",
+            "D": "NCC"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "Cyber citizenship refers to ______.",
+          "options": {
+            "A": "being a citizen of the internet",
+            "B": "responsible behavior online",
+            "C": "hacking into systems",
+            "D": "avoiding technology"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "A responsible use of social media includes ______.",
+          "options": {
+            "A": "spreading fake news",
+            "B": "cyberbullying",
+            "C": "sharing verified information",
+            "D": "posting private information of others"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "Digital footprint is ______.",
+          "options": {
+            "A": "a mark left by wet feet",
+            "B": "the trail of data you leave online",
+            "C": "a type of shoe",
+            "D": "a computer virus"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Nigeria is a member of all the following except ______.",
+          "options": {
+            "A": "United Nations (UN)",
+            "B": "African Union (AU)",
+            "C": "European Union (EU)",
+            "D": "ECOWAS"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "ECOWAS was established to promote ______.",
+          "options": {
+            "A": "economic integration in West Africa",
+            "B": "military conquest",
+            "C": "cultural isolation",
+            "D": "political division"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "Nigeria's role in the UN includes ______.",
+          "options": {
+            "A": "dominating the Security Council",
+            "B": "contributing to peacekeeping",
+            "C": "controlling the World Bank",
+            "D": "avoiding international affairs"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "Global peace and security can be achieved through ______.",
+          "options": {
+            "A": "arms race",
+            "B": "diplomacy and cooperation",
+            "C": "isolationism",
+            "D": "colonization"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "Nigeria has contributed to peacekeeping missions in ______.",
+          "options": {
+            "A": "Europe only",
+            "B": "Asia only",
+            "C": "Africa and beyond",
+            "D": "the Americas only"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "Public speaking is important for civic leadership because it helps to ______.",
+          "options": {
+            "A": "intimidate people",
+            "B": "communicate ideas effectively",
+            "C": "avoid interaction",
+            "D": "hide one's thoughts"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "Advocacy means ______.",
+          "options": {
+            "A": "supporting a cause through action",
+            "B": "remaining silent",
+            "C": "opposing all changes",
+            "D": "avoiding responsibility"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "Civic participation includes ______.",
+          "options": {
+            "A": "voting in elections",
+            "B": "staying at home",
+            "C": "ignoring community issues",
+            "D": "breaking laws"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "Poverty alleviation programs in Nigeria include ______.",
+          "options": {
+            "A": "N-Power",
+            "B": "Olympic Games",
+            "C": "National Sports Festival",
+            "D": "Carnival Calabar"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Transparency International is an organization that fights ______.",
+          "options": {
+            "A": "malaria",
+            "B": "corruption",
+            "C": "illiteracy",
+            "D": "hunger"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "Kidnapping for ransom is a form of ______.",
+          "options": {
+            "A": "economic activity",
+            "B": "insecurity",
+            "C": "job creation",
+            "D": "social service"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "The condition of lacking basic needs like food and shelter is called ______.",
+          "options": {
+            "A": "wealth",
+            "B": "poverty",
+            "C": "security",
+            "D": "development"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "People forced to flee their homes but remain within their country are called ______.",
+          "options": {
+            "A": "refugees",
+            "B": "immigrants",
+            "C": "internally displaced persons",
+            "D": "tourists"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "The UN agency responsible for refugees is ______.",
+          "options": {
+            "A": "UNICEF",
+            "B": "WHO",
+            "C": "UNHCR",
+            "D": "UNESCO"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Peacebuilding focuses on ______.",
+          "options": {
+            "A": "creating long-term peace",
+            "B": "starting wars",
+            "C": "arming civilians",
+            "D": "encouraging hatred"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "In mediation, the mediator must be ______.",
+          "options": {
+            "A": "biased",
+            "B": "neutral",
+            "C": "a friend to one party",
+            "D": "a government official"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "Human rights include the right to ______.",
+          "options": {
+            "A": "own slaves",
+            "B": "life and liberty",
+            "C": "discriminate",
+            "D": "torture others"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "The Nigerian Constitution guarantees ______.",
+          "options": {
+            "A": "human rights",
+            "B": "monarchy",
+            "C": "dictatorship",
+            "D": "anarchy"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "An example of cybercrime is ______.",
+          "options": {
+            "A": "online banking",
+            "B": "identity theft",
+            "C": "sending emails",
+            "D": "using search engines"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "To stay safe online, you should ______.",
+          "options": {
+            "A": "share your password",
+            "B": "click on unknown links",
+            "C": "use strong passwords",
+            "D": "post your address publicly"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "Nigeria joined the UN in ______.",
+          "options": {
+            "A": "1960",
+            "B": "1970",
+            "C": "1980",
+            "D": "1990"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "The AU headquarters is in ______.",
+          "options": {
+            "A": "Abuja",
+            "B": "Addis Ababa",
+            "C": "Lagos",
+            "D": "Accra"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "ECOWAS stands for ______.",
+          "options": {
+            "A": "Economic Community of West African States",
+            "B": "European Council of West African States",
+            "C": "Economic Corporation of West African States",
+            "D": "Educational Community of West African States"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "Nigeria has contributed troops to peacekeeping in ______.",
+          "options": {
+            "A": "Liberia and Sierra Leone",
+            "B": "France and Germany",
+            "C": "China and Japan",
+            "D": "Brazil and Argentina"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "Global security threats include ______.",
+          "options": {
+            "A": "terrorism",
+            "B": "peace treaties",
+            "C": "cultural exchange",
+            "D": "international aid"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "A good public speaker should ______.",
+          "options": {
+            "A": "speak without preparation",
+            "B": "use clear language and confidence",
+            "C": "avoid eye contact",
+            "D": "read from a script without pause"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "To advocate for change, one can ______.",
+          "options": {
+            "A": "write petitions",
+            "B": "remain silent",
+            "C": "discourage others",
+            "D": "ignore problems"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "An example of civic participation is ______.",
+          "options": {
+            "A": "littering the environment",
+            "B": "participating in community sanitation",
+            "C": "destroying public property",
+            "D": "skipping school"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "The main goal of peace education is to ______.",
+          "options": {
+            "A": "prepare for war",
+            "B": "build a culture of peace",
+            "C": "encourage revenge",
+            "D": "promote violence"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "A strategy for human rights protection is ______.",
+          "options": {
+            "A": "public awareness campaigns",
+            "B": "suppressing protests",
+            "C": "ignoring abuses",
+            "D": "encouraging discrimination"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "Responsible digital citizens should ______.",
+          "options": {
+            "A": "respect others online",
+            "B": "spread rumors",
+            "C": "hack accounts",
+            "D": "post offensive comments"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "Nigeria's membership in international organizations helps in ______.",
+          "options": {
+            "A": "isolation",
+            "B": "economic and political cooperation",
+            "C": "cultural degradation",
+            "D": "limiting development"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "Civic leadership skills are important for ______.",
+          "options": {
+            "A": "personal gain only",
+            "B": "effective community service",
+            "C": "avoiding responsibilities",
+            "D": "creating conflicts"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "The inability to meet basic needs is called ______ poverty.",
+          "options": {
+            "A": "absolute",
+            "B": "relative",
+            "C": "occasional",
+            "D": "voluntary"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Civic advocacy can lead to ______.",
+          "options": {
+            "A": "positive social change",
+            "B": "increased corruption",
+            "C": "more conflicts",
+            "D": "less participation"
+          },
+          "answer": "A",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-      
-                                       
-                                  {
-                                    "id": 1,
-                                    "question": " (a) Simplify the following expressions completely, leaving your answers in index form where appropriate:\n   i. 5<sup>2</sup> × 5^3 ÷ 5^4\n   ii. ((3^2)^3 × 3^4)/3^5\n   iii. (4a^2b^3) × (2a^3b)\n(b) Solve the following exponential equations:\n   i. Find the value of x if 3^x = 81\n   ii. Solve for y: 2^(2y+1) = 32\n   iii. If 5^n = 125, find n.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 2,
-                                    "question": " (a) Evaluate the following without using calculators, showing all steps:\n   i. log_3 81\n   ii. log_10 10000\n   iii. log_5 125 + log_5 25\n(b) Simplify the following logarithmic expressions:\n   i. log_a 6 + log_a 4 - log_a 3\n   ii. 2 log_2 8 - log_2 16\n   iii. Given that log 2 = 0.3010 and log 3 = 0.4771, find log 6.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 3,
-                                    "question": "(a) State the type of triangle described below and sketch each:\n   i. A triangle with sides 5cm, 5cm, and 8cm.\n   ii. A triangle with angles 45°, 45°, and 90°.\n   iii. A triangle with all sides 6cm.\n   iv. A triangle with sides 3cm, 4cm, and 5cm.\n(b) In  triangle ABC , angle A = 50°, angle B = 70°:\n   i. Calculate angle C.\n   ii. What type of triangle is this based on its angles?\n   iii. If side AB is the longest side, which angle is opposite it?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 4,
-                                    "question": "find the values of the angles with alphabets shown in the diagram below\n and give reasons to support your answers",
-                                    "marks": 10,
-                                    "image": "img/ss2 maths/ss1_math.png"
-                                  },
-                                  {
-                                    "id": 5,
-                                    "question": " (a) Express the following in index form and simplify:\n   i. √16 × ∛27\n   ii. (8^(2/3))\n(b) If log_10 2 = 0.3010 and log_10 3 = 0.4771, find:\n   i. log_10 12\n   ii. log_10 1.5\n(c) A regular polygon has each exterior angle equal to 40°.\n   i. How many sides does the polygon have?\n   ii. What is the name of this polygon?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                   {
-                                    id: 6,
-                                    question: "a. Using ruler and compasses only, construct:\n(i) Angle 60°\n(ii) Angle 30° (by bisecting 60°)\nShow all construction lines clearly. \n b. Construct triangle ABC such that AB = 8cm, AC = 6cm, and BC = 7cm.\n(i) Measure and write down ∠A\n(ii) Construct the bisector of ∠A .",
-                                    marks: 10,
-                                    image: null
-                                  },
-                                         
-
+      {
+                  "id": 1,
+                  "question": "a. Define corruption. \n\n b. Explain two causes of poverty in Nigeria. \n\n c. Suggest two ways to reduce insecurity in Nigeria.",
+                  "marks": 12.5,
+                  "image": null
+                },
+                {
+                  "id": 2,
+                  "question": "a. Who is a refugee? \n\n b. Differentiate between a refugee and an internally displaced person (IDP). \n\n c. State two challenges faced by IDPs in Nigeria.",
+                  "marks": 12.5,
+                  "image": null
+                },
+                {
+                  "id": 3,
+                  "question": "a. What is peace education? \n\n b. Explain the process of negotiation. \n\n c. Mention two roles of a mediator in conflict resolution.",
+                  "marks": 12.5,
+                  "image": null
+                },
+                {
+                  "id": 4,
+                  "question": "a. List three human rights guaranteed in the Nigerian Constitution. \n\n b. Explain two strategies for protecting human rights. \n\n c. What is the role of the National Human Rights Commission (NHRC)?",
+                  "marks": 12.5,
+                  "image": null
+                },
+                {
+                  "id": 5,
+                  "question": "a. Define cyber citizenship. \n\n b. Explain two responsible ways to use social media. \n\n c. State two dangers of irresponsible online behavior.",
+                  "marks": 12.5,
+                  "image": null
+                },
+                {
+                  "id": 6,
+                  "question": "a. Mention two international organizations Nigeria belongs to. \n\n b. Explain Nigeria's role in the African Union (AU). \n\n c. What is the importance of Nigeria's membership in ECOWAS?",
+                  "marks": 12.5,
+                  "image": null
+                },
+                {
+                  "id": 7,
+                  "question": "a. Explain two ways Nigeria has contributed to global peace and security. \n\n b. What is public speaking? \n\n c. Mention two importance of advocacy in civic leadership.",
+                  "marks": 12.5,
+                  "image": null
+                }
 ];
-       // ================== APPLICATION VARIABLES ==================
+       
+
+
+    // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1186,142 +1438,23 @@
                         submitExam();
                     }
                 }, 1000);
-
-                            // ================== MATH SYMBOL MAPPING ==================
-            function mapMathSymbol(text) {
-                if (!text) return '';
-                
-                return text
-                    .replace(/&theta;/g, 'θ')
-                    .replace(/&Theta;/g, 'Θ')
-                    .replace(/&pi;/g, 'π')
-                    .replace(/&Pi;/g, 'Π')
-                    .replace(/&alpha;/g, 'α')
-                    .replace(/&beta;/g, 'β')
-                    .replace(/&gamma;/g, 'γ')
-                    .replace(/&delta;/g, 'δ')
-                    .replace(/&epsilon;/g, 'ε')
-                    .replace(/&phi;/g, 'φ')
-                    .replace(/&omega;/g, 'ω')
-                    .replace(/&mu;/g, 'μ')
-                    .replace(/&sigma;/g, 'σ')
-                    .replace(/&lambda;/g, 'λ')
-                    .replace(/&radic;/g, '√')
-                    .replace(/&infin;/g, '∞')
-                    .replace(/&int;/g, '∫')
-                    .replace(/&sum;/g, '∑')
-                    .replace(/&prod;/g, '∏')
-                    .replace(/&part;/g, '∂')
-                    .replace(/&deg;/g, '°')
-                    .replace(/&times;/g, '×')
-                    .replace(/&divide;/g, '÷')
-                    .replace(/&plusmn;/g, '±')
-                    .replace(/&le;/g, '≤')
-                    .replace(/&ge;/g, '≥')
-                    .replace(/&ne;/g, '≠')
-                    .replace(/&frac12;/g, '½')
-                    .replace(/&frac14;/g, '¼')
-                    .replace(/&frac34;/g, '¾')
-                    // Convert plain text powers like ^3 to <sup>3</sup> (only if not already HTML)
-                    .replace(/\^(\d+)/g, '<sup>$1</sup>')
-                    .replace(/\^\(([^)]+)\)/g, '<sup>$1</sup>')
-                    // Convert plain text indices like _3 to <sub>3</sub>
-                    .replace(/_(\d+)/g, '<sub>$1</sub>')
-                    .replace(/_\(([^)]+)\)/g, '<sub>$1</sub>');
+       
+        // ================== SECTION TOGGLE ==================
+        function showSection(section) {
+            currentSection = section;
+            // Update button states
+            document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
+            document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
+           
+            // Show/hide sections
+            document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
+            document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
+           
+            // Update navigation
+            if (section === 'theory') {
+                displayTheoryQuestion();
             }
-
-            // ================== THEORY QUESTIONS ==================
-            function displayTheoryQuestion() {
-                if (theoryQuestions.length === 0) {
-                    document.getElementById('theoryQuestionText').innerHTML = "<p>No theory questions available.</p>";
-                    return;
-                }
-               
-                const tq = theoryQuestions[currentTheory];
-                
-                // Apply math mapping to the question text (including marks)
-                const questionWithMarks = `${currentTheory + 1}. ${tq.question} ${tq.marks ? `[${tq.marks} marks]` : ''}`;
-                document.getElementById('theoryQuestionText').innerHTML = mapMathSymbol(questionWithMarks);
-                    
-                document.getElementById('theoryAnswer').value = theoryAnswers[currentTheory] || "";
-               
-                // Handle theory question image
-                const theoryImageContainer = document.getElementById('theoryImageContainer');
-                if (tq.image) {
-                    // Also apply mapping to the caption if it exists
-                    const caption = tq.imageCaption ? mapMathSymbol(tq.imageCaption) : 'Diagram for question';
-                    theoryImageContainer.innerHTML = `
-                        <div class="theory-image-wrapper">
-                            <img src="${tq.image}" alt="Theory Question Diagram" class="theory-question-image">
-                            <div class="image-caption">${caption}</div>
-                        </div>
-                    `;
-                } else {
-                    theoryImageContainer.innerHTML = '';
-                }
-               
-                updateTheoryStatus();
-            }
-
-            function updateTheoryStatus() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                document.getElementById("theoryStatus").innerText =
-                    `Question ${currentTheory + 1} of ${theoryQuestions.length} | Saved: ${savedCount}/${theoryQuestions.length}`;
-            }
-
-            function saveTheoryAnswer() {
-                const answer = document.getElementById('theoryAnswer').value.trim();
-                theoryAnswers[currentTheory] = answer;
-                localStorage.setItem(`theoryAnswer_${currentTheory}`, answer);
-                updateTheoryStatus();
-                alert("Theory answer saved successfully!");
-            }
-
-            function nextTheoryQuestion() {
-                if (currentTheory < theoryQuestions.length - 1) {
-                    currentTheory++;
-                    displayTheoryQuestion();
-                } else {
-                    alert("You've reached the last theory question.");
-                }
-            }
-
-            function prevTheoryQuestion() {
-                if (currentTheory > 0) {
-                    currentTheory--;
-                    displayTheoryQuestion();
-                }
-            }
-
-            function submitTheoryExam() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                const confirmSubmit = confirm(
-                    `Theory section completed!\n\n` +
-                    `You have answered ${savedCount} out of ${theoryQuestions.length} theory questions.\n\n` +
-                    `Are you sure you want to submit?`
-                );
-               
-                if (confirmSubmit) {
-                    alert("Theory answers submitted successfully!");
-                }
-            }
-                   
-                    // ================== SECTION TOGGLE ==================
-                    function showSection(section) {
-                        currentSection = section;
-                        // Update button states
-                        document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
-                        document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
-                       
-                        // Show/hide sections
-                        document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
-                        document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
-                       
-                        // Update navigation
-                        if (section === 'theory') {
-                            displayTheoryQuestion();
-                        }
-                    }
+        }
        
         // ================== MATH SYMBOL MAPPING ==================
         function mapMathSymbol(text) {
@@ -1565,7 +1698,7 @@
             }
                    
         // ================== THEORY QUESTIONS ==================
-        /*function displayTheoryQuestion() {
+        function displayTheoryQuestion() {
             if (theoryQuestions.length === 0) {
                 document.getElementById('theoryQuestionText').innerText = "No theory questions available.";
                 return;
@@ -1635,7 +1768,7 @@
             if (confirmSubmit) {
                 alert("Theory answers submitted successfully!");
             }
-        }*/
+        }
        
         // ================== DATE & TIME ==================
         function updateDateTime() {

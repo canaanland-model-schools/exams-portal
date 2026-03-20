@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - SS1 MATHEMEMATICS  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - SS3 MATHEMATICS Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS1 MATHEMEMATICS   (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  SS3 MATHEMATICS (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS1 MATHEMEMATICS FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> SS3 MATHEMATICS  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -700,358 +700,609 @@
 
     <script>
            
+       
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                                         
+        
   {
     "id": 1,
-    "question": "Simplify 3^4 × 3^2 in index form.",
-    "options": { "A": "3^6", "B": "3^8", "C": "9^6", "D": "3^2" },
-    "answer": "A",
+    "question": "Multiply 3.4 x 10^-5 by 7.1 x 10^8 and leave the answer in standard form.",
+    "options": {
+      "A": "2.414 x 10^2",
+      "B": "2.414 x 10^3",
+      "C": "2.414 x 10^4",
+      "D": "2.414 x 10^5"
+    },
+    "answer": "C",
     "image": null
   },
   {
     "id": 2,
-    "question": "Evaluate log_2 8 + log_2 4.",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A",
+    "question": "Given that P = {p: 1 < p < 20}, where p is an integer and R = {r : 0 ≤ r ≤ 25, where r is a multiple of 4}. Find P ∩ R",
+    "options": {
+      "A": "{4, 8, 10, 16}",
+      "B": "{4, 8, 12, 16}",
+      "C": "{4, 8, 12, 16, 20}",
+      "D": "{4, 8, 12, 16, 20, 24}"
+    },
+    "answer": "B",
     "image": null
   },
   {
     "id": 3,
-    "question": "A triangle with all sides equal is called:",
-    "options": { "A": "Scalene triangle", "B": "Isosceles triangle", "C": "Equilateral triangle", "D": "Right-angled triangle" },
+    "question": "The first term of an Arithmetic Progression (A.P) is 2 and the last term is 29. If the common difference is 3, how many terms are in the A.P.?",
+    "options": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "11"
+    },
     "answer": "C",
     "image": null
   },
   {
     "id": 4,
-    "question": "The polygon with 6 sides is known as:",
-    "options": { "A": "Pentagon", "B": "Hexagon", "C": "Heptagon", "D": "Octagon" },
-    "answer": "B",
+    "question": "Express in index form: log<sub>x</sub> a + log<sub>y</sub> a = 3",
+    "options": {
+      "A": "x + y = 3",
+      "B": "xy = 3",
+      "C": "xy = a^3",
+      "D": "x + y = a^3"
+    },
+    "answer": "C",
     "image": null
   },
   {
     "id": 5,
-    "question": "Solve for x: 2<sup>x</sup> = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
+    "question": "Simplify: (2p - q)^2 - (p + q)^2",
+    "options": {
+      "A": "3p(p - 2q)",
+      "B": "2p(p - 3q)",
+      "C": "3p(2p - q)",
+      "D": "2p(3p - q)"
+    },
+    "answer": "A",
     "image": null
   },
   {
     "id": 6,
-    "question": "The sum of interior angles of a quadrilateral is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
+    "question": "If (3 - 4√2)(1 + 3√2) = a + b√2, find the value of b",
+    "options": {
+      "A": "-5",
+      "B": "5",
+      "C": "-21",
+      "D": "21"
+    },
+    "answer": "B",
     "image": null
   },
   {
     "id": 7,
-    "question": "Express log_10 1000 without logarithm.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
+    "question": "Find the sum for which $1,250.00 will amount to $2,031.25 at 12.5% per annum simple interest.",
+    "options": {
+      "A": "2 years",
+      "B": "3 years",
+      "C": "4 years",
+      "D": "5 years"
+    },
+    "answer": "D",
     "image": null
   },
   {
     "id": 8,
-    "question": "A polygon is said to be regular if:",
-    "options": { "A": "All sides are equal", "B": "All angles are equal", "C": "Both A and B", "D": "None of the above" },
+    "question": "If log_2 (x - 1) / 3 = 5, find the value of x",
+    "options": {
+      "A": "8",
+      "B": "16",
+      "C": "64",
+      "D": "122"
+    },
     "answer": "C",
     "image": null
   },
   {
     "id": 9,
-    "question": "Simplify (a^3 × a^5) / a^4.",
-    "options": { "A": "a^2", "B": "a^4", "C": "a^6", "D": "a^12" },
+    "question": "The population of a town increases by 3% every year. In the year 2000, the population was 3000. Find the population in the year 2003.",
+    "options": {
+      "A": "3,182",
+      "B": "3,278",
+      "C": "6,591",
+      "D": "7,515"
+    },
     "answer": "B",
     "image": null
   },
   {
     "id": 10,
-    "question": "In a right-angled triangle, the side opposite the right angle is called:",
-    "options": { "A": "Adjacent", "B": "Hypotenuse", "C": "Opposite", "D": "Base" },
+    "question": "A trader gave a change of #540.00 instead of #570.00 to a customer. Calculate the percentage error.",
+    "options": {
+      "A": "55 1/9%",
+      "B": "55/9%",
+      "C": "57 1/9%",
+      "D": "57/9%"
+    },
     "answer": "B",
     "image": null
   },
   {
     "id": 11,
-    "question": "Simplify (2^3)^4 in index form.",
-    "options": { "A": "2^7", "B": "2^12", "C": "2^1", "D": "2^81" },
+    "question": "The interior angle of a regular polygon is 168º. Find the number of sides of the polygon.",
+    "options": {
+      "A": "24",
+      "B": "30",
+      "C": "15",
+      "D": "12"
+    },
     "answer": "B",
     "image": null
   },
   {
     "id": 12,
-    "question": "Solve for x: 4<sup>x</sup> = 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
+    "question": "If 3x - 2y = -5 and x + 2y = 9, find the value of (x - y)/(x + y)",
+    "options": {
+      "A": "5/3",
+      "B": "3/5",
+      "C": "-3/5",
+      "D": "-5/3"
+    },
+    "answer": "C",
     "image": null
   },
   {
     "id": 13,
-    "question": "Evaluate log_3 27.",
-    "options": { "A": "2", "B": "3", "C": "9", "D": "81" },
-    "answer": "B",
+    "question": "A variable W varies partly as M and partly inversely as P. Which of the following correctly represents the relation with k1 and k2 constants?",
+    "options": {
+      "A": "W = k1M / (k2P)",
+      "B": "W = (k1 + k2) MP",
+      "C": "W = k1M + k2P",
+      "D": "W = (k1 + k2)M + P"
+    },
+    "answer": "C",
     "image": null
   },
   {
     "id": 14,
-    "question": "If log 2 = 0.3010, what is log 8?",
-    "options": { "A": "0.6020", "B": "0.9030", "C": "1.2040", "D": "0.9542" },
-    "answer": "B",
+    "question": "A cylindrical metallic barrel of height 2.5m and radius 0.245m is closed at one end. Find, correct to one decimal place, the total surface area of the barrel (Take π = 22/7)",
+    "options": {
+      "A": "2.1 m²",
+      "B": "3.5 m²",
+      "C": "4.0 m²",
+      "D": "9.4 m²"
+    },
+    "answer": "C",
     "image": null
   },
   {
     "id": 15,
-    "question": "A triangle with two equal sides is called:",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "B",
+    "question": "Make R the subject of the relation V = πl(R² - r²)",
+    "options": {
+      "A": "R = √(V/(πl) + r²)",
+      "B": "R = √(V/(πl) - r²)",
+      "C": "R = √(V - πl r²)",
+      "D": "R = √(V + πl r²)"
+    },
+    "answer": "A",
     "image": null
   },
   {
     "id": 16,
-    "question": "In a right-angled triangle, the side opposite the 30° angle is half the length of the:",
-    "options": { "A": "Adjacent side", "B": "Hypotenuse", "C": "Opposite side", "D": "Base" },
-    "answer": "B",
+    "question": "Consider the following statements: m = Edna is respectful, n = Edna is brilliant. If m ⇒ n, which of the following is valid?",
+    "options": {
+      "A": "¬n ⇒ ¬m",
+      "B": "¬m ⇒ ¬n",
+      "C": "n ⇒ ¬m",
+      "D": "m ⇒ n"
+    },
+    "answer": "A",
     "image": null
   },
   {
     "id": 17,
-    "question": "The sum of exterior angles of any polygon is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
+    "question": "A number is added to both the numerator and the denominator of the fraction 1/8. If the result is 1/2, find the number.",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "D",
     "image": null
   },
   {
     "id": 18,
-    "question": "A regular polygon has 8 sides. What is the measure of each exterior angle?",
-    "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°" },
-    "answer": "C",
+    "question": "Gifty, Justina, and Frank shared 60 oranges in the ratio 5:3:7 respectively. How many oranges did Justina receive?",
+    "options": {
+      "A": "16",
+      "B": "12",
+      "C": "20",
+      "D": "28"
+    },
+    "answer": "B",
     "image": null
   },
   {
     "id": 19,
-    "question": "Simplify log_2 8 + log_2 2.",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "B",
+    "question": "Find the quadratic equation whose roots are 2/3 and -1",
+    "options": {
+      "A": "3x² - x - 2 = 0",
+      "B": "3x² + x + 2 = 0",
+      "C": "3x² + x - 2 = 0",
+      "D": "3x² + x - 1 = 0"
+    },
+    "answer": "C",
     "image": null
   },
   {
     "id": 20,
-    "question": "What is the name of a 9-sided polygon?",
-    "options": { "A": "Octagon", "B": "Nonagon", "C": "Decagon", "D": "Heptagon" },
-    "answer": "B",
+    "question": "A piece of rod of length 44 m is cut to form a rectangular shape such that the ratio of the length to the breadth is 7:4. Find the breadth.",
+    "options": {
+      "A": "8 m",
+      "B": "14 m",
+      "C": "16 m",
+      "D": "24 m"
+    },
+    "answer": "A",
     "image": null
   },
   {
     "id": 21,
-    "question": "Simplify (3^2 × 3^3) / 3^4.",
-    "options": { "A": "3^1", "B": "3^2", "C": "3^5", "D": "3^6" },
+    "question": "In the diagram, MN || KL, ML and KN intersect at X. |MN| = 12cm, |MX| = 10cm and |MN| = 9cm (possibly a typo). If the area of ΔMXN is 16cm², calculate the area of ΔLXK.",
+    "options": {
+      "A": "9 cm²",
+      "B": "8 cm²",
+      "C": "10 cm²",
+      "D": "12 cm²"
+    },
     "answer": "A",
-    "image": null
+    "image": "img/ss3/q21_diagram.png"
   },
   {
     "id": 22,
-    "question": "If 5^(2x) = 625, find x.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B",
+    "question": "A ladder 15 m long leans against a vertical pole, making an angle of 72º with the horizontal. Calculate, correct to one decimal place, the distance between the foot of the ladder and the pole.",
+    "options": {
+      "A": "15.8 m",
+      "B": "14.3 m",
+      "C": "4.9 m",
+      "D": "4.6 m"
+    },
+    "answer": "D",
     "image": null
   },
   {
     "id": 23,
-    "question": "Evaluate log_5 125.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
+    "question": "In the diagram, O is the centre of the circle. If |OA| = 25 cm and |AB| = 40 cm, find |OH|.",
+    "options": {
+      "A": "15 cm",
+      "B": "20 cm",
+      "C": "25 cm",
+      "D": "30 cm"
+    },
+    "answer": "A",
+    "image": "img/ss3/q23_diagram.png"
   },
   {
     "id": 24,
-    "question": "Given log<sub>a</sub> 2 = 0.5, find a.",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
+    "question": "A car valued at $600,000.00 depreciates by 10% each year. What will be the value of the car at the end of two years?",
+    "options": {
+      "A": "$120,000.00",
+      "B": "$480,000.00",
+      "C": "$486,000.00",
+      "D": "$540,000.00"
+    },
+    "answer": "C",
     "image": null
   },
   {
     "id": 25,
-    "question": "A triangle has angles 60°, 60°, and 60°. What type of triangle is it?",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "C",
+    "question": "Given that P is 25 m on a bearing of 330º from Q, how far south of P is Q?",
+    "options": {
+      "A": "25.2 m",
+      "B": "21.7 m",
+      "C": "19.8 m",
+      "D": "18.5 m"
+    },
+    "answer": "B",
     "image": null
   },
   {
     "id": 26,
-    "question": "The longest side in a right-angled triangle is called:",
-    "options": { "A": "Opposite", "B": "Adjacent", "C": "Hypotenuse", "D": "Base" },
-    "answer": "C",
+    "question": "The length and breadth of a cuboid are 15 cm and 8 cm respectively. If the volume of the cuboid is 1560 cm³, calculate the total surface area.",
+    "options": {
+      "A": "976 cm²",
+      "B": "838 cm²",
+      "C": "792 cm²",
+      "D": "746 cm²"
+    },
+    "answer": "B",
     "image": null
   },
   {
     "id": 27,
-    "question": "How many diagonals does a pentagon have?",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "The interior angle of a regular hexagon is:",
-    "options": { "A": "60°", "B": "90°", "C": "120°", "D": "150°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Simplify log 100 - log 10.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "10" },
+    "question": "The number 1621 was subtracted from 6244 in base x. If the result was 4323, find x.",
+    "options": {
+      "A": "Seven",
+      "B": "Eight",
+      "C": "Nine",
+      "D": "Ten"
+    },
     "answer": "A",
     "image": null
   },
   {
-    "id": 30,
-    "question": "Solve 2^(x+1) = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
+    "id": 28,
+    "question": "Factorize completely: 27x² - 48y²",
+    "options": {
+      "A": "3(3x + 4y)(3x - 4y)",
+      "B": "3(3x + 4y)(3x + 4y)",
+      "C": "3(9x - 16y)(9x + 16y)",
+      "D": "3(9x - 16y)(9x - 16y)"
+    },
+    "answer": "A",
     "image": null
   },
   {
-    "id": 31,
-    "question": "Which of the following is equal to 8^(2/3)?",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "If log 3 = 0.4771, find log 0.3.",
-    "options": { "A": "0.4771", "B": "1.4771", "C": "-0.5229", "D": "0.5229" },
+    "id": 29,
+    "question": "For what values of x is (x-3)/4 + (x+1)/8 ≥ 2?",
+    "options": {
+      "A": "x ≥ 5",
+      "B": "x ≥ 6",
+      "C": "x ≥ 7",
+      "D": "x ≥ 8"
+    },
     "answer": "C",
     "image": null
   },
   {
-    "id": 33,
-    "question": "The angle subtended by a straight line is:",
-    "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
+    "id": 30,
+    "question": "In the diagram, <SQR = 52º and <PRT = 16º. Find the value of the angle marked y.",
+    "options": {
+      "A": "64°",
+      "B": "68°",
+      "C": "112°",
+      "D": "128°"
+    },
+    "answer": "C",
+    "image": "img/ss3/q30_diagram.png"
+  },
+  {
+    "id": 31,
+    "question": "In the diagram, JKL is a tangent to the circle GHIK at K. Find the indicated angle.",
+    "options": {
+      "A": "93°",
+      "B": "55°",
+      "C": "42°",
+      "D": "23°"
+    },
+    "answer": "A",
+    "image": "img/ss3/q31_diagram.png"
+  },
+  {
+    "id": 32,
+    "question": "A cone and a cylinder are of equal volume. The base radius of the cone is twice the radius of the cylinder. What is the ratio of the height of the cylinder to that of the cone?",
+    "options": {
+      "A": "5:4",
+      "B": "4:3",
+      "C": "3:2",
+      "D": "3:4"
+    },
     "answer": "B",
     "image": null
   },
   {
+    "id": 33,
+    "question": "Find, correct to the nearest whole number, the value of h in the diagram.",
+    "options": {
+      "A": "15 m",
+      "B": "22 m",
+      "C": "23 m",
+      "D": "18 m"
+    },
+    "answer": "B",
+    "image": "img/ss3/q33_diagram.png"
+  },
+  {
     "id": 34,
-    "question": "A triangle with sides 3cm, 4cm, 5cm is:",
-    "options": { "A": "Acute-angled", "B": "Obtuse-angled", "C": "Right-angled", "D": "Isosceles" },
+    "question": "The gradient of the line joining the points P(2, -8) and Q(1, y) is -4. Find the value of y.",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "-4",
+      "D": "-3"
+    },
     "answer": "C",
     "image": null
   },
   {
     "id": 35,
-    "question": "The number of sides of a regular polygon whose interior angle is 144°.",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
+    "question": "In the diagram, PQ || RS, ∠WYZ = 44º and ∠WXY = 50º. Find ∠WTX.",
+    "options": {
+      "A": "65°",
+      "B": "68°",
+      "C": "86°",
+      "D": "90°"
+    },
     "answer": "C",
-    "image": null
+    "image": "img/ss3/q35_diagram.png"
   },
   {
     "id": 36,
-    "question": "Simplify (27)^(1/3).",
-    "options": { "A": "3", "B": "6", "C": "9", "D": "27" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Evaluate log_2 32.",
-    "options": { "A": "4", "B": "5", "C": "6", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Which of the following is correct?",
-    "options": { "A": "log a + log b = log (a+b)", "B": "log a - log b = log (a/b)", "C": "log (a^b) = b log a", "D": "Both B and C" },
+    "question": "The perimeter of a rectangular garden is 90 m. If the width is 7 m less than the length, find the length of the garden.",
+    "options": {
+      "A": "19 m",
+      "B": "23 m",
+      "C": "24 m",
+      "D": "26 m"
+    },
     "answer": "D",
     "image": null
   },
   {
+    "id": 37,
+    "question": "Four of the angles of a hexagon sum up to 420º. If the remaining angles are equal, find the value of each of the remaining angles.",
+    "options": {
+      "A": "60°",
+      "B": "100°",
+      "C": "120°",
+      "D": "150°"
+    },
+    "answer": "D",
+    "image": null
+  },
+  {
+    "id": 38,
+    "question": "Find the value of x in the diagram.",
+    "options": {
+      "A": "120°",
+      "B": "100°",
+      "C": "60°",
+      "D": "150°"
+    },
+    "answer": "C",
+    "image": "img/ss3/q38_diagram.png"
+  },
+  {
     "id": 39,
-    "question": "If the exterior angle of a regular polygon is 30°, how many sides does it have?",
-    "options": { "A": "10", "B": "12", "C": "15", "D": "18" },
+    "question": "The following are the masses (in kg) of members in a club: 59, 44, 53, 49, 57, 40, 48, and 50. Calculate the mean mass.",
+    "options": {
+      "A": "44 kg",
+      "B": "50 kg",
+      "C": "40 kg",
+      "D": "53 kg"
+    },
     "answer": "B",
     "image": null
   },
   {
     "id": 40,
-    "question": "The base angles of an isosceles triangle are always:",
-    "options": { "A": "Acute", "B": "Obtuse", "C": "Right", "D": "Equal" },
-    "answer": "D",
+    "question": "The following are the masses (in kg) of members in a club: 59, 44, 53, 49, 57, 40, 48, and 50. Calculate the variance of the distribution.",
+    "options": {
+      "A": "35",
+      "B": "36",
+      "C": "40",
+      "D": "50"
+    },
+    "answer": "A",
     "image": null
   },
   {
     "id": 41,
-    "question": "Simplify (16)^(3/4).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Evaluate log_4 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "8" },
+    "question": "Two opposite sides of a rectangle are (5x + 3) m and (2x + 9) m. If an adjacent side is (6x - 7) m, find in m², the area of the rectangle.",
+    "options": {
+      "A": "45",
+      "B": "65",
+      "C": "125",
+      "D": "165"
+    },
     "answer": "B",
     "image": null
   },
   {
-    "id": 43,
-    "question": "In a triangle, if two angles are 45° and 75°, find the third angle.",
-    "options": { "A": "60°", "B": "65°", "C": "70°", "D": "75°" },
+    "id": 42,
+    "question": "A die is tossed once. Find the probability of getting a prime number.",
+    "options": {
+      "A": "1/2",
+      "B": "1/6",
+      "C": "1/3",
+      "D": "2/3"
+    },
     "answer": "A",
+    "image": null
+  },
+  {
+    "id": 43,
+    "question": "The area of a sector of a circle with radius 7 cm is 51.3 cm². Calculate, correct to the nearest whole number, the angle of the sector. (Take π = 22/7)",
+    "options": {
+      "A": "60°",
+      "B": "120°",
+      "C": "150°",
+      "D": "150°"
+    },
+    "answer": "B",
     "image": null
   },
   {
     "id": 44,
-    "question": "A polygon has 10 sides. What is the sum of its interior angles?",
-    "options": { "A": "1080°", "B": "1260°", "C": "1440°", "D": "1620°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Solve for x: 3^(x-1) = 27.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "Given log<sub>a</sub> 27 = 3, find a.",
-    "options": { "A": "3", "B": "9", "C": "27", "D": "81" },
+    "question": "A cliff on the bank of a river is 87 m high. A boat on the river is 22 m away from the cliff. Calculate, correct to the nearest degree, the angle of depression of the boat from the top of the cliff.",
+    "options": {
+      "A": "76°",
+      "B": "64°",
+      "C": "36°",
+      "D": "24°"
+    },
     "answer": "A",
     "image": null
   },
   {
+    "id": 45,
+    "question": "In the diagram, TU is a tangent to the circle SPQR at P. If ∠PTS = 44º, ∠SQP = 35º, find ∠PST.",
+    "options": {
+      "A": "101°",
+      "B": "125°",
+      "C": "130°",
+      "D": "135°"
+    },
+    "answer": "A",
+    "image": "img/ss3/q45_diagram.png"
+  },
+  {
+    "id": 46,
+    "question": "The probability that Amaka will pass an examination is 3/7 and that Bala will pass is 4/9. Find the probability that both will pass the examination.",
+    "options": {
+      "A": "2/21",
+      "B": "4/21",
+      "C": "5/21",
+      "D": "9/21"
+    },
+    "answer": "B",
+    "image": null
+  },
+  {
     "id": 47,
-    "question": "How many sides does a polygon have if each exterior angle is 36°?",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
+    "question": "Which of the following points lies on the line 3x - 8y = 11?",
+    "options": {
+      "A": "(1, 1)",
+      "B": "(1, -1)",
+      "C": "(-1, 1)",
+      "D": "(-1, -1)"
+    },
+    "answer": "B",
     "image": null
   },
   {
     "id": 48,
-    "question": "In a right-angled triangle, the side opposite 60° is related to the hypotenuse by factor:",
-    "options": { "A": "1/2", "B": "√3/2", "C": "√2/2", "D": "1/√2" },
+    "question": "Find the range of the following set of numbers: 28, 29, 39, 38, 33, 37, 26, 20, 15, and 25.",
+    "options": {
+      "A": "22",
+      "B": "24",
+      "C": "25",
+      "D": "27"
+    },
     "answer": "B",
     "image": null
   },
   {
     "id": 49,
-    "question": "Simplify (√8) × (√2).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
+    "question": "The fourth and eighth terms of an Arithmetic Progression are 16 and 40 respectively. Find the common difference.",
+    "options": {
+      "A": "-6",
+      "B": "6",
+      "C": "-2",
+      "D": "2"
+    },
     "answer": "B",
     "image": null
   },
   {
     "id": 50,
-    "question": "Which of the following is equal to log 1000?",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+    "question": "For what values of y is (y+2)/(8y² - 10y + 3) not defined?",
+    "options": {
+      "A": "-3/4, 1/2",
+      "B": "-3/4, -1/2",
+      "C": "3/4, 1/2",
+      "D": "3/4, -1/2"
+    },
     "answer": "C",
     "image": null
   }
@@ -1060,48 +1311,75 @@
 
 
         const staticTheoryQuestions = [
-      
-                                       
-                                  {
-                                    "id": 1,
-                                    "question": " (a) Simplify the following expressions completely, leaving your answers in index form where appropriate:\n   i. 5<sup>2</sup> × 5^3 ÷ 5^4\n   ii. ((3^2)^3 × 3^4)/3^5\n   iii. (4a^2b^3) × (2a^3b)\n(b) Solve the following exponential equations:\n   i. Find the value of x if 3^x = 81\n   ii. Solve for y: 2^(2y+1) = 32\n   iii. If 5^n = 125, find n.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 2,
-                                    "question": " (a) Evaluate the following without using calculators, showing all steps:\n   i. log_3 81\n   ii. log_10 10000\n   iii. log_5 125 + log_5 25\n(b) Simplify the following logarithmic expressions:\n   i. log_a 6 + log_a 4 - log_a 3\n   ii. 2 log_2 8 - log_2 16\n   iii. Given that log 2 = 0.3010 and log 3 = 0.4771, find log 6.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 3,
-                                    "question": "(a) State the type of triangle described below and sketch each:\n   i. A triangle with sides 5cm, 5cm, and 8cm.\n   ii. A triangle with angles 45°, 45°, and 90°.\n   iii. A triangle with all sides 6cm.\n   iv. A triangle with sides 3cm, 4cm, and 5cm.\n(b) In  triangle ABC , angle A = 50°, angle B = 70°:\n   i. Calculate angle C.\n   ii. What type of triangle is this based on its angles?\n   iii. If side AB is the longest side, which angle is opposite it?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 4,
-                                    "question": "find the values of the angles with alphabets shown in the diagram below\n and give reasons to support your answers",
-                                    "marks": 10,
-                                    "image": "img/ss2 maths/ss1_math.png"
-                                  },
-                                  {
-                                    "id": 5,
-                                    "question": " (a) Express the following in index form and simplify:\n   i. √16 × ∛27\n   ii. (8^(2/3))\n(b) If log_10 2 = 0.3010 and log_10 3 = 0.4771, find:\n   i. log_10 12\n   ii. log_10 1.5\n(c) A regular polygon has each exterior angle equal to 40°.\n   i. How many sides does the polygon have?\n   ii. What is the name of this polygon?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                   {
-                                    id: 6,
-                                    question: "a. Using ruler and compasses only, construct:\n(i) Angle 60°\n(ii) Angle 30° (by bisecting 60°)\nShow all construction lines clearly. \n b. Construct triangle ABC such that AB = 8cm, AC = 6cm, and BC = 7cm.\n(i) Measure and write down ∠A\n(ii) Construct the bisector of ∠A .",
-                                    marks: 10,
-                                    image: null
-                                  },
-                                         
+  
+                          {
+                            "id": 1,
+                            "question": "The time(t) taken to buy fuel at a filling station varies directly as the number of vehicles(V) in a queue and varies inversely as the number of pumps (P), available at the station. \nIn a station with 5 pumps, it took 10 minutes to fuel 20 vehicles. \nfind the; \n(a) relationship between t, P, and V; \n(b) time it takes to fuel 50 vehicles at a station with 2 pumps; \n(c) number of pumps required to fuel 40 vehicles in 20 minutes. ",
+                            "image": null
+                          },
+                          {
+                            "id": 2,
+                            "question": "A car travelled at a distance of  (2x + 13) km at 67.5 km/h and (5x − 20) km at 72 km/h. If the total time for the entire journey was 90 minutes, find the value of x. ",
+                            "image": null
+                          },
+                          {
+                            "id": 3,
+                            "question": "A circular floor of a building is to be tiled with ceramic tiles each of side 40 cm. If the perimeter of the floor is 66 m, calculate, correct to the nearest whole number, the number of tiles required to completely tile the floor.[take π = 22/7] ",
+                            "image": null
+                          },
+                          {
+                            "id": 4,
+                            "question": "In the diagram, ABCD is a circle O. The quadratic OBCD is a rhombus such that ∠ADO = ∠OBA = y and ∠BAD = t. \nFind; \n(a) the value of t; \n(b) the value of y; \n(c) ∠ADC. ",
+                            "image": "img/q4_diagram.jpg"
+                          },
+                          {
+                            "id": 5,
+                            "question": "A basket contains 3 gold-plated marbles, 4 diamond marbles, and some silver marbles, all of the same size and shape. Two marbles were drawn from the basket at random one after the other without replacement. If the probability that the two marbles were all silver is 115, find the number of silver marbles. ",
+                            "image": null
+                          },
+                          {
+                            "id": 6,
+                            "question": "Given that (x + 2), (4x + 3), and (7x + 24) are consecutive terms of a Geometric Progression (G.P.), find the: \n(a) value of x \n(b) common ratio. ",
+                            "image": null
+                          },
+                          {
+                            "id": 7,
+                            "question": "The table shows the ages of 20 children in a household. Given that x: y = 1: 2 \n(a) values of x and y \n(b) mean ages of the children. ",
+                            "image": "img/ss2 maths/ss3_math.png"
+                          },
+                          {
+                            "id": 8,
+                            "question": "Two observers Abu and Badu, 46 m apart, observe a bird on a vertical pole from the same side of the bird. The angles of elevation of the bird from Abu's and Badu's eye are 40º and 48º respectively. If at the foot of the pole Abu and Badu are on same horizontal; \n(a) illustrate the information in a diagram; \n(b) calculate, correct to one decimal place, the height of the pole. ",
+                            "image": "imgimg/ss3//q8_diagram.png"
+                          },
+                          {
+                            "id": 9,
+                            "question": "The diameter of a circle centre O is 26 cm. If a chord PQ¯¯¯¯¯¯¯¯ is drawn such that it is 5 cm from O to the centre of the chord, calculate, correct to the nearest whole number, the \n(a)∠POQ \n(b) Area of the minor segment formed by the chord PQ¯¯¯¯¯¯¯¯. [take π = 22/7] ",
+                            "image": null
+                          },
+                          {
+                            "id": 10,
+                            "question": "(a) In a man's will, he gave 25 of the total acres of the farm to the wife and 13 of what is left to the family. The rest of the farm was to be shared amongst his three children in the ratio 3: 5: 2. Given that, the child who had the least share received 8 acres, calculate the: \n(i) total acres the man left. \n(ii) number of acres the wife received. \n(b) The price of a Television set is $1,600.00. It can be purchased by a deposit of $400.00 and the rest of the amount paid by 12 monthly installments at 25% per annum simple interest. If the Television set is purchased by installment, find the total cost.",
+                            "image": null
+                          },
+                          {
+                            "id": 11,
+                            "question": "(a) Find the equation of the line that passes through the origin and the point of intersection of the lines x+2y=7 and x−y=4. \n(b) The ratio of an interior angle to an exterior angle of a regular polygon is 4: 1. Find the: \n(i) number of sides; \n(ii) value of the exterior angle; and \n(iii) sum of the interior angles of the polygon. ",
+                            "image": null
+                          },
+                          {
+                            "id": 12,
+                            "question": "(a) In the diagram above, PR¯¯¯¯¯¯¯¯ is a tangent to the circle O at Q. ∠POQ = 56º and  PO¯¯¯¯¯¯¯¯ intersect  SO¯¯¯¯¯¯¯ at V such that ∠SVP = 109º. Calculate: \n(i) ∠TQP \n(ii) ∠QTS \n(b) Simplify (2n^2-3n-2)/(2n^2+3n+1) × (n^2-1)/(n^2-4) ",
+                            "image": "img/img/ss3/q12_diagram.png"
+                          },
+                          {
+                            "id": 13,
+                            "question": "(a) In the diagram above, ABT is a circle centre O. PQ¯¯¯¯¯¯¯¯ is a tangent to the circle at T and ABC is a straight line. TC¯¯¯¯¯¯¯ bisects ∠BTQ, ∠BAT = 44º and ∠PTA = 60º. Find ∠ACT \n(b) The circumference of the base of a cylindrical tank is 11 m. The height of the tank is 3 m more than 6 times the base radius. Calculate the:\n (i) radius; \n(ii) height; \n(iii) volume of the tank. ",
+                            "image": "img/img/ss3/q13_diagram.png"
+                          }
 
 ];
-       // ================== APPLICATION VARIABLES ==================
+        // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1154,7 +1432,7 @@
         };
        
                     // ================== TIMER ==================
-                let timeLeft = 60 * 90; // 90 minutes in seconds
+                let timeLeft = 60 * 150; // 90 minutes in seconds
                 const timerEl = document.getElementById('timer');
                 const timerInterval = setInterval(() => {
                     const hours = Math.floor(timeLeft / 3600);
@@ -1186,142 +1464,23 @@
                         submitExam();
                     }
                 }, 1000);
-
-                            // ================== MATH SYMBOL MAPPING ==================
-            function mapMathSymbol(text) {
-                if (!text) return '';
-                
-                return text
-                    .replace(/&theta;/g, 'θ')
-                    .replace(/&Theta;/g, 'Θ')
-                    .replace(/&pi;/g, 'π')
-                    .replace(/&Pi;/g, 'Π')
-                    .replace(/&alpha;/g, 'α')
-                    .replace(/&beta;/g, 'β')
-                    .replace(/&gamma;/g, 'γ')
-                    .replace(/&delta;/g, 'δ')
-                    .replace(/&epsilon;/g, 'ε')
-                    .replace(/&phi;/g, 'φ')
-                    .replace(/&omega;/g, 'ω')
-                    .replace(/&mu;/g, 'μ')
-                    .replace(/&sigma;/g, 'σ')
-                    .replace(/&lambda;/g, 'λ')
-                    .replace(/&radic;/g, '√')
-                    .replace(/&infin;/g, '∞')
-                    .replace(/&int;/g, '∫')
-                    .replace(/&sum;/g, '∑')
-                    .replace(/&prod;/g, '∏')
-                    .replace(/&part;/g, '∂')
-                    .replace(/&deg;/g, '°')
-                    .replace(/&times;/g, '×')
-                    .replace(/&divide;/g, '÷')
-                    .replace(/&plusmn;/g, '±')
-                    .replace(/&le;/g, '≤')
-                    .replace(/&ge;/g, '≥')
-                    .replace(/&ne;/g, '≠')
-                    .replace(/&frac12;/g, '½')
-                    .replace(/&frac14;/g, '¼')
-                    .replace(/&frac34;/g, '¾')
-                    // Convert plain text powers like ^3 to <sup>3</sup> (only if not already HTML)
-                    .replace(/\^(\d+)/g, '<sup>$1</sup>')
-                    .replace(/\^\(([^)]+)\)/g, '<sup>$1</sup>')
-                    // Convert plain text indices like _3 to <sub>3</sub>
-                    .replace(/_(\d+)/g, '<sub>$1</sub>')
-                    .replace(/_\(([^)]+)\)/g, '<sub>$1</sub>');
+       
+        // ================== SECTION TOGGLE ==================
+        function showSection(section) {
+            currentSection = section;
+            // Update button states
+            document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
+            document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
+           
+            // Show/hide sections
+            document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
+            document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
+           
+            // Update navigation
+            if (section === 'theory') {
+                displayTheoryQuestion();
             }
-
-            // ================== THEORY QUESTIONS ==================
-            function displayTheoryQuestion() {
-                if (theoryQuestions.length === 0) {
-                    document.getElementById('theoryQuestionText').innerHTML = "<p>No theory questions available.</p>";
-                    return;
-                }
-               
-                const tq = theoryQuestions[currentTheory];
-                
-                // Apply math mapping to the question text (including marks)
-                const questionWithMarks = `${currentTheory + 1}. ${tq.question} ${tq.marks ? `[${tq.marks} marks]` : ''}`;
-                document.getElementById('theoryQuestionText').innerHTML = mapMathSymbol(questionWithMarks);
-                    
-                document.getElementById('theoryAnswer').value = theoryAnswers[currentTheory] || "";
-               
-                // Handle theory question image
-                const theoryImageContainer = document.getElementById('theoryImageContainer');
-                if (tq.image) {
-                    // Also apply mapping to the caption if it exists
-                    const caption = tq.imageCaption ? mapMathSymbol(tq.imageCaption) : 'Diagram for question';
-                    theoryImageContainer.innerHTML = `
-                        <div class="theory-image-wrapper">
-                            <img src="${tq.image}" alt="Theory Question Diagram" class="theory-question-image">
-                            <div class="image-caption">${caption}</div>
-                        </div>
-                    `;
-                } else {
-                    theoryImageContainer.innerHTML = '';
-                }
-               
-                updateTheoryStatus();
-            }
-
-            function updateTheoryStatus() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                document.getElementById("theoryStatus").innerText =
-                    `Question ${currentTheory + 1} of ${theoryQuestions.length} | Saved: ${savedCount}/${theoryQuestions.length}`;
-            }
-
-            function saveTheoryAnswer() {
-                const answer = document.getElementById('theoryAnswer').value.trim();
-                theoryAnswers[currentTheory] = answer;
-                localStorage.setItem(`theoryAnswer_${currentTheory}`, answer);
-                updateTheoryStatus();
-                alert("Theory answer saved successfully!");
-            }
-
-            function nextTheoryQuestion() {
-                if (currentTheory < theoryQuestions.length - 1) {
-                    currentTheory++;
-                    displayTheoryQuestion();
-                } else {
-                    alert("You've reached the last theory question.");
-                }
-            }
-
-            function prevTheoryQuestion() {
-                if (currentTheory > 0) {
-                    currentTheory--;
-                    displayTheoryQuestion();
-                }
-            }
-
-            function submitTheoryExam() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                const confirmSubmit = confirm(
-                    `Theory section completed!\n\n` +
-                    `You have answered ${savedCount} out of ${theoryQuestions.length} theory questions.\n\n` +
-                    `Are you sure you want to submit?`
-                );
-               
-                if (confirmSubmit) {
-                    alert("Theory answers submitted successfully!");
-                }
-            }
-                   
-                    // ================== SECTION TOGGLE ==================
-                    function showSection(section) {
-                        currentSection = section;
-                        // Update button states
-                        document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
-                        document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
-                       
-                        // Show/hide sections
-                        document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
-                        document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
-                       
-                        // Update navigation
-                        if (section === 'theory') {
-                            displayTheoryQuestion();
-                        }
-                    }
+        }
        
         // ================== MATH SYMBOL MAPPING ==================
         function mapMathSymbol(text) {
@@ -1565,7 +1724,7 @@
             }
                    
         // ================== THEORY QUESTIONS ==================
-        /*function displayTheoryQuestion() {
+        function displayTheoryQuestion() {
             if (theoryQuestions.length === 0) {
                 document.getElementById('theoryQuestionText').innerText = "No theory questions available.";
                 return;
@@ -1635,7 +1794,7 @@
             if (confirmSubmit) {
                 alert("Theory answers submitted successfully!");
             }
-        }*/
+        }
        
         // ================== DATE & TIME ==================
         function updateDateTime() {

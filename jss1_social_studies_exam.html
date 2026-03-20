@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - SS1 MATHEMEMATICS  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - JSS1 SOCIAL| CITIZENSHIP STUDIES  Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS1 MATHEMEMATICS   (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  JSS1 SOCIAL| CITIZENSHIP STUDIES  - JSS1 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS1 MATHEMEMATICS FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> JSS1 SOCIAL| CITIZENSHIP STUDIES   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -699,409 +699,109 @@
 
 
     <script>
-           
             
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                                         
-  {
-    "id": 1,
-    "question": "Simplify 3^4 × 3^2 in index form.",
-    "options": { "A": "3^6", "B": "3^8", "C": "9^6", "D": "3^2" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "Evaluate log_2 8 + log_2 4.",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A triangle with all sides equal is called:",
-    "options": { "A": "Scalene triangle", "B": "Isosceles triangle", "C": "Equilateral triangle", "D": "Right-angled triangle" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "The polygon with 6 sides is known as:",
-    "options": { "A": "Pentagon", "B": "Hexagon", "C": "Heptagon", "D": "Octagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "Solve for x: 2<sup>x</sup> = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "The sum of interior angles of a quadrilateral is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "Express log_10 1000 without logarithm.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "A polygon is said to be regular if:",
-    "options": { "A": "All sides are equal", "B": "All angles are equal", "C": "Both A and B", "D": "None of the above" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "Simplify (a^3 × a^5) / a^4.",
-    "options": { "A": "a^2", "B": "a^4", "C": "a^6", "D": "a^12" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "In a right-angled triangle, the side opposite the right angle is called:",
-    "options": { "A": "Adjacent", "B": "Hypotenuse", "C": "Opposite", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "Simplify (2^3)^4 in index form.",
-    "options": { "A": "2^7", "B": "2^12", "C": "2^1", "D": "2^81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "Solve for x: 4<sup>x</sup> = 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Evaluate log_3 27.",
-    "options": { "A": "2", "B": "3", "C": "9", "D": "81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "If log 2 = 0.3010, what is log 8?",
-    "options": { "A": "0.6020", "B": "0.9030", "C": "1.2040", "D": "0.9542" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A triangle with two equal sides is called:",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "In a right-angled triangle, the side opposite the 30° angle is half the length of the:",
-    "options": { "A": "Adjacent side", "B": "Hypotenuse", "C": "Opposite side", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "The sum of exterior angles of any polygon is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "A regular polygon has 8 sides. What is the measure of each exterior angle?",
-    "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Simplify log_2 8 + log_2 2.",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "What is the name of a 9-sided polygon?",
-    "options": { "A": "Octagon", "B": "Nonagon", "C": "Decagon", "D": "Heptagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Simplify (3^2 × 3^3) / 3^4.",
-    "options": { "A": "3^1", "B": "3^2", "C": "3^5", "D": "3^6" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "If 5^(2x) = 625, find x.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "Evaluate log_5 125.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Given log<sub>a</sub> 2 = 0.5, find a.",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "A triangle has angles 60°, 60°, and 60°. What type of triangle is it?",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "The longest side in a right-angled triangle is called:",
-    "options": { "A": "Opposite", "B": "Adjacent", "C": "Hypotenuse", "D": "Base" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "How many diagonals does a pentagon have?",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "The interior angle of a regular hexagon is:",
-    "options": { "A": "60°", "B": "90°", "C": "120°", "D": "150°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Simplify log 100 - log 10.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "10" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Solve 2^(x+1) = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Which of the following is equal to 8^(2/3)?",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "If log 3 = 0.4771, find log 0.3.",
-    "options": { "A": "0.4771", "B": "1.4771", "C": "-0.5229", "D": "0.5229" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "The angle subtended by a straight line is:",
-    "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "A triangle with sides 3cm, 4cm, 5cm is:",
-    "options": { "A": "Acute-angled", "B": "Obtuse-angled", "C": "Right-angled", "D": "Isosceles" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "The number of sides of a regular polygon whose interior angle is 144°.",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "Simplify (27)^(1/3).",
-    "options": { "A": "3", "B": "6", "C": "9", "D": "27" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Evaluate log_2 32.",
-    "options": { "A": "4", "B": "5", "C": "6", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Which of the following is correct?",
-    "options": { "A": "log a + log b = log (a+b)", "B": "log a - log b = log (a/b)", "C": "log (a^b) = b log a", "D": "Both B and C" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "If the exterior angle of a regular polygon is 30°, how many sides does it have?",
-    "options": { "A": "10", "B": "12", "C": "15", "D": "18" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "The base angles of an isosceles triangle are always:",
-    "options": { "A": "Acute", "B": "Obtuse", "C": "Right", "D": "Equal" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "Simplify (16)^(3/4).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Evaluate log_4 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "In a triangle, if two angles are 45° and 75°, find the third angle.",
-    "options": { "A": "60°", "B": "65°", "C": "70°", "D": "75°" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "A polygon has 10 sides. What is the sum of its interior angles?",
-    "options": { "A": "1080°", "B": "1260°", "C": "1440°", "D": "1620°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Solve for x: 3^(x-1) = 27.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "Given log<sub>a</sub> 27 = 3, find a.",
-    "options": { "A": "3", "B": "9", "C": "27", "D": "81" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "How many sides does a polygon have if each exterior angle is 36°?",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "In a right-angled triangle, the side opposite 60° is related to the hypotenuse by factor:",
-    "options": { "A": "1/2", "B": "√3/2", "C": "√2/2", "D": "1/√2" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Simplify (√8) × (√2).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Which of the following is equal to log 1000?",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  }
-
+       { "id": 1, "question": "The environment includes _____.", "options": { "A": "only trees", "B": "only animals", "C": "living and non-living things", "D": "only buildings" }, "answer": "C", "image": null },
+                        { "id": 2, "question": "One importance of caring for the environment is _____.", "options": { "A": "more pollution", "B": "better health", "C": "less water", "D": "more waste" }, "answer": "B", "image": null },
+                        { "id": 3, "question": "Cutting down trees without replanting is called _____.", "options": { "A": "afforestation", "B": "deforestation", "C": "irrigation", "D": "conservation" }, "answer": "B", "image": null },
+                        { "id": 4, "question": "Climate change means _____.", "options": { "A": "weather today", "B": "long-term change in weather patterns", "C": "daily temperature", "D": "rainfall only" }, "answer": "B", "image": null },
+                        { "id": 5, "question": "A cause of climate change is _____.", "options": { "A": "planting trees", "B": "burning fossil fuels", "C": "using bicycles", "D": "recycling" }, "answer": "B", "image": null },
+                        { "id": 6, "question": "One effect of climate change is _____.", "options": { "A": "cooler weather", "B": "sea level rise", "C": "more forests", "D": "clean air" }, "answer": "B", "image": null },
+                        { "id": 7, "question": "A disaster is a _____.", "options": { "A": "planned event", "B": "sudden event causing damage", "C": "celebration", "D": "normal day" }, "answer": "B", "image": null },
+                        { "id": 8, "question": "An example of a natural disaster is _____.", "options": { "A": "car accident", "B": "flood", "C": "fight", "D": "examination" }, "answer": "B", "image": null },
+                        { "id": 9, "question": "Disaster risk reduction involves _____.", "options": { "A": "ignoring warnings", "B": "being prepared", "C": "building in flood areas", "D": "no planning" }, "answer": "B", "image": null },
+                        { "id": 10, "question": "Early warning signs help people to _____.", "options": { "A": "panic", "B": "prepare and evacuate", "C": "stay indoors only", "D": "ignore" }, "answer": "B", "image": null },
+                        { "id": 11, "question": "Environmental protection means _____.", "options": { "A": "damaging nature", "B": "using resources carelessly", "C": "preserving natural resources", "D": "polluting air" }, "answer": "C", "image": null },
+                        { "id": 12, "question": "A simple way to protect the environment is _____.", "options": { "A": "littering", "B": "burning waste", "C": "recycling", "D": "wasting water" }, "answer": "C", "image": null },
+                        { "id": 13, "question": "An NGO that protects the environment in Nigeria is _____.", "options": { "A": "NEPA", "B": "NAFDAC", "C": "Nigerian Conservation Foundation", "D": "Police" }, "answer": "C", "image": null },
+                        { "id": 14, "question": "An epidemic is _____.", "options": { "A": "a disease affecting many people quickly", "B": "a healthy condition", "C": "a festival", "D": "a type of food" }, "answer": "A", "image": null },
+                        { "id": 15, "question": "COVID-19 is an example of a _____.", "options": { "A": "pandemic", "B": "celebration", "C": "game", "D": "festival" }, "answer": "A", "image": null },
+                        { "id": 16, "question": "To prevent epidemics, we should _____.", "options": { "A": "avoid vaccination", "B": "practice good hygiene", "C": "share personal items", "D": "ignore symptoms" }, "answer": "B", "image": null },
+                        { "id": 17, "question": "Safety means _____.", "options": { "A": "being in danger", "B": "protection from harm", "C": "taking risks", "D": "playing with fire" }, "answer": "B", "image": null },
+                        { "id": 18, "question": "A safety rule at home is _____.", "options": { "A": "playing with matches", "B": "touching electric sockets", "C": "keeping drugs away from children", "D": "running on stairs" }, "answer": "C", "image": null },
+                        { "id": 19, "question": "When you see an unsafe situation, you should _____.", "options": { "A": "ignore it", "B": "report to an adult", "C": "join in", "D": "laugh" }, "answer": "B", "image": null },
+                        { "id": 20, "question": "Female Genital Mutilation (FGM) is a _____.", "options": { "A": "beneficial practice", "B": "harmful traditional practice", "C": "medical treatment", "D": "religious rite" }, "answer": "B", "image": null },
+                        { "id": 21, "question": "Child marriage is harmful because it _____.", "options": { "A": "helps education", "B": "causes health problems", "C": "makes children happy", "D": "gives wealth" }, "answer": "B", "image": null },
+                        { "id": 22, "question": "A law against harmful practices in Nigeria is the _____.", "options": { "A": "Child Rights Act", "B": "Traffic Act", "C": "Land Use Act", "D": "Companies Act" }, "answer": "A", "image": null },
+                        { "id": 23, "question": "Sustainability means _____.", "options": { "A": "using all resources now", "B": "meeting needs without harming future generations", "C": "wasting resources", "D": "polluting water" }, "answer": "B", "image": null },
+                        { "id": 24, "question": "Air pollution can cause _____.", "options": { "A": "clean air", "B": "breathing problems", "C": "healthy lungs", "D": "fresh smell" }, "answer": "B", "image": null },
+                        { "id": 25, "question": "Planting trees helps to _____.", "options": { "A": "reduce oxygen", "B": "increase soil erosion", "C": "absorb carbon dioxide", "D": "cause floods" }, "answer": "C", "image": null },
+                        { "id": 26, "question": "The government agency responsible for environment in Nigeria is _____.", "options": { "A": "Ministry of Education", "B": "Ministry of Environment", "C": "Ministry of Defence", "D": "Ministry of Finance" }, "answer": "B", "image": null },
+                        { "id": 27, "question": "A community safety initiative is _____.", "options": { "A": "forming vigilante groups", "B": "burning refuse on roads", "C": "blocking drainage", "D": "ignoring streetlights" }, "answer": "A", "image": null },
+                        { "id": 28, "question": "During a flood warning, you should _____.", "options": { "A": "go swimming", "B": "move to higher ground", "C": "stay in basement", "D": "ignore it" }, "answer": "B", "image": null },
+                        { "id": 29, "question": "The main cause of cholera is _____.", "options": { "A": "contaminated water", "B": "clean water", "C": "fresh air", "D": "good food" }, "answer": "A", "image": null },
+                        { "id": 30, "question": "Malaria is spread by _____.", "options": { "A": "mosquitoes", "B": "handshake", "C": "sharing clothes", "D": "eating together" }, "answer": "A", "image": null },
+                        { "id": 31, "question": "To reduce climate change, we can _____.", "options": { "A": "use more cars", "B": "plant trees", "C": "burn plastics", "D": "cut down forests" }, "answer": "B", "image": null },
+                        { "id": 32, "question": "A harmful effect of deforestation is _____.", "options": { "A": "more rainfall", "B": "loss of habitat", "C": "clean water", "D": "fertile soil" }, "answer": "B", "image": null },
+                        { "id": 33, "question": "An early warning sign of fire might be _____.", "options": { "A": "smoke", "B": "cool temperature", "C": "water", "D": "fresh air" }, "answer": "A", "image": null },
+                        { "id": 34, "question": "The Red Cross helps during _____.", "options": { "A": "disasters", "B": "parties", "C": "examinations", "D": "sports only" }, "answer": "A", "image": null },
+                        { "id": 35, "question": "Environmental sanitation includes _____.", "options": { "A": "proper waste disposal", "B": "dumping refuse in drainage", "C": "burning plastics openly", "D": "littering the street" }, "answer": "A", "image": null },
+                        { "id": 36, "question": "Vaccination helps to prevent _____.", "options": { "A": "epidemics", "B": "accidents", "C": "robbery", "D": "hunger" }, "answer": "A", "image": null },
+                        { "id": 37, "question": "A safety rule on the road is _____.", "options": { "A": "crossing without looking", "B": "using pedestrian crossing", "C": "playing on the highway", "D": "ignoring traffic lights" }, "answer": "B", "image": null },
+                        { "id": 38, "question": "Reporting a harmful traditional practice helps to _____.", "options": { "A": "protect children", "B": "encourage it", "C": "hide it", "D": "make it worse" }, "answer": "A", "image": null },
+                        { "id": 39, "question": "Which is a positive cultural practice? _____.", "options": { "A": "FGM", "B": "child marriage", "C": "respecting elders", "D": "preferring male children" }, "answer": "C", "image": null },
+                        { "id": 40, "question": "Erosion can be controlled by _____.", "options": { "A": "planting grasses", "B": "cutting trees", "C": "building on slopes", "D": "leaving land bare" }, "answer": "A", "image": null },
+                        { "id": 41, "question": "An effect of pollution on water is _____.", "options": { "A": "clean water", "B": "death of aquatic life", "C": "more fish", "D": "safe drinking" }, "answer": "B", "image": null },
+                        { "id": 42, "question": "Using energy-saving bulbs helps to _____.", "options": { "A": "waste energy", "B": "reduce electricity use", "C": "increase bills", "D": "cause blackouts" }, "answer": "B", "image": null },
+                        { "id": 43, "question": "A disaster preparedness item is _____.", "options": { "A": "first aid kit", "B": "television", "C": "video game", "D": "perfume" }, "answer": "A", "image": null },
+                        { "id": 44, "question": "During an epidemic, public health measures include _____.", "options": { "A": "social distancing", "B": "hugging everyone", "C": "sharing utensils", "D": "overcrowding" }, "answer": "A", "image": null },
+                        { "id": 45, "question": "Safety at school includes _____.", "options": { "A": "running in corridors", "B": "following laboratory rules", "C": "fighting in class", "D": "ignoring teachers" }, "answer": "B", "image": null },
+                        { "id": 46, "question": "A cause of fire disaster is _____.", "options": { "A": "water", "B": "careless use of electricity", "C": "fresh air", "D": "cool temperature" }, "answer": "B", "image": null },
+                        { "id": 47, "question": "The agency that forecasts weather in Nigeria is _____.", "options": { "A": "NIMET", "B": "INEC", "C": "NDLEA", "D": "EFCC" }, "answer": "A", "image": null },
+                        { "id": 48, "question": "Community involvement in environmental protection can include _____.", "options": { "A": "monthly sanitation", "B": "dumping waste in river", "C": "burning leaves", "D": "blocking drainages" }, "answer": "A", "image": null },
+                        { "id": 49, "question": "A harmful effect of climate change on agriculture is _____.", "options": { "A": "increased yield", "B": "drought", "C": "regular rainfall", "D": "fertile soil" }, "answer": "B", "image": null },
+                        { "id": 50, "question": "The '3Rs' of waste management are _____.", "options": { "A": "Reduce, Reuse, Recycle", "B": "Read, Write, Arithmetic", "C": "Run, Rest, Relax", "D": "Rent, Return, Repair" }, "answer": "A", "image": null }
+                      
 ];
 
 
         const staticTheoryQuestions = [
-      
-                                       
-                                  {
-                                    "id": 1,
-                                    "question": " (a) Simplify the following expressions completely, leaving your answers in index form where appropriate:\n   i. 5<sup>2</sup> × 5^3 ÷ 5^4\n   ii. ((3^2)^3 × 3^4)/3^5\n   iii. (4a^2b^3) × (2a^3b)\n(b) Solve the following exponential equations:\n   i. Find the value of x if 3^x = 81\n   ii. Solve for y: 2^(2y+1) = 32\n   iii. If 5^n = 125, find n.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 2,
-                                    "question": " (a) Evaluate the following without using calculators, showing all steps:\n   i. log_3 81\n   ii. log_10 10000\n   iii. log_5 125 + log_5 25\n(b) Simplify the following logarithmic expressions:\n   i. log_a 6 + log_a 4 - log_a 3\n   ii. 2 log_2 8 - log_2 16\n   iii. Given that log 2 = 0.3010 and log 3 = 0.4771, find log 6.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 3,
-                                    "question": "(a) State the type of triangle described below and sketch each:\n   i. A triangle with sides 5cm, 5cm, and 8cm.\n   ii. A triangle with angles 45°, 45°, and 90°.\n   iii. A triangle with all sides 6cm.\n   iv. A triangle with sides 3cm, 4cm, and 5cm.\n(b) In  triangle ABC , angle A = 50°, angle B = 70°:\n   i. Calculate angle C.\n   ii. What type of triangle is this based on its angles?\n   iii. If side AB is the longest side, which angle is opposite it?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 4,
-                                    "question": "find the values of the angles with alphabets shown in the diagram below\n and give reasons to support your answers",
-                                    "marks": 10,
-                                    "image": "img/ss2 maths/ss1_math.png"
-                                  },
-                                  {
-                                    "id": 5,
-                                    "question": " (a) Express the following in index form and simplify:\n   i. √16 × ∛27\n   ii. (8^(2/3))\n(b) If log_10 2 = 0.3010 and log_10 3 = 0.4771, find:\n   i. log_10 12\n   ii. log_10 1.5\n(c) A regular polygon has each exterior angle equal to 40°.\n   i. How many sides does the polygon have?\n   ii. What is the name of this polygon?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                   {
-                                    id: 6,
-                                    question: "a. Using ruler and compasses only, construct:\n(i) Angle 60°\n(ii) Angle 30° (by bisecting 60°)\nShow all construction lines clearly. \n b. Construct triangle ABC such that AB = 8cm, AC = 6cm, and BC = 7cm.\n(i) Measure and write down ∠A\n(ii) Construct the bisector of ∠A .",
-                                    marks: 10,
-                                    image: null
-                                  },
-                                         
-
+       {
+                    "id": 1,
+                    "question": "a. What is the environment? \n\n b. List four environmental problems in your community. \n\n c. Suggest three ways to ensure environmental sustainability.",
+                    "marks": 10,
+                    "image": null
+                  },
+                  {
+                    "id": 2,
+                    "question": "a. Define climate change. \n\n b. Explain two causes of climate change. \n\n c. State three effects of climate change on human life.",
+                    "marks": 10,
+                    "image": null
+                  },
+                  {
+                    "id": 3,
+                    "question": "a. What is disaster risk reduction? \n\n b. Mention three types of disasters common in Nigeria. \n\n c. Describe two measures to prepare for a flood disaster.",
+                    "marks": 10,
+                    "image": null
+                  },
+                  {
+                    "id": 4,
+                    "question": "a. What is an early warning system? \n\n b. Give two examples of early warning signs for disasters. \n\n c. Why is it important to heed early warnings?",
+                    "marks": 10,
+                    "image": null
+                  },
+                  {
+                    "id": 5,
+                    "question": "a. What is environmental protection? \n\n b. Identify three simple environmental protection practices you can do at home. \n\n c. Name two government agencies involved in environmental protection in Nigeria.",
+                    "marks": 10,
+                    "image": null
+                  },
+                  {
+                    "id": 6,
+                    "question": "a. Define epidemic. \n\n b. Give three examples of epidemics. \n\n c. Explain two personal measures to prevent the spread of epidemics.",
+                    "marks": 10,
+                    "image": null
+                  },
+                  {
+                    "id": 7,
+                    "question": "a. What are harmful traditional practices? \n\n b. List three examples of harmful traditional practices. \n\n c. Suggest two ways to discourage harmful traditional practices in your community.",
+                    "marks": 10,
+                    "image": null
+                  }
 ];
-       // ================== APPLICATION VARIABLES ==================
+     // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1186,142 +886,23 @@
                         submitExam();
                     }
                 }, 1000);
-
-                            // ================== MATH SYMBOL MAPPING ==================
-            function mapMathSymbol(text) {
-                if (!text) return '';
-                
-                return text
-                    .replace(/&theta;/g, 'θ')
-                    .replace(/&Theta;/g, 'Θ')
-                    .replace(/&pi;/g, 'π')
-                    .replace(/&Pi;/g, 'Π')
-                    .replace(/&alpha;/g, 'α')
-                    .replace(/&beta;/g, 'β')
-                    .replace(/&gamma;/g, 'γ')
-                    .replace(/&delta;/g, 'δ')
-                    .replace(/&epsilon;/g, 'ε')
-                    .replace(/&phi;/g, 'φ')
-                    .replace(/&omega;/g, 'ω')
-                    .replace(/&mu;/g, 'μ')
-                    .replace(/&sigma;/g, 'σ')
-                    .replace(/&lambda;/g, 'λ')
-                    .replace(/&radic;/g, '√')
-                    .replace(/&infin;/g, '∞')
-                    .replace(/&int;/g, '∫')
-                    .replace(/&sum;/g, '∑')
-                    .replace(/&prod;/g, '∏')
-                    .replace(/&part;/g, '∂')
-                    .replace(/&deg;/g, '°')
-                    .replace(/&times;/g, '×')
-                    .replace(/&divide;/g, '÷')
-                    .replace(/&plusmn;/g, '±')
-                    .replace(/&le;/g, '≤')
-                    .replace(/&ge;/g, '≥')
-                    .replace(/&ne;/g, '≠')
-                    .replace(/&frac12;/g, '½')
-                    .replace(/&frac14;/g, '¼')
-                    .replace(/&frac34;/g, '¾')
-                    // Convert plain text powers like ^3 to <sup>3</sup> (only if not already HTML)
-                    .replace(/\^(\d+)/g, '<sup>$1</sup>')
-                    .replace(/\^\(([^)]+)\)/g, '<sup>$1</sup>')
-                    // Convert plain text indices like _3 to <sub>3</sub>
-                    .replace(/_(\d+)/g, '<sub>$1</sub>')
-                    .replace(/_\(([^)]+)\)/g, '<sub>$1</sub>');
+       
+        // ================== SECTION TOGGLE ==================
+        function showSection(section) {
+            currentSection = section;
+            // Update button states
+            document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
+            document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
+           
+            // Show/hide sections
+            document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
+            document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
+           
+            // Update navigation
+            if (section === 'theory') {
+                displayTheoryQuestion();
             }
-
-            // ================== THEORY QUESTIONS ==================
-            function displayTheoryQuestion() {
-                if (theoryQuestions.length === 0) {
-                    document.getElementById('theoryQuestionText').innerHTML = "<p>No theory questions available.</p>";
-                    return;
-                }
-               
-                const tq = theoryQuestions[currentTheory];
-                
-                // Apply math mapping to the question text (including marks)
-                const questionWithMarks = `${currentTheory + 1}. ${tq.question} ${tq.marks ? `[${tq.marks} marks]` : ''}`;
-                document.getElementById('theoryQuestionText').innerHTML = mapMathSymbol(questionWithMarks);
-                    
-                document.getElementById('theoryAnswer').value = theoryAnswers[currentTheory] || "";
-               
-                // Handle theory question image
-                const theoryImageContainer = document.getElementById('theoryImageContainer');
-                if (tq.image) {
-                    // Also apply mapping to the caption if it exists
-                    const caption = tq.imageCaption ? mapMathSymbol(tq.imageCaption) : 'Diagram for question';
-                    theoryImageContainer.innerHTML = `
-                        <div class="theory-image-wrapper">
-                            <img src="${tq.image}" alt="Theory Question Diagram" class="theory-question-image">
-                            <div class="image-caption">${caption}</div>
-                        </div>
-                    `;
-                } else {
-                    theoryImageContainer.innerHTML = '';
-                }
-               
-                updateTheoryStatus();
-            }
-
-            function updateTheoryStatus() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                document.getElementById("theoryStatus").innerText =
-                    `Question ${currentTheory + 1} of ${theoryQuestions.length} | Saved: ${savedCount}/${theoryQuestions.length}`;
-            }
-
-            function saveTheoryAnswer() {
-                const answer = document.getElementById('theoryAnswer').value.trim();
-                theoryAnswers[currentTheory] = answer;
-                localStorage.setItem(`theoryAnswer_${currentTheory}`, answer);
-                updateTheoryStatus();
-                alert("Theory answer saved successfully!");
-            }
-
-            function nextTheoryQuestion() {
-                if (currentTheory < theoryQuestions.length - 1) {
-                    currentTheory++;
-                    displayTheoryQuestion();
-                } else {
-                    alert("You've reached the last theory question.");
-                }
-            }
-
-            function prevTheoryQuestion() {
-                if (currentTheory > 0) {
-                    currentTheory--;
-                    displayTheoryQuestion();
-                }
-            }
-
-            function submitTheoryExam() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                const confirmSubmit = confirm(
-                    `Theory section completed!\n\n` +
-                    `You have answered ${savedCount} out of ${theoryQuestions.length} theory questions.\n\n` +
-                    `Are you sure you want to submit?`
-                );
-               
-                if (confirmSubmit) {
-                    alert("Theory answers submitted successfully!");
-                }
-            }
-                   
-                    // ================== SECTION TOGGLE ==================
-                    function showSection(section) {
-                        currentSection = section;
-                        // Update button states
-                        document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
-                        document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
-                       
-                        // Show/hide sections
-                        document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
-                        document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
-                       
-                        // Update navigation
-                        if (section === 'theory') {
-                            displayTheoryQuestion();
-                        }
-                    }
+        }
        
         // ================== MATH SYMBOL MAPPING ==================
         function mapMathSymbol(text) {
@@ -1565,7 +1146,7 @@
             }
                    
         // ================== THEORY QUESTIONS ==================
-        /*function displayTheoryQuestion() {
+        function displayTheoryQuestion() {
             if (theoryQuestions.length === 0) {
                 document.getElementById('theoryQuestionText').innerText = "No theory questions available.";
                 return;
@@ -1635,7 +1216,7 @@
             if (confirmSubmit) {
                 alert("Theory answers submitted successfully!");
             }
-        }*/
+        }
        
         // ================== DATE & TIME ==================
         function updateDateTime() {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - SS1 MATHEMEMATICS  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - JSS3 ENGLISH LANGUAGE Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS1 MATHEMEMATICS   (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  JSS3 ENGLISH LANGUAGE -  (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS1 MATHEMEMATICS FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> JSS3 ENGLISH LANGUAGE  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -700,406 +700,656 @@
 
     <script>
            
-            
-    
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                                         
-  {
-    "id": 1,
-    "question": "Simplify 3^4 × 3^2 in index form.",
-    "options": { "A": "3^6", "B": "3^8", "C": "9^6", "D": "3^2" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "Evaluate log_2 8 + log_2 4.",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A triangle with all sides equal is called:",
-    "options": { "A": "Scalene triangle", "B": "Isosceles triangle", "C": "Equilateral triangle", "D": "Right-angled triangle" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "The polygon with 6 sides is known as:",
-    "options": { "A": "Pentagon", "B": "Hexagon", "C": "Heptagon", "D": "Octagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "Solve for x: 2<sup>x</sup> = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "The sum of interior angles of a quadrilateral is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "Express log_10 1000 without logarithm.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "A polygon is said to be regular if:",
-    "options": { "A": "All sides are equal", "B": "All angles are equal", "C": "Both A and B", "D": "None of the above" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "Simplify (a^3 × a^5) / a^4.",
-    "options": { "A": "a^2", "B": "a^4", "C": "a^6", "D": "a^12" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "In a right-angled triangle, the side opposite the right angle is called:",
-    "options": { "A": "Adjacent", "B": "Hypotenuse", "C": "Opposite", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "Simplify (2^3)^4 in index form.",
-    "options": { "A": "2^7", "B": "2^12", "C": "2^1", "D": "2^81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "Solve for x: 4<sup>x</sup> = 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Evaluate log_3 27.",
-    "options": { "A": "2", "B": "3", "C": "9", "D": "81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "If log 2 = 0.3010, what is log 8?",
-    "options": { "A": "0.6020", "B": "0.9030", "C": "1.2040", "D": "0.9542" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A triangle with two equal sides is called:",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "In a right-angled triangle, the side opposite the 30° angle is half the length of the:",
-    "options": { "A": "Adjacent side", "B": "Hypotenuse", "C": "Opposite side", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "The sum of exterior angles of any polygon is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "A regular polygon has 8 sides. What is the measure of each exterior angle?",
-    "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Simplify log_2 8 + log_2 2.",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "What is the name of a 9-sided polygon?",
-    "options": { "A": "Octagon", "B": "Nonagon", "C": "Decagon", "D": "Heptagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Simplify (3^2 × 3^3) / 3^4.",
-    "options": { "A": "3^1", "B": "3^2", "C": "3^5", "D": "3^6" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "If 5^(2x) = 625, find x.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "Evaluate log_5 125.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Given log<sub>a</sub> 2 = 0.5, find a.",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "A triangle has angles 60°, 60°, and 60°. What type of triangle is it?",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "The longest side in a right-angled triangle is called:",
-    "options": { "A": "Opposite", "B": "Adjacent", "C": "Hypotenuse", "D": "Base" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "How many diagonals does a pentagon have?",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "The interior angle of a regular hexagon is:",
-    "options": { "A": "60°", "B": "90°", "C": "120°", "D": "150°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Simplify log 100 - log 10.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "10" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Solve 2^(x+1) = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Which of the following is equal to 8^(2/3)?",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "If log 3 = 0.4771, find log 0.3.",
-    "options": { "A": "0.4771", "B": "1.4771", "C": "-0.5229", "D": "0.5229" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "The angle subtended by a straight line is:",
-    "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "A triangle with sides 3cm, 4cm, 5cm is:",
-    "options": { "A": "Acute-angled", "B": "Obtuse-angled", "C": "Right-angled", "D": "Isosceles" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "The number of sides of a regular polygon whose interior angle is 144°.",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "Simplify (27)^(1/3).",
-    "options": { "A": "3", "B": "6", "C": "9", "D": "27" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Evaluate log_2 32.",
-    "options": { "A": "4", "B": "5", "C": "6", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Which of the following is correct?",
-    "options": { "A": "log a + log b = log (a+b)", "B": "log a - log b = log (a/b)", "C": "log (a^b) = b log a", "D": "Both B and C" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "If the exterior angle of a regular polygon is 30°, how many sides does it have?",
-    "options": { "A": "10", "B": "12", "C": "15", "D": "18" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "The base angles of an isosceles triangle are always:",
-    "options": { "A": "Acute", "B": "Obtuse", "C": "Right", "D": "Equal" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "Simplify (16)^(3/4).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Evaluate log_4 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "In a triangle, if two angles are 45° and 75°, find the third angle.",
-    "options": { "A": "60°", "B": "65°", "C": "70°", "D": "75°" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "A polygon has 10 sides. What is the sum of its interior angles?",
-    "options": { "A": "1080°", "B": "1260°", "C": "1440°", "D": "1620°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Solve for x: 3^(x-1) = 27.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "Given log<sub>a</sub> 27 = 3, find a.",
-    "options": { "A": "3", "B": "9", "C": "27", "D": "81" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "How many sides does a polygon have if each exterior angle is 36°?",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "In a right-angled triangle, the side opposite 60° is related to the hypotenuse by factor:",
-    "options": { "A": "1/2", "B": "√3/2", "C": "√2/2", "D": "1/√2" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Simplify (√8) × (√2).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Which of the following is equal to log 1000?",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  }
+                 {
+          "id": 1,
+          "question": "The consonant sound /θ/ is found in the word:",
+          "options": {
+            "A": "tick",
+            "B": "then",
+            "C": "this",
+            "D": "thick"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Which pair illustrates the contrast between /t/ and /s/?",
+          "options": {
+            "A": "mission – measure",
+            "B": "pit – pass",
+            "C": "much – march",
+            "D": "thin – then"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "In the words ‘pleasure’ and ‘vision’, the contrasting consonant sounds are:",
+          "options": {
+            "A": "/p/ and /v/",
+            "B": "/ʃ/ and /ʒ/",
+            "C": "/t/ and /θ/",
+            "D": "/s/ and /z/"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "The vowel sound /ɑ:/ as in ‘march’ is different from /ʌ/ in:",
+          "options": {
+            "A": "arm",
+            "B": "park",
+            "C": "much",
+            "D": "firm"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "The word ‘against’ in “He argued against the proposal” is a:",
+          "options": {
+            "A": "Conjunction",
+            "B": "Verb",
+            "C": "Preposition",
+            "D": "Adverb"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "“The students listened attentively.” This is an example of a:",
+          "options": {
+            "A": "Compound sentence",
+            "B": "Complex sentence",
+            "C": "Simple sentence",
+            "D": "Compound-complex sentence"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "Which of the following is a compound sentence?",
+          "options": {
+            "A": "She ran quickly.",
+            "B": "He failed because he did not study.",
+            "C": "Bola sang and Ade danced.",
+            "D": "The man who called left a message."
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "A word that joins two independent clauses is a:",
+          "options": {
+            "A": "Preposition",
+            "B": "Conjunction",
+            "C": "Interjection",
+            "D": "Pronoun"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "“The girl taught herself how to play the piano.” The underlined word is a:",
+          "options": {
+            "A": "Relative pronoun",
+            "B": "Personal pronoun",
+            "C": "Reflexive pronoun",
+            "D": "Demonstrative pronoun"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "In the sentence, “This is the book that I lost,” the word ‘that’ is a:",
+          "options": {
+            "A": "Reflexive pronoun",
+            "B": "Personal pronoun",
+            "C": "Demonstrative pronoun",
+            "D": "Relative pronoun"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "“These shoes are mine.” The word ‘These’ is a:",
+          "options": {
+            "A": "Personal pronoun",
+            "B": "Reflexive pronoun",
+            "C": "Demonstrative pronoun",
+            "D": "Relative pronoun"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "The pronouns I, you, he, she, it, we, and they are classified as:",
+          "options": {
+            "A": "Reflexive pronouns",
+            "B": "Relative pronouns",
+            "C": "Personal pronouns",
+            "D": "Demonstrative pronouns"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "Reading for critical evaluation involves:",
+          "options": {
+            "A": "Reading aloud with expression",
+            "B": "Forming opinions and judgments about a text",
+            "C": "Memorizing the text word for word",
+            "D": "Identifying nouns and verbs only"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Listening to get the main gist requires focusing on the:",
+          "options": {
+            "A": "Speaker’s accent",
+            "B": "Overall idea or central point",
+            "C": "Smallest details and examples",
+            "D": "First sentence only"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "An informal letter to a pen-pal should close with:",
+          "options": {
+            "A": "Yours faithfully,",
+            "B": "Yours sincerely,",
+            "C": "Yours in service,",
+            "D": "Your friend,"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Which of these is a key feature of a narrative essay?",
+          "options": {
+            "A": "It proves a point with logic.",
+            "B": "It describes a place in detail.",
+            "C": "It tells a story.",
+            "D": "It explains a process step-by-step."
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "An article discussing ‘The Evil of Youth Unemployment’ aims primarily to:",
+          "options": {
+            "A": "Tell a funny story",
+            "B": "Describe a personal experience",
+            "C": "Inform and raise awareness about a problem",
+            "D": "Argue about political parties"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "A folktale is traditionally:",
+          "options": {
+            "A": "Written in scientific journals",
+            "B": "Passed down through oral tradition",
+            "C": "About modern technology",
+            "D": "Always a true historical account"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "The language of poetry is characterized by:",
+          "options": {
+            "A": "Long paragraphs and reports",
+            "B": "Rhyme, rhythm, and figurative expressions",
+            "C": "Strict factual accuracy only",
+            "D": "Short sentences without imagery"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "In drama, the list of characters is called the:",
+          "options": {
+            "A": "Prologue",
+            "B": "Cast",
+            "C": "Script",
+            "D": "Monologue"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "Choose the word that has the same vowel sound as the one underlined in ‘birth’.",
+          "options": {
+            "A": "arm",
+            "B": "firm",
+            "C": "march",
+            "D": "park"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "Choose the correct punctuation for the sentence: she asked are you coming with us",
+          "options": {
+            "A": "She asked, “are you coming with us?”",
+            "B": "She asked “are you coming with us?”",
+            "C": "She asked, “Are you coming with us?”",
+            "D": "she asked, “Are you coming with us?”"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The figure of speech that compares two things using ‘like’ or ‘as’ is:",
+          "options": {
+            "A": "Metaphor",
+            "B": "Simile",
+            "C": "Personification",
+            "D": "Hyperbole"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "Which word is nearest in meaning to ‘arduous’?",
+          "options": {
+            "A": "Easy",
+            "B": "Difficult",
+            "C": "Happy",
+            "D": "Short"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Which of the following is in the passive voice?",
+          "options": {
+            "A": "The teacher praised the student.",
+            "B": "The student was praised by the teacher.",
+            "C": "The student praised the teacher.",
+            "D": "Did the teacher praise the student?"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "The expression “It’s raining cats and dogs” is an example of:",
+          "options": {
+            "A": "Simile",
+            "B": "Literal language",
+            "C": "Idiom",
+            "D": "Onomatopoeia"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "The tense of the verb in “She has finished her work” is:",
+          "options": {
+            "A": "Simple past",
+            "B": "Present perfect",
+            "C": "Past perfect",
+            "D": "Simple present"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "Which of these is a formal register?",
+          "options": {
+            "A": "“Hey, what’s up?”",
+            "B": "“Dear Sir, I wish to apply...”",
+            "C": "“Gimme that book!”",
+            "D": "“I ain’t going there.”"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "The word ‘biology’ is stressed on the:",
+          "options": {
+            "A": "First syllable",
+            "B": "Second syllable",
+            "C": "Third syllable",
+            "D": "Fourth syllable"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Which sentence is correctly capitalized?",
+          "options": {
+            "A": "The nigerian flag is green white green.",
+            "B": "We visited Lagos last december.",
+            "C": "Dr. Chike Obi is a famous mathematician.",
+            "D": "She speaks english and french."
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "Which option gives the correct plural form?",
+          "options": {
+            "A": "ox – oxes",
+            "B": "knife – knifes",
+            "C": "child – children",
+            "D": "sheep – sheeps"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "The synonym for ‘benevolent’ is:",
+          "options": {
+            "A": "Kind",
+            "B": "Greedy",
+            "C": "Angry",
+            "D": "Small"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "The antonym of ‘valor’ is:",
+          "options": {
+            "A": "Courage",
+            "B": "Cowardice",
+            "C": "Strength",
+            "D": "Wisdom"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "“The wind whispered through the trees.” This is an example of:",
+          "options": {
+            "A": "Metaphor",
+            "B": "Simile",
+            "C": "Personification",
+            "D": "Alliteration"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "A group of lions is called a:",
+          "options": {
+            "A": "Pack",
+            "B": "Herd",
+            "C": "Pride",
+            "D": "Flock"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "Which of the following is an abstract noun?",
+          "options": {
+            "A": "Table",
+            "B": "Happiness",
+            "C": "Lagos",
+            "D": "Teacher"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "The part of speech that modifies a verb is an:",
+          "options": {
+            "A": "Adjective",
+            "B": "Adverb",
+            "C": "Noun",
+            "D": "Preposition"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "Choose the correctly spelled word:",
+          "options": {
+            "A": "Occasion",
+            "B": "Ocassion",
+            "C": "Occassion",
+            "D": "Ocasion"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "The word ‘unbelievable’ has how many syllables?",
+          "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "7"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "Which sentence is grammatically correct?",
+          "options": {
+            "A": "Neither of the boys are here.",
+            "B": "Each student have a book.",
+            "C": "The news is good.",
+            "D": "She don’t like apples."
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "A short story that teaches a moral lesson and often features animals is called a:",
+          "options": {
+            "A": "Epic",
+            "B": "Fable",
+            "C": "Sonnet",
+            "D": "Biography"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "In comprehension, the ‘tone’ of a passage refers to the writer’s:",
+          "options": {
+            "A": "Handwriting",
+            "B": "Attitude or feeling",
+            "C": "Length of sentences",
+            "D": "Use of difficult words"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "The main idea of a paragraph is often found in the:",
+          "options": {
+            "A": "Middle sentence",
+            "B": "Concluding sentence",
+            "C": "Topic sentence",
+            "D": "Longest sentence"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "An expository essay on ‘Drug Abuse’ mainly:",
+          "options": {
+            "A": "Tells a story about a drug user",
+            "B": "Argues for legalizing drugs",
+            "C": "Explains and informs about the dangers",
+            "D": "Describes what a drug looks like"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "Which conjunction shows contrast?",
+          "options": {
+            "A": "and",
+            "B": "but",
+            "C": "so",
+            "D": "because"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "The literary term for the time and place where a story occurs is:",
+          "options": {
+            "A": "Plot",
+            "B": "Setting",
+            "C": "Theme",
+            "D": "Conflict"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "Which question tag is correct? She can swim, ____?",
+          "options": {
+            "A": "can she",
+            "B": "can’t she",
+            "C": "isn’t it",
+            "D": "doesn’t she"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "The word ‘inaudible’ means:",
+          "options": {
+            "A": "Very loud",
+            "B": "Cannot be heard",
+            "C": "Easy to hear",
+            "D": "Unpleasant to hear"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "“I promise to call you.” The underlined word functions as a:",
+          "options": {
+            "A": "Noun",
+            "B": "Verb",
+            "C": "Adverb",
+            "D": "Adjective"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Which of these is NOT a feature of an informal letter?",
+          "options": {
+            "A": "Use of slang and contractions",
+            "B": "Writer’s address and date at the top right",
+            "C": "“Yours faithfully,” as closing",
+            "D": "Casual, friendly language"
+          },
+          "answer": "C",
+          "image": null
+        }
+      ];
 
-];
+
 
 
         const staticTheoryQuestions = [
-      
-                                       
-                                  {
-                                    "id": 1,
-                                    "question": " (a) Simplify the following expressions completely, leaving your answers in index form where appropriate:\n   i. 5<sup>2</sup> × 5^3 ÷ 5^4\n   ii. ((3^2)^3 × 3^4)/3^5\n   iii. (4a^2b^3) × (2a^3b)\n(b) Solve the following exponential equations:\n   i. Find the value of x if 3^x = 81\n   ii. Solve for y: 2^(2y+1) = 32\n   iii. If 5^n = 125, find n.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 2,
-                                    "question": " (a) Evaluate the following without using calculators, showing all steps:\n   i. log_3 81\n   ii. log_10 10000\n   iii. log_5 125 + log_5 25\n(b) Simplify the following logarithmic expressions:\n   i. log_a 6 + log_a 4 - log_a 3\n   ii. 2 log_2 8 - log_2 16\n   iii. Given that log 2 = 0.3010 and log 3 = 0.4771, find log 6.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 3,
-                                    "question": "(a) State the type of triangle described below and sketch each:\n   i. A triangle with sides 5cm, 5cm, and 8cm.\n   ii. A triangle with angles 45°, 45°, and 90°.\n   iii. A triangle with all sides 6cm.\n   iv. A triangle with sides 3cm, 4cm, and 5cm.\n(b) In  triangle ABC , angle A = 50°, angle B = 70°:\n   i. Calculate angle C.\n   ii. What type of triangle is this based on its angles?\n   iii. If side AB is the longest side, which angle is opposite it?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 4,
-                                    "question": "find the values of the angles with alphabets shown in the diagram below\n and give reasons to support your answers",
-                                    "marks": 10,
-                                    "image": "img/ss2 maths/ss1_math.png"
-                                  },
-                                  {
-                                    "id": 5,
-                                    "question": " (a) Express the following in index form and simplify:\n   i. √16 × ∛27\n   ii. (8^(2/3))\n(b) If log_10 2 = 0.3010 and log_10 3 = 0.4771, find:\n   i. log_10 12\n   ii. log_10 1.5\n(c) A regular polygon has each exterior angle equal to 40°.\n   i. How many sides does the polygon have?\n   ii. What is the name of this polygon?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                   {
-                                    id: 6,
-                                    question: "a. Using ruler and compasses only, construct:\n(i) Angle 60°\n(ii) Angle 30° (by bisecting 60°)\nShow all construction lines clearly. \n b. Construct triangle ABC such that AB = 8cm, AC = 6cm, and BC = 7cm.\n(i) Measure and write down ∠A\n(ii) Construct the bisector of ∠A .",
-                                    marks: 10,
-                                    image: null
-                                  },
-                                         
-
+                            {
+                    "id": 1,
+                    "question": "Composition\na. Write an informal letter to your pen-pal in another country, telling him or her about your favourite subject in school and why you like it. \n\n b. Identify and explain two key features of an informal letter that you have used in your composition above. \n\n c. Differentiate between an informal letter and a formal letter.",
+                    "marks": 12.5,
+                    "image": null
+                  },
+                  {
+                    "id": 2,
+                    "question": "Grammar\na. Define the term ‘pronoun’. \n\n b. Using examples in sentences, distinguish between Reflexive Pronouns and Relative Pronouns. \n\n c. Complete the following sentences with the correct Demonstrative Pronouns (this, that, these, those):\ni. ______ shoes here are dirty.\nii. Look at ______ beautiful painting on the far wall!\niii. ______ is my brother.",
+                    "marks": 12.5,
+                    "image": null
+                  },
+                  {
+                    "id": 3,
+                    "question": "Comprehension & Summary\na. According to the passage, what is ‘youth unemployment’? \n\n b. State two ‘evil effects’ of youth unemployment mentioned in the passage. \n\n c. In one sentence, suggest a solution to the problem as stated in the passage.",
+                    "marks": 12.5,
+                    "image": null
+                  },
+                  {
+                    "id": 4,
+                    "question": "Essay Writing\na. What is an expository essay? \n\n b. Write an expository essay on the topic: “The Dangers of Drug Addiction.” \n\n c. Mention two features of a good expository essay that you have demonstrated in your writing.",
+                    "marks": 12.5,
+                    "image": null
+                  },
+                  {
+                    "id": 5,
+                    "question": "Literature (Prose & Drama)\na. Mention three common features of prose writing. \n\n b. Define drama as a genre of literature. \n\n c. Identify two elements of drama and briefly explain each.",
+                    "marks": 12.5,
+                    "image": null
+                  },
+                  {
+                    "id": 6,
+                    "question": "Literature (Poetry & Folktales)\na. Write a short poem of four (4) lines on the title: “The Lonely Child.” \n\n b. State two characteristics of the language used in poetry. \n\n c. Narrate a brief story titled: “How the Tortoise Got the Pattern on His Shell.”",
+                    "marks": 12.5,
+                    "image": null
+                  },
+                  {
+                    "id": 7,
+                    "question": "Grammar & Vocabulary\na. Construct one sentence each to illustrate the correct use of the following prepositions: with, for, against. \n\n b. Fill in the blanks with the correct vowels to complete the words: b_rth, f_rm, _rm. \n\n c. For each of the following words, provide one synonym and one antonym: (i) Valor (ii) Benevolent.",
+                    "marks": 12.5,
+                    "image": null
+                  }
 ];
        // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -1186,142 +1436,23 @@
                         submitExam();
                     }
                 }, 1000);
-
-                            // ================== MATH SYMBOL MAPPING ==================
-            function mapMathSymbol(text) {
-                if (!text) return '';
-                
-                return text
-                    .replace(/&theta;/g, 'θ')
-                    .replace(/&Theta;/g, 'Θ')
-                    .replace(/&pi;/g, 'π')
-                    .replace(/&Pi;/g, 'Π')
-                    .replace(/&alpha;/g, 'α')
-                    .replace(/&beta;/g, 'β')
-                    .replace(/&gamma;/g, 'γ')
-                    .replace(/&delta;/g, 'δ')
-                    .replace(/&epsilon;/g, 'ε')
-                    .replace(/&phi;/g, 'φ')
-                    .replace(/&omega;/g, 'ω')
-                    .replace(/&mu;/g, 'μ')
-                    .replace(/&sigma;/g, 'σ')
-                    .replace(/&lambda;/g, 'λ')
-                    .replace(/&radic;/g, '√')
-                    .replace(/&infin;/g, '∞')
-                    .replace(/&int;/g, '∫')
-                    .replace(/&sum;/g, '∑')
-                    .replace(/&prod;/g, '∏')
-                    .replace(/&part;/g, '∂')
-                    .replace(/&deg;/g, '°')
-                    .replace(/&times;/g, '×')
-                    .replace(/&divide;/g, '÷')
-                    .replace(/&plusmn;/g, '±')
-                    .replace(/&le;/g, '≤')
-                    .replace(/&ge;/g, '≥')
-                    .replace(/&ne;/g, '≠')
-                    .replace(/&frac12;/g, '½')
-                    .replace(/&frac14;/g, '¼')
-                    .replace(/&frac34;/g, '¾')
-                    // Convert plain text powers like ^3 to <sup>3</sup> (only if not already HTML)
-                    .replace(/\^(\d+)/g, '<sup>$1</sup>')
-                    .replace(/\^\(([^)]+)\)/g, '<sup>$1</sup>')
-                    // Convert plain text indices like _3 to <sub>3</sub>
-                    .replace(/_(\d+)/g, '<sub>$1</sub>')
-                    .replace(/_\(([^)]+)\)/g, '<sub>$1</sub>');
+       
+        // ================== SECTION TOGGLE ==================
+        function showSection(section) {
+            currentSection = section;
+            // Update button states
+            document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
+            document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
+           
+            // Show/hide sections
+            document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
+            document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
+           
+            // Update navigation
+            if (section === 'theory') {
+                displayTheoryQuestion();
             }
-
-            // ================== THEORY QUESTIONS ==================
-            function displayTheoryQuestion() {
-                if (theoryQuestions.length === 0) {
-                    document.getElementById('theoryQuestionText').innerHTML = "<p>No theory questions available.</p>";
-                    return;
-                }
-               
-                const tq = theoryQuestions[currentTheory];
-                
-                // Apply math mapping to the question text (including marks)
-                const questionWithMarks = `${currentTheory + 1}. ${tq.question} ${tq.marks ? `[${tq.marks} marks]` : ''}`;
-                document.getElementById('theoryQuestionText').innerHTML = mapMathSymbol(questionWithMarks);
-                    
-                document.getElementById('theoryAnswer').value = theoryAnswers[currentTheory] || "";
-               
-                // Handle theory question image
-                const theoryImageContainer = document.getElementById('theoryImageContainer');
-                if (tq.image) {
-                    // Also apply mapping to the caption if it exists
-                    const caption = tq.imageCaption ? mapMathSymbol(tq.imageCaption) : 'Diagram for question';
-                    theoryImageContainer.innerHTML = `
-                        <div class="theory-image-wrapper">
-                            <img src="${tq.image}" alt="Theory Question Diagram" class="theory-question-image">
-                            <div class="image-caption">${caption}</div>
-                        </div>
-                    `;
-                } else {
-                    theoryImageContainer.innerHTML = '';
-                }
-               
-                updateTheoryStatus();
-            }
-
-            function updateTheoryStatus() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                document.getElementById("theoryStatus").innerText =
-                    `Question ${currentTheory + 1} of ${theoryQuestions.length} | Saved: ${savedCount}/${theoryQuestions.length}`;
-            }
-
-            function saveTheoryAnswer() {
-                const answer = document.getElementById('theoryAnswer').value.trim();
-                theoryAnswers[currentTheory] = answer;
-                localStorage.setItem(`theoryAnswer_${currentTheory}`, answer);
-                updateTheoryStatus();
-                alert("Theory answer saved successfully!");
-            }
-
-            function nextTheoryQuestion() {
-                if (currentTheory < theoryQuestions.length - 1) {
-                    currentTheory++;
-                    displayTheoryQuestion();
-                } else {
-                    alert("You've reached the last theory question.");
-                }
-            }
-
-            function prevTheoryQuestion() {
-                if (currentTheory > 0) {
-                    currentTheory--;
-                    displayTheoryQuestion();
-                }
-            }
-
-            function submitTheoryExam() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                const confirmSubmit = confirm(
-                    `Theory section completed!\n\n` +
-                    `You have answered ${savedCount} out of ${theoryQuestions.length} theory questions.\n\n` +
-                    `Are you sure you want to submit?`
-                );
-               
-                if (confirmSubmit) {
-                    alert("Theory answers submitted successfully!");
-                }
-            }
-                   
-                    // ================== SECTION TOGGLE ==================
-                    function showSection(section) {
-                        currentSection = section;
-                        // Update button states
-                        document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
-                        document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
-                       
-                        // Show/hide sections
-                        document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
-                        document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
-                       
-                        // Update navigation
-                        if (section === 'theory') {
-                            displayTheoryQuestion();
-                        }
-                    }
+        }
        
         // ================== MATH SYMBOL MAPPING ==================
         function mapMathSymbol(text) {
@@ -1565,7 +1696,7 @@
             }
                    
         // ================== THEORY QUESTIONS ==================
-        /*function displayTheoryQuestion() {
+        function displayTheoryQuestion() {
             if (theoryQuestions.length === 0) {
                 document.getElementById('theoryQuestionText').innerText = "No theory questions available.";
                 return;
@@ -1635,7 +1766,7 @@
             if (confirmSubmit) {
                 alert("Theory answers submitted successfully!");
             }
-        }*/
+        }
        
         // ================== DATE & TIME ==================
         function updateDateTime() {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - SS1 MATHEMEMATICS  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - SS3 ECONOMICS Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS1 MATHEMEMATICS   (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  SS3 ECONOMICS  (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS1 MATHEMEMATICS FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> SS3 ECONOMICS  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -700,408 +700,661 @@
 
     <script>
            
-            
+      
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                                         
-  {
-    "id": 1,
-    "question": "Simplify 3^4 × 3^2 in index form.",
-    "options": { "A": "3^6", "B": "3^8", "C": "9^6", "D": "3^2" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "Evaluate log_2 8 + log_2 4.",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A triangle with all sides equal is called:",
-    "options": { "A": "Scalene triangle", "B": "Isosceles triangle", "C": "Equilateral triangle", "D": "Right-angled triangle" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "The polygon with 6 sides is known as:",
-    "options": { "A": "Pentagon", "B": "Hexagon", "C": "Heptagon", "D": "Octagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "Solve for x: 2<sup>x</sup> = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "The sum of interior angles of a quadrilateral is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "Express log_10 1000 without logarithm.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "A polygon is said to be regular if:",
-    "options": { "A": "All sides are equal", "B": "All angles are equal", "C": "Both A and B", "D": "None of the above" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "Simplify (a^3 × a^5) / a^4.",
-    "options": { "A": "a^2", "B": "a^4", "C": "a^6", "D": "a^12" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "In a right-angled triangle, the side opposite the right angle is called:",
-    "options": { "A": "Adjacent", "B": "Hypotenuse", "C": "Opposite", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "Simplify (2^3)^4 in index form.",
-    "options": { "A": "2^7", "B": "2^12", "C": "2^1", "D": "2^81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "Solve for x: 4<sup>x</sup> = 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Evaluate log_3 27.",
-    "options": { "A": "2", "B": "3", "C": "9", "D": "81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "If log 2 = 0.3010, what is log 8?",
-    "options": { "A": "0.6020", "B": "0.9030", "C": "1.2040", "D": "0.9542" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A triangle with two equal sides is called:",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "In a right-angled triangle, the side opposite the 30° angle is half the length of the:",
-    "options": { "A": "Adjacent side", "B": "Hypotenuse", "C": "Opposite side", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "The sum of exterior angles of any polygon is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "A regular polygon has 8 sides. What is the measure of each exterior angle?",
-    "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Simplify log_2 8 + log_2 2.",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "What is the name of a 9-sided polygon?",
-    "options": { "A": "Octagon", "B": "Nonagon", "C": "Decagon", "D": "Heptagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Simplify (3^2 × 3^3) / 3^4.",
-    "options": { "A": "3^1", "B": "3^2", "C": "3^5", "D": "3^6" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "If 5^(2x) = 625, find x.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "Evaluate log_5 125.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Given log<sub>a</sub> 2 = 0.5, find a.",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "A triangle has angles 60°, 60°, and 60°. What type of triangle is it?",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "The longest side in a right-angled triangle is called:",
-    "options": { "A": "Opposite", "B": "Adjacent", "C": "Hypotenuse", "D": "Base" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "How many diagonals does a pentagon have?",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "The interior angle of a regular hexagon is:",
-    "options": { "A": "60°", "B": "90°", "C": "120°", "D": "150°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Simplify log 100 - log 10.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "10" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Solve 2^(x+1) = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Which of the following is equal to 8^(2/3)?",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "If log 3 = 0.4771, find log 0.3.",
-    "options": { "A": "0.4771", "B": "1.4771", "C": "-0.5229", "D": "0.5229" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "The angle subtended by a straight line is:",
-    "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "A triangle with sides 3cm, 4cm, 5cm is:",
-    "options": { "A": "Acute-angled", "B": "Obtuse-angled", "C": "Right-angled", "D": "Isosceles" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "The number of sides of a regular polygon whose interior angle is 144°.",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "Simplify (27)^(1/3).",
-    "options": { "A": "3", "B": "6", "C": "9", "D": "27" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Evaluate log_2 32.",
-    "options": { "A": "4", "B": "5", "C": "6", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Which of the following is correct?",
-    "options": { "A": "log a + log b = log (a+b)", "B": "log a - log b = log (a/b)", "C": "log (a^b) = b log a", "D": "Both B and C" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "If the exterior angle of a regular polygon is 30°, how many sides does it have?",
-    "options": { "A": "10", "B": "12", "C": "15", "D": "18" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "The base angles of an isosceles triangle are always:",
-    "options": { "A": "Acute", "B": "Obtuse", "C": "Right", "D": "Equal" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "Simplify (16)^(3/4).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Evaluate log_4 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "In a triangle, if two angles are 45° and 75°, find the third angle.",
-    "options": { "A": "60°", "B": "65°", "C": "70°", "D": "75°" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "A polygon has 10 sides. What is the sum of its interior angles?",
-    "options": { "A": "1080°", "B": "1260°", "C": "1440°", "D": "1620°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Solve for x: 3^(x-1) = 27.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "Given log<sub>a</sub> 27 = 3, find a.",
-    "options": { "A": "3", "B": "9", "C": "27", "D": "81" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "How many sides does a polygon have if each exterior angle is 36°?",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "In a right-angled triangle, the side opposite 60° is related to the hypotenuse by factor:",
-    "options": { "A": "1/2", "B": "√3/2", "C": "√2/2", "D": "1/√2" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Simplify (√8) × (√2).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Which of the following is equal to log 1000?",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  }
-
+         {
+          "id": 1,
+          "question": "The balance of payments is a systematic record of a country's:",
+          "options": {
+            "A": "Domestic production",
+            "B": "International economic transactions",
+            "C": "Government budget",
+            "D": "Population growth"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Terms of trade measure the relationship between:",
+          "options": {
+            "A": "Exports and imports",
+            "B": "Savings and investment",
+            "C": "Income and expenditure",
+            "D": "Debt and credit"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "If a country's export prices rise relative to import prices, its terms of trade are:",
+          "options": {
+            "A": "Unfavorable",
+            "B": "Favorable",
+            "C": "Balanced",
+            "D": "Inelastic"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "A favorable balance of payments occurs when:",
+          "options": {
+            "A": "Imports exceed exports",
+            "B": "Exports exceed imports",
+            "C": "Capital outflow exceeds inflow",
+            "D": "The current account is in deficit"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "An unfavorable balance of payments can lead to:",
+          "options": {
+            "A": "Increase in foreign reserves",
+            "B": "Depreciation of the local currency",
+            "C": "Economic boom",
+            "D": "Surplus in trade"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "The balance of payments surplus means:",
+          "options": {
+            "A": "Total receipts exceed total payments",
+            "B": "Total payments exceed total receipts",
+            "C": "Imports are greater than exports",
+            "D": "The country is in debt"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "A deficit in the balance of payments can be corrected by:",
+          "options": {
+            "A": "Increasing imports",
+            "B": "Devaluing the currency",
+            "C": "Reducing exports",
+            "D": "Encouraging capital outflow"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Which of these is NOT a method of correcting balance of payments problems?",
+          "options": {
+            "A": "Tariffs",
+            "B": "Devaluation",
+            "C": "Export promotion",
+            "D": "Increasing government spending"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "Economic development refers to:",
+          "options": {
+            "A": "An increase in GDP only",
+            "B": "Qualitative improvements in living standards and economic structure",
+            "C": "A decrease in population",
+            "D": "An increase in inflation"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "The main difference between economic growth and development is that:",
+          "options": {
+            "A": "Growth is quantitative, development is qualitative",
+            "B": "Growth is always accompanied by development",
+            "C": "Development is only about GDP",
+            "D": "Growth is about quality of life"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "Which of the following is a problem of economic development in Nigeria?",
+          "options": {
+            "A": "High literacy rate",
+            "B": "Adequate infrastructure",
+            "C": "Over-dependence on oil",
+            "D": "Stable political climate"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Economic development planning involves:",
+          "options": {
+            "A": "Random economic decisions",
+            "B": "Setting goals and strategies for economic improvement",
+            "C": "Leaving the economy to market forces only",
+            "D": "Ignoring social welfare"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "The first national development plan in Nigeria was launched in:",
+          "options": {
+            "A": "1960",
+            "B": "1962",
+            "C": "1970",
+            "D": "1980"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Which of these is an element of development planning?",
+          "options": {
+            "A": "Setting objectives",
+            "B": "No evaluation",
+            "C": "Ignoring resources",
+            "D": "Isolating sectors"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "The main objective of Nigeria's development plans is to:",
+          "options": {
+            "A": "Increase foreign debt",
+            "B": "Achieve sustainable economic growth and development",
+            "C": "Reduce exports",
+            "D": "Encourage corruption"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "ECOWAS stands for:",
+          "options": {
+            "A": "Economic Community of West African States",
+            "B": "European Community of West African States",
+            "C": "Economic Council of West African States",
+            "D": "Economic Cooperation of West African States"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "The International Monetary Fund (IMF) primarily provides:",
+          "options": {
+            "A": "Military aid",
+            "B": "Financial assistance and policy advice to member countries",
+            "C": "Direct business investments",
+            "D": "Agricultural tools"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "The World Bank (IBRD) focuses on:",
+          "options": {
+            "A": "Short-term balance of payments support",
+            "B": "Long-term development projects and poverty reduction",
+            "C": "Regulating oil prices",
+            "D": "Managing regional trade"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "OPEC is an organization of:",
+          "options": {
+            "A": "Oil-consuming countries",
+            "B": "Oil-producing countries",
+            "C": "African nations",
+            "D": "European nations"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "The United Nations Conference on Trade and Development (UNCTAD) deals with:",
+          "options": {
+            "A": "Military alliances",
+            "B": "Trade and development issues of developing countries",
+            "C": "Space exploration",
+            "D": "Cultural exchanges"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "The African Development Bank (ADB) aims to:",
+          "options": {
+            "A": "Promote economic development in Asia",
+            "B": "Promote economic and social development in Africa",
+            "C": "Control African governments",
+            "D": "Regulate African currencies"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "GATT was replaced by the:",
+          "options": {
+            "A": "UNO",
+            "B": "WTO",
+            "C": "IMF",
+            "D": "OPEC"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The main goal of the MDGs was to:",
+          "options": {
+            "A": "Promote global conflict",
+            "B": "Reduce poverty and improve living standards by 2015",
+            "C": "Increase military spending",
+            "D": "Support colonialism"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "NEEDS stands for:",
+          "options": {
+            "A": "National Economic Empowerment and Development Strategy",
+            "B": "National Energy and Environmental Development Scheme",
+            "C": "Nigerian Economic Enhancement and Development System",
+            "D": "National Employment and Economic Development Strategy"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Nigeria's Vision 2020 aimed to make Nigeria:",
+          "options": {
+            "A": "A top 20 global economy by 2020",
+            "B": "A closed economy",
+            "C": "An import-dependent nation",
+            "D": "A one-party state"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "Poverty is characterized by:",
+          "options": {
+            "A": "High income and wealth",
+            "B": "Lack of basic needs and low living standards",
+            "C": "Excessive savings",
+            "D": "High levels of education"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "A major effect of poverty is:",
+          "options": {
+            "A": "Improved health",
+            "B": "Increased crime and social unrest",
+            "C": "High life expectancy",
+            "D": "Economic stability"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "Which agency in Nigeria is specifically for poverty alleviation?",
+          "options": {
+            "A": "CBN",
+            "B": "NAPEP",
+            "C": "NDLEA",
+            "D": "NNPC"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "HIV/AIDS affects the economy by:",
+          "options": {
+            "A": "Increasing the labor force",
+            "B": "Reducing productivity and increasing healthcare costs",
+            "C": "Boosting agricultural output",
+            "D": "Encouraging foreign investment"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Power and energy inadequacy in Nigeria leads to:",
+          "options": {
+            "A": "Increased industrial output",
+            "B": "High cost of production and business closures",
+            "C": "Employment generation",
+            "D": "Stable electricity supply"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "The consolidation of banks in Nigeria was aimed at:",
+          "options": {
+            "A": "Reducing the number of banks",
+            "B": "Strengthening the banking sector and preventing failures",
+            "C": "Increasing foreign control",
+            "D": "Decreasing capital base"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "The Economic Commission for Africa (ECA) is a regional arm of the:",
+          "options": {
+            "A": "IMF",
+            "B": "United Nations",
+            "C": "World Bank",
+            "D": "African Union"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "A country with a balance of payments deficit may experience:",
+          "options": {
+            "A": "Appreciation of its currency",
+            "B": "Loss of foreign reserves",
+            "C": "Increased foreign investment",
+            "D": "Trade surplus"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "Which of these is a feature of economic growth?",
+          "options": {
+            "A": "Increase in real GDP",
+            "B": "Decrease in output",
+            "C": "No change in infrastructure",
+            "D": "Decline in income"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "Economic development includes improvement in:",
+          "options": {
+            "A": "GDP only",
+            "B": "Education, health, and infrastructure",
+            "C": "Military power only",
+            "D": "Political corruption"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "Nigeria's development plans are usually for a period of:",
+          "options": {
+            "A": "1 year",
+            "B": "3 years",
+            "C": "5 years",
+            "D": "10 years"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "The IMF and World Bank are referred to as:",
+          "options": {
+            "A": "Regional banks",
+            "B": "Multilateral financial institutions",
+            "C": "Private corporations",
+            "D": "Local microfinance banks"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "A major objective of ECOWAS is to:",
+          "options": {
+            "A": "Promote political instability",
+            "B": "Achieve economic integration in West Africa",
+            "C": "Encourage civil wars",
+            "D": "Isolate member countries"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "The \"Washington Consensus\" is associated with policies of:",
+          "options": {
+            "A": "The IMF and World Bank",
+            "B": "OPEC",
+            "C": "ECOWAS",
+            "D": "United Nations"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "The General Agreement on Tariffs and Trade (GATT) was primarily concerned with:",
+          "options": {
+            "A": "Reducing trade barriers",
+            "B": "Increasing military alliances",
+            "C": "Controlling population",
+            "D": "Regulating oil prices"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "Which of these is a Millennium Development Goal?",
+          "options": {
+            "A": "Promote gender inequality",
+            "B": "Eradicate extreme poverty and hunger",
+            "C": "Increase child mortality",
+            "D": "Reduce primary education"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "The National Directorate of Employment (NDE) focuses on:",
+          "options": {
+            "A": "Creating employment opportunities",
+            "B": "Regulating imports",
+            "C": "Controlling inflation",
+            "D": "Managing foreign exchange"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "Energy inadequacy in Nigeria is partly due to:",
+          "options": {
+            "A": "Over-reliance on hydro and thermal power without adequate maintenance",
+            "B": "Excessive investment in the sector",
+            "C": "Low population growth",
+            "D": "Too many functional power plants"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "The main focus of Nigeria's economic reform programmes in the banking sector was:",
+          "options": {
+            "A": "To reduce capital base",
+            "B": "To increase the number of banks",
+            "C": "To consolidate and strengthen banks",
+            "D": "To nationalize all banks"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "The term \"conditionality\" is often associated with loans from the:",
+          "options": {
+            "A": "IMF",
+            "B": "ECOWAS",
+            "C": "OPEC",
+            "D": "African Union"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "An example of a poverty alleviation program in Nigeria is:",
+          "options": {
+            "A": "NAFDAC",
+            "B": "NAPEP",
+            "C": "EFCC",
+            "D": "INEC"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "The HIV/AIDS pandemic can lead to:",
+          "options": {
+            "A": "A larger workforce",
+            "B": "A reduction in the dependent population",
+            "C": "A decrease in government spending on health",
+            "D": "Loss of skilled labor and increased orphans"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "The main source of energy in Nigeria is:",
+          "options": {
+            "A": "Solar power",
+            "B": "Coal",
+            "C": "Oil and gas",
+            "D": "Nuclear power"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "The Economic and Financial Crimes Commission (EFCC) was established to:",
+          "options": {
+            "A": "Fight corruption and economic crimes",
+            "B": "Alleviate poverty",
+            "C": "Provide housing",
+            "D": "Regulate trade"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "A country can improve its balance of payments by:",
+          "options": {
+            "A": "Encouraging imports",
+            "B": "Promoting exports and reducing imports",
+            "C": "Devaluing its currency and increasing imports",
+            "D": "Reducing export subsidies"
+          },
+          "answer": "B",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-      
-                                       
-                                  {
-                                    "id": 1,
-                                    "question": " (a) Simplify the following expressions completely, leaving your answers in index form where appropriate:\n   i. 5<sup>2</sup> × 5^3 ÷ 5^4\n   ii. ((3^2)^3 × 3^4)/3^5\n   iii. (4a^2b^3) × (2a^3b)\n(b) Solve the following exponential equations:\n   i. Find the value of x if 3^x = 81\n   ii. Solve for y: 2^(2y+1) = 32\n   iii. If 5^n = 125, find n.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 2,
-                                    "question": " (a) Evaluate the following without using calculators, showing all steps:\n   i. log_3 81\n   ii. log_10 10000\n   iii. log_5 125 + log_5 25\n(b) Simplify the following logarithmic expressions:\n   i. log_a 6 + log_a 4 - log_a 3\n   ii. 2 log_2 8 - log_2 16\n   iii. Given that log 2 = 0.3010 and log 3 = 0.4771, find log 6.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 3,
-                                    "question": "(a) State the type of triangle described below and sketch each:\n   i. A triangle with sides 5cm, 5cm, and 8cm.\n   ii. A triangle with angles 45°, 45°, and 90°.\n   iii. A triangle with all sides 6cm.\n   iv. A triangle with sides 3cm, 4cm, and 5cm.\n(b) In  triangle ABC , angle A = 50°, angle B = 70°:\n   i. Calculate angle C.\n   ii. What type of triangle is this based on its angles?\n   iii. If side AB is the longest side, which angle is opposite it?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 4,
-                                    "question": "find the values of the angles with alphabets shown in the diagram below\n and give reasons to support your answers",
-                                    "marks": 10,
-                                    "image": "img/ss2 maths/ss1_math.png"
-                                  },
-                                  {
-                                    "id": 5,
-                                    "question": " (a) Express the following in index form and simplify:\n   i. √16 × ∛27\n   ii. (8^(2/3))\n(b) If log_10 2 = 0.3010 and log_10 3 = 0.4771, find:\n   i. log_10 12\n   ii. log_10 1.5\n(c) A regular polygon has each exterior angle equal to 40°.\n   i. How many sides does the polygon have?\n   ii. What is the name of this polygon?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                   {
-                                    id: 6,
-                                    question: "a. Using ruler and compasses only, construct:\n(i) Angle 60°\n(ii) Angle 30° (by bisecting 60°)\nShow all construction lines clearly. \n b. Construct triangle ABC such that AB = 8cm, AC = 6cm, and BC = 7cm.\n(i) Measure and write down ∠A\n(ii) Construct the bisector of ∠A .",
-                                    marks: 10,
-                                    image: null
-                                  },
-                                         
-
+      {
+    "id": 1,
+    "question": "a. Define the term Balance of Payments. \n\n b. Differentiate between a favorable and an unfavorable balance of payments. \n\n c. Explain three methods a country can use to correct a deficit in its balance of payments.",
+    "marks": 12.5,
+    "image": null
+  },
+  {
+    "id": 2,
+    "question": "a. Distinguish between economic growth and economic development. \n\n b. Discuss three problems of economic development in Nigeria. \n\n c. Why is economic development planning important for a country?",
+    "marks": 12.5,
+    "image": null
+  },
+  {
+    "id": 3,
+    "question": "a. Explain the term \"Economic Development Planning\". \n\n b. Outline four elements of a development plan. \n\n c. State three objectives of Nigeria's development plans.",
+    "marks": 12.5,
+    "image": null
+  },
+  {
+    "id": 4,
+    "question": "a. What is the main objective of the International Monetary Fund (IMF)? \n\n b. Describe two roles of the World Bank (IBRD) in promoting global economic development. \n\n c. Explain two ways in which OPEC influences the global economy.",
+    "marks": 12.5,
+    "image": null
+  },
+  {
+    "id": 5,
+    "question": "a. Explain the meaning of the following: (i) MDGs (ii) NEEDS (iii) Vision 2020. \n\n b. Discuss two objectives of the National Economic Empowerment and Development Strategy (NEEDS). \n\n c. How does poverty act as a constraint to economic development?",
+    "marks": 12.5,
+    "image": null
+  },
+  {
+    "id": 6,
+    "question": "a. Define poverty and mention two of its effects on society. \n\n b. Identify three poverty alleviation agencies in Nigeria and state one function of each. \n\n c. Explain two economic consequences of HIV/AIDS in a country.",
+    "marks": 12.5,
+    "image": null
+  },
+  {
+    "id": 7,
+    "question": "a. What is meant by \"consolidation of financial institutions\"? \n\n b. Discuss three reasons for the consolidation of banks in Nigeria. \n\n c. Explain two challenges of power and energy inadequacy on Nigeria's economic development.",
+    "marks": 12.5,
+    "image": null
+  }
 ];
-       // ================== APPLICATION VARIABLES ==================
+    
+
+
+  // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1186,142 +1439,23 @@
                         submitExam();
                     }
                 }, 1000);
-
-                            // ================== MATH SYMBOL MAPPING ==================
-            function mapMathSymbol(text) {
-                if (!text) return '';
-                
-                return text
-                    .replace(/&theta;/g, 'θ')
-                    .replace(/&Theta;/g, 'Θ')
-                    .replace(/&pi;/g, 'π')
-                    .replace(/&Pi;/g, 'Π')
-                    .replace(/&alpha;/g, 'α')
-                    .replace(/&beta;/g, 'β')
-                    .replace(/&gamma;/g, 'γ')
-                    .replace(/&delta;/g, 'δ')
-                    .replace(/&epsilon;/g, 'ε')
-                    .replace(/&phi;/g, 'φ')
-                    .replace(/&omega;/g, 'ω')
-                    .replace(/&mu;/g, 'μ')
-                    .replace(/&sigma;/g, 'σ')
-                    .replace(/&lambda;/g, 'λ')
-                    .replace(/&radic;/g, '√')
-                    .replace(/&infin;/g, '∞')
-                    .replace(/&int;/g, '∫')
-                    .replace(/&sum;/g, '∑')
-                    .replace(/&prod;/g, '∏')
-                    .replace(/&part;/g, '∂')
-                    .replace(/&deg;/g, '°')
-                    .replace(/&times;/g, '×')
-                    .replace(/&divide;/g, '÷')
-                    .replace(/&plusmn;/g, '±')
-                    .replace(/&le;/g, '≤')
-                    .replace(/&ge;/g, '≥')
-                    .replace(/&ne;/g, '≠')
-                    .replace(/&frac12;/g, '½')
-                    .replace(/&frac14;/g, '¼')
-                    .replace(/&frac34;/g, '¾')
-                    // Convert plain text powers like ^3 to <sup>3</sup> (only if not already HTML)
-                    .replace(/\^(\d+)/g, '<sup>$1</sup>')
-                    .replace(/\^\(([^)]+)\)/g, '<sup>$1</sup>')
-                    // Convert plain text indices like _3 to <sub>3</sub>
-                    .replace(/_(\d+)/g, '<sub>$1</sub>')
-                    .replace(/_\(([^)]+)\)/g, '<sub>$1</sub>');
+       
+        // ================== SECTION TOGGLE ==================
+        function showSection(section) {
+            currentSection = section;
+            // Update button states
+            document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
+            document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
+           
+            // Show/hide sections
+            document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
+            document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
+           
+            // Update navigation
+            if (section === 'theory') {
+                displayTheoryQuestion();
             }
-
-            // ================== THEORY QUESTIONS ==================
-            function displayTheoryQuestion() {
-                if (theoryQuestions.length === 0) {
-                    document.getElementById('theoryQuestionText').innerHTML = "<p>No theory questions available.</p>";
-                    return;
-                }
-               
-                const tq = theoryQuestions[currentTheory];
-                
-                // Apply math mapping to the question text (including marks)
-                const questionWithMarks = `${currentTheory + 1}. ${tq.question} ${tq.marks ? `[${tq.marks} marks]` : ''}`;
-                document.getElementById('theoryQuestionText').innerHTML = mapMathSymbol(questionWithMarks);
-                    
-                document.getElementById('theoryAnswer').value = theoryAnswers[currentTheory] || "";
-               
-                // Handle theory question image
-                const theoryImageContainer = document.getElementById('theoryImageContainer');
-                if (tq.image) {
-                    // Also apply mapping to the caption if it exists
-                    const caption = tq.imageCaption ? mapMathSymbol(tq.imageCaption) : 'Diagram for question';
-                    theoryImageContainer.innerHTML = `
-                        <div class="theory-image-wrapper">
-                            <img src="${tq.image}" alt="Theory Question Diagram" class="theory-question-image">
-                            <div class="image-caption">${caption}</div>
-                        </div>
-                    `;
-                } else {
-                    theoryImageContainer.innerHTML = '';
-                }
-               
-                updateTheoryStatus();
-            }
-
-            function updateTheoryStatus() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                document.getElementById("theoryStatus").innerText =
-                    `Question ${currentTheory + 1} of ${theoryQuestions.length} | Saved: ${savedCount}/${theoryQuestions.length}`;
-            }
-
-            function saveTheoryAnswer() {
-                const answer = document.getElementById('theoryAnswer').value.trim();
-                theoryAnswers[currentTheory] = answer;
-                localStorage.setItem(`theoryAnswer_${currentTheory}`, answer);
-                updateTheoryStatus();
-                alert("Theory answer saved successfully!");
-            }
-
-            function nextTheoryQuestion() {
-                if (currentTheory < theoryQuestions.length - 1) {
-                    currentTheory++;
-                    displayTheoryQuestion();
-                } else {
-                    alert("You've reached the last theory question.");
-                }
-            }
-
-            function prevTheoryQuestion() {
-                if (currentTheory > 0) {
-                    currentTheory--;
-                    displayTheoryQuestion();
-                }
-            }
-
-            function submitTheoryExam() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                const confirmSubmit = confirm(
-                    `Theory section completed!\n\n` +
-                    `You have answered ${savedCount} out of ${theoryQuestions.length} theory questions.\n\n` +
-                    `Are you sure you want to submit?`
-                );
-               
-                if (confirmSubmit) {
-                    alert("Theory answers submitted successfully!");
-                }
-            }
-                   
-                    // ================== SECTION TOGGLE ==================
-                    function showSection(section) {
-                        currentSection = section;
-                        // Update button states
-                        document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
-                        document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
-                       
-                        // Show/hide sections
-                        document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
-                        document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
-                       
-                        // Update navigation
-                        if (section === 'theory') {
-                            displayTheoryQuestion();
-                        }
-                    }
+        }
        
         // ================== MATH SYMBOL MAPPING ==================
         function mapMathSymbol(text) {
@@ -1565,7 +1699,7 @@
             }
                    
         // ================== THEORY QUESTIONS ==================
-        /*function displayTheoryQuestion() {
+        function displayTheoryQuestion() {
             if (theoryQuestions.length === 0) {
                 document.getElementById('theoryQuestionText').innerText = "No theory questions available.";
                 return;
@@ -1635,7 +1769,7 @@
             if (confirmSubmit) {
                 alert("Theory answers submitted successfully!");
             }
-        }*/
+        }
        
         // ================== DATE & TIME ==================
         function updateDateTime() {

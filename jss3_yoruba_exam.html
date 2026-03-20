@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - SS1 MATHEMEMATICS  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - JSS3 YORUBA LANGUAGE Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  SS1 MATHEMEMATICS   (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  JSS3 YORUBA LANGUAGE -  (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,7 +690,7 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> SS1 MATHEMEMATICS FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text"> JSS3 YORUBA LANGUAGE  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
@@ -704,404 +704,654 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                                         
-  {
-    "id": 1,
-    "question": "Simplify 3^4 × 3^2 in index form.",
-    "options": { "A": "3^6", "B": "3^8", "C": "9^6", "D": "3^2" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "Evaluate log_2 8 + log_2 4.",
-    "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A triangle with all sides equal is called:",
-    "options": { "A": "Scalene triangle", "B": "Isosceles triangle", "C": "Equilateral triangle", "D": "Right-angled triangle" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "The polygon with 6 sides is known as:",
-    "options": { "A": "Pentagon", "B": "Hexagon", "C": "Heptagon", "D": "Octagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "Solve for x: 2<sup>x</sup> = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "The sum of interior angles of a quadrilateral is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "Express log_10 1000 without logarithm.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "A polygon is said to be regular if:",
-    "options": { "A": "All sides are equal", "B": "All angles are equal", "C": "Both A and B", "D": "None of the above" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "Simplify (a^3 × a^5) / a^4.",
-    "options": { "A": "a^2", "B": "a^4", "C": "a^6", "D": "a^12" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "In a right-angled triangle, the side opposite the right angle is called:",
-    "options": { "A": "Adjacent", "B": "Hypotenuse", "C": "Opposite", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "Simplify (2^3)^4 in index form.",
-    "options": { "A": "2^7", "B": "2^12", "C": "2^1", "D": "2^81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "Solve for x: 4<sup>x</sup> = 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Evaluate log_3 27.",
-    "options": { "A": "2", "B": "3", "C": "9", "D": "81" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "If log 2 = 0.3010, what is log 8?",
-    "options": { "A": "0.6020", "B": "0.9030", "C": "1.2040", "D": "0.9542" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A triangle with two equal sides is called:",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "In a right-angled triangle, the side opposite the 30° angle is half the length of the:",
-    "options": { "A": "Adjacent side", "B": "Hypotenuse", "C": "Opposite side", "D": "Base" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "The sum of exterior angles of any polygon is:",
-    "options": { "A": "180°", "B": "270°", "C": "360°", "D": "540°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "A regular polygon has 8 sides. What is the measure of each exterior angle?",
-    "options": { "A": "30°", "B": "40°", "C": "45°", "D": "60°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Simplify log_2 8 + log_2 2.",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "What is the name of a 9-sided polygon?",
-    "options": { "A": "Octagon", "B": "Nonagon", "C": "Decagon", "D": "Heptagon" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Simplify (3^2 × 3^3) / 3^4.",
-    "options": { "A": "3^1", "B": "3^2", "C": "3^5", "D": "3^6" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "If 5^(2x) = 625, find x.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "Evaluate log_5 125.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Given log<sub>a</sub> 2 = 0.5, find a.",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "A triangle has angles 60°, 60°, and 60°. What type of triangle is it?",
-    "options": { "A": "Scalene", "B": "Isosceles", "C": "Equilateral", "D": "Right-angled" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "The longest side in a right-angled triangle is called:",
-    "options": { "A": "Opposite", "B": "Adjacent", "C": "Hypotenuse", "D": "Base" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "How many diagonals does a pentagon have?",
-    "options": { "A": "3", "B": "4", "C": "5", "D": "6" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "The interior angle of a regular hexagon is:",
-    "options": { "A": "60°", "B": "90°", "C": "120°", "D": "150°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Simplify log 100 - log 10.",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "10" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Solve 2^(x+1) = 16.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Which of the following is equal to 8^(2/3)?",
-    "options": { "A": "2", "B": "4", "C": "6", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "If log 3 = 0.4771, find log 0.3.",
-    "options": { "A": "0.4771", "B": "1.4771", "C": "-0.5229", "D": "0.5229" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "The angle subtended by a straight line is:",
-    "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "A triangle with sides 3cm, 4cm, 5cm is:",
-    "options": { "A": "Acute-angled", "B": "Obtuse-angled", "C": "Right-angled", "D": "Isosceles" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "The number of sides of a regular polygon whose interior angle is 144°.",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "Simplify (27)^(1/3).",
-    "options": { "A": "3", "B": "6", "C": "9", "D": "27" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Evaluate log_2 32.",
-    "options": { "A": "4", "B": "5", "C": "6", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Which of the following is correct?",
-    "options": { "A": "log a + log b = log (a+b)", "B": "log a - log b = log (a/b)", "C": "log (a^b) = b log a", "D": "Both B and C" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "If the exterior angle of a regular polygon is 30°, how many sides does it have?",
-    "options": { "A": "10", "B": "12", "C": "15", "D": "18" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "The base angles of an isosceles triangle are always:",
-    "options": { "A": "Acute", "B": "Obtuse", "C": "Right", "D": "Equal" },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "Simplify (16)^(3/4).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Evaluate log_4 64.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "8" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "In a triangle, if two angles are 45° and 75°, find the third angle.",
-    "options": { "A": "60°", "B": "65°", "C": "70°", "D": "75°" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "A polygon has 10 sides. What is the sum of its interior angles?",
-    "options": { "A": "1080°", "B": "1260°", "C": "1440°", "D": "1620°" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Solve for x: 3^(x-1) = 27.",
-    "options": { "A": "2", "B": "3", "C": "4", "D": "5" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "Given log<sub>a</sub> 27 = 3, find a.",
-    "options": { "A": "3", "B": "9", "C": "27", "D": "81" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "How many sides does a polygon have if each exterior angle is 36°?",
-    "options": { "A": "8", "B": "9", "C": "10", "D": "12" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "In a right-angled triangle, the side opposite 60° is related to the hypotenuse by factor:",
-    "options": { "A": "1/2", "B": "√3/2", "C": "√2/2", "D": "1/√2" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Simplify (√8) × (√2).",
-    "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Which of the following is equal to log 1000?",
-    "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
-    "answer": "C",
-    "image": null
-  }
-
+       {
+          "id": 1,
+          "question": "APÁ KINNI (AKAYE) & APÁ KEJI\n,instructions\n: Ka ayọka àkọ́kọ́ kí o sì dáhùn àwọn ìbéèrè tí ó tẹ̀lé e.,Omo bibi ilu Ede ni Bodunde. Ode Apomu ni won fi ori iya re Asake sole si. Ise agbe ti o gbonju ba lowo awon obi re ni oun naa n se. Oniruuru ounje bii: ege, agbado, anamo, ati ewa ni o n gbin. Ise agbe yii ti gbe e de awon ilu bii: Iseyin, Eruwa, Saki, Tede, ati Okeho ni ile oke ogunti o ti pade Mojere, aya re.\n\nOnisowo ni Salewa ti o je iya Mojere. Ori ti iya re n ta yii ni o ba a kiri lo ti o pade Bodunde ti o n to oko bo lowo irole. Lati ibi biba Mojere ra ori ni owo ti wo owo ti ese ti wo ese.\n\nKilaasi keji agba onipele keji ni eko iwe Bodunde pari si ni ile eko Girama kan ni ilu Osogbo nitori eda owo. Mojere ni tire gba iwe eri oniwee mewaa ni ile eko ijoba ti o wa ni Ikire, sugbon gbogbo ise to se lo ti fidi remi. O ko ise aso riran o si n wa owo masiini iranso. Eyi lo mu ki o ma a ba iya re kiri ori ki o baa le ri owo ko jo.\nNibo ni ilu Bodunde?",
+          "options": {
+            "A": "Eruwa",
+            "B": "Ede",
+            "C": "Iseyin",
+            "D": "Saki"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Ewo ninu iwonyii ni o wa ni ile oke ogun?",
+          "options": {
+            "A": "Eruwa",
+            "B": "Ede",
+            "C": "Ikire",
+            "D": "Osogbo"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "Okan ninu iwonyi ko si lara awon ounje ti Bodunde gbin",
+          "options": {
+            "A": "Agbado",
+            "B": "Anamo",
+            "C": "Ege",
+            "D": "Isu"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "Itumo ‘fidi remi’ ni",
+          "options": {
+            "A": "Gboriyin",
+            "B": "Kuna",
+            "C": "fi idi jale",
+            "D": "subu lu omi"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Toka si gbolohun ti o tona nipa ayoka yii ninu awon gbolohun wonyi.",
+          "options": {
+            "A": "Bodunde ko ni iwe eri oniwee mewaa",
+            "B": "Ilu Osogbo ni ile eko ti mojere lo wa",
+            "C": "Owo ori ni iya Bodunde n se",
+            "D": "Okeho ni ilu Asake"
+          },
+          "answer": "A",
+          "image": null
+        }
+      ]
+    },
+    "grammar_phonology": {
+      "name": "APÁ KEJI (ÈTÒ IRO, ÀRÒKÒ, GIRÁMÀ, ÀKÓTÒ, ÌTÀN ÌSẸ̀DÁLẸ̀, ÀSÀ, LITIRÉSÒ)",
+      "instructions": "Dáhùn gbogbo ìbéèrè wọ̀nyí.",
+      "questions": [
+        {
+          "id": 6,
+          "question": "Apeere faweli iwaju ni",
+          "options": {
+            "A": "a",
+            "B": "e",
+            "C": "o",
+            "D": "u"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "Okan ninu iro faweli wonyii ko gbodo bere oro ninu ojulowo ede Yoruba",
+          "options": {
+            "A": "A",
+            "B": "E",
+            "C": "I",
+            "D": "U"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Meloo ni gbogbo leta konsonanti ede Yoruba",
+          "options": {
+            "A": "Merindinlogun",
+            "B": "Mejidinlogun",
+            "C": "Metala",
+            "D": "Merinla"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "Oro ti o ni batani f-kf-kf ninu awon oro wonyii ni",
+          "options": {
+            "A": "alaini",
+            "B": "eemi",
+            "C": "ileke",
+            "D": "kangun"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "Faweli iwaju je – ninu ede Yoruba",
+          "options": {
+            "A": "meji",
+            "B": "meta",
+            "C": "mefa",
+            "D": "meje"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "Orisi ami ohun meloo ni o wa ninu ede Yoruba?",
+          "options": {
+            "A": "okan",
+            "B": "meji",
+            "C": "meta",
+            "D": "merin"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Faweli ‘i’ je faweli aranmupe",
+          "options": {
+            "A": "ahanudiepe, iwaju, roboto",
+            "B": "ahanupe, iwaju, perese",
+            "C": "ahanupe, eyin, roboto",
+            "D": "ayanupe, aarin, perese"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "Toka si eya ara ti ko si ninu awon ti afi n pe iro ede ninu awon wonyii.",
+          "options": {
+            "A": "Ahon",
+            "B": "Ete",
+            "C": "Eti",
+            "D": "Tan–an–na"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Faweli aranmupe inu ede Yoruba je meloo?",
+          "options": {
+            "A": "meji",
+            "B": "marun",
+            "C": "mefa",
+            "D": "meje"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "Iro ohun ti o ye lori “akiyesi” ni",
+          "options": {
+            "A": "d:m:d:m",
+            "B": "d:r:m:m",
+            "C": "r:r:d:d",
+            "D": "r:m:d:r"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "“Oluko ti mo feran ju” je aroko",
+          "options": {
+            "A": "Alapejuwe",
+            "B": "Alariiyanjiyan",
+            "C": "Isipaya",
+            "D": "Asotan"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "Ewo ninu awon oro oro wonyi lo je mo aroko oniroyin?",
+          "options": {
+            "A": "Aso ebi",
+            "B": "ayeye igbeyawo oluko mi",
+            "C": "Ise ijoba",
+            "D": "ore mi timotimo"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "“ipade wa bi oyin” ipede yii le je jeyo ninu",
+          "options": {
+            "A": "aroko asotan",
+            "B": "leta gbefe",
+            "C": "aroko oniroyin",
+            "D": "aroko asapejuwe"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "Aafin soun ti ile ogbomoso le je aroko",
+          "options": {
+            "A": "alapejuwe",
+            "B": "asotan",
+            "C": "asariyanjiyan",
+            "D": "oniroyin"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "Leta aigbefe ni leta ti a ko si",
+          "options": {
+            "A": "aare orile ede",
+            "B": "egbon iya eni",
+            "C": "mama eni",
+            "D": "obi eni"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "Ewo ninu iwonyii ni o je apeere eranko?",
+          "options": {
+            "A": "Aga, Iwe, owo",
+            "B": "Ewure, elede, adiye",
+            "C": "Kolade, Yemi, Ayo",
+            "D": "owo, bata, ile"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "Oro aropo afarajoruko jeyo ninu",
+          "options": {
+            "A": "Biola fun un lowo",
+            "B": "Ko fo aso re",
+            "C": "Oun ni mo pe",
+            "D": "Mo ra eyin adiye"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "Oro aropo oruko enikeji eyo ni",
+          "options": {
+            "A": "a",
+            "B": "e",
+            "C": "mi",
+            "D": "won"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "“Won ti jeun yo bamubamu” ewo ni oro aponle ninu gbolohun yii?",
+          "options": {
+            "A": "Bamubamu",
+            "B": "Jeun",
+            "C": "Ti",
+            "D": "Won"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Isori oro wo ni o maa n se alaye kukun nipa oro oruko? Oro",
+          "options": {
+            "A": "apejuwe",
+            "B": "aponle",
+            "C": "atokun",
+            "D": "oruko"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "Omo naa mo tonitoni. “tonitoni” je oro",
+          "options": {
+            "A": "apejuwe",
+            "B": "aponle",
+            "C": "atokun",
+            "D": "oruko"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "Oju sewa rewa, amo ko dan. Oro asopo inu gbolohun yii ni",
+          "options": {
+            "A": "amo",
+            "B": "dan",
+            "C": "oju",
+            "D": "rewa"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "Toka si oro ti o tele ilana akoto ede Yoruba ninu iwonyi",
+          "options": {
+            "A": "Ebute metta",
+            "B": "Eiye",
+            "C": "Olopaa",
+            "D": "Shola"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "Bawo ni a se le ko ‘Suru’ ni ilana akoto Yoruba ode oni",
+          "options": {
+            "A": "Suruu",
+            "B": "Suuru",
+            "C": "Su uru",
+            "D": "Su ru"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Ninu akoto ede Yoruba, bi a ti n sipeli pepeiye ni yi",
+          "options": {
+            "A": "Iyepepe",
+            "B": "Peipeye",
+            "C": "pepe iye",
+            "D": "pepeye"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "Ninu akoto ede Yoruba, shagamu yoo di",
+          "options": {
+            "A": "Sagamu",
+            "B": "Sagaamu",
+            "C": "Saguumu",
+            "D": "Shaigamu"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "Bawo ni a se n ko ‘gan’ ninu akoto Yoruba ode oni",
+          "options": {
+            "A": "Ganan",
+            "B": "Ganna",
+            "C": "Gan–an",
+            "D": "Gangan"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "Okan ninu awon wonyii lo ba ilana akoto Yoruba mu",
+          "options": {
+            "A": "Eniti",
+            "B": "Kini",
+            "C": "Nigba naa",
+            "D": "Wipe"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "Alaanu yoo yipada",
+          "options": {
+            "A": "alaanu",
+            "B": "alaaanu",
+            "C": "alanu",
+            "D": "alaanuu"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "Ta ni Lamurudu?",
+          "options": {
+            "A": "Baba oduduwa",
+            "B": "Egbon oduduwa",
+            "C": "E ni ti o te Ife do",
+            "D": "Omo oduduwa"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "Okanbi bi omo",
+          "options": {
+            "A": "Merin",
+            "B": "Marun–un",
+            "C": "Mefa",
+            "D": "Meje"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "Ta ni o te Ilu Oyo do",
+          "options": {
+            "A": "Alaketu",
+            "B": "Oranmiyan",
+            "C": "Olowu",
+            "D": "Onisabe"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "Ojo meloo ni Oduduwa ati awon omoleyin re fi rin de ibi ti won tedo si",
+          "options": {
+            "A": "Ogorun ojo",
+            "B": "Aadorin ojo",
+            "C": "Ogorin",
+            "D": "Aadorun un ojo"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "Ta ni eni ti o tumo iwe bibeli si ede Yoruba?",
+          "options": {
+            "A": "C.A Gollmer",
+            "B": "J.B Wood",
+            "C": "S.A Crowther",
+            "D": "J.C Raban"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "Odun wo gan–an ni ede Yoruba di kiko sile?",
+          "options": {
+            "A": "1842",
+            "B": "1847",
+            "C": "1844",
+            "D": "1975"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "Ajayi bere Ipade Ijosin akoko ni Yoruba ninu soosi siemeesi ni ilu",
+          "options": {
+            "A": "France",
+            "B": "Freetown",
+            "C": "Saro",
+            "D": "Ibadan"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "Ipinle wo ni awon Ijesa ti wopo ju?",
+          "options": {
+            "A": "Ekiti",
+            "B": "Kwara",
+            "C": "Ondo",
+            "D": "Osun"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "Ounje ti awon Ekiti feran ju ni",
+          "options": {
+            "A": "Iyan",
+            "B": "Amala",
+            "C": "Egbo",
+            "D": "Iresi"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "Eya Yoruba wo ni ede adugbo won sunmo Yoruba ajumolo pekipeki",
+          "options": {
+            "A": "Ekiti",
+            "B": "Ogun",
+            "C": "Ondo",
+            "D": "Oyo"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "Omo to doju bole nigba ti won bii ni",
+          "options": {
+            "A": "Aina",
+            "B": "Ajala",
+            "C": "Ajayi",
+            "D": "Ojo"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "Ojo keloo ti a bi omokunrin ni a maa n so o loruko ni aye atijo? Ojo",
+          "options": {
+            "A": "Karun–un",
+            "B": "Kefa",
+            "C": "Kesan–an",
+            "D": "Kejo"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "Kin ni eewo Esu?",
+          "options": {
+            "A": "Adi",
+            "B": "Iyo",
+            "C": "Omi",
+            "D": "Oti"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "Ninu iwe owo ibobe ti wale Mabogaje ko, iroyin wo ni oloye Bajowa gbo to fikawo lori? Iroyin nipa",
+          "options": {
+            "A": "Iku oloye Kolajo Dabiri",
+            "B": "Iku ogbeni Gbadamosi",
+            "C": "Iku Sule Awako",
+            "D": "Ise miiran ti won fe gbe jade"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "Kin ni oruko oga olopaa ti o n ri si iwa odaran?",
+          "options": {
+            "A": "Ajimeto",
+            "B": "Femi Ladeji",
+            "C": "Deji Gbadamosi",
+            "D": "Babarimisa"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Ninu iwe ti Bade Ojuade ko, oruko obinrin ti o kowe sile de Banji ni",
+          "options": {
+            "A": "Bolatito",
+            "B": "Toreera",
+            "C": "Toyosi",
+            "D": "Larape"
+          },
+          "answer": "B",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-      
-                                       
-                                  {
-                                    "id": 1,
-                                    "question": " (a) Simplify the following expressions completely, leaving your answers in index form where appropriate:\n   i. 5<sup>2</sup> × 5^3 ÷ 5^4\n   ii. ((3^2)^3 × 3^4)/3^5\n   iii. (4a^2b^3) × (2a^3b)\n(b) Solve the following exponential equations:\n   i. Find the value of x if 3^x = 81\n   ii. Solve for y: 2^(2y+1) = 32\n   iii. If 5^n = 125, find n.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 2,
-                                    "question": " (a) Evaluate the following without using calculators, showing all steps:\n   i. log_3 81\n   ii. log_10 10000\n   iii. log_5 125 + log_5 25\n(b) Simplify the following logarithmic expressions:\n   i. log_a 6 + log_a 4 - log_a 3\n   ii. 2 log_2 8 - log_2 16\n   iii. Given that log 2 = 0.3010 and log 3 = 0.4771, find log 6.",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 3,
-                                    "question": "(a) State the type of triangle described below and sketch each:\n   i. A triangle with sides 5cm, 5cm, and 8cm.\n   ii. A triangle with angles 45°, 45°, and 90°.\n   iii. A triangle with all sides 6cm.\n   iv. A triangle with sides 3cm, 4cm, and 5cm.\n(b) In  triangle ABC , angle A = 50°, angle B = 70°:\n   i. Calculate angle C.\n   ii. What type of triangle is this based on its angles?\n   iii. If side AB is the longest side, which angle is opposite it?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                  {
-                                    "id": 4,
-                                    "question": "find the values of the angles with alphabets shown in the diagram below\n and give reasons to support your answers",
-                                    "marks": 10,
-                                    "image": "img/ss2 maths/ss1_math.png"
-                                  },
-                                  {
-                                    "id": 5,
-                                    "question": " (a) Express the following in index form and simplify:\n   i. √16 × ∛27\n   ii. (8^(2/3))\n(b) If log_10 2 = 0.3010 and log_10 3 = 0.4771, find:\n   i. log_10 12\n   ii. log_10 1.5\n(c) A regular polygon has each exterior angle equal to 40°.\n   i. How many sides does the polygon have?\n   ii. What is the name of this polygon?",
-                                    "marks": 10,
-                                    "image": null
-                                  },
-                                   {
-                                    id: 6,
-                                    question: "a. Using ruler and compasses only, construct:\n(i) Angle 60°\n(ii) Angle 30° (by bisecting 60°)\nShow all construction lines clearly. \n b. Construct triangle ABC such that AB = 8cm, AC = 6cm, and BC = 7cm.\n(i) Measure and write down ∠A\n(ii) Construct the bisector of ∠A .",
-                                    marks: 10,
-                                    image: null
-                                  },
-                                         
-
+     {
+          "id": 1,
+          "question": "Ko aroko oju iwe kan (one page) lori okan ti o ba yan laayo ninu ori oro wonyii:\n(i) Ayeye ojo ibi mi ti o koja\n(ii) Omokunrin wulo ju Omobinrin lo\n(iii) Omi\n(iv) Ko leta si ore re, ki o si salaye awon isoro ti e n doju ko nile eko re",
+          "marks": null,
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "(i) Ko ise meta ti oro aropo oruko se ninu gbolohun\n(ii) Fa ila sidii oro oruko to n sise abo ninu gbolohun Yoruba\n(a) Adetola de fila\n(b) Bolaji je eja\n(c) Oluko ko iwe\n(d) Foluke ke omo\n(e) Ologbon pa eku\n(f) Aremu lu ilu",
+          "marks": null,
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "(i) Kin ni aroko? (2 marks)\n(ii) So itumo ami aroko wonyii\n(a) Apopo obi\n(b) Awo ilu\n(c) Nnkan mefa\n(d) Ota ati etu ibon (4 marks)\n(iii) Daruko orisi meta ninu awon orisa yoruba (3 marks)",
+          "marks": null,
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "(i) Kin ni aayan ogbufo?\n(ii) Tumo gbolohun wonyii si ede Yoruba\n(a) The taste of the pudding is in the eating\n(b) He has a heart of stone\n(c) Hit the nail on the head\n(d) You can't eat your cake and have it\n(e) A stitch in time saves nine\n(f) Remember the child of whom you are",
+          "marks": null,
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "(a) Fun iro faweli ni oriki\n(b) Ko orisi ona meji ti a pin iro faweli si\n(c) Ko agbegbe ti won ti n lo won ewi alohun wonyi;\n(i) Rara sisun\n(ii) Ekun iyawo\n(iii) Bolojo\n(iv) Obitun\n(v) Alamo",
+          "marks": null,
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "(i) Ninu iwe \"ase oloooto\" ti oloye Akinlola ko, Daruko eda itan marun-un\n(ii) Ninu iwe \"Talaremo\" ti Sola Toyin Oni ko: \"Sugbon bawo ni mo fe se oro omo ti won n pe ni Abimbola yii si\"?\n(a) Ta ni o n ro ero yii?\n(b) Ta lo wa pelu eni ohun nigba naa\n(c) Ki lo mu ero yii wa?",
+          "marks": null,
+          "image": null
+        }
 ];
-       // ================== APPLICATION VARIABLES ==================
+      // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1186,142 +1436,23 @@
                         submitExam();
                     }
                 }, 1000);
-
-                            // ================== MATH SYMBOL MAPPING ==================
-            function mapMathSymbol(text) {
-                if (!text) return '';
-                
-                return text
-                    .replace(/&theta;/g, 'θ')
-                    .replace(/&Theta;/g, 'Θ')
-                    .replace(/&pi;/g, 'π')
-                    .replace(/&Pi;/g, 'Π')
-                    .replace(/&alpha;/g, 'α')
-                    .replace(/&beta;/g, 'β')
-                    .replace(/&gamma;/g, 'γ')
-                    .replace(/&delta;/g, 'δ')
-                    .replace(/&epsilon;/g, 'ε')
-                    .replace(/&phi;/g, 'φ')
-                    .replace(/&omega;/g, 'ω')
-                    .replace(/&mu;/g, 'μ')
-                    .replace(/&sigma;/g, 'σ')
-                    .replace(/&lambda;/g, 'λ')
-                    .replace(/&radic;/g, '√')
-                    .replace(/&infin;/g, '∞')
-                    .replace(/&int;/g, '∫')
-                    .replace(/&sum;/g, '∑')
-                    .replace(/&prod;/g, '∏')
-                    .replace(/&part;/g, '∂')
-                    .replace(/&deg;/g, '°')
-                    .replace(/&times;/g, '×')
-                    .replace(/&divide;/g, '÷')
-                    .replace(/&plusmn;/g, '±')
-                    .replace(/&le;/g, '≤')
-                    .replace(/&ge;/g, '≥')
-                    .replace(/&ne;/g, '≠')
-                    .replace(/&frac12;/g, '½')
-                    .replace(/&frac14;/g, '¼')
-                    .replace(/&frac34;/g, '¾')
-                    // Convert plain text powers like ^3 to <sup>3</sup> (only if not already HTML)
-                    .replace(/\^(\d+)/g, '<sup>$1</sup>')
-                    .replace(/\^\(([^)]+)\)/g, '<sup>$1</sup>')
-                    // Convert plain text indices like _3 to <sub>3</sub>
-                    .replace(/_(\d+)/g, '<sub>$1</sub>')
-                    .replace(/_\(([^)]+)\)/g, '<sub>$1</sub>');
+       
+        // ================== SECTION TOGGLE ==================
+        function showSection(section) {
+            currentSection = section;
+            // Update button states
+            document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
+            document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
+           
+            // Show/hide sections
+            document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
+            document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
+           
+            // Update navigation
+            if (section === 'theory') {
+                displayTheoryQuestion();
             }
-
-            // ================== THEORY QUESTIONS ==================
-            function displayTheoryQuestion() {
-                if (theoryQuestions.length === 0) {
-                    document.getElementById('theoryQuestionText').innerHTML = "<p>No theory questions available.</p>";
-                    return;
-                }
-               
-                const tq = theoryQuestions[currentTheory];
-                
-                // Apply math mapping to the question text (including marks)
-                const questionWithMarks = `${currentTheory + 1}. ${tq.question} ${tq.marks ? `[${tq.marks} marks]` : ''}`;
-                document.getElementById('theoryQuestionText').innerHTML = mapMathSymbol(questionWithMarks);
-                    
-                document.getElementById('theoryAnswer').value = theoryAnswers[currentTheory] || "";
-               
-                // Handle theory question image
-                const theoryImageContainer = document.getElementById('theoryImageContainer');
-                if (tq.image) {
-                    // Also apply mapping to the caption if it exists
-                    const caption = tq.imageCaption ? mapMathSymbol(tq.imageCaption) : 'Diagram for question';
-                    theoryImageContainer.innerHTML = `
-                        <div class="theory-image-wrapper">
-                            <img src="${tq.image}" alt="Theory Question Diagram" class="theory-question-image">
-                            <div class="image-caption">${caption}</div>
-                        </div>
-                    `;
-                } else {
-                    theoryImageContainer.innerHTML = '';
-                }
-               
-                updateTheoryStatus();
-            }
-
-            function updateTheoryStatus() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                document.getElementById("theoryStatus").innerText =
-                    `Question ${currentTheory + 1} of ${theoryQuestions.length} | Saved: ${savedCount}/${theoryQuestions.length}`;
-            }
-
-            function saveTheoryAnswer() {
-                const answer = document.getElementById('theoryAnswer').value.trim();
-                theoryAnswers[currentTheory] = answer;
-                localStorage.setItem(`theoryAnswer_${currentTheory}`, answer);
-                updateTheoryStatus();
-                alert("Theory answer saved successfully!");
-            }
-
-            function nextTheoryQuestion() {
-                if (currentTheory < theoryQuestions.length - 1) {
-                    currentTheory++;
-                    displayTheoryQuestion();
-                } else {
-                    alert("You've reached the last theory question.");
-                }
-            }
-
-            function prevTheoryQuestion() {
-                if (currentTheory > 0) {
-                    currentTheory--;
-                    displayTheoryQuestion();
-                }
-            }
-
-            function submitTheoryExam() {
-                const savedCount = theoryAnswers.filter(answer => answer.trim() !== "").length;
-                const confirmSubmit = confirm(
-                    `Theory section completed!\n\n` +
-                    `You have answered ${savedCount} out of ${theoryQuestions.length} theory questions.\n\n` +
-                    `Are you sure you want to submit?`
-                );
-               
-                if (confirmSubmit) {
-                    alert("Theory answers submitted successfully!");
-                }
-            }
-                   
-                    // ================== SECTION TOGGLE ==================
-                    function showSection(section) {
-                        currentSection = section;
-                        // Update button states
-                        document.getElementById('objectivesBtn').classList.toggle('active', section === 'objectives');
-                        document.getElementById('theoryBtn').classList.toggle('active', section === 'theory');
-                       
-                        // Show/hide sections
-                        document.getElementById('objectivesSection').style.display = section === 'objectives' ? 'block' : 'none';
-                        document.getElementById('theorySection').style.display = section === 'theory' ? 'block' : 'none';
-                       
-                        // Update navigation
-                        if (section === 'theory') {
-                            displayTheoryQuestion();
-                        }
-                    }
+        }
        
         // ================== MATH SYMBOL MAPPING ==================
         function mapMathSymbol(text) {
@@ -1565,7 +1696,7 @@
             }
                    
         // ================== THEORY QUESTIONS ==================
-        /*function displayTheoryQuestion() {
+        function displayTheoryQuestion() {
             if (theoryQuestions.length === 0) {
                 document.getElementById('theoryQuestionText').innerText = "No theory questions available.";
                 return;
@@ -1635,7 +1766,7 @@
             if (confirmSubmit) {
                 alert("Theory answers submitted successfully!");
             }
-        }*/
+        }
        
         // ================== DATE & TIME ==================
         function updateDateTime() {
