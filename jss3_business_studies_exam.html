@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - DEMO Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - BUSINESS STUDIES Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  DEMO - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  BUSINESS STUDIES - JSS3 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -625,180 +625,389 @@
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
         {
-          id: 1,
-          question: "Find the set of prime factors of 12",
-          options: { A: "3", B: "2, 3", C: "3, 4", D: "2, 6" },
-          answer: "B",
-          image: null
+          "id": 1,
+          "question": "A business goal is a _____ that a business aims to achieve.",
+          "options": { "A": "problem", "B": "target", "C": "loss", "D": "debt" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 2,
-          question: "Which of the following is not a prime number?",
-          options: { A: "3", B: "5", C: "7", D: "9" },
-          answer: "D",
-          image: null
+          "id": 2,
+          "question": "Goals that are achievable within a short period, like one year, are called _____ goals.",
+          "options": { "A": "Long-term", "B": "Medium-term", "C": "Short-term", "D": "Lifetime" },
+          "answer": "C",
+          "image": null
         },
         {
-          id: 3,
-          question: "Find the highest common factor (H.C.F) of 20, 12 and 28.",
-          options: { A: "2", B: "4", C: "8", D: "12" },
-          answer: "A",
-          image: null
+          "id": 3,
+          "question": "For a goal to be effective, it must be Specific, Measurable, Achievable, Realistic, and _____.",
+          "options": { "A": "Time-bound", "B": "Temporary", "C": "Troublesome", "D": "Tall" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 4,
-          question: "Find the sum of 124.3, 0.275 and 74.06 (correct to one decimal place)",
-          options: { A: "198.6", B: "198.7", C: "892.0", D: "892.4" },
-          answer: "A",
-          image: null
+          "id": 4,
+          "question": "An example of a short-term business goal is to _____.",
+          "options": { "A": "build a new factory in five years", "B": "open a branch in another country in ten years", "C": "increase weekly sales by 10%", "D": "become a multinational company" },
+          "answer": "C",
+          "image": null
         },
         {
-          id: 5,
-          question: "What is the place value of 9 in the number 624.93?",
-          options: { A: "hundred", B: "tens", C: "units", D: "tenths" },
-          answer: "D",
-          image: null
+          "id": 5,
+          "question": "Setting clear goals helps a business to _____.",
+          "options": { "A": "waste resources", "B": "stay focused", "C": "confuse workers", "D": "lose direction" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 6,
-          question: "Find the lowest common multiple (L.C.M) of 4, 5 and 6",
-          options: { A: "20", B: "24", C: "30", D: "60" },
-          answer: "D",
-          image: null
+          "id": 6,
+          "question": "A written document that describes a business, its objectives, and how it plans to achieve them is a _____.",
+          "options": { "A": "Diary", "B": "Report", "C": "Business plan", "D": "Receipt" },
+          "answer": "C",
+          "image": null
         },
         {
-          id: 7,
-          question: "Evaluate 0.25 × 0.06, correct to three decimal places.",
-          options: { A: "0.001", B: "0.02", C: "0.015", D: "0.075" },
-          answer: "C",
-          image: null
+          "id": 7,
+          "question": "The section of a business plan that shows the expected income and expenses is the _____.",
+          "options": { "A": "Executive summary", "B": "Marketing plan", "C": "Financial plan", "D": "Company description" },
+          "answer": "C",
+          "image": null
         },
         {
-          id: 8,
-          question: "Express 1/8 as a decimal fraction",
-          options: { A: "0.125", B: "0.375", C: "0.625", D: "0.750" },
-          answer: "C",
-          image: null
+          "id": 8,
+          "question": "A business plan is important because it helps to _____.",
+          "options": { "A": "scare away investors", "B": "attract loans and investors", "C": "hide business ideas", "D": "confuse competitors" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 9,
-          question: "Simplify 3/4 − 1/2 + 1/3",
-          options: { A: "11/12", B: "7/12", C: "5/6", D: "1" },
-          answer: "B",
-          image: null
+          "id": 9,
+          "question": "The part of a business plan that describes the product or service and the problem it solves is the _____.",
+          "options": { "A": "Financial plan", "B": "Business description", "C": "Conclusion", "D": "Appendix" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 10,
-          question: "Express 2/5 as a decimal fraction",
-          options: { A: "0.4", B: "0.04", C: "0.004", D: "0.0004" },
-          answer: "B",
-          image: null
+          "id": 10,
+          "question": "A business plan serves as a _____ for the business.",
+          "options": { "A": "road map", "B": "problem", "C": "obstacle", "D": "burden" },
+          "answer": "A",
+          "image": null
         },
         {
-          id: 11,
-          question: "Correct 0.003858 to three significant figures.",
-          options: { A: "0.00385", B: "0.00386", C: "0.0039", D: "386" },
-          answer: "B",
-          image: null
+          "id": 11,
+          "question": "Agencies set up by the government to safeguard the rights of buyers are called consumer _____ agencies.",
+          "options": { "A": "exploitation", "B": "protection", "C": "deception", "D": "fraud" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 12,
-          question: "Evaluate 0.37 × 7",
-          options: { A: "0.259", B: "2.590", C: "25.900", D: "259.000" },
-          answer: "A",
-          image: null
+          "id": 12,
+          "question": "In Nigeria, the agency responsible for regulating and protecting food and drug products is _____.",
+          "options": { "A": "SON", "B": "NAFDAC", "C": "CPC", "D": "FRSC" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 13,
-          question: "Express 12/18 to its lowest term",
-          options: { A: "2", B: "2/3", C: "4/6", D: "1/3" },
-          answer: "C",
-          image: null
+          "id": 13,
+          "question": "The agency that ensures all manufactured products in Nigeria meet quality standards is _____.",
+          "options": { "A": "NAFDAC", "B": "SON (Standard Organization of Nigeria)", "C": "NDLEA", "D": "NPA" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 14,
-          question: "HELP = _____ (using code A=1, B=2 ... Z=26)",
-          options: { A: "7, 4, 8, 9", B: "10, 5, 9, 11", C: "8, 5, 12, 16", D: "4, 5, 6, 15" },
-          answer: "C",
-          image: null
+          "id": 14,
+          "question": "The Federal Competition and Consumer Protection Commission (FCCPC) is tasked with _____.",
+          "options": { "A": "building roads", "B": "protecting consumer rights", "C": "collecting taxes", "D": "training entrepreneurs" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 15,
-          question: "SIT = _____",
-          options: { A: "16, 17, 19", B: "5, 22, 1", C: "20, 14, 25", D: "19, 9, 20" },
-          answer: "D",
-          image: null
+          "id": 15,
+          "question": "A consumer protection agency helps to prevent _____.",
+          "options": { "A": "fair trade", "B": "honest advertising", "C": "exploitation and fake products", "D": "good business practices" },
+          "answer": "C",
+          "image": null
         },
         {
-          id: 16,
-          question: "FAITH = _____",
-          options: { A: "6, 1, 9, 20, 8", B: "20, 9, 8, 1, 6", C: "10, 12, 14, 16, 18", D: "1, 2, 3, 4, 5" },
-          answer: "A",
-          image: null
+          "id": 16,
+          "question": "The action a consumer takes to show they are not happy with a product or service is a _____.",
+          "options": { "A": "Praise", "B": "Complaint", "C": "Gift", "D": "Recommendation" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 17,
-          question: "SAVE = _____",
-          options: { A: "19, 2, 20, 5", B: "19, 1, 22, 5", C: "26, 12, 3, 5", D: "7, 8, 10, 11" },
-          answer: "B",
-          image: null
+          "id": 17,
+          "question": "When making a complaint, it is important to be _____.",
+          "options": { "A": "rude and aggressive", "B": "calm and polite", "C": "silent and passive", "D": "violent and threatening" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 18,
-          question: "2, 5, 14, 9, 14 = ______",
-          options: { A: "BENIN", B: "BAMIM", C: "BENAN", D: "BEMAM" },
-          answer: "A",
-          image: null
+          "id": 18,
+          "question": "The first step in making a complaint is usually to _____.",
+          "options": { "A": "go to the police", "B": "contact the seller or provider", "C": "burn the product", "D": "go to the media" },
+          "answer": "B",
+          "image": null
         },
         {
-          id: 19,
-          question: "13, 1, 14 = _____",
-          options: { A: "NAM", B: "MAP", C: "MAN", D: "PAM" },
-          answer: "C",
-          image: null
+          "id": 19,
+          "question": "The remedy a consumer gets for a faulty product or service is called _____.",
+          "options": { "A": "profit", "B": "interest", "C": "redress", "D": "discount" },
+          "answer": "C",
+          "image": null
         },
         {
-          id: 20,
-          question: "3, 18, 25 = _____",
-          options: { A: "CAP", B: "CRY", C: "CAN", D: "CAT" },
-          answer: "B",
-          image: null
+          "id": 20,
+          "question": "Getting a refund, replacement, or repair for a damaged product is an example of seeking _____.",
+          "options": { "A": "help", "B": "redress", "C": "trouble", "D": "friendship" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "If a seller refuses to give a refund for a faulty item, the consumer can seek help from a _____.",
+          "options": { "A": "friend", "B": "consumer protection agency", "C": "pastor", "D": "neighbour" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "The process of sending and receiving information between two or more people is _____.",
+          "options": { "A": "Transportation", "B": "Advertising", "C": "Communication", "D": "Production" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The person who sends the message is the _____.",
+          "options": { "A": "Receiver", "B": "Decoder", "C": "Sender", "D": "Barrier" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "The medium through which a message is sent, such as phone or letter, is the _____.",
+          "options": { "A": "Feedback", "B": "Channel", "C": "Noise", "D": "Context" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Communication that flows from a superior to a subordinate is _____ communication.",
+          "options": { "A": "Upward", "B": "Horizontal", "C": "Downward", "D": "Diagonal" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "A major barrier to effective communication is _____.",
+          "options": { "A": "using simple language", "B": "giving feedback", "C": "noise", "D": "listening carefully" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "The movement of people and goods from one place to another is _____.",
+          "options": { "A": "Communication", "B": "Transportation", "C": "Advertising", "D": "Banking" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "Which of the following is a mode of transportation?",
+          "options": { "A": "Air", "B": "Water", "C": "Land", "D": "All of the above" },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "Using a canoe or ship to move goods is an example of _____ transport.",
+          "options": { "A": "Land", "B": "Air", "C": "Water", "D": "Rail" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "The fastest mode of transportation is _____.",
+          "options": { "A": "Road", "B": "Rail", "C": "Air", "D": "Water" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "Transportation is important for business because it _____.",
+          "options": { "A": "increases the cost of goods", "B": "makes goods available to consumers", "C": "destroys goods", "D": "reduces demand" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "Any paid form of non-personal presentation of goods or services by an identified sponsor is _____.",
+          "options": { "A": "Salesmanship", "B": "Publicity", "C": "Advertising", "D": "Marketing" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "The main purpose of advertising is to _____.",
+          "options": { "A": "increase production costs", "B": "inform and persuade people to buy", "C": "confuse consumers", "D": "reduce sales" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "Advertising through newspapers and magazines is known as _____ media.",
+          "options": { "A": "Electronic", "B": "Print", "C": "Outdoor", "D": "Broadcast" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "Billboards and posters are examples of _____ advertising.",
+          "options": { "A": "Print", "B": "Electronic", "C": "Outdoor", "D": "Online" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "A radio or television advert is an example of _____ media.",
+          "options": { "A": "Print", "B": "Electronic", "C": "Outdoor", "D": "Direct mail" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "Machines and tools used in an office to carry out clerical work are called office _____.",
+          "options": { "A": "Furniture", "B": "Equipment", "C": "Stationery", "D": "Building" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "A computer, printer, and scanner are examples of _____ office equipment.",
+          "options": { "A": "Manual", "B": "Electrical/Electronic", "C": "Heavy", "D": "Simple" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "A stapler, hole puncher, and paper clips are classified as _____.",
+          "options": { "A": "Machines", "B": "Small office equipment/Stationery", "C": "Furniture", "D": "Fixtures" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "The equipment used for sealing letters and documents is a _____.",
+          "options": { "A": "Perforator", "B": "Stapler", "C": "Sealing machine", "D": "Guillotine" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "A duplicating machine is used for _____.",
+          "options": { "A": "destroying documents", "B": "making copies of documents", "C": "filing documents", "D": "signing documents" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "The accepted way or routine of carrying out work in an office is called office _____.",
+          "options": { "A": "Equipment", "B": "Furniture", "C": "Procedure", "D": "Politics" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "Having a set office procedure helps to ensure _____.",
+          "options": { "A": "chaos and confusion", "B": "efficiency and order", "C": "delay and waste", "D": "conflict" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "The first step in a typical office procedure for handling mail is _____.",
+          "options": { "A": "Opening", "B": "Sorting", "C": "Receiving/Collecting", "D": "Dispatching" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "The process of arranging items in a systematic order for easy reference is called _____.",
+          "options": { "A": "Stamping", "B": "Filing", "C": "Shredding", "D": "Copying" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "A file that contains documents related to a specific subject is a _____ file.",
+          "options": { "A": "Personal", "B": "Subject", "C": "Chronological", "D": "Lateral" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "The document used to record all incoming and outgoing mail is the _____.",
+          "options": { "A": "Diary", "B": "Ledger", "C": "Mail register", "D": "Invoice" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "The process of sending out mail from an organization is called _____.",
+          "options": { "A": "Inward mail", "B": "Outward mail", "C": "Filing", "D": "Sorting" },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "A well-planned office procedure reduces _____.",
+          "options": { "A": "efficiency", "B": "productivity", "C": "waste of time and resources", "D": "profit" },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "The final stage in an office procedure for outward mail is usually _____.",
+          "options": { "A": "stamping", "B": "folding and enclosing", "C": "dispatching", "D": "recording" },
+          "answer": "C",
+          "image": null
         }
 ];
 
 
         const staticTheoryQuestions = [
-      {
-        id: 1,
-        question: "Express the following in words: (i): 40037 (ii): 208045 (iii): 1000009", 
-      
-        marks: 10,
-        image: null
-      },
-      {
-        id: 2,
-        question: "Use the number line to solve the following: (i): +2 + 5 = ___ (ii): +6 - 3 = ___ (iii): -5 + 3 = ___",
-        marks: 10,
-        image: null
-      },
-      {
-        id: 3,
-        question: "Answer the following: (i): Find the H.C.F of 9, 12, 18 (ii): Find the L.C.M of 10, 20, 30",  
-        marks: 10,
-        image: null
-      },
-      {
-        id: 4,
-        question: "Convert the following to base 10: (i): 11011₂ to base 10   (ii): 121₃ to base 10", 
-        marks: 10,
-        image: null
-      },
-      {
-        id: 5,
-        question: "Simplify the expression: i: ( 3/4 ÷ 1/2 ) + ( 5/6 + 1/3 )",    
-        marks: 10,
-        image: null
-      }
+            {
+              "id": 1,
+              "question": "Describe simple business goals and what is the strength of a publishing business.",
+              "marks": null,
+              "image": null
+            },
+            {
+              "id": 2,
+              "question": "Define a business plan and three procedures for drawing a simple single business plan.",
+              "marks": null,
+              "image": null
+            },
+            {
+              "id": 3,
+              "question": "State the reasons why consumer protection agencies are needed.",
+              "marks": null,
+              "image": null
+            },
+            {
+              "id": 4,
+              "question": "What is justified and unjustified complaints?",
+              "marks": null,
+              "image": null
+            },
+            {
+              "id": 5,
+              "question": "Define consumer right and state way of seeking redress by consumers.",
+              "marks": null,
+              "image": null
+            }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
