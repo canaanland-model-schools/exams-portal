@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CHRISIAN RELIGIOUS STUDIES Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - MATHEMATICS Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -512,7 +512,12 @@
         </div>
         <div id="logo">
             <img src="img/Ctemplogo.png" alt="COLLEGE CBT PORTAL">
+
         </div>
+
+           
+            
+
         <div id="student-info">
             <center><strong>ATTENTION! CLICK ON SUBMIT BUTTON BEFORE YOUR TIME IS UP TO SAVE YOUR SCORE</strong></center>
             <center><p id="datetime"></p></center>
@@ -525,12 +530,7 @@
           <h2 id="username">Student Name</h2>
            </div>
 
-        <!--<img id="userImage" src="img/default_user.jpg" alt="Student Image" style="width:120px; height:120px; border-radius:50%; border:3px solid #008000; display:block; margin:0 auto;">
-      
-            <center><img id="userImage"><br><br></center>
-             <img id="userImage" src="img/default_user.jpg" alt="Student Image">
-            <center>Hello: <span id="userName"></span></center>
-        </div>-->
+     
 
     
         <center><h3>CANAANLAND  GROUP OF SCHOOLS EKUTE QUARTERS  ADO EKITI </h3></center> 
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CHRISIAN RELIGIOUS STUDIES - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  MATHEMATICS - JSS1 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,406 +624,652 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                      {
-    "id": 1,
-    "question": "The smallest unit of society is the __.",
-    "options": { "A": "church", "B": "community", "C": "family", "D": "school" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "A family made up of father, mother, and children is called __.",
-    "options": { "A": "extended family", "B": "nuclear family", "C": "large family", "D": "royal family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A family that includes grandparents, uncles, and cousins is called __.",
-    "options": { "A": "nuclear family", "B": "extended family", "C": "compound family", "D": "village family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "God created the first family with __.",
-    "options": { "A": "Abraham and Sarah", "B": "Adam and Eve", "C": "Isaac and Rebekah", "D": "Joseph and Mary" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "One importance of the family is to teach __.",
-    "options": { "A": "disobedience", "B": "bad habits", "C": "values and morals", "D": "fighting" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "According to Ephesians 6:1, children should __ their parents.",
-    "options": { "A": "insult", "B": "obey", "C": "avoid", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "The head of the family is usually the __.",
-    "options": { "A": "mother", "B": "father", "C": "teacher", "D": "pastor" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "Parents are expected to __ their children.",
-    "options": { "A": "abandon", "B": "train", "C": "ignore", "D": "hate" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A good family name means having a good __.",
-    "options": { "A": "reputation", "B": "house", "C": "job", "D": "clothes" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "According to Proverbs 22:1, a good name is better than __.",
-    "options": { "A": "silver", "B": "money", "C": "great riches", "D": "land" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "A place where teaching and learning take place is the __.",
-    "options": { "A": "market", "B": "church", "C": "school", "D": "village" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The head of a school is called the __.",
-    "options": { "A": "teacher", "B": "principal", "C": "prefect", "D": "student" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Students in a school are also called __.",
-    "options": { "A": "workers", "B": "learners", "C": "traders", "D": "farmers" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "Choosing good friends in school helps students to __.",
-    "options": { "A": "misbehave", "B": "succeed", "C": "steal", "D": "cheat" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A good friend will always __.",
-    "options": { "A": "encourage good behavior", "B": "encourage stealing", "C": "encourage fighting", "D": "encourage cheating" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "A bad friend can lead someone into __.",
-    "options": { "A": "success", "B": "good behavior", "C": "trouble", "D": "blessings" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "According to the Bible, David was a friend of __.",
-    "options": { "A": "Saul", "B": "Jonathan", "C": "Peter", "D": "James" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "Friendship between David and Jonathan is found in __.",
-    "options": { "A": "1 Samuel 18:1–5", "B": "Genesis 1", "C": "Exodus 2", "D": "Matthew 5" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Good friends help us to __.",
-    "options": { "A": "do wrong", "B": "behave well", "C": "break rules", "D": "fight others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Students must respect their __ in school.",
-    "options": { "A": "teachers", "B": "enemies", "C": "strangers", "D": "neighbors" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Friendship means __.",
-    "options": { "A": "hatred between people", "B": "love and understanding between people", "C": "quarrelling", "D": "cheating others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "A good friend will __ you when you are wrong.",
-    "options": { "A": "ignore", "B": "correct", "C": "insult", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "One consequence of bad friends is __.",
-    "options": { "A": "good character", "B": "progress", "C": "punishment", "D": "success" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Bad friends may lead someone into __.",
-    "options": { "A": "stealing", "B": "obedience", "C": "honesty", "D": "respect" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "The Bible advises us to avoid __ friends.",
-    "options": { "A": "good", "B": "wise", "C": "bad", "D": "helpful" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "A community is a group of people living in the same __.",
-    "options": { "A": "country", "B": "area", "C": "school", "D": "church" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "The leader of a community may be called a __.",
-    "options": { "A": "chief", "B": "teacher", "C": "doctor", "D": "student" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "One way of sustaining good relationships in the community is __.",
-    "options": { "A": "fighting", "B": "cooperation", "C": "stealing", "D": "hatred" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Respecting community leaders helps to maintain __.",
-    "options": { "A": "disorder", "B": "peace", "C": "trouble", "D": "confusion" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Community members should live in __.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "pride" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Helping one another in the community shows __.",
-    "options": { "A": "wickedness", "B": "selfishness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "Fighting in the community can lead to __.",
-    "options": { "A": "peace", "B": "conflict", "C": "unity", "D": "joy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "A good community encourages __.",
-    "options": { "A": "cooperation", "B": "hatred", "C": "jealousy", "D": "selfishness" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "One duty of community members is to __ laws.",
-    "options": { "A": "break", "B": "obey", "C": "ignore", "D": "reject" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "Peace in the community promotes __.",
-    "options": { "A": "development", "B": "poverty", "C": "confusion", "D": "destruction" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "The church is a place where Christians __.",
-    "options": { "A": "trade", "B": "play", "C": "worship God", "D": "sleep" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Members of the church are called __.",
-    "options": { "A": "believers", "B": "strangers", "C": "enemies", "D": "traders" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Fellowship in the church means __.",
-    "options": { "A": "hatred among members", "B": "unity among believers", "C": "fighting in church", "D": "ignoring others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "The leader of a church may be called a __.",
-    "options": { "A": "teacher", "B": "pastor", "C": "student", "D": "driver" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "Christians should live in __ with one another.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "anger" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "One importance of fellowship in the church is to __.",
-    "options": { "A": "build faith", "B": "create division", "C": "cause quarrels", "D": "spread hatred" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Christians are expected to __ one another.",
-    "options": { "A": "hate", "B": "fight", "C": "love", "D": "avoid" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "Helping members in the church shows __.",
-    "options": { "A": "selfishness", "B": "wickedness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "The church teaches people to __ God.",
-    "options": { "A": "ignore", "B": "disobey", "C": "worship", "D": "fight" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Unity in the church promotes __.",
-    "options": { "A": "growth", "B": "confusion", "C": "hatred", "D": "jealousy" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "A person who leads others spiritually in the church is a __.",
-    "options": { "A": "pastor", "B": "teacher", "C": "trader", "D": "farmer" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "Respect for elders shows good __.",
-    "options": { "A": "behavior", "B": "pride", "C": "anger", "D": "disobedience" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "Children who obey their parents receive __.",
-    "options": { "A": "punishment", "B": "blessings", "C": "trouble", "D": "shame" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Living peacefully with others shows __.",
-    "options": { "A": "wickedness", "B": "good character", "C": "pride", "D": "jealousy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Christians should always show __ to others.",
-    "options": { "A": "hatred", "B": "anger", "C": "love", "D": "jealousy" },
-    "answer": "C",
-    "image": null
-  }
+     {
+          "id": 1,
+          "question": "What is the sum of ¾ and ⅔?",
+          "options": {
+            "A": "1 5/12",
+            "B": "1 ¼",
+            "C": "1 ⅓",
+            "D": "1 ½"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Subtract 5/8 from 1 ½.",
+          "options": {
+            "A": "1 ⅛",
+            "B": "1 ⅜",
+            "C": "⅞",
+            "D": "1"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "The product of 2/5 and 3/4 is ______.",
+          "options": {
+            "A": "3/10",
+            "B": "5/9",
+            "C": "6/20",
+            "D": "8/15"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "Divide ¾ by ½.",
+          "options": {
+            "A": "1 ½",
+            "B": "1 ¼",
+            "C": "2",
+            "D": "3/8"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Round 567.389 to the nearest whole number.",
+          "options": {
+            "A": "567",
+            "B": "568",
+            "C": "567.4",
+            "D": "567.39"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "How many significant figures are in 0.0405?",
+          "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "5"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "The binary number 1011₂ is equal to ______ in base ten.",
+          "options": {
+            "A": "9",
+            "B": "10",
+            "C": "11",
+            "D": "12"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Add 101₂ and 110₂.",
+          "options": {
+            "A": "1001₂",
+            "B": "1011₂",
+            "C": "1101₂",
+            "D": "1111₂"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "Subtract 101₂ from 1110₂.",
+          "options": {
+            "A": "1001₂",
+            "B": "1101₂",
+            "C": "1011₂",
+            "D": "111₂"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "Multiply 101₂ by 11₂.",
+          "options": {
+            "A": "1111₂",
+            "B": "1101₂",
+            "C": "1010₂",
+            "D": "1001₂"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "In the expression 5x + 3y, the coefficient of y is ______.",
+          "options": {
+            "A": "5",
+            "B": "3",
+            "C": "x",
+            "D": "y"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Simplify: 2a + 3b + a – b.",
+          "options": {
+            "A": "3a + 2b",
+            "B": "3a + 4b",
+            "C": "a + 2b",
+            "D": "5ab"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "Expand: 3(x + 4).",
+          "options": {
+            "A": "3x + 4",
+            "B": "3x + 12",
+            "C": "x + 12",
+            "D": "7x"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Collect like terms: 5p – 2q + p + 4q.",
+          "options": {
+            "A": "6p + 2q",
+            "B": "6p – 2q",
+            "C": "4p + 2q",
+            "D": "5p + 6q"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "Solve: x + 7 = 15.",
+          "options": {
+            "A": "8",
+            "B": "22",
+            "C": "9",
+            "D": "10"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "If 3y = 27, then y = ______.",
+          "options": {
+            "A": "9",
+            "B": "24",
+            "C": "30",
+            "D": "81"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "An angle less than 90° is called ______.",
+          "options": {
+            "A": "obtuse",
+            "B": "reflex",
+            "C": "acute",
+            "D": "right"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "The sum of angles on a straight line is ______.",
+          "options": {
+            "A": "90°",
+            "B": "180°",
+            "C": "360°",
+            "D": "270°"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "Calculate the perimeter of a rectangle of length 8 cm and width 5 cm.",
+          "options": {
+            "A": "13 cm",
+            "B": "26 cm",
+            "C": "40 cm",
+            "D": "30 cm"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "The area of a square of side 6 m is ______.",
+          "options": {
+            "A": "12 m²",
+            "B": "24 m²",
+            "C": "36 m²",
+            "D": "30 m²"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "The mean of 4, 6, 8, and 10 is ______.",
+          "options": {
+            "A": "7",
+            "B": "8",
+            "C": "9",
+            "D": "10"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "The mode of 2, 3, 4, 3, 5, 3 is ______.",
+          "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "5"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "Which is the smallest fraction?",
+          "options": {
+            "A": "2/3",
+            "B": "3/5",
+            "C": "5/8",
+            "D": "1/2"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "0.25 as a fraction in its lowest terms is ______.",
+          "options": {
+            "A": "1/4",
+            "B": "25/100",
+            "C": "1/25",
+            "D": "5/20"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "The place value of 7 in 3.076 is ______.",
+          "options": {
+            "A": "tenths",
+            "B": "hundredths",
+            "C": "thousandths",
+            "D": "tens"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "3/8 × 4/9 = ______.",
+          "options": {
+            "A": "1/6",
+            "B": "12/72",
+            "C": "7/17",
+            "D": "1/3"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "Express 0.375 as a fraction.",
+          "options": {
+            "A": "3/8",
+            "B": "375/1000",
+            "C": "3/4",
+            "D": "5/8"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "Which of these is an algebraic expression?",
+          "options": {
+            "A": "5 + 3 = 8",
+            "B": "2x – 7",
+            "C": "9 > 5",
+            "D": "πr²"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "Simplify: 4a × 3b.",
+          "options": {
+            "A": "7ab",
+            "B": "12ab",
+            "C": "12a",
+            "D": "12b"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "If a = 3 and b = 2, find a² + b².",
+          "options": {
+            "A": "5",
+            "B": "13",
+            "C": "10",
+            "D": "25"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "Convert 25₁₀ to base two.",
+          "options": {
+            "A": "11001₂",
+            "B": "11101₂",
+            "C": "10101₂",
+            "D": "10011₂"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "The complement of 35° is ______.",
+          "options": {
+            "A": "145°",
+            "B": "55°",
+            "C": "65°",
+            "D": "45°"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "How many degrees are in a right angle?",
+          "options": {
+            "A": "45°",
+            "B": "90°",
+            "C": "180°",
+            "D": "360°"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "A triangle with all sides equal is called ______.",
+          "options": {
+            "A": "isosceles",
+            "B": "scalene",
+            "C": "equilateral",
+            "D": "right-angled"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "Find the area of a triangle with base 10 cm and height 4 cm.",
+          "options": {
+            "A": "20 cm²",
+            "B": "40 cm²",
+            "C": "14 cm²",
+            "D": "25 cm²"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "The perimeter of a square of side 9 cm is ______.",
+          "options": {
+            "A": "18 cm",
+            "B": "27 cm",
+            "C": "36 cm",
+            "D": "81 cm"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "The median of 5, 8, 3, 9, 2 is ______.",
+          "options": {
+            "A": "5",
+            "B": "8",
+            "C": "3",
+            "D": "9"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "A pie chart represents data in ______.",
+          "options": {
+            "A": "bars",
+            "B": "sectors",
+            "C": "lines",
+            "D": "columns"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "Which is the largest 3-digit number?",
+          "options": {
+            "A": "999",
+            "B": "100",
+            "C": "990",
+            "D": "109"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "Estimate 148 + 63 by rounding to the nearest ten.",
+          "options": {
+            "A": "200",
+            "B": "210",
+            "C": "220",
+            "D": "230"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "7.2 ÷ 0.6 = ______.",
+          "options": {
+            "A": "1.2",
+            "B": "12",
+            "C": "0.12",
+            "D": "120"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "The next number in the sequence 3, 6, 9, 12, … is ______.",
+          "options": {
+            "A": "15",
+            "B": "18",
+            "C": "21",
+            "D": "24"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "5² – 3² = ______.",
+          "options": {
+            "A": "4",
+            "B": "16",
+            "C": "34",
+            "D": "8"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "Find the value of 2x + 5 when x = 4.",
+          "options": {
+            "A": "9",
+            "B": "13",
+            "C": "18",
+            "D": "40"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "A prime number between 10 and 20 is ______.",
+          "options": {
+            "A": "14",
+            "B": "15",
+            "C": "17",
+            "D": "21"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "The HCF of 12 and 18 is ______.",
+          "options": {
+            "A": "3",
+            "B": "6",
+            "C": "9",
+            "D": "12"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "The LCM of 4 and 5 is ______.",
+          "options": {
+            "A": "10",
+            "B": "20",
+            "C": "30",
+            "D": "40"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "If ¼ of a number is 7, the number is ______.",
+          "options": {
+            "A": "21",
+            "B": "24",
+            "C": "28",
+            "D": "35"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "30% of ₦500 is ______.",
+          "options": {
+            "A": "₦100",
+            "B": "₦150",
+            "C": "₦200",
+            "D": "₦250"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Which is a measure of central tendency?",
+          "options": {
+            "A": "Range",
+            "B": "Median",
+            "C": "Sum",
+            "D": "Product"
+          },
+          "answer": "B",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-
-
-                                                               {
-                                "id": 1,
-                                "question": "a. What is repentance? \n\n b. Narrate the story of David’s repentance as recorded in 2 Samuel 12:7–13. \n\n c. Mention two lessons Christians can learn from David’s repentance.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 2,
-                                "question": "a. Who was Jonah? \n\n b. Describe how the people of Nineveh responded to Jonah’s message (Jonah 3:1–10). \n\n c. State two importance of repentance in a Christian’s life.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 3,
-                                "question": "a. Define obedience. \n\n b. Outline God’s call to Abraham in Genesis 12:1–9. \n\n c. Explain two blessings Abraham received for his obedience.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 4,
-                                "question": "a. Who was Zacchaeus? \n\n b. How did Jesus’ visit change Zacchaeus’ life? (Luke 19:1–10) \n\n c. What are two consequences of refusing to repent?",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 5,
-                                "question": "a. What does 'call to service' mean? \n\n b. Using Joseph as an example, explain how faithfulness in service can lead to promotion. \n\n c. Identify two problems people face in serving God and others.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 6,
-                                "question": "a. Mention two qualities of Ruth that made her a good example of service. \n\n b. How did Boaz show kindness to Ruth? (Ruth 2) \n\n c. Give two reasons why Christians should serve one another.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 7,
-                                "question": "a. Relate the story of Abraham’s sacrifice of Isaac (Genesis 22:1–19). \n\n b. What two lessons can be learned from this story? \n\n c. How can a JSS 1 student show obedience at home and in school?",
-                                "marks": 10,
-                                "image": null
-                              }
-                                  
-      
+                                     {
+                                    id: 1,
+                                    question: "Simplify \na. (i) 2⅔ + 1¾\n(ii) 3½ ÷ 1¼ \n b. A farmer has 5½ hectares of land. He plants maize on ⅔ of it. How many hectares are left for other crops? \n c. Round 6.4783 to\n (i) 2 decimal places\n(ii) 3 significant figures",
+                                    marks: 10,
+                                    image: null
+                                  },
+                                  {
+                                    id: 2,
+                                    question: "Convert \n a. (i) 29₁₀ to base two\n(ii) 11011₂ to base ten \n b.Perform The Followiong Binary Operation\n (i) 111₂ + 101₂\n(ii) 1001₂ – 110₂ \n c. Multiply 1011₂ by 101₂.",
+                                    marks: 10,
+                                    image: null
+                                  },
+                                  {
+                                    id: 3,
+                                    question: "Simplify\n a. (i) 4x + 3y – 2x + 5y\n(ii) 2(3a – 4b) + 5(a + b) \n b. If p = 5 and q = 2, evaluate:\n (i) 3p² – 2q\n(ii) (p + q)(p – q) \n c.solve\n (i) 2x – 7 = 15\n(ii) ¾ y = 12",
+                                    marks: 10,
+                                    image: null
+                                  },
+                                  {
+                                    id: 4,
+                                    question: "a. In a class of 48 students, ¼ are boys. How many are girls? \n b. Mr. Ojo bought 8.5 kg of rice at ₦320 per kg. How much change did he get from ₦3,000? \n c. Find the mean and median of: 12, 8, 15, 10, 13, 11, 14.",
+                                    marks: 10,
+                                    image: null
+                                  },
+                                  {
+                                    id: 5,
+                                    question: "a. Calculate the perimeter of a rectangular garden of length 15 m and width 9 m. \n b. Find the area of a triangle with base 14 cm and height 6 cm. \n c. An angle is 25° more than its complement. Find the angle.",
+                                    marks: 10,
+                                    image: null
+                                  },
+                                  {
+                                    id: 6,
+                                    question: "a. Estimate the product of 47 and 32 by rounding each to the nearest ten. \n b. A bag contains 12 red balls, 8 blue balls, and 5 green balls. What fraction of the balls are blue? \n c. Simplify: ⅗ of (2½ + 1¼)",
+                                    marks: 10,
+                                    image: null
+                                  },
+                                  {
+                                    id: 7,
+                                    question: "a. If 5 books cost ₦2,500, how much will 9 of the same books cost? \n b. The sum of three consecutive numbers is 63. Find the numbers. \n c. Find the value of: 0.2 × 0.3 ÷ 0.02",
+                                    marks: 10,
+                                    image: null
+                                  }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -1079,8 +1325,10 @@
                   document.getElementById('username').innerText = username;
                   
               
-                document.getElementById('userImage').src =
-              (sessionStorage.getItem('image') || 'img/default_user.jpg');
+                //document.getElementById('userImage').src =
+              //'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');
+
+              document.getElementById('userImage').src = sessionStorage.getItem('image') || 'img/default_user.jpg';
                 }
            
             // Load static questions
@@ -1100,7 +1348,7 @@
         };
        
         // ================== TIMER ==================
-        let timeLeft = 60 * 60; // 60 minutes
+        let timeLeft = 60 * 90; // 60 minutes
         const timerEl = document.getElementById('timer');
         const timerInterval = setInterval(() => {
             let min = Math.floor(timeLeft / 60);
@@ -1384,7 +1632,7 @@
                     window.location.href = "results.html";
         }*/
 
-            function showResult() {
+            /*function showResult() {
 				    clearInterval(timerInterval);
 				    let score = 0;
 				    questions.forEach((q, i) => {
@@ -1441,7 +1689,76 @@
 				    
 				    alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
 				    window.location.href = "results.html";
-				}
+				}*/
+                function showResult() {
+                        clearInterval(timerInterval);
+                        let score = 0;
+                        questions.forEach((q, i) => {
+                            if (userAnswers[i] === q.answer) score++;
+                        });
+                        
+                        const username = sessionStorage.getItem('username') || "Guest";
+                        const cls = sessionStorage.getItem('class');
+                        const sub = sessionStorage.getItem('subject');
+                        
+                        localStorage.setItem("examUser", username);
+                        localStorage.setItem("examScore", score);
+                        localStorage.setItem("totalQuestions", questions.length);
+                        localStorage.setItem("pendingClass", cls);
+                        localStorage.setItem("pendingSubject", sub);
+                        localStorage.setItem("pendingUsername", username);
+                        
+                        // Get exam info from sessionStorage or use default
+                        const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
+                        localStorage.setItem("examInfo", examInfo);
+                        
+                        // ✅ Build a clean record for history (to be used by records.html)
+                        const record = {
+                            username: username,
+                            class: cls,
+                            subject: sub,
+                            score: score,
+                            totalQuestions: questions.length,
+                            percentage: ((score / questions.length) * 100).toFixed(2) + '%',
+                            examInfo: examInfo,
+                            timestamp: new Date().toISOString()
+                        };
+                        
+                        // ✅ Save this attempt to localStorage (creates/updates examRecords array)
+                        let records = JSON.parse(localStorage.getItem('examRecords') || '[]');
+                        records.push(record);
+                        localStorage.setItem('examRecords', JSON.stringify(records));
+                        
+                        // ✅ Secretly download score details to downloads folder
+                        const scoreDetails = {
+                            ...record,
+                            userAnswers: userAnswers,
+                            correctAnswers: questions.map(q => q.answer)
+                        };
+                        
+                        // Create a blob with the data
+                        const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
+                        const url = URL.createObjectURL(blob);
+                        
+                        // Create a hidden anchor element and trigger download
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = `exam_results_${username}_${new Date().getTime()}.json`;
+                        a.style.display = 'none';
+                        document.body.appendChild(a);
+                        a.click();
+                        
+                        // Clean up
+                        document.body.removeChild(a);
+                        URL.revokeObjectURL(url);
+                        
+                        // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
+                        console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
+                        
+                        alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
+                        window.location.href = "results.html";
+                    }
+
 
 
 

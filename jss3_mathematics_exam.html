@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CHRISIAN RELIGIOUS STUDIES Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - MATHEMATICS Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CHRISIAN RELIGIOUS STUDIES - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  MATHEMATICS - JSS3 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,406 +624,297 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                      {
-    "id": 1,
-    "question": "The smallest unit of society is the __.",
-    "options": { "A": "church", "B": "community", "C": "family", "D": "school" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "A family made up of father, mother, and children is called __.",
-    "options": { "A": "extended family", "B": "nuclear family", "C": "large family", "D": "royal family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A family that includes grandparents, uncles, and cousins is called __.",
-    "options": { "A": "nuclear family", "B": "extended family", "C": "compound family", "D": "village family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "God created the first family with __.",
-    "options": { "A": "Abraham and Sarah", "B": "Adam and Eve", "C": "Isaac and Rebekah", "D": "Joseph and Mary" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "One importance of the family is to teach __.",
-    "options": { "A": "disobedience", "B": "bad habits", "C": "values and morals", "D": "fighting" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "According to Ephesians 6:1, children should __ their parents.",
-    "options": { "A": "insult", "B": "obey", "C": "avoid", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "The head of the family is usually the __.",
-    "options": { "A": "mother", "B": "father", "C": "teacher", "D": "pastor" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "Parents are expected to __ their children.",
-    "options": { "A": "abandon", "B": "train", "C": "ignore", "D": "hate" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A good family name means having a good __.",
-    "options": { "A": "reputation", "B": "house", "C": "job", "D": "clothes" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "According to Proverbs 22:1, a good name is better than __.",
-    "options": { "A": "silver", "B": "money", "C": "great riches", "D": "land" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "A place where teaching and learning take place is the __.",
-    "options": { "A": "market", "B": "church", "C": "school", "D": "village" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The head of a school is called the __.",
-    "options": { "A": "teacher", "B": "principal", "C": "prefect", "D": "student" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Students in a school are also called __.",
-    "options": { "A": "workers", "B": "learners", "C": "traders", "D": "farmers" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "Choosing good friends in school helps students to __.",
-    "options": { "A": "misbehave", "B": "succeed", "C": "steal", "D": "cheat" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A good friend will always __.",
-    "options": { "A": "encourage good behavior", "B": "encourage stealing", "C": "encourage fighting", "D": "encourage cheating" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "A bad friend can lead someone into __.",
-    "options": { "A": "success", "B": "good behavior", "C": "trouble", "D": "blessings" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "According to the Bible, David was a friend of __.",
-    "options": { "A": "Saul", "B": "Jonathan", "C": "Peter", "D": "James" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "Friendship between David and Jonathan is found in __.",
-    "options": { "A": "1 Samuel 18:1–5", "B": "Genesis 1", "C": "Exodus 2", "D": "Matthew 5" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Good friends help us to __.",
-    "options": { "A": "do wrong", "B": "behave well", "C": "break rules", "D": "fight others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Students must respect their __ in school.",
-    "options": { "A": "teachers", "B": "enemies", "C": "strangers", "D": "neighbors" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Friendship means __.",
-    "options": { "A": "hatred between people", "B": "love and understanding between people", "C": "quarrelling", "D": "cheating others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "A good friend will __ you when you are wrong.",
-    "options": { "A": "ignore", "B": "correct", "C": "insult", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "One consequence of bad friends is __.",
-    "options": { "A": "good character", "B": "progress", "C": "punishment", "D": "success" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Bad friends may lead someone into __.",
-    "options": { "A": "stealing", "B": "obedience", "C": "honesty", "D": "respect" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "The Bible advises us to avoid __ friends.",
-    "options": { "A": "good", "B": "wise", "C": "bad", "D": "helpful" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "A community is a group of people living in the same __.",
-    "options": { "A": "country", "B": "area", "C": "school", "D": "church" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "The leader of a community may be called a __.",
-    "options": { "A": "chief", "B": "teacher", "C": "doctor", "D": "student" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "One way of sustaining good relationships in the community is __.",
-    "options": { "A": "fighting", "B": "cooperation", "C": "stealing", "D": "hatred" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Respecting community leaders helps to maintain __.",
-    "options": { "A": "disorder", "B": "peace", "C": "trouble", "D": "confusion" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Community members should live in __.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "pride" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Helping one another in the community shows __.",
-    "options": { "A": "wickedness", "B": "selfishness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "Fighting in the community can lead to __.",
-    "options": { "A": "peace", "B": "conflict", "C": "unity", "D": "joy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "A good community encourages __.",
-    "options": { "A": "cooperation", "B": "hatred", "C": "jealousy", "D": "selfishness" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "One duty of community members is to __ laws.",
-    "options": { "A": "break", "B": "obey", "C": "ignore", "D": "reject" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "Peace in the community promotes __.",
-    "options": { "A": "development", "B": "poverty", "C": "confusion", "D": "destruction" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "The church is a place where Christians __.",
-    "options": { "A": "trade", "B": "play", "C": "worship God", "D": "sleep" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Members of the church are called __.",
-    "options": { "A": "believers", "B": "strangers", "C": "enemies", "D": "traders" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Fellowship in the church means __.",
-    "options": { "A": "hatred among members", "B": "unity among believers", "C": "fighting in church", "D": "ignoring others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "The leader of a church may be called a __.",
-    "options": { "A": "teacher", "B": "pastor", "C": "student", "D": "driver" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "Christians should live in __ with one another.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "anger" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "One importance of fellowship in the church is to __.",
-    "options": { "A": "build faith", "B": "create division", "C": "cause quarrels", "D": "spread hatred" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Christians are expected to __ one another.",
-    "options": { "A": "hate", "B": "fight", "C": "love", "D": "avoid" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "Helping members in the church shows __.",
-    "options": { "A": "selfishness", "B": "wickedness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "The church teaches people to __ God.",
-    "options": { "A": "ignore", "B": "disobey", "C": "worship", "D": "fight" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Unity in the church promotes __.",
-    "options": { "A": "growth", "B": "confusion", "C": "hatred", "D": "jealousy" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "A person who leads others spiritually in the church is a __.",
-    "options": { "A": "pastor", "B": "teacher", "C": "trader", "D": "farmer" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "Respect for elders shows good __.",
-    "options": { "A": "behavior", "B": "pride", "C": "anger", "D": "disobedience" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "Children who obey their parents receive __.",
-    "options": { "A": "punishment", "B": "blessings", "C": "trouble", "D": "shame" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Living peacefully with others shows __.",
-    "options": { "A": "wickedness", "B": "good character", "C": "pride", "D": "jealousy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Christians should always show __ to others.",
-    "options": { "A": "hatred", "B": "anger", "C": "love", "D": "jealousy" },
-    "answer": "C",
-    "image": null
-  }
+                             {
+                              "id": 1,
+                              "question": "The solution to the pair of equations 2x + y = 7 and x - y = 2 is:",
+                              "options": {
+                                "A": "(3,1)",
+                                "B": "(1,3)",
+                                "C": "(4,2)",
+                                "D": "(2,4)"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 2,
+                              "question": "If 3x - 2y = 10 and x + 2y = 6, the value of y is:",
+                              "options": {
+                                "A": "1",
+                                "B": "2",
+                                "C": "3",
+                                "D": "4"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 3,
+                              "question": "The method of solving simultaneous equations by removing one variable is called:",
+                              "options": {
+                                "A": "Substitution method",
+                                "B": "Graphical method",
+                                "C": "Elimination method",
+                                "D": "Comparison method"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 4,
+                              "question": "In graphical method, the solution of two simultaneous equations is represented by:",
+                              "options": {
+                                "A": "The x-intercept",
+                                "B": "The y-intercept",
+                                "C": "The point of intersection of the two lines",
+                                "D": "The slope of the lines"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 5,
+                              "question": "Two triangles are similar if their corresponding angles are:",
+                              "options": {
+                                "A": "Complementary",
+                                "B": "Supplementary",
+                                "C": "Equal",
+                                "D": "Unequal"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 6,
+                              "question": "If a shape is enlarged by a scale factor of 3, the area of the image is ____ times the area of the object.",
+                              "options": {
+                                "A": "3",
+                                "B": "6",
+                                "C": "9",
+                                "D": "12"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 7,
+                              "question": "A map scale is 1:50000. What distance in km does 4cm on the map represent?",
+                              "options": {
+                                "A": "2 km",
+                                "B": "2.5 km",
+                                "C": "3 km",
+                                "D": "20 km"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 8,
+                              "question": "The area of a triangle with base 10cm and height 6cm is:",
+                              "options": {
+                                "A": "30 cm²",
+                                "B": "60 cm²",
+                                "C": "16 cm²",
+                                "D": "20 cm²"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 9,
+                              "question": "The formula for the area of a trapezium is:",
+                              "options": {
+                                "A": "½(a + b)h",
+                                "B": "πr²",
+                                "C": "base × height",
+                                "D": "½ × base × height"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 10,
+                              "question": "The area of a circle of radius 7cm is (take π = 22/7):",
+                              "options": {
+                                "A": "44 cm²",
+                                "B": "154 cm²",
+                                "C": "22 cm²",
+                                "D": "308 cm²"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 11,
+                              "question": "A sector of a circle of radius 14cm subtends an angle of 90° at the centre. Its area is:",
+                              "options": {
+                                "A": "154 cm²",
+                                "B": "77 cm²",
+                                "C": "308 cm²",
+                                "D": "51.33 cm²"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 12,
+                              "question": "In a right-angled triangle, the side opposite the right angle is called:",
+                              "options": {
+                                "A": "Adjacent",
+                                "B": "Opposite",
+                                "C": "Hypotenuse",
+                                "D": "Base"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 13,
+                              "question": "sin θ =",
+                              "options": {
+                                "A": "opposite/adjacent",
+                                "B": "adjacent/hypotenuse",
+                                "C": "opposite/hypotenuse",
+                                "D": "hypotenuse/opposite"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 14,
+                              "question": "If tan θ = 1, then θ is:",
+                              "options": {
+                                "A": "30°",
+                                "B": "45°",
+                                "C": "60°",
+                                "D": "90°"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 15,
+                              "question": "The angle of elevation is measured from the:",
+                              "options": {
+                                "A": "Horizontal upward",
+                                "B": "Horizontal downward",
+                                "C": "Vertical upward",
+                                "D": "Vertical downward"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 16,
+                              "question": "A clinometer is used to measure:",
+                              "options": {
+                                "A": "Distance",
+                                "B": "Area",
+                                "C": "Angles of elevation/depression",
+                                "D": "Volume"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 17,
+                              "question": "The value of sin 30° is:",
+                              "options": {
+                                "A": "1",
+                                "B": "½",
+                                "C": "√3/2",
+                                "D": "0"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 18,
+                              "question": "Two rectangles are similar. The first has dimensions 4cm by 6cm, the second has shorter side 10cm. The longer side of the second rectangle is:",
+                              "options": {
+                                "A": "15 cm",
+                                "B": "20 cm",
+                                "C": "12 cm",
+                                "D": "18 cm"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 19,
+                              "question": "The perimeter of similar shapes are in the ratio of their:",
+                              "options": {
+                                "A": "Areas",
+                                "B": "Scale factors",
+                                "C": "Volumes",
+                                "D": "Corresponding sides"
+                              },
+                              "answer": "D",
+                              "image": null
+                            },
+                            {
+                              "id": 20,
+                              "question": "If 5x + 2y = 16 and 3x - 2y = 0, then x =",
+                              "options": {
+                                "A": "1",
+                                "B": "2",
+                                "C": "3",
+                                "D": "4"
+                              },
+                              "answer": "B",
+                              "image": null
+                            }
+
 ];
 
 
-        const staticTheoryQuestions = [
+        
+const staticTheoryQuestions = [
 
 
-                                                               {
-                                "id": 1,
-                                "question": "a. What is repentance? \n\n b. Narrate the story of David’s repentance as recorded in 2 Samuel 12:7–13. \n\n c. Mention two lessons Christians can learn from David’s repentance.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 2,
-                                "question": "a. Who was Jonah? \n\n b. Describe how the people of Nineveh responded to Jonah’s message (Jonah 3:1–10). \n\n c. State two importance of repentance in a Christian’s life.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 3,
-                                "question": "a. Define obedience. \n\n b. Outline God’s call to Abraham in Genesis 12:1–9. \n\n c. Explain two blessings Abraham received for his obedience.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 4,
-                                "question": "a. Who was Zacchaeus? \n\n b. How did Jesus’ visit change Zacchaeus’ life? (Luke 19:1–10) \n\n c. What are two consequences of refusing to repent?",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 5,
-                                "question": "a. What does 'call to service' mean? \n\n b. Using Joseph as an example, explain how faithfulness in service can lead to promotion. \n\n c. Identify two problems people face in serving God and others.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 6,
-                                "question": "a. Mention two qualities of Ruth that made her a good example of service. \n\n b. How did Boaz show kindness to Ruth? (Ruth 2) \n\n c. Give two reasons why Christians should serve one another.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 7,
-                                "question": "a. Relate the story of Abraham’s sacrifice of Isaac (Genesis 22:1–19). \n\n b. What two lessons can be learned from this story? \n\n c. How can a JSS 1 student show obedience at home and in school?",
-                                "marks": 10,
-                                "image": null
-                              }
-                                  
-      
+        
+                                      {
+                                        "id": 1,
+                                        "question": "ANSWER ANY 4 QUESTION IN ALL \nShow all workings clearly. Marks are awarded for correct steps.\n\n a. Solve algebraically:3x + 2y = 85x - 2y = 16 \n\n b. Using a graphical method, solve:y = x + 1y = 7 - x(Use values of x from 0 to 5). \n\n c. A farmer bought 3 goats and 5 sheep for ₦31,000. If a goat costs ₦x and a sheep costs ₦y, and 2 goats and 1 sheep cost ₦13,000, write down the two equations and find the cost of each.",
+                                        "marks": 5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 2,
+                                        "question": "a. Define similar figures. \n\n b. Triangle ABC is similar to triangle PQR. AB = 8cm, BC = 12cm, AC = 10cm. If PQ = 12cm, find the lengths of PR and QR. \n\n c. Two similar cylinders have heights 7cm and 21cm. If the volume of the smaller cylinder is 66 cm³, find the volume of the larger one.",
+                                        "marks": 5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 3,
+                                        "question": "a. Calculate the area of a trapezium with parallel sides 12cm and 8cm, and height 5cm. \n\n b. A circle has radius 14cm. Find:(i) its circumference(ii) its area(Take π = 22/7) \n\n c. A sector of a circle of radius 10cm has an angle of 72° at the centre. Calculate the area of the sector.",
+                                        "marks": 5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 4,
+                                        "question": "a. In the right-angled triangle below, label the sides (opposite, adjacent, hypotenuse) relative to angle θ. \n\n b. Given a right-angled triangle where the side opposite angle θ is 6cm and the hypotenuse is 10cm, find:(i) sin θ(ii) cos θ(iii) tan θ \n\n c. A ladder 13m long leans against a wall. If the foot of the ladder is 5m from the wall, find the angle the ladder makes with the ground.",
+                                        "marks": 5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 5,
+                                        "question": "a. Differentiate between angle of elevation and angle of depression with diagrams. \n\n b. From the top of a building 20m high, the angle of depression of a car on the ground is 30°. Calculate the distance of the car from the foot of the building. \n\n c. Explain how you would use a clinometer to measure the height of a tree.",
+                                        "marks": 5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 6,
+                                        "question": "a. A rectangular garden measures 15m by 10m. A path of uniform width 2m is built around it inside the garden. Find the area of the path. \n\n b. The area of a parallelogram is 48 cm². If its height is 6cm, find the length of its base. \n\n c. A square and a circle have the same perimeter of 44cm. Which has a larger area and by how much? (Take π = 22/7)",
+                                        "marks": 5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 7,
+                                        "question": "a. The ratio of the corresponding sides of two similar pentagons is 3:5. Find the ratio of their:(i) perimeters(ii) areas \n\n b. Two similar cones have base radii 4cm and 6cm. If the volume of the smaller cone is 32π cm³, find the volume of the larger cone. \n\n c. The shadow of a pole 3m high is 4m long. At the same time, the shadow of a tree is 10m long. Find the height of the tree.",
+                                        "marks": 5,
+                                        "image": null
+                                      }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -1079,8 +970,7 @@
                   document.getElementById('username').innerText = username;
                   
               
-                document.getElementById('userImage').src =
-              (sessionStorage.getItem('image') || 'img/default_user.jpg');
+                document.getElementById('userImage').src = (sessionStorage.getItem('image') || 'img/default_user.jpg');
                 }
            
             // Load static questions

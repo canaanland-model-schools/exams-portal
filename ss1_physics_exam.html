@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CHRISIAN RELIGIOUS STUDIES Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - PHYSICS Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CHRISIAN RELIGIOUS STUDIES - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  PHYSICS - SS1 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,406 +624,651 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                      {
-    "id": 1,
-    "question": "The smallest unit of society is the __.",
-    "options": { "A": "church", "B": "community", "C": "family", "D": "school" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "A family made up of father, mother, and children is called __.",
-    "options": { "A": "extended family", "B": "nuclear family", "C": "large family", "D": "royal family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A family that includes grandparents, uncles, and cousins is called __.",
-    "options": { "A": "nuclear family", "B": "extended family", "C": "compound family", "D": "village family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "God created the first family with __.",
-    "options": { "A": "Abraham and Sarah", "B": "Adam and Eve", "C": "Isaac and Rebekah", "D": "Joseph and Mary" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "One importance of the family is to teach __.",
-    "options": { "A": "disobedience", "B": "bad habits", "C": "values and morals", "D": "fighting" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "According to Ephesians 6:1, children should __ their parents.",
-    "options": { "A": "insult", "B": "obey", "C": "avoid", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "The head of the family is usually the __.",
-    "options": { "A": "mother", "B": "father", "C": "teacher", "D": "pastor" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "Parents are expected to __ their children.",
-    "options": { "A": "abandon", "B": "train", "C": "ignore", "D": "hate" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A good family name means having a good __.",
-    "options": { "A": "reputation", "B": "house", "C": "job", "D": "clothes" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "According to Proverbs 22:1, a good name is better than __.",
-    "options": { "A": "silver", "B": "money", "C": "great riches", "D": "land" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "A place where teaching and learning take place is the __.",
-    "options": { "A": "market", "B": "church", "C": "school", "D": "village" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The head of a school is called the __.",
-    "options": { "A": "teacher", "B": "principal", "C": "prefect", "D": "student" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Students in a school are also called __.",
-    "options": { "A": "workers", "B": "learners", "C": "traders", "D": "farmers" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "Choosing good friends in school helps students to __.",
-    "options": { "A": "misbehave", "B": "succeed", "C": "steal", "D": "cheat" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A good friend will always __.",
-    "options": { "A": "encourage good behavior", "B": "encourage stealing", "C": "encourage fighting", "D": "encourage cheating" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "A bad friend can lead someone into __.",
-    "options": { "A": "success", "B": "good behavior", "C": "trouble", "D": "blessings" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "According to the Bible, David was a friend of __.",
-    "options": { "A": "Saul", "B": "Jonathan", "C": "Peter", "D": "James" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "Friendship between David and Jonathan is found in __.",
-    "options": { "A": "1 Samuel 18:1–5", "B": "Genesis 1", "C": "Exodus 2", "D": "Matthew 5" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Good friends help us to __.",
-    "options": { "A": "do wrong", "B": "behave well", "C": "break rules", "D": "fight others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Students must respect their __ in school.",
-    "options": { "A": "teachers", "B": "enemies", "C": "strangers", "D": "neighbors" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Friendship means __.",
-    "options": { "A": "hatred between people", "B": "love and understanding between people", "C": "quarrelling", "D": "cheating others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "A good friend will __ you when you are wrong.",
-    "options": { "A": "ignore", "B": "correct", "C": "insult", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "One consequence of bad friends is __.",
-    "options": { "A": "good character", "B": "progress", "C": "punishment", "D": "success" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Bad friends may lead someone into __.",
-    "options": { "A": "stealing", "B": "obedience", "C": "honesty", "D": "respect" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "The Bible advises us to avoid __ friends.",
-    "options": { "A": "good", "B": "wise", "C": "bad", "D": "helpful" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "A community is a group of people living in the same __.",
-    "options": { "A": "country", "B": "area", "C": "school", "D": "church" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "The leader of a community may be called a __.",
-    "options": { "A": "chief", "B": "teacher", "C": "doctor", "D": "student" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "One way of sustaining good relationships in the community is __.",
-    "options": { "A": "fighting", "B": "cooperation", "C": "stealing", "D": "hatred" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Respecting community leaders helps to maintain __.",
-    "options": { "A": "disorder", "B": "peace", "C": "trouble", "D": "confusion" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Community members should live in __.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "pride" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Helping one another in the community shows __.",
-    "options": { "A": "wickedness", "B": "selfishness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "Fighting in the community can lead to __.",
-    "options": { "A": "peace", "B": "conflict", "C": "unity", "D": "joy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "A good community encourages __.",
-    "options": { "A": "cooperation", "B": "hatred", "C": "jealousy", "D": "selfishness" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "One duty of community members is to __ laws.",
-    "options": { "A": "break", "B": "obey", "C": "ignore", "D": "reject" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "Peace in the community promotes __.",
-    "options": { "A": "development", "B": "poverty", "C": "confusion", "D": "destruction" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "The church is a place where Christians __.",
-    "options": { "A": "trade", "B": "play", "C": "worship God", "D": "sleep" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Members of the church are called __.",
-    "options": { "A": "believers", "B": "strangers", "C": "enemies", "D": "traders" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Fellowship in the church means __.",
-    "options": { "A": "hatred among members", "B": "unity among believers", "C": "fighting in church", "D": "ignoring others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "The leader of a church may be called a __.",
-    "options": { "A": "teacher", "B": "pastor", "C": "student", "D": "driver" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "Christians should live in __ with one another.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "anger" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "One importance of fellowship in the church is to __.",
-    "options": { "A": "build faith", "B": "create division", "C": "cause quarrels", "D": "spread hatred" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Christians are expected to __ one another.",
-    "options": { "A": "hate", "B": "fight", "C": "love", "D": "avoid" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "Helping members in the church shows __.",
-    "options": { "A": "selfishness", "B": "wickedness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "The church teaches people to __ God.",
-    "options": { "A": "ignore", "B": "disobey", "C": "worship", "D": "fight" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Unity in the church promotes __.",
-    "options": { "A": "growth", "B": "confusion", "C": "hatred", "D": "jealousy" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "A person who leads others spiritually in the church is a __.",
-    "options": { "A": "pastor", "B": "teacher", "C": "trader", "D": "farmer" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "Respect for elders shows good __.",
-    "options": { "A": "behavior", "B": "pride", "C": "anger", "D": "disobedience" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "Children who obey their parents receive __.",
-    "options": { "A": "punishment", "B": "blessings", "C": "trouble", "D": "shame" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Living peacefully with others shows __.",
-    "options": { "A": "wickedness", "B": "good character", "C": "pride", "D": "jealousy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Christians should always show __ to others.",
-    "options": { "A": "hatred", "B": "anger", "C": "love", "D": "jealousy" },
-    "answer": "C",
-    "image": null
-  }
+       {
+                              "id": 1,
+                              "question": "The product of mass and velocity of a body is its ______.",
+                              "options": {
+                                "A": "Force",
+                                "B": "Momentum",
+                                "C": "Energy",
+                                "D": "Impulse"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 2,
+                              "question": "Newton's first law of motion is also called the law of ______.",
+                              "options": {
+                                "A": "Inertia",
+                                "B": "Momentum",
+                                "C": "Acceleration",
+                                "D": "Reaction"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 3,
+                              "question": "The SI unit of momentum is ______.",
+                              "options": {
+                                "A": "kg m/s",
+                                "B": "N/s",
+                                "C": "J/s",
+                                "D": "Nm"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 4,
+                              "question": "When two bodies collide, the total momentum before impact is equal to the total momentum after impact, provided no external force acts. This is the law of conservation of ______.",
+                              "options": {
+                                "A": "Energy",
+                                "B": "Momentum",
+                                "C": "Charge",
+                                "D": "Mass"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 5,
+                              "question": "Work is said to be done when a force moves an object through a ______.",
+                              "options": {
+                                "A": "Mass",
+                                "B": "Distance",
+                                "C": "Time",
+                                "D": "Speed"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 6,
+                              "question": "The SI unit of work is ______.",
+                              "options": {
+                                "A": "Newton",
+                                "B": "Joule",
+                                "C": "Watt",
+                                "D": "Pascal"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 7,
+                              "question": "Power is defined as the rate of doing ______.",
+                              "options": {
+                                "A": "Work",
+                                "B": "Energy",
+                                "C": "Force",
+                                "D": "Momentum"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 8,
+                              "question": "One horsepower is approximately equal to ______ watts.",
+                              "options": {
+                                "A": "746",
+                                "B": "550",
+                                "C": "1000",
+                                "D": "745"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 9,
+                              "question": "A simple machine that changes the direction of a force is a ______.",
+                              "options": {
+                                "A": "Lever",
+                                "B": "Inclined plane",
+                                "C": "Pulley",
+                                "D": "Screw"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 10,
+                              "question": "The ratio of load to effort in a machine is called ______.",
+                              "options": {
+                                "A": "Velocity ratio",
+                                "B": "Mechanical advantage",
+                                "C": "Efficiency",
+                                "D": "Work output"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 11,
+                              "question": "The velocity ratio of a machine is the ratio of ______.",
+                              "options": {
+                                "A": "Load to effort",
+                                "B": "Effort to load",
+                                "C": "Distance moved by effort to distance moved by load",
+                                "D": "Work output to work input"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 12,
+                              "question": "Efficiency of a machine is expressed as a ______.",
+                              "options": {
+                                "A": "Decimal",
+                                "B": "Percentage",
+                                "C": "Fraction",
+                                "D": "Ratio"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 13,
+                              "question": "Heat is a form of ______.",
+                              "options": {
+                                "A": "Matter",
+                                "B": "Energy",
+                                "C": "Force",
+                                "D": "Power"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 14,
+                              "question": "The SI unit of temperature is ______.",
+                              "options": {
+                                "A": "Joule",
+                                "B": "Kelvin",
+                                "C": "Celsius",
+                                "D": "Fahrenheit"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 15,
+                              "question": "The normal human body temperature is about ______ °C.",
+                              "options": {
+                                "A": "37",
+                                "B": "98.6",
+                                "C": "100",
+                                "D": "0"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 16,
+                              "question": "A clinical thermometer is used to measure body temperature because it has a ______.",
+                              "options": {
+                                "A": "Wide range",
+                                "B": "Narrow range",
+                                "C": "Constriction",
+                                "D": "Mercury thread"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 17,
+                              "question": "The quantity of heat required to raise the temperature of 1 kg of a substance by 1 K is its ______.",
+                              "options": {
+                                "A": "Latent heat",
+                                "B": "Specific heat capacity",
+                                "C": "Heat capacity",
+                                "D": "Thermal conductivity"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 18,
+                              "question": "The SI unit of specific heat capacity is ______.",
+                              "options": {
+                                "A": "J/kg",
+                                "B": "J/kgK",
+                                "C": "J/K",
+                                "D": "J/g°C"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 19,
+                              "question": "The heat required to change a substance from solid to liquid at constant temperature is called ______.",
+                              "options": {
+                                "A": "Specific latent heat of fusion",
+                                "B": "Specific latent heat of vaporization",
+                                "C": "Heat capacity",
+                                "D": "Sensible heat"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 20,
+                              "question": "The instrument used to measure heat changes is a ______.",
+                              "options": {
+                                "A": "Thermometer",
+                                "B": "Calorimeter",
+                                "C": "Barometer",
+                                "D": "Manometer"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 21,
+                              "question": "The random motion of pollen grains in water observed under a microscope is called ______.",
+                              "options": {
+                                "A": "Diffusion",
+                                "B": "Osmosis",
+                                "C": "Brownian motion",
+                                "D": "Convection"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 22,
+                              "question": "The process by which gases mix spontaneously is called ______.",
+                              "options": {
+                                "A": "Evaporation",
+                                "B": "Diffusion",
+                                "C": "Conduction",
+                                "D": "Radiation"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 23,
+                              "question": "According to kinetic theory, particles of matter are in constant ______.",
+                              "options": {
+                                "A": "Rest",
+                                "B": "Motion",
+                                "C": "Vibration only",
+                                "D": "Linear motion only"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 24,
+                              "question": "The pressure exerted by a gas is due to ______.",
+                              "options": {
+                                "A": "Weight of the gas",
+                                "B": "Collisions of gas molecules with the walls",
+                                "C": "Density of the gas",
+                                "D": "Volume of the gas"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 25,
+                              "question": "Which of these is NOT a simple machine?",
+                              "options": {
+                                "A": "Lever",
+                                "B": "Pulley",
+                                "C": "Screw",
+                                "D": "Battery"
+                              },
+                              "answer": "D",
+                              "image": null
+                            },
+                            {
+                              "id": 26,
+                              "question": "Newton's second law states that force is proportional to the rate of change of ______.",
+                              "options": {
+                                "A": "Velocity",
+                                "B": "Momentum",
+                                "C": "Speed",
+                                "D": "Distance"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 27,
+                              "question": "The formula for kinetic energy is ______.",
+                              "options": {
+                                "A": "½ mv²",
+                                "B": "mgh",
+                                "C": "F × d",
+                                "D": "P × t"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 28,
+                              "question": "The energy stored in a stretched spring is ______ energy.",
+                              "options": {
+                                "A": "Kinetic",
+                                "B": "Potential",
+                                "C": "Chemical",
+                                "D": "Heat"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 29,
+                              "question": "A machine with an efficiency of 100% is called an ______ machine.",
+                              "options": {
+                                "A": "Ideal",
+                                "B": "Real",
+                                "C": "Simple",
+                                "D": "Complex"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 30,
+                              "question": "A seesaw is an example of a ______.",
+                              "options": {
+                                "A": "First-class lever",
+                                "B": "Second-class lever",
+                                "C": "Third-class lever",
+                                "D": "Inclined plane"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 31,
+                              "question": "The boiling point of water on the Kelvin scale is ______.",
+                              "options": {
+                                "A": "100 K",
+                                "B": "273 K",
+                                "C": "373 K",
+                                "D": "0 K"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 32,
+                              "question": "The freezing point of water on the Fahrenheit scale is ______.",
+                              "options": {
+                                "A": "0°F",
+                                "B": "32°F",
+                                "C": "100°F",
+                                "D": "212°F"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 33,
+                              "question": "Mercury is used in thermometers because it ______.",
+                              "options": {
+                                "A": "Expands uniformly",
+                                "B": "Is cheap",
+                                "C": "Is safe",
+                                "D": "Contracts when heated"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 34,
+                              "question": "The amount of heat needed to melt 1 kg of ice at 0°C is ______ J. (Specific latent heat of fusion of ice = 3.36 × 10⁵ J/kg)",
+                              "options": {
+                                "A": "3.36 × 10⁵",
+                                "B": "2.26 × 10⁶",
+                                "C": "4.2 × 10³",
+                                "D": "1.0 × 10³"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 35,
+                              "question": "The specific heat capacity of water is ______ J/kgK.",
+                              "options": {
+                                "A": "4200",
+                                "B": "2100",
+                                "C": "336000",
+                                "D": "2260000"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 36,
+                              "question": "A change of state from liquid to gas is called ______.",
+                              "options": {
+                                "A": "Fusion",
+                                "B": "Vaporization",
+                                "C": "Condensation",
+                                "D": "Sublimation"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 37,
+                              "question": "The pressure of a gas in a container increases when the temperature increases because the molecules ______.",
+                              "options": {
+                                "A": "Move slower",
+                                "B": "Move faster and collide more often",
+                                "C": "Become heavier",
+                                "D": "Escape"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 38,
+                              "question": "The smell of perfume spreading across a room is an example of ______.",
+                              "options": {
+                                "A": "Convection",
+                                "B": "Radiation",
+                                "C": "Diffusion",
+                                "D": "Evaporation"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 39,
+                              "question": "Which of these is evidence of the particulate nature of matter?",
+                              "options": {
+                                "A": "Color",
+                                "B": "Density",
+                                "C": "Diffusion",
+                                "D": "Transparency"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 40,
+                              "question": "The kinetic theory explains that particles have ______ between them.",
+                              "options": {
+                                "A": "Bonds",
+                                "B": "Spaces",
+                                "C": "Forces",
+                                "D": "Charges"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 41,
+                              "question": "The force that acts on a body for a very short time is called ______.",
+                              "options": {
+                                "A": "Momentum",
+                                "B": "Impulse",
+                                "C": "Energy",
+                                "D": "Power"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 42,
+                              "question": "The work done against gravity when lifting an object is stored as ______.",
+                              "options": {
+                                "A": "Kinetic energy",
+                                "B": "Gravitational potential energy",
+                                "C": "Elastic potential energy",
+                                "D": "Heat energy"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 43,
+                              "question": "A machine has a mechanical advantage of 4. If the load is 200 N, the effort required is ______ N.",
+                              "options": {
+                                "A": "50",
+                                "B": "800",
+                                "C": "200",
+                                "D": "4"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 44,
+                              "question": "If the velocity ratio of a machine is 5 and its efficiency is 80%, its mechanical advantage is ______.",
+                              "options": {
+                                "A": "4",
+                                "B": "5",
+                                "C": "6.25",
+                                "D": "1"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 45,
+                              "question": "The absolute zero temperature is ______.",
+                              "options": {
+                                "A": "0°C",
+                                "B": "-273°C",
+                                "C": "273 K",
+                                "D": "373 K"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 46,
+                              "question": "A block of mass 2 kg is lifted vertically through 3 m. The work done is (g = 10 m/s²) ______ J.",
+                              "options": {
+                                "A": "6",
+                                "B": "20",
+                                "C": "60",
+                                "D": "600"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 47,
+                              "question": "The momentum of a 5 kg mass moving at 2 m/s is ______ kg m/s.",
+                              "options": {
+                                "A": "10",
+                                "B": "2.5",
+                                "C": "7",
+                                "D": "20"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 48,
+                              "question": "The energy conversion in a swinging pendulum is between kinetic and ______ energy.",
+                              "options": {
+                                "A": "Heat",
+                                "B": "Potential",
+                                "C": "Sound",
+                                "D": "Light"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 49,
+                              "question": "Which thermometer is used to measure very high temperatures?",
+                              "options": {
+                                "A": "Clinical thermometer",
+                                "B": "Alcohol thermometer",
+                                "C": "Thermocouple",
+                                "D": "Mercury thermometer"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 50,
+                              "question": "The phenomenon where gas molecules pass through a tiny hole is called ______.",
+                              "options": {
+                                "A": "Diffusion",
+                                "B": "Effusion",
+                                "C": "Osmosis",
+                                "D": "Conduction"
+                              },
+                              "answer": "B",
+                              "image": null
+                            }
 ];
 
 
         const staticTheoryQuestions = [
-
-
-                                                               {
-                                "id": 1,
-                                "question": "a. What is repentance? \n\n b. Narrate the story of David’s repentance as recorded in 2 Samuel 12:7–13. \n\n c. Mention two lessons Christians can learn from David’s repentance.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 2,
-                                "question": "a. Who was Jonah? \n\n b. Describe how the people of Nineveh responded to Jonah’s message (Jonah 3:1–10). \n\n c. State two importance of repentance in a Christian’s life.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 3,
-                                "question": "a. Define obedience. \n\n b. Outline God’s call to Abraham in Genesis 12:1–9. \n\n c. Explain two blessings Abraham received for his obedience.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 4,
-                                "question": "a. Who was Zacchaeus? \n\n b. How did Jesus’ visit change Zacchaeus’ life? (Luke 19:1–10) \n\n c. What are two consequences of refusing to repent?",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 5,
-                                "question": "a. What does 'call to service' mean? \n\n b. Using Joseph as an example, explain how faithfulness in service can lead to promotion. \n\n c. Identify two problems people face in serving God and others.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 6,
-                                "question": "a. Mention two qualities of Ruth that made her a good example of service. \n\n b. How did Boaz show kindness to Ruth? (Ruth 2) \n\n c. Give two reasons why Christians should serve one another.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 7,
-                                "question": "a. Relate the story of Abraham’s sacrifice of Isaac (Genesis 22:1–19). \n\n b. What two lessons can be learned from this story? \n\n c. How can a JSS 1 student show obedience at home and in school?",
-                                "marks": 10,
-                                "image": null
-                              }
-                                  
-      
+       {
+            "id": 1,
+            "question": "a. State Newton's laws of motion. \n\n b. Define momentum and state its SI unit. \n\n c. A car of mass 1200 kg moving at 20 m/s collides with a stationary car of mass 800 kg. If they move together after collision, calculate their common velocity.",
+            "marks": 12.5,
+            "image": null
+          },
+          {
+            "id": 2,
+            "question": "a. Define:\n(i) Work\n(ii) Energy\n(iii) Power \n\n b. A boy of mass 50 kg runs up a flight of stairs 5 m high in 10 seconds. Calculate:\n(i) The work done\n(ii) The power developed (g = 10 m/s²) \n\n c. State the principle of conservation of energy and give one example.",
+            "marks": 12.5,
+            "image": null
+          },
+          {
+            "id": 3,
+            "question": "a. What is a simple machine? \n\n b. Explain the following terms as applied to machines:\n(i) Mechanical advantage\n(ii) Velocity ratio\n(iii) Efficiency \n\n c. A machine with a velocity ratio of 6 requires an effort of 100 N to lift a load of 450 N. Calculate:\n(i) The mechanical advantage\n(ii) The efficiency",
+            "marks": 12.5,
+            "image": null
+          },
+          {
+            "id": 4,
+            "question": "a. Differentiate between heat and temperature. \n\n b. Name two types of thermometers and state one use of each. \n\n c. Convert the following temperatures:\n(i) 25°C to Kelvin\n(ii) 300 K to °C\n(iii) 98.6°F to °C",
+            "marks": 12.5,
+            "image": null
+          },
+          {
+            "question": "a. Define:\n(i) Specific heat capacity\n(ii) Specific latent heat of fusion \n\n b. Calculate the quantity of heat required to raise the temperature of 2 kg of water from 20°C to 70°C.\n(Specific heat capacity of water = 4200 J/kgK) \n\n c. Explain why water is used as a cooling agent in car radiators.",
+            "marks": 12.5,
+            "image": null
+          },
+          {
+            "id": 6,
+            "question": "a. State the kinetic theory of matter. \n\n b. Describe an experiment to demonstrate Brownian motion. \n\n c. Explain the following using kinetic theory:\n(i) Diffusion in gases\n(ii) Pressure exerted by a gas",
+            "marks": 12.5,
+            "image": null
+          },
+          {
+            "id": 7,
+            "question": "a. Why is a person thrown forward when a moving vehicle suddenly stops? \n\n b. A bullet of mass 0.02 kg is fired with a velocity of 400 m/s. Calculate its momentum. \n\n c. In a calorimeter experiment, 0.5 kg of a metal at 100°C is dropped into 0.2 kg of water at 15°C. If the final temperature is 25°C, calculate the specific heat capacity of the metal.\n(Specific heat capacity of water = 4200 J/kgK)",
+            "marks": 12.5,
+            "image": null
+          }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];

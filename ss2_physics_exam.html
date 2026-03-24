@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CHRISIAN RELIGIOUS STUDIES Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - PHYSICS Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CHRISIAN RELIGIOUS STUDIES - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  PHYSICS - SS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,406 +624,652 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                      {
-    "id": 1,
-    "question": "The smallest unit of society is the __.",
-    "options": { "A": "church", "B": "community", "C": "family", "D": "school" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "A family made up of father, mother, and children is called __.",
-    "options": { "A": "extended family", "B": "nuclear family", "C": "large family", "D": "royal family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A family that includes grandparents, uncles, and cousins is called __.",
-    "options": { "A": "nuclear family", "B": "extended family", "C": "compound family", "D": "village family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "God created the first family with __.",
-    "options": { "A": "Abraham and Sarah", "B": "Adam and Eve", "C": "Isaac and Rebekah", "D": "Joseph and Mary" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "One importance of the family is to teach __.",
-    "options": { "A": "disobedience", "B": "bad habits", "C": "values and morals", "D": "fighting" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "According to Ephesians 6:1, children should __ their parents.",
-    "options": { "A": "insult", "B": "obey", "C": "avoid", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "The head of the family is usually the __.",
-    "options": { "A": "mother", "B": "father", "C": "teacher", "D": "pastor" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "Parents are expected to __ their children.",
-    "options": { "A": "abandon", "B": "train", "C": "ignore", "D": "hate" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A good family name means having a good __.",
-    "options": { "A": "reputation", "B": "house", "C": "job", "D": "clothes" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "According to Proverbs 22:1, a good name is better than __.",
-    "options": { "A": "silver", "B": "money", "C": "great riches", "D": "land" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "A place where teaching and learning take place is the __.",
-    "options": { "A": "market", "B": "church", "C": "school", "D": "village" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The head of a school is called the __.",
-    "options": { "A": "teacher", "B": "principal", "C": "prefect", "D": "student" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Students in a school are also called __.",
-    "options": { "A": "workers", "B": "learners", "C": "traders", "D": "farmers" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "Choosing good friends in school helps students to __.",
-    "options": { "A": "misbehave", "B": "succeed", "C": "steal", "D": "cheat" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A good friend will always __.",
-    "options": { "A": "encourage good behavior", "B": "encourage stealing", "C": "encourage fighting", "D": "encourage cheating" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "A bad friend can lead someone into __.",
-    "options": { "A": "success", "B": "good behavior", "C": "trouble", "D": "blessings" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "According to the Bible, David was a friend of __.",
-    "options": { "A": "Saul", "B": "Jonathan", "C": "Peter", "D": "James" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "Friendship between David and Jonathan is found in __.",
-    "options": { "A": "1 Samuel 18:1–5", "B": "Genesis 1", "C": "Exodus 2", "D": "Matthew 5" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Good friends help us to __.",
-    "options": { "A": "do wrong", "B": "behave well", "C": "break rules", "D": "fight others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Students must respect their __ in school.",
-    "options": { "A": "teachers", "B": "enemies", "C": "strangers", "D": "neighbors" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Friendship means __.",
-    "options": { "A": "hatred between people", "B": "love and understanding between people", "C": "quarrelling", "D": "cheating others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "A good friend will __ you when you are wrong.",
-    "options": { "A": "ignore", "B": "correct", "C": "insult", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "One consequence of bad friends is __.",
-    "options": { "A": "good character", "B": "progress", "C": "punishment", "D": "success" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Bad friends may lead someone into __.",
-    "options": { "A": "stealing", "B": "obedience", "C": "honesty", "D": "respect" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "The Bible advises us to avoid __ friends.",
-    "options": { "A": "good", "B": "wise", "C": "bad", "D": "helpful" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "A community is a group of people living in the same __.",
-    "options": { "A": "country", "B": "area", "C": "school", "D": "church" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "The leader of a community may be called a __.",
-    "options": { "A": "chief", "B": "teacher", "C": "doctor", "D": "student" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "One way of sustaining good relationships in the community is __.",
-    "options": { "A": "fighting", "B": "cooperation", "C": "stealing", "D": "hatred" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Respecting community leaders helps to maintain __.",
-    "options": { "A": "disorder", "B": "peace", "C": "trouble", "D": "confusion" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Community members should live in __.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "pride" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Helping one another in the community shows __.",
-    "options": { "A": "wickedness", "B": "selfishness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "Fighting in the community can lead to __.",
-    "options": { "A": "peace", "B": "conflict", "C": "unity", "D": "joy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "A good community encourages __.",
-    "options": { "A": "cooperation", "B": "hatred", "C": "jealousy", "D": "selfishness" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "One duty of community members is to __ laws.",
-    "options": { "A": "break", "B": "obey", "C": "ignore", "D": "reject" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "Peace in the community promotes __.",
-    "options": { "A": "development", "B": "poverty", "C": "confusion", "D": "destruction" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "The church is a place where Christians __.",
-    "options": { "A": "trade", "B": "play", "C": "worship God", "D": "sleep" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Members of the church are called __.",
-    "options": { "A": "believers", "B": "strangers", "C": "enemies", "D": "traders" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Fellowship in the church means __.",
-    "options": { "A": "hatred among members", "B": "unity among believers", "C": "fighting in church", "D": "ignoring others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "The leader of a church may be called a __.",
-    "options": { "A": "teacher", "B": "pastor", "C": "student", "D": "driver" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "Christians should live in __ with one another.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "anger" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "One importance of fellowship in the church is to __.",
-    "options": { "A": "build faith", "B": "create division", "C": "cause quarrels", "D": "spread hatred" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Christians are expected to __ one another.",
-    "options": { "A": "hate", "B": "fight", "C": "love", "D": "avoid" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "Helping members in the church shows __.",
-    "options": { "A": "selfishness", "B": "wickedness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "The church teaches people to __ God.",
-    "options": { "A": "ignore", "B": "disobey", "C": "worship", "D": "fight" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Unity in the church promotes __.",
-    "options": { "A": "growth", "B": "confusion", "C": "hatred", "D": "jealousy" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "A person who leads others spiritually in the church is a __.",
-    "options": { "A": "pastor", "B": "teacher", "C": "trader", "D": "farmer" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "Respect for elders shows good __.",
-    "options": { "A": "behavior", "B": "pride", "C": "anger", "D": "disobedience" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "Children who obey their parents receive __.",
-    "options": { "A": "punishment", "B": "blessings", "C": "trouble", "D": "shame" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Living peacefully with others shows __.",
-    "options": { "A": "wickedness", "B": "good character", "C": "pride", "D": "jealousy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Christians should always show __ to others.",
-    "options": { "A": "hatred", "B": "anger", "C": "love", "D": "jealousy" },
-    "answer": "C",
-    "image": null
-  }
+        {
+          "id": 1,
+          "question": "An electric field is a region where:",
+          "options": {
+            "A": "only positive charges exist",
+            "B": "an electric charge experiences a force",
+            "C": "magnetic forces are dominant",
+            "D": "gravitational forces are absent"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "The SI unit of electric field intensity is:",
+          "options": {
+            "A": "Newton",
+            "B": "Volt",
+            "C": "Newton per Coulomb",
+            "D": "Joule"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "Coulomb's law states that the force between two charges is:",
+          "options": {
+            "A": "directly proportional to the product of the charges",
+            "B": "inversely proportional to the square of the distance",
+            "C": "both A and B",
+            "D": "independent of distance"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "A capacitor stores energy in the form of:",
+          "options": {
+            "A": "magnetic field",
+            "B": "electric field",
+            "C": "gravitational field",
+            "D": "nuclear energy"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Magnetic field lines around a bar magnet:",
+          "options": {
+            "A": "start from north pole and end at south pole",
+            "B": "start from south pole and end at north pole",
+            "C": "are circular with no beginning or end",
+            "D": "are always straight lines"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "The region around a magnet where magnetic influence is felt is called:",
+          "options": {
+            "A": "electric field",
+            "B": "magnetic field",
+            "C": "gravitational field",
+            "D": "electrostatic field"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "The magnetic flux through a surface is maximum when:",
+          "options": {
+            "A": "the surface is parallel to the field",
+            "B": "the surface is perpendicular to the field",
+            "C": "the surface is at 45° to the field",
+            "D": "there is no magnetic field"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Electromagnetic induction was discovered by:",
+          "options": {
+            "A": "Isaac Newton",
+            "B": "Michael Faraday",
+            "C": "Albert Einstein",
+            "D": "Thomas Edison"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "Faraday's law states that the induced emf is proportional to the:",
+          "options": {
+            "A": "resistance of the coil",
+            "B": "rate of change of magnetic flux",
+            "C": "strength of the magnet",
+            "D": "temperature of the coil"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "Lenz's law gives the direction of induced current and is based on conservation of:",
+          "options": {
+            "A": "charge",
+            "B": "energy",
+            "C": "momentum",
+            "D": "mass"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "A device that increases or decreases AC voltage is called a:",
+          "options": {
+            "A": "motor",
+            "B": "generator",
+            "C": "transformer",
+            "D": "rectifier"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "In AC circuits, the value of current that produces the same heating effect as DC is called:",
+          "options": {
+            "A": "peak value",
+            "B": "average value",
+            "C": "rms value",
+            "D": "instantaneous value"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "The frequency of AC mains in Nigeria is:",
+          "options": {
+            "A": "50 Hz",
+            "B": "60 Hz",
+            "C": "100 Hz",
+            "D": "25 Hz"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Which of the following is a primary cell?",
+          "options": {
+            "A": "Lead-acid battery",
+            "B": "Lithium-ion battery",
+            "C": "Dry cell",
+            "D": "Nickel-cadmium battery"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "A secondary cell can be:",
+          "options": {
+            "A": "used once and discarded",
+            "B": "recharged and reused",
+            "C": "only used in watches",
+            "D": "not used to store energy"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "The electrolyte in a car battery is:",
+          "options": {
+            "A": "distilled water",
+            "B": "sulfuric acid solution",
+            "C": "sodium chloride solution",
+            "D": "potassium hydroxide solution"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "Solar energy is converted directly to electricity by:",
+          "options": {
+            "A": "solar panels",
+            "B": "solar heaters",
+            "C": "solar cookers",
+            "D": "solar chimneys"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "The main advantage of solar energy is that it is:",
+          "options": {
+            "A": "non-renewable",
+            "B": "polluting",
+            "C": "renewable and clean",
+            "D": "available only at night"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "Electric field lines around a positive charge are:",
+          "options": {
+            "A": "directed inward",
+            "B": "directed outward",
+            "C": "circular",
+            "D": "absent"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "The force between two charges of 1C each placed 1m apart in vacuum is:",
+          "options": {
+            "A": "9 × 10⁹ N",
+            "B": "1 N",
+            "C": "9 × 10⁻⁹ N",
+            "D": "10 N"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "The capacitance of a capacitor is measured in:",
+          "options": {
+            "A": "Farad",
+            "B": "Ohm",
+            "C": "Henry",
+            "D": "Tesla"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "Like magnetic poles:",
+          "options": {
+            "A": "attract each other",
+            "B": "repel each other",
+            "C": "have no effect on each other",
+            "D": "cancel each other"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The angle of dip is 90° at the:",
+          "options": {
+            "A": "equator",
+            "B": "magnetic poles",
+            "C": "temperate regions",
+            "D": "everywhere"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "A generator converts:",
+          "options": {
+            "A": "mechanical energy to electrical energy",
+            "B": "electrical energy to mechanical energy",
+            "C": "heat energy to electrical energy",
+            "D": "light energy to electrical energy"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "A step-up transformer:",
+          "options": {
+            "A": "increases voltage",
+            "B": "decreases voltage",
+            "C": "increases current",
+            "D": "decreases current"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "The peak value of an AC voltage is 311V. Its rms value is approximately:",
+          "options": {
+            "A": "220V",
+            "B": "311V",
+            "C": "440V",
+            "D": "155V"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "In an AC circuit with a pure resistor, voltage and current are:",
+          "options": {
+            "A": "in phase",
+            "B": "90° out of phase",
+            "C": "180° out of phase",
+            "D": "45° out of phase"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "The terminal voltage of a cell is less than its emf when it is:",
+          "options": {
+            "A": "on open circuit",
+            "B": "being charged",
+            "C": "delivering current",
+            "D": "new"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "Which battery is commonly used in mobile phones?",
+          "options": {
+            "A": "Lead-acid",
+            "B": "Lithium-ion",
+            "C": "Dry cell",
+            "D": "Mercury cell"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "The active material in the positive plate of a lead-acid battery is:",
+          "options": {
+            "A": "lead",
+            "B": "lead dioxide",
+            "C": "sulfuric acid",
+            "D": "lead sulfate"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "A solar collector works on the principle of:",
+          "options": {
+            "A": "photovoltaic effect",
+            "B": "thermionic emission",
+            "C": "electromagnetic induction",
+            "D": "convection currents"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "Solar panels are made from:",
+          "options": {
+            "A": "copper",
+            "B": "silicon",
+            "C": "aluminum",
+            "D": "iron"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "The electric field inside a hollow charged conductor is:",
+          "options": {
+            "A": "zero",
+            "B": "constant",
+            "C": "maximum at the center",
+            "D": "infinite"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "Two charges +2μC and -4μC are separated by 0.1m. The force between them is:",
+          "options": {
+            "A": "attractive",
+            "B": "repulsive",
+            "C": "zero",
+            "D": "infinite"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "The magnetic field inside a solenoid is:",
+          "options": {
+            "A": "uniform",
+            "B": "non-uniform",
+            "C": "zero",
+            "D": "circular"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "A magnetic compass needle aligns itself:",
+          "options": {
+            "A": "perpendicular to the earth's magnetic field",
+            "B": "parallel to the earth's magnetic field",
+            "C": "at 45° to the earth's magnetic field",
+            "D": "randomly"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "The back emf in a motor is maximum when:",
+          "options": {
+            "A": "the motor is just switched on",
+            "B": "the motor is running at full speed",
+            "C": "the motor is stopped",
+            "D": "the motor is overloaded"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "A transformer works on the principle of:",
+          "options": {
+            "A": "electrostatic induction",
+            "B": "electromagnetic induction",
+            "C": "mutual induction",
+            "D": "both B and C"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "The form factor of AC is the ratio of:",
+          "options": {
+            "A": "rms value to average value",
+            "B": "peak value to rms value",
+            "C": "average value to rms value",
+            "D": "peak value to average value"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "In an AC circuit with a capacitor, current leads voltage by:",
+          "options": {
+            "A": "0°",
+            "B": "90°",
+            "C": "180°",
+            "D": "45°"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "The internal resistance of a fresh dry cell is:",
+          "options": {
+            "A": "very high",
+            "B": "very low",
+            "C": "zero",
+            "D": "infinite"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "Which of these is not a secondary cell?",
+          "options": {
+            "A": "Nickel-iron cell",
+            "B": "Alkaline cell",
+            "C": "Lead-acid cell",
+            "D": "Lithium-polymer cell"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "The charging of a lead-acid battery is an example of:",
+          "options": {
+            "A": "electrolysis",
+            "B": "electromagnetic induction",
+            "C": "photovoltaic effect",
+            "D": "thermionic emission"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "The efficiency of a solar cell is typically about:",
+          "options": {
+            "A": "10-20%",
+            "B": "50-60%",
+            "C": "80-90%",
+            "D": "100%"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "Which of these is not a use of solar energy?",
+          "options": {
+            "A": "Water heating",
+            "B": "Electricity generation",
+            "C": "Cooking",
+            "D": "Radioactive decay"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "The direction of magnetic field lines around a straight current-carrying conductor is given by:",
+          "options": {
+            "A": "Faraday's law",
+            "B": "Lenz's law",
+            "C": "Right-hand grip rule",
+            "D": "Left-hand rule"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "The unit of magnetic flux is:",
+          "options": {
+            "A": "Tesla",
+            "B": "Weber",
+            "C": "Henry",
+            "D": "Gauss"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "In an AC generator, the induced emf is maximum when the coil is:",
+          "options": {
+            "A": "parallel to the field",
+            "B": "perpendicular to the field",
+            "C": "at 45° to the field",
+            "D": "stationary"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "A step-down transformer has:",
+          "options": {
+            "A": "more turns in primary coil",
+            "B": "more turns in secondary coil",
+            "C": "same turns in both coils",
+            "D": "no turns"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "The grid system in Nigeria uses:",
+          "options": {
+            "A": "DC only",
+            "B": "AC only",
+            "C": "both AC and DC",
+            "D": "neither AC nor DC"
+          },
+          "answer": "B",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-
-
-                                                               {
-                                "id": 1,
-                                "question": "a. What is repentance? \n\n b. Narrate the story of David’s repentance as recorded in 2 Samuel 12:7–13. \n\n c. Mention two lessons Christians can learn from David’s repentance.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 2,
-                                "question": "a. Who was Jonah? \n\n b. Describe how the people of Nineveh responded to Jonah’s message (Jonah 3:1–10). \n\n c. State two importance of repentance in a Christian’s life.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 3,
-                                "question": "a. Define obedience. \n\n b. Outline God’s call to Abraham in Genesis 12:1–9. \n\n c. Explain two blessings Abraham received for his obedience.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 4,
-                                "question": "a. Who was Zacchaeus? \n\n b. How did Jesus’ visit change Zacchaeus’ life? (Luke 19:1–10) \n\n c. What are two consequences of refusing to repent?",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 5,
-                                "question": "a. What does 'call to service' mean? \n\n b. Using Joseph as an example, explain how faithfulness in service can lead to promotion. \n\n c. Identify two problems people face in serving God and others.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 6,
-                                "question": "a. Mention two qualities of Ruth that made her a good example of service. \n\n b. How did Boaz show kindness to Ruth? (Ruth 2) \n\n c. Give two reasons why Christians should serve one another.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 7,
-                                "question": "a. Relate the story of Abraham’s sacrifice of Isaac (Genesis 22:1–19). \n\n b. What two lessons can be learned from this story? \n\n c. How can a JSS 1 student show obedience at home and in school?",
-                                "marks": 10,
-                                "image": null
-                              }
-                                  
-      
+      {
+              "id": 1,
+              "question": "a. Define electric field intensity and state its SI unit. \n\n b. State Coulomb's law and write its mathematical expression. \n\n c. Two point charges of +5μC and -3μC are placed 0.1m apart in air. Calculate the force between them. [Take 1/4πε₀ = 9 × 10⁹ Nm²/C²]",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 2,
+              "question": "a. What is a magnetic field? \n\n b. Describe an experiment to plot the magnetic field lines around a bar magnet. \n\n c. State three properties of magnetic field lines.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 3,
+              "question": "a. State Faraday's law of electromagnetic induction. \n\n b. Explain Lenz's law and how it determines the direction of induced current. \n\n c. Describe how a simple AC generator works.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 4,
+              "question": "a. Differentiate between AC and DC. \n\n b. Define: (i) Peak value (ii) RMS value (iii) Frequency of AC. \n\n c. An AC voltage is given by V = 311 sin(314t). Calculate its:\n(i) Peak voltage\n(ii) RMS voltage\n(iii) Frequency",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 5,
+              "question": "a. Differentiate between primary and secondary cells. \n\n b. Describe the construction and working of a lead-acid battery. \n\n c. State three precautions to take when maintaining a car battery.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 6,
+              "question": "a. What is solar energy? \n\n b. Describe the principle of operation of a photovoltaic cell. \n\n c. State three advantages and two disadvantages of solar energy.",
+              "marks": 12.5,
+              "image": null
+            },
+            {
+              "id": 7,
+              "question": "a. Explain the working principle of a transformer. \n\n b. A transformer has 1000 turns in the primary coil and 100 turns in the secondary coil. If the input voltage is 240V AC, calculate the output voltage. \n\n c. State two energy losses in a transformer and how they can be minimized.",
+              "marks": 12.5,
+              "image": null
+            }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];

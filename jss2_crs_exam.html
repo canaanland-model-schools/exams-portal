@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CHRISIAN RELIGIOUS STUDIES Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - CHRISTIAN RELIGIOUS STUDIES Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CHRISIAN RELIGIOUS STUDIES - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  CHRISTIAN RELIGIOUS STUDIES - JSS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,406 +624,652 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                      {
-    "id": 1,
-    "question": "The smallest unit of society is the __.",
-    "options": { "A": "church", "B": "community", "C": "family", "D": "school" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "A family made up of father, mother, and children is called __.",
-    "options": { "A": "extended family", "B": "nuclear family", "C": "large family", "D": "royal family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A family that includes grandparents, uncles, and cousins is called __.",
-    "options": { "A": "nuclear family", "B": "extended family", "C": "compound family", "D": "village family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "God created the first family with __.",
-    "options": { "A": "Abraham and Sarah", "B": "Adam and Eve", "C": "Isaac and Rebekah", "D": "Joseph and Mary" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "One importance of the family is to teach __.",
-    "options": { "A": "disobedience", "B": "bad habits", "C": "values and morals", "D": "fighting" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "According to Ephesians 6:1, children should __ their parents.",
-    "options": { "A": "insult", "B": "obey", "C": "avoid", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "The head of the family is usually the __.",
-    "options": { "A": "mother", "B": "father", "C": "teacher", "D": "pastor" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "Parents are expected to __ their children.",
-    "options": { "A": "abandon", "B": "train", "C": "ignore", "D": "hate" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A good family name means having a good __.",
-    "options": { "A": "reputation", "B": "house", "C": "job", "D": "clothes" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "According to Proverbs 22:1, a good name is better than __.",
-    "options": { "A": "silver", "B": "money", "C": "great riches", "D": "land" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "A place where teaching and learning take place is the __.",
-    "options": { "A": "market", "B": "church", "C": "school", "D": "village" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The head of a school is called the __.",
-    "options": { "A": "teacher", "B": "principal", "C": "prefect", "D": "student" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Students in a school are also called __.",
-    "options": { "A": "workers", "B": "learners", "C": "traders", "D": "farmers" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "Choosing good friends in school helps students to __.",
-    "options": { "A": "misbehave", "B": "succeed", "C": "steal", "D": "cheat" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A good friend will always __.",
-    "options": { "A": "encourage good behavior", "B": "encourage stealing", "C": "encourage fighting", "D": "encourage cheating" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "A bad friend can lead someone into __.",
-    "options": { "A": "success", "B": "good behavior", "C": "trouble", "D": "blessings" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "According to the Bible, David was a friend of __.",
-    "options": { "A": "Saul", "B": "Jonathan", "C": "Peter", "D": "James" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "Friendship between David and Jonathan is found in __.",
-    "options": { "A": "1 Samuel 18:1–5", "B": "Genesis 1", "C": "Exodus 2", "D": "Matthew 5" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Good friends help us to __.",
-    "options": { "A": "do wrong", "B": "behave well", "C": "break rules", "D": "fight others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Students must respect their __ in school.",
-    "options": { "A": "teachers", "B": "enemies", "C": "strangers", "D": "neighbors" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Friendship means __.",
-    "options": { "A": "hatred between people", "B": "love and understanding between people", "C": "quarrelling", "D": "cheating others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "A good friend will __ you when you are wrong.",
-    "options": { "A": "ignore", "B": "correct", "C": "insult", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "One consequence of bad friends is __.",
-    "options": { "A": "good character", "B": "progress", "C": "punishment", "D": "success" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Bad friends may lead someone into __.",
-    "options": { "A": "stealing", "B": "obedience", "C": "honesty", "D": "respect" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "The Bible advises us to avoid __ friends.",
-    "options": { "A": "good", "B": "wise", "C": "bad", "D": "helpful" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "A community is a group of people living in the same __.",
-    "options": { "A": "country", "B": "area", "C": "school", "D": "church" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "The leader of a community may be called a __.",
-    "options": { "A": "chief", "B": "teacher", "C": "doctor", "D": "student" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "One way of sustaining good relationships in the community is __.",
-    "options": { "A": "fighting", "B": "cooperation", "C": "stealing", "D": "hatred" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Respecting community leaders helps to maintain __.",
-    "options": { "A": "disorder", "B": "peace", "C": "trouble", "D": "confusion" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Community members should live in __.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "pride" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Helping one another in the community shows __.",
-    "options": { "A": "wickedness", "B": "selfishness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "Fighting in the community can lead to __.",
-    "options": { "A": "peace", "B": "conflict", "C": "unity", "D": "joy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "A good community encourages __.",
-    "options": { "A": "cooperation", "B": "hatred", "C": "jealousy", "D": "selfishness" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "One duty of community members is to __ laws.",
-    "options": { "A": "break", "B": "obey", "C": "ignore", "D": "reject" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "Peace in the community promotes __.",
-    "options": { "A": "development", "B": "poverty", "C": "confusion", "D": "destruction" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "The church is a place where Christians __.",
-    "options": { "A": "trade", "B": "play", "C": "worship God", "D": "sleep" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Members of the church are called __.",
-    "options": { "A": "believers", "B": "strangers", "C": "enemies", "D": "traders" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Fellowship in the church means __.",
-    "options": { "A": "hatred among members", "B": "unity among believers", "C": "fighting in church", "D": "ignoring others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "The leader of a church may be called a __.",
-    "options": { "A": "teacher", "B": "pastor", "C": "student", "D": "driver" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "Christians should live in __ with one another.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "anger" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "One importance of fellowship in the church is to __.",
-    "options": { "A": "build faith", "B": "create division", "C": "cause quarrels", "D": "spread hatred" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Christians are expected to __ one another.",
-    "options": { "A": "hate", "B": "fight", "C": "love", "D": "avoid" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "Helping members in the church shows __.",
-    "options": { "A": "selfishness", "B": "wickedness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "The church teaches people to __ God.",
-    "options": { "A": "ignore", "B": "disobey", "C": "worship", "D": "fight" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Unity in the church promotes __.",
-    "options": { "A": "growth", "B": "confusion", "C": "hatred", "D": "jealousy" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "A person who leads others spiritually in the church is a __.",
-    "options": { "A": "pastor", "B": "teacher", "C": "trader", "D": "farmer" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "Respect for elders shows good __.",
-    "options": { "A": "behavior", "B": "pride", "C": "anger", "D": "disobedience" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "Children who obey their parents receive __.",
-    "options": { "A": "punishment", "B": "blessings", "C": "trouble", "D": "shame" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Living peacefully with others shows __.",
-    "options": { "A": "wickedness", "B": "good character", "C": "pride", "D": "jealousy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Christians should always show __ to others.",
-    "options": { "A": "hatred", "B": "anger", "C": "love", "D": "jealousy" },
-    "answer": "C",
-    "image": null
-  }
+                                                  {
+          "id": 1,
+          "question": "Who were the first two disciples Jesus called by the Sea of Galilee?",
+          "options": {
+            "A": "James and John",
+            "B": "Peter and Andrew",
+            "C": "Matthew and Thomas",
+            "D": "Philip and Bartholomew"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "In Luke 5:1-11, what were Simon Peter and his partners doing when Jesus called them?",
+          "options": {
+            "A": "Praying",
+            "B": "Mending their nets",
+            "C": "Washing their nets",
+            "D": "Fishing"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "How many disciples did Jesus call to be apostles in Mark 3:13-19?",
+          "options": {
+            "A": "Seven",
+            "B": "Ten",
+            "C": "Twelve",
+            "D": "Seventy"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "Which of these was NOT one of the twelve apostles?",
+          "options": {
+            "A": "Simon the Zealot",
+            "B": "Judas Iscariot",
+            "C": "John the Baptist",
+            "D": "James son of Alphaeus"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "What was the former occupation of Matthew the apostle?",
+          "options": {
+            "A": "Fisherman",
+            "B": "Shepherd",
+            "C": "Tax collector",
+            "D": "Tentmaker"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "According to Luke 9:57-62, what did Jesus say to the man who wanted to first bury his father?",
+          "options": {
+            "A": "\"Come, follow me.\"",
+            "B": "\"Let the dead bury their own dead.\"",
+            "C": "\"Go and sell all you have.\"",
+            "D": "\"Your faith has saved you.\""
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "Jesus said, \"If anyone comes to me and does not hate his father and mother...\" What does 'hate' in this context (Lk 14:26) primarily mean?",
+          "options": {
+            "A": "To despise them",
+            "B": "To love them less by comparison",
+            "C": "To abandon them",
+            "D": "To disobey them"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "What did Jesus say a person must do to be His disciple, as in Luke 14:33?",
+          "options": {
+            "A": "Pray without ceasing",
+            "B": "Give up all his possessions",
+            "C": "Fast twice a week",
+            "D": "Renounce all his family"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "The Beatitudes are found in which book of the Bible?",
+          "options": {
+            "A": "Mark",
+            "B": "Luke",
+            "C": "John",
+            "D": "Matthew"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "\"Blessed are the poor in spirit, for theirs is the ______.\"",
+          "options": {
+            "A": "kingdom of heaven",
+            "B": "earth",
+            "C": "comfort",
+            "D": "mercy"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "\"Blessed are the peacemakers, for they will be called ______.\"",
+          "options": {
+            "A": "sons of God",
+            "B": "children of light",
+            "C": "wise ones",
+            "D": "righteous"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Which Beatitude promises that the pure in heart will see God?",
+          "options": {
+            "A": "The fifth",
+            "B": "The sixth",
+            "C": "The seventh",
+            "D": "The eighth"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "Jesus told His followers, \"You are the ______ of the earth.\"",
+          "options": {
+            "A": "light",
+            "B": "salt",
+            "C": "seed",
+            "D": "vine"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "If salt loses its saltiness, how can it be made salty again? (Matt 5:13).",
+          "options": {
+            "A": "By adding more salt",
+            "B": "By washing it",
+            "C": "It is no longer good for anything",
+            "D": "By mixing it with sugar"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "Christians are the light of the world. A city on a hill cannot be ______.",
+          "options": {
+            "A": "built",
+            "B": "hidden",
+            "C": "destroyed",
+            "D": "moved"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "According to Jesus in Matthew 5:16, our good deeds should cause people to ______.",
+          "options": {
+            "A": "glorify our Father in heaven",
+            "B": "envy us",
+            "C": "praise us",
+            "D": "give us money"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "What was the Old Testament law regarding revenge? (Matt 5:38)",
+          "options": {
+            "A": "\"Love your neighbour\"",
+            "B": "\"An eye for an eye\"",
+            "C": "\"Turn the other cheek\"",
+            "D": "\"Do not resist an evil person\""
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "Jesus taught that if someone slaps you on the right cheek, you should ______.",
+          "options": {
+            "A": "slap him back",
+            "B": "run away",
+            "C": "turn to him the other cheek",
+            "D": "report him to the authorities"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "If someone wants to sue you and take your tunic, you should also let him have your ______.",
+          "options": {
+            "A": "shoes",
+            "B": "house",
+            "C": "cloak",
+            "D": "money"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "Jesus taught that we should give to the one who asks and not turn away from the one who wants to ______.",
+          "options": {
+            "A": "fight us",
+            "B": "borrow from us",
+            "C": "teach us",
+            "D": "sell to us"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "When praying, Jesus warned against being like the ______ who love to pray publicly.",
+          "options": {
+            "A": "Pharisees",
+            "B": "Sadducees",
+            "C": "Scribes",
+            "D": "Herodians"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "Where should you go to pray in secret, according to Matthew 6:6?",
+          "options": {
+            "A": "Synagogue",
+            "B": "Street corner",
+            "C": "Your room",
+            "D": "Mountain top"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "How did Jesus say we should address God in prayer?",
+          "options": {
+            "A": "\"Master\"",
+            "B": "\"Our Father\"",
+            "C": "\"Almighty King\"",
+            "D": "\"Holy One\""
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "When fasting, what should you do so others won't know?",
+          "options": {
+            "A": "Announce it",
+            "B": "Wash your face and look normal",
+            "C": "Wear sackcloth",
+            "D": "Put ashes on your head"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "According to Matthew 6:14-15, if you forgive others, who will forgive you?",
+          "options": {
+            "A": "The church",
+            "B": "Your heavenly Father",
+            "C": "The priest",
+            "D": "Your friends"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "Where should we store our treasures according to Jesus? (Matt 6:19-20)",
+          "options": {
+            "A": "In banks",
+            "B": "In heaven",
+            "C": "In hidden safes",
+            "D": "In our houses"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "What did Jesus say happens where our treasure is?",
+          "options": {
+            "A": "Our work will be there",
+            "B": "Our family will be there",
+            "C": "Our heart will be also",
+            "D": "Our future will be there"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "\"No one can serve two masters... You cannot serve both God and ______.\"",
+          "options": {
+            "A": "Caesar",
+            "B": "Money",
+            "C": "Pleasure",
+            "D": "Power"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "In Matthew 6:25-34, what did Jesus tell His followers not to worry about?",
+          "options": {
+            "A": "Their spiritual gifts",
+            "B": "Their life, food, and clothing",
+            "C": "The sins of others",
+            "D": "The end times"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Who does Jesus say feeds the birds of the air?",
+          "options": {
+            "A": "Farmers",
+            "B": "Your heavenly Father",
+            "C": "The earth",
+            "D": "The rain"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "What did Jesus say about the lilies of the field?",
+          "options": {
+            "A": "They toil and spin",
+            "B": "They are more beautiful than Solomon's glory",
+            "C": "They need no water",
+            "D": "They are useless"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "What is the Gentiles' (pagans') main concern according to Matthew 6:32?",
+          "options": {
+            "A": "Spiritual things",
+            "B": "The kingdom of God",
+            "C": "Food, drink, and clothing",
+            "D": "Helping others"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "We should seek first ______ and His righteousness.",
+          "options": {
+            "A": "our happiness",
+            "B": "the church",
+            "C": "the kingdom of God",
+            "D": "our family's welfare"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "Simon Peter's brother was named ______.",
+          "options": {
+            "A": "James",
+            "B": "John",
+            "C": "Andrew",
+            "D": "Philip"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "Which pair of brothers were called the \"Sons of Thunder\"?",
+          "options": {
+            "A": "Peter and Andrew",
+            "B": "James and John",
+            "C": "Philip and Bartholomew",
+            "D": "James and Jude"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "After the miraculous catch of fish, what was Simon Peter's reaction to Jesus? (Lk 5:8)",
+          "options": {
+            "A": "\"Let's fish some more!\"",
+            "B": "\"Go away from me, Lord; I am a sinful man!\"",
+            "C": "\"Will you stay with us?\"",
+            "D": "\"Teach us to pray.\""
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "What did Jesus say the disciples would become if they followed Him?",
+          "options": {
+            "A": "\"Fishers of fish\"",
+            "B": "\"Fishers of men\"",
+            "C": "\"Great teachers\"",
+            "D": "\"Healers of the sick\""
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "Which apostle is also called Nathanael in the Bible?",
+          "options": {
+            "A": "Matthew",
+            "B": "Thomas",
+            "C": "Bartholomew",
+            "D": "Thaddaeus"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "In the call of the Twelve, Jesus gave them authority to do all EXCEPT?",
+          "options": {
+            "A": "Drive out demons",
+            "B": "Heal every disease",
+            "C": "Forgive sins",
+            "D": "Preach"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "What did the man in Luke 9:61 want to do before following Jesus?",
+          "options": {
+            "A": "Get married",
+            "B": "Say goodbye to his family",
+            "C": "Sell his farm",
+            "D": "Finish his education"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "What is the reward for those who mourn (Matt 5:4)?",
+          "options": {
+            "A": "They will inherit the earth",
+            "B": "They will be filled",
+            "C": "They will be shown mercy",
+            "D": "They will be comforted"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "\"Blessed are those who hunger and thirst for righteousness, for they will be ______.\"",
+          "options": {
+            "A": "satisfied",
+            "B": "called sons of God",
+            "C": "shown mercy",
+            "D": "pure in heart"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "\"Blessed are the merciful, for they will be shown ______.\"",
+          "options": {
+            "A": "love",
+            "B": "mercy",
+            "C": "kindness",
+            "D": "favour"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "What should we do with our light (good works)?",
+          "options": {
+            "A": "Hide it",
+            "B": "Put it under a bowl",
+            "C": "Let it shine before men",
+            "D": "Use it only at home"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "The teaching \"Do not resist an evil person\" is found in Matthew chapter ___.",
+          "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "7"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "How many times did Peter ask if he should forgive his brother?",
+          "options": {
+            "A": "Three times",
+            "B": "Seven times",
+            "C": "Seventy times seven",
+            "D": "Seventy-seven times"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "Jesus said we should not worry about tomorrow because ______.",
+          "options": {
+            "A": "tomorrow may not come",
+            "B": "tomorrow will worry about itself",
+            "C": "we have enough for today",
+            "D": "God is not concerned with tomorrow"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "Which book records the call of the first disciples while they were casting a net?",
+          "options": {
+            "A": "Matthew only",
+            "B": "Mark only",
+            "C": "Luke only",
+            "D": "Both Matthew and Mark"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "What did James and John immediately do when Jesus called them?",
+          "options": {
+            "A": "Asked their father's permission",
+            "B": "Left their father Zebedee in the boat",
+            "C": "Finished mending the nets",
+            "D": "Went home to collect money"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Jesus said, \"Foxes have holes and birds of the air have nests, but the Son of Man has ______.\"",
+          "options": {
+            "A": "many houses",
+            "B": "no place to lay his head",
+            "C": "a throne in heaven",
+            "D": "a home in Bethany"
+          },
+          "answer": "B",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-
-
-                                                               {
-                                "id": 1,
-                                "question": "a. What is repentance? \n\n b. Narrate the story of David’s repentance as recorded in 2 Samuel 12:7–13. \n\n c. Mention two lessons Christians can learn from David’s repentance.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 2,
-                                "question": "a. Who was Jonah? \n\n b. Describe how the people of Nineveh responded to Jonah’s message (Jonah 3:1–10). \n\n c. State two importance of repentance in a Christian’s life.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 3,
-                                "question": "a. Define obedience. \n\n b. Outline God’s call to Abraham in Genesis 12:1–9. \n\n c. Explain two blessings Abraham received for his obedience.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 4,
-                                "question": "a. Who was Zacchaeus? \n\n b. How did Jesus’ visit change Zacchaeus’ life? (Luke 19:1–10) \n\n c. What are two consequences of refusing to repent?",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 5,
-                                "question": "a. What does 'call to service' mean? \n\n b. Using Joseph as an example, explain how faithfulness in service can lead to promotion. \n\n c. Identify two problems people face in serving God and others.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 6,
-                                "question": "a. Mention two qualities of Ruth that made her a good example of service. \n\n b. How did Boaz show kindness to Ruth? (Ruth 2) \n\n c. Give two reasons why Christians should serve one another.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 7,
-                                "question": "a. Relate the story of Abraham’s sacrifice of Isaac (Genesis 22:1–19). \n\n b. What two lessons can be learned from this story? \n\n c. How can a JSS 1 student show obedience at home and in school?",
-                                "marks": 10,
-                                "image": null
-                              }
-                                  
-      
+                                                  {
+                            "id": 1,
+                            "question": "a. Narrate the call of the first four disciples as recorded in Matthew 4:18-22. \n\n b. State two reasons why Jesus called fishermen among His first disciples. \n\n c. Mention two qualities of a good disciple as shown by the immediate response of Peter, Andrew, James, and John.",
+                            "marks": 12.5,
+                            "image": null
+                          },
+                          {
+                            "id": 2,
+                            "question": "a. From Mark 3:13-19, list any six of the twelve apostles Jesus appointed. \n\n b. Explain two reasons why Jesus chose twelve apostles. \n\n c. Identify one significant fact about any two of the apostles you listed in (a).",
+                            "marks": 12.5,
+                            "image": null
+                          },
+                          {
+                            "id": 3,
+                            "question": "a. What three demands did Jesus make from would-be followers in Luke 9:57-62? \n\n b. Explain what Jesus meant when He said, \"No one who puts a hand to the plow and looks back is fit for service in the kingdom of God.\" \n\n c. According to Luke 14:25-33, why must a disciple of Jesus 'count the cost'?",
+                            "marks": 12.5,
+                            "image": null
+                          },
+                          {
+                            "id": 4,
+                            "question": "a. Mention any five of the eight Beatitudes from Matthew 5:3-10. \n\n b. Explain the meaning of \"Blessed are the meek, for they will inherit the earth.\" \n\n c. How can a Christian student show that he/she is \"pure in heart\" in school?",
+                            "marks": 12.5,
+                            "image": null
+                          },
+                          {
+                            "id": 5,
+                            "question": "a. Explain what Jesus meant when He said, \"You are the salt of the earth\" (Matt 5:13). \n\n b. In what two ways can a Christian function as \"the light of the world\" (Matt 5:14-16)? \n\n c. What happens when a Christian fails to be salt and light in his/her community?",
+                            "marks": 12.5,
+                            "image": null
+                          },
+                          {
+                            "id": 6,
+                            "question": "a. Summarize Jesus' teaching on revenge as contained in Matthew 5:38-42. \n\n b. State two practical ways a Christian student can apply the principle of \"turning the other cheek\" when offended by a classmate. \n\n c. Why is Jesus' teaching on non-retaliation considered a higher standard than the Old Testament law?",
+                            "marks": 12.5,
+                            "image": null
+                          },
+                          {
+                            "id": 7,
+                            "question": "a. Identify three key teachings of Jesus on prayer from Matthew 6:5-15. \n\n b. What two reasons did Jesus give for not worrying about material needs like food and clothing (Matt 6:25-34)? \n\n c. According to Matthew 6:19-24, why is it impossible to serve both God and money?",
+                            "marks": 12.5,
+                            "image": null
+                          }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -1079,8 +1325,7 @@
                   document.getElementById('username').innerText = username;
                   
               
-                document.getElementById('userImage').src =
-              (sessionStorage.getItem('image') || 'img/default_user.jpg');
+                document.getElementById('userImage').src = (sessionStorage.getItem('image') || 'img/default_user.jpg');
                 }
            
             // Load static questions

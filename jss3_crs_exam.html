@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CHRISIAN RELIGIOUS STUDIES Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - CHRISTIAN RELIGIOUS STUDIES Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CHRISIAN RELIGIOUS STUDIES - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  CHRISTIAN RELIGIOUS STUDIES - JSS3 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,406 +624,652 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                      {
-    "id": 1,
-    "question": "The smallest unit of society is the __.",
-    "options": { "A": "church", "B": "community", "C": "family", "D": "school" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "A family made up of father, mother, and children is called __.",
-    "options": { "A": "extended family", "B": "nuclear family", "C": "large family", "D": "royal family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A family that includes grandparents, uncles, and cousins is called __.",
-    "options": { "A": "nuclear family", "B": "extended family", "C": "compound family", "D": "village family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "God created the first family with __.",
-    "options": { "A": "Abraham and Sarah", "B": "Adam and Eve", "C": "Isaac and Rebekah", "D": "Joseph and Mary" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "One importance of the family is to teach __.",
-    "options": { "A": "disobedience", "B": "bad habits", "C": "values and morals", "D": "fighting" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "According to Ephesians 6:1, children should __ their parents.",
-    "options": { "A": "insult", "B": "obey", "C": "avoid", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "The head of the family is usually the __.",
-    "options": { "A": "mother", "B": "father", "C": "teacher", "D": "pastor" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "Parents are expected to __ their children.",
-    "options": { "A": "abandon", "B": "train", "C": "ignore", "D": "hate" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A good family name means having a good __.",
-    "options": { "A": "reputation", "B": "house", "C": "job", "D": "clothes" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "According to Proverbs 22:1, a good name is better than __.",
-    "options": { "A": "silver", "B": "money", "C": "great riches", "D": "land" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "A place where teaching and learning take place is the __.",
-    "options": { "A": "market", "B": "church", "C": "school", "D": "village" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The head of a school is called the __.",
-    "options": { "A": "teacher", "B": "principal", "C": "prefect", "D": "student" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Students in a school are also called __.",
-    "options": { "A": "workers", "B": "learners", "C": "traders", "D": "farmers" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "Choosing good friends in school helps students to __.",
-    "options": { "A": "misbehave", "B": "succeed", "C": "steal", "D": "cheat" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A good friend will always __.",
-    "options": { "A": "encourage good behavior", "B": "encourage stealing", "C": "encourage fighting", "D": "encourage cheating" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "A bad friend can lead someone into __.",
-    "options": { "A": "success", "B": "good behavior", "C": "trouble", "D": "blessings" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "According to the Bible, David was a friend of __.",
-    "options": { "A": "Saul", "B": "Jonathan", "C": "Peter", "D": "James" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "Friendship between David and Jonathan is found in __.",
-    "options": { "A": "1 Samuel 18:1–5", "B": "Genesis 1", "C": "Exodus 2", "D": "Matthew 5" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Good friends help us to __.",
-    "options": { "A": "do wrong", "B": "behave well", "C": "break rules", "D": "fight others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Students must respect their __ in school.",
-    "options": { "A": "teachers", "B": "enemies", "C": "strangers", "D": "neighbors" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Friendship means __.",
-    "options": { "A": "hatred between people", "B": "love and understanding between people", "C": "quarrelling", "D": "cheating others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "A good friend will __ you when you are wrong.",
-    "options": { "A": "ignore", "B": "correct", "C": "insult", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "One consequence of bad friends is __.",
-    "options": { "A": "good character", "B": "progress", "C": "punishment", "D": "success" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Bad friends may lead someone into __.",
-    "options": { "A": "stealing", "B": "obedience", "C": "honesty", "D": "respect" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "The Bible advises us to avoid __ friends.",
-    "options": { "A": "good", "B": "wise", "C": "bad", "D": "helpful" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "A community is a group of people living in the same __.",
-    "options": { "A": "country", "B": "area", "C": "school", "D": "church" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "The leader of a community may be called a __.",
-    "options": { "A": "chief", "B": "teacher", "C": "doctor", "D": "student" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "One way of sustaining good relationships in the community is __.",
-    "options": { "A": "fighting", "B": "cooperation", "C": "stealing", "D": "hatred" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Respecting community leaders helps to maintain __.",
-    "options": { "A": "disorder", "B": "peace", "C": "trouble", "D": "confusion" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Community members should live in __.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "pride" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Helping one another in the community shows __.",
-    "options": { "A": "wickedness", "B": "selfishness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "Fighting in the community can lead to __.",
-    "options": { "A": "peace", "B": "conflict", "C": "unity", "D": "joy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "A good community encourages __.",
-    "options": { "A": "cooperation", "B": "hatred", "C": "jealousy", "D": "selfishness" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "One duty of community members is to __ laws.",
-    "options": { "A": "break", "B": "obey", "C": "ignore", "D": "reject" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "Peace in the community promotes __.",
-    "options": { "A": "development", "B": "poverty", "C": "confusion", "D": "destruction" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "The church is a place where Christians __.",
-    "options": { "A": "trade", "B": "play", "C": "worship God", "D": "sleep" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Members of the church are called __.",
-    "options": { "A": "believers", "B": "strangers", "C": "enemies", "D": "traders" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Fellowship in the church means __.",
-    "options": { "A": "hatred among members", "B": "unity among believers", "C": "fighting in church", "D": "ignoring others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "The leader of a church may be called a __.",
-    "options": { "A": "teacher", "B": "pastor", "C": "student", "D": "driver" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "Christians should live in __ with one another.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "anger" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "One importance of fellowship in the church is to __.",
-    "options": { "A": "build faith", "B": "create division", "C": "cause quarrels", "D": "spread hatred" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Christians are expected to __ one another.",
-    "options": { "A": "hate", "B": "fight", "C": "love", "D": "avoid" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "Helping members in the church shows __.",
-    "options": { "A": "selfishness", "B": "wickedness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "The church teaches people to __ God.",
-    "options": { "A": "ignore", "B": "disobey", "C": "worship", "D": "fight" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Unity in the church promotes __.",
-    "options": { "A": "growth", "B": "confusion", "C": "hatred", "D": "jealousy" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "A person who leads others spiritually in the church is a __.",
-    "options": { "A": "pastor", "B": "teacher", "C": "trader", "D": "farmer" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "Respect for elders shows good __.",
-    "options": { "A": "behavior", "B": "pride", "C": "anger", "D": "disobedience" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "Children who obey their parents receive __.",
-    "options": { "A": "punishment", "B": "blessings", "C": "trouble", "D": "shame" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Living peacefully with others shows __.",
-    "options": { "A": "wickedness", "B": "good character", "C": "pride", "D": "jealousy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Christians should always show __ to others.",
-    "options": { "A": "hatred", "B": "anger", "C": "love", "D": "jealousy" },
-    "answer": "C",
-    "image": null
-  }
+         {
+          "id": 1,
+          "question": "In Acts 8, Simon the Magician was impressed by Peter's ability to ______.",
+          "options": {
+            "A": "heal the sick",
+            "B": "perform miracles",
+            "C": "lay hands for the Holy Spirit",
+            "D": "raise the dead"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "Peter rebuked Simon the Magician because Simon tried to ______.",
+          "options": {
+            "A": "buy the gift of God with money",
+            "B": "preach without permission",
+            "C": "challenge Peter's authority",
+            "D": "join the apostles"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "The man healed by Peter at Lydda was named ______.",
+          "options": {
+            "A": "Cornelius",
+            "B": "Aeneas",
+            "C": "Dorcas",
+            "D": "Simon"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "Dorcas, whom Peter raised, was known for her ______.",
+          "options": {
+            "A": "wealth",
+            "B": "prayers",
+            "C": "good works and charity",
+            "D": "prophecy"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "Cornelius was a ______.",
+          "options": {
+            "A": "Jewish priest",
+            "B": "Roman centurion",
+            "C": "Greek philosopher",
+            "D": "Samaritan merchant"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "In his vision, Cornelius saw ______.",
+          "options": {
+            "A": "a sheet with animals",
+            "B": "an angel of God",
+            "C": "the apostle Peter",
+            "D": "a bright light"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "Peter's vision of the sheet taught him that ______.",
+          "options": {
+            "A": "he should not call any man unclean",
+            "B": "he should eat unclean animals",
+            "C": "he should travel to Rome",
+            "D": "Gentiles could not be saved"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "Peter was imprisoned by ______.",
+          "options": {
+            "A": "the Romans",
+            "B": "the Jews",
+            "C": "King Herod",
+            "D": "the Pharisees"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "The angel who freed Peter from prison told him to ______.",
+          "options": {
+            "A": "flee the city",
+            "B": "go to the temple and preach",
+            "C": "return to prison",
+            "D": "stand up quickly"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "Herod Agrippa was struck dead because he ______.",
+          "options": {
+            "A": "persecuted the church",
+            "B": "accepted worship due to God",
+            "C": "killed James",
+            "D": "imprisoned Peter"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "Apostle Paul's original name was ______.",
+          "options": {
+            "A": "Silas",
+            "B": "Stephen",
+            "C": "Saul",
+            "D": "Barnabas"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Before his conversion, Paul persecuted Christians because he ______.",
+          "options": {
+            "A": "hated Romans",
+            "B": "was a zealous Pharisee",
+            "C": "wanted to please the Greeks",
+            "D": "was paid by the Sanhedrin"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "Paul was present at the stoning of ______.",
+          "options": {
+            "A": "Peter",
+            "B": "Stephen",
+            "C": "James",
+            "D": "John"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "Paul was traveling to ______ when he was converted.",
+          "options": {
+            "A": "Jerusalem",
+            "B": "Damascus",
+            "C": "Antioch",
+            "D": "Tarsus"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "On the Damascus road, Paul heard a voice saying, \"Saul, Saul, why ______?\"",
+          "options": {
+            "A": "do you persecute me?",
+            "B": "are you traveling to Damascus?",
+            "C": "do you doubt?",
+            "D": "have you forsaken me?"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "After his conversion, Paul was baptized by ______.",
+          "options": {
+            "A": "Peter",
+            "B": "Ananias",
+            "C": "Barnabas",
+            "D": "Silas"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "Paul's first missionary journey was with ______.",
+          "options": {
+            "A": "Peter and John",
+            "B": "Barnabas and Mark",
+            "C": "Timothy and Silas",
+            "D": "Luke and Apollos"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "The Council at Jerusalem was convened to address the issue of ______.",
+          "options": {
+            "A": "church leadership",
+            "B": "circumcision of Gentile believers",
+            "C": "financial giving",
+            "D": "persecution"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "Who argued that Gentiles should not be burdened with the law of Moses?",
+          "options": {
+            "A": "James",
+            "B": "Peter",
+            "C": "Paul",
+            "D": "Both B and C"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "The decision of the Jerusalem Council was sent to Gentile believers through a letter carried by ______.",
+          "options": {
+            "A": "Paul and Barnabas",
+            "B": "Judas and Silas",
+            "C": "Peter and John",
+            "D": "Timothy and Titus"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "Christian unity is important because it ______.",
+          "options": {
+            "A": "allows for many doctrines",
+            "B": "reflects the nature of God",
+            "C": "promotes competition",
+            "D": "discourages non-believers"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "An example of a Christian organization in Nigeria is ______.",
+          "options": {
+            "A": "CAN",
+            "B": "FIFA",
+            "C": "UN",
+            "D": "NATO"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "Interdenominational cooperation helps Christians to ______.",
+          "options": {
+            "A": "compete",
+            "B": "worship together and share resources",
+            "C": "create new denominations",
+            "D": "avoid persecution"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "According to Philippians 4, the church's giving to Paul was a ______.",
+          "options": {
+            "A": "sacrifice",
+            "B": "sweet-smelling aroma to God",
+            "C": "commandment",
+            "D": "requirement for salvation"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "Teaching that fosters unity includes ______.",
+          "options": {
+            "A": "love for one another",
+            "B": "emphasis on differences",
+            "C": "criticism of other denominations",
+            "D": "isolation from others"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "Christians living in a community should ______.",
+          "options": {
+            "A": "keep to themselves",
+            "B": "be salt and light",
+            "C": "avoid non-Christians",
+            "D": "judge others openly"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "When persecuted, Christians should ______.",
+          "options": {
+            "A": "retaliate",
+            "B": "pray for their persecutors",
+            "C": "go into hiding",
+            "D": "deny their faith"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "Simon the Magician came from the city of ______.",
+          "options": {
+            "A": "Jerusalem",
+            "B": "Samaria",
+            "C": "Antioch",
+            "D": "Rome"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "Peter said to Aeneas, \"Jesus Christ ______ you.\"",
+          "options": {
+            "A": "saves",
+            "B": "heals",
+            "C": "forgives",
+            "D": "loves"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "Dorcas was also known by the Greek name ______.",
+          "options": {
+            "A": "Lydia",
+            "B": "Tabitha",
+            "C": "Mary",
+            "D": "Rhoda"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "Cornelius was described as a ______ man.",
+          "options": {
+            "A": "wicked",
+            "B": "devout and God-fearing",
+            "C": "rich and proud",
+            "D": "silent and secretive"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "Peter was staying in the house of ______ when he had the vision.",
+          "options": {
+            "A": "Cornelius",
+            "B": "Simon the tanner",
+            "C": "John Mark",
+            "D": "Mary the mother of John"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "Peter's miraculous escape from prison was discovered by ______.",
+          "options": {
+            "A": "the guards",
+            "B": "Rhoda",
+            "C": "Herod",
+            "D": "the apostles"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "The angel struck Peter to ______.",
+          "options": {
+            "A": "punish him",
+            "B": "wake him up",
+            "C": "heal him",
+            "D": "guide him"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "Herod's death occurred because he did not give ______.",
+          "options": {
+            "A": "praise to God",
+            "B": "money to the poor",
+            "C": "freedom to Peter",
+            "D": "offerings to the temple"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "Paul was born in ______.",
+          "options": {
+            "A": "Jerusalem",
+            "B": "Tarsus",
+            "C": "Damascus",
+            "D": "Antioch"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "Paul was educated under ______.",
+          "options": {
+            "A": "Gamaliel",
+            "B": "Caiaphas",
+            "C": "Annas",
+            "D": "Herod"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "Paul's conversion took place about ______ after Jesus' ascension.",
+          "options": {
+            "A": "one year",
+            "B": "three years",
+            "C": "ten years",
+            "D": "twenty years"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "On his first missionary journey, Paul and Barnabas first preached in ______.",
+          "options": {
+            "A": "Cyprus",
+            "B": "Galatia",
+            "C": "Macedonia",
+            "D": "Athens"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "At Lystra, Paul healed a man who had been ______.",
+          "options": {
+            "A": "blind from birth",
+            "B": "lame from birth",
+            "C": "deaf and mute",
+            "D": "leprous"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "The Jerusalem Council decided that Gentile believers should abstain from ______.",
+          "options": {
+            "A": "eating meat",
+            "B": "food sacrificed to idols, blood, strangled animals, and sexual immorality",
+            "C": "working on the Sabbath",
+            "D": "drinking wine"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "The council's decision was meant to promote ______ between Jewish and Gentile believers.",
+          "options": {
+            "A": "separation",
+            "B": "unity",
+            "C": "competition",
+            "D": "disagreement"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "CAN stands for ______.",
+          "options": {
+            "A": "Christian Association of Nigeria",
+            "B": "Church of All Nations",
+            "C": "Christian Alliance Network",
+            "D": "Christians in Nigeria"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "According to 1 Corinthians 8, knowledge ______, but love ______.",
+          "options": {
+            "A": "destroys; builds",
+            "B": "puffs up; builds up",
+            "C": "saves; heals",
+            "D": "confuses; unites"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "Christian giving should be done ______.",
+          "options": {
+            "A": "reluctantly",
+            "B": "under compulsion",
+            "C": "cheerfully",
+            "D": "only when rich"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "A teaching that fosters unity is found in ______.",
+          "options": {
+            "A": "John 17:21",
+            "B": "Matthew 5:13",
+            "C": "Revelation 3:16",
+            "D": "Genesis 1:1"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "A Christian's attitude in a non-Christian community should be one of ______.",
+          "options": {
+            "A": "superiority",
+            "B": "condemnation",
+            "C": "love and respect",
+            "D": "indifference"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "When Peter was released from prison, the believers were gathered at the house of ______.",
+          "options": {
+            "A": "Mary the mother of John",
+            "B": "Cornelius",
+            "C": "Simon the tanner",
+            "D": "Dorcas"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "The gift Simon wanted to buy was the ______.",
+          "options": {
+            "A": "gift of healing",
+            "B": "gift of prophecy",
+            "C": "gift of the Holy Spirit",
+            "D": "gift of tongues"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "Paul's first missionary journey ended in ______.",
+          "options": {
+            "A": "Antioch of Syria",
+            "B": "Jerusalem",
+            "C": "Rome",
+            "D": "Ephesus"
+          },
+          "answer": "A",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-
-
-                                                               {
-                                "id": 1,
-                                "question": "a. What is repentance? \n\n b. Narrate the story of David’s repentance as recorded in 2 Samuel 12:7–13. \n\n c. Mention two lessons Christians can learn from David’s repentance.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 2,
-                                "question": "a. Who was Jonah? \n\n b. Describe how the people of Nineveh responded to Jonah’s message (Jonah 3:1–10). \n\n c. State two importance of repentance in a Christian’s life.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 3,
-                                "question": "a. Define obedience. \n\n b. Outline God’s call to Abraham in Genesis 12:1–9. \n\n c. Explain two blessings Abraham received for his obedience.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 4,
-                                "question": "a. Who was Zacchaeus? \n\n b. How did Jesus’ visit change Zacchaeus’ life? (Luke 19:1–10) \n\n c. What are two consequences of refusing to repent?",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 5,
-                                "question": "a. What does 'call to service' mean? \n\n b. Using Joseph as an example, explain how faithfulness in service can lead to promotion. \n\n c. Identify two problems people face in serving God and others.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 6,
-                                "question": "a. Mention two qualities of Ruth that made her a good example of service. \n\n b. How did Boaz show kindness to Ruth? (Ruth 2) \n\n c. Give two reasons why Christians should serve one another.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 7,
-                                "question": "a. Relate the story of Abraham’s sacrifice of Isaac (Genesis 22:1–19). \n\n b. What two lessons can be learned from this story? \n\n c. How can a JSS 1 student show obedience at home and in school?",
-                                "marks": 10,
-                                "image": null
-                              }
-                                  
-      
+                                         {
+                                        "id": 1,
+                                        "question": "a. Who was Simon the Magician? \n\n b. What request did he make to Peter and why? \n\n c. Explain Peter's response to Simon's request.",
+                                        "marks": 12.5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 2,
+                                        "question": "a. Describe the healing of Aeneas by Peter. \n\n b. What was the significance of this miracle? \n\n c. Narrate the raising of Dorcas and its impact on the believers.",
+                                        "marks": 12.5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 3,
+                                        "question": "a. Who was Cornelius and what kind of man was he? \n\n b. Describe the vision Cornelius received. \n\n c. Explain the importance of Cornelius' conversion for the early church.",
+                                        "marks": 12.5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 4,
+                                        "question": "a. Narrate the events leading to Paul's conversion on the road to Damascus. \n\n b. What role did Ananias play in Paul's conversion? \n\n c. State two ways Paul's life changed after his conversion.",
+                                        "marks": 12.5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 5,
+                                        "question": "a. What was the main issue discussed at the Council of Jerusalem? \n\n b. Outline the arguments presented by Peter and James. \n\n c. What was the final decision and how was it communicated?",
+                                        "marks": 12.5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 6,
+                                        "question": "a. List three Christian organizations in Nigeria. \n\n b. Explain two ways interdenominational cooperation benefits the church. \n\n c. According to Philippians 4:14-20, why is Christian giving important?",
+                                        "marks": 12.5,
+                                        "image": null
+                                      },
+                                      {
+                                        "id": 7,
+                                        "question": "a. Mention three teachings that foster unity among Christians. \n\n b. How should a Christian live in a non-Christian community? \n\n c. What should be a Christian's attitude towards persecution?",
+                                        "marks": 12.5,
+                                        "image": null
+                                      }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -1080,7 +1326,7 @@
                   
               
                 document.getElementById('userImage').src =
-              (sessionStorage.getItem('image') || 'img/default_user.jpg');
+              'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');
                 }
            
             // Load static questions

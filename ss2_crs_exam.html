@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CHRISIAN RELIGIOUS STUDIES Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - CHRISTIAN RELIGIOUS STUDIES Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CHRISIAN RELIGIOUS STUDIES - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  CHRISTIAN RELIGIOUS STUDIES - SS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,406 +624,652 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                      {
-    "id": 1,
-    "question": "The smallest unit of society is the __.",
-    "options": { "A": "church", "B": "community", "C": "family", "D": "school" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "A family made up of father, mother, and children is called __.",
-    "options": { "A": "extended family", "B": "nuclear family", "C": "large family", "D": "royal family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A family that includes grandparents, uncles, and cousins is called __.",
-    "options": { "A": "nuclear family", "B": "extended family", "C": "compound family", "D": "village family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "God created the first family with __.",
-    "options": { "A": "Abraham and Sarah", "B": "Adam and Eve", "C": "Isaac and Rebekah", "D": "Joseph and Mary" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "One importance of the family is to teach __.",
-    "options": { "A": "disobedience", "B": "bad habits", "C": "values and morals", "D": "fighting" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "According to Ephesians 6:1, children should __ their parents.",
-    "options": { "A": "insult", "B": "obey", "C": "avoid", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "The head of the family is usually the __.",
-    "options": { "A": "mother", "B": "father", "C": "teacher", "D": "pastor" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "Parents are expected to __ their children.",
-    "options": { "A": "abandon", "B": "train", "C": "ignore", "D": "hate" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A good family name means having a good __.",
-    "options": { "A": "reputation", "B": "house", "C": "job", "D": "clothes" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "According to Proverbs 22:1, a good name is better than __.",
-    "options": { "A": "silver", "B": "money", "C": "great riches", "D": "land" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "A place where teaching and learning take place is the __.",
-    "options": { "A": "market", "B": "church", "C": "school", "D": "village" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The head of a school is called the __.",
-    "options": { "A": "teacher", "B": "principal", "C": "prefect", "D": "student" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Students in a school are also called __.",
-    "options": { "A": "workers", "B": "learners", "C": "traders", "D": "farmers" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "Choosing good friends in school helps students to __.",
-    "options": { "A": "misbehave", "B": "succeed", "C": "steal", "D": "cheat" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A good friend will always __.",
-    "options": { "A": "encourage good behavior", "B": "encourage stealing", "C": "encourage fighting", "D": "encourage cheating" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "A bad friend can lead someone into __.",
-    "options": { "A": "success", "B": "good behavior", "C": "trouble", "D": "blessings" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "According to the Bible, David was a friend of __.",
-    "options": { "A": "Saul", "B": "Jonathan", "C": "Peter", "D": "James" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "Friendship between David and Jonathan is found in __.",
-    "options": { "A": "1 Samuel 18:1–5", "B": "Genesis 1", "C": "Exodus 2", "D": "Matthew 5" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Good friends help us to __.",
-    "options": { "A": "do wrong", "B": "behave well", "C": "break rules", "D": "fight others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Students must respect their __ in school.",
-    "options": { "A": "teachers", "B": "enemies", "C": "strangers", "D": "neighbors" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Friendship means __.",
-    "options": { "A": "hatred between people", "B": "love and understanding between people", "C": "quarrelling", "D": "cheating others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "A good friend will __ you when you are wrong.",
-    "options": { "A": "ignore", "B": "correct", "C": "insult", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "One consequence of bad friends is __.",
-    "options": { "A": "good character", "B": "progress", "C": "punishment", "D": "success" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Bad friends may lead someone into __.",
-    "options": { "A": "stealing", "B": "obedience", "C": "honesty", "D": "respect" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "The Bible advises us to avoid __ friends.",
-    "options": { "A": "good", "B": "wise", "C": "bad", "D": "helpful" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "A community is a group of people living in the same __.",
-    "options": { "A": "country", "B": "area", "C": "school", "D": "church" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "The leader of a community may be called a __.",
-    "options": { "A": "chief", "B": "teacher", "C": "doctor", "D": "student" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "One way of sustaining good relationships in the community is __.",
-    "options": { "A": "fighting", "B": "cooperation", "C": "stealing", "D": "hatred" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Respecting community leaders helps to maintain __.",
-    "options": { "A": "disorder", "B": "peace", "C": "trouble", "D": "confusion" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Community members should live in __.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "pride" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Helping one another in the community shows __.",
-    "options": { "A": "wickedness", "B": "selfishness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "Fighting in the community can lead to __.",
-    "options": { "A": "peace", "B": "conflict", "C": "unity", "D": "joy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "A good community encourages __.",
-    "options": { "A": "cooperation", "B": "hatred", "C": "jealousy", "D": "selfishness" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "One duty of community members is to __ laws.",
-    "options": { "A": "break", "B": "obey", "C": "ignore", "D": "reject" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "Peace in the community promotes __.",
-    "options": { "A": "development", "B": "poverty", "C": "confusion", "D": "destruction" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "The church is a place where Christians __.",
-    "options": { "A": "trade", "B": "play", "C": "worship God", "D": "sleep" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Members of the church are called __.",
-    "options": { "A": "believers", "B": "strangers", "C": "enemies", "D": "traders" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Fellowship in the church means __.",
-    "options": { "A": "hatred among members", "B": "unity among believers", "C": "fighting in church", "D": "ignoring others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "The leader of a church may be called a __.",
-    "options": { "A": "teacher", "B": "pastor", "C": "student", "D": "driver" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "Christians should live in __ with one another.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "anger" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "One importance of fellowship in the church is to __.",
-    "options": { "A": "build faith", "B": "create division", "C": "cause quarrels", "D": "spread hatred" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Christians are expected to __ one another.",
-    "options": { "A": "hate", "B": "fight", "C": "love", "D": "avoid" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "Helping members in the church shows __.",
-    "options": { "A": "selfishness", "B": "wickedness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "The church teaches people to __ God.",
-    "options": { "A": "ignore", "B": "disobey", "C": "worship", "D": "fight" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Unity in the church promotes __.",
-    "options": { "A": "growth", "B": "confusion", "C": "hatred", "D": "jealousy" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "A person who leads others spiritually in the church is a __.",
-    "options": { "A": "pastor", "B": "teacher", "C": "trader", "D": "farmer" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "Respect for elders shows good __.",
-    "options": { "A": "behavior", "B": "pride", "C": "anger", "D": "disobedience" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "Children who obey their parents receive __.",
-    "options": { "A": "punishment", "B": "blessings", "C": "trouble", "D": "shame" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Living peacefully with others shows __.",
-    "options": { "A": "wickedness", "B": "good character", "C": "pride", "D": "jealousy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Christians should always show __ to others.",
-    "options": { "A": "hatred", "B": "anger", "C": "love", "D": "jealousy" },
-    "answer": "C",
-    "image": null
-  }
+        {
+                              "id": 1,
+                              "question": "Which biblical character is known for making a wise decision when faced with a difficult situation?",
+                              "options": {
+                                "A": "Saul",
+                                "B": "Solomon",
+                                "C": "Herod",
+                                "D": "Pilate"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 2,
+                              "question": "The story of the rich young ruler teaches Christians to avoid:",
+                              "options": {
+                                "A": "Generosity",
+                                "B": "Greed",
+                                "C": "Prayer",
+                                "D": "Fasting"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 3,
+                              "question": "The supremacy of God is demonstrated in His control over:",
+                              "options": {
+                                "A": "Nature only",
+                                "B": "Nations and rulers",
+                                "C": "Only the church",
+                                "D": "Only believers"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 4,
+                              "question": "King Josiah is known for:",
+                              "options": {
+                                "A": "Introducing idol worship",
+                                "B": "Religious reforms",
+                                "C": "Persecuting prophets",
+                                "D": "Building temples to idols"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 5,
+                              "question": "Nehemiah showed concern for his nation by:",
+                              "options": {
+                                "A": "Leading the rebuilding of Jerusalem's walls",
+                                "B": "Fleeing to another country",
+                                "C": "Ignoring the plight of his people",
+                                "D": "Opposing the king"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 6,
+                              "question": "Hebrews 11 is often called the:",
+                              "options": {
+                                "A": "Chapter of love",
+                                "B": "Chapter of faith",
+                                "C": "Chapter of hope",
+                                "D": "Chapter of wisdom"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 7,
+                              "question": "The prophet who emphasized social justice and righteousness was:",
+                              "options": {
+                                "A": "Amos",
+                                "B": "Jonah",
+                                "C": "Ezekiel",
+                                "D": "Daniel"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 8,
+                              "question": "Jesus was baptized by:",
+                              "options": {
+                                "A": "John the Baptist",
+                                "B": "Peter",
+                                "C": "James",
+                                "D": "Andrew"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 9,
+                              "question": "The temptation of Jesus in the wilderness was intended to:",
+                              "options": {
+                                "A": "Test His commitment to God's will",
+                                "B": "Make Him sin",
+                                "C": "Prepare Him for preaching",
+                                "D": "Show His power"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 10,
+                              "question": "Achan's greed led to:",
+                              "options": {
+                                "A": "Victory for Israel",
+                                "B": "Defeat at Ai",
+                                "C": "Blessings for his family",
+                                "D": "Promotion in the army"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 11,
+                              "question": "Gehazi's greed caused him to:",
+                              "options": {
+                                "A": "Receive a blessing from Elisha",
+                                "B": "Become leprous",
+                                "C": "Become a prophet",
+                                "D": "Gain great wealth"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 12,
+                              "question": "Judas Iscariot betrayed Jesus because of:",
+                              "options": {
+                                "A": "Greed for money",
+                                "B": "Love for Jesus",
+                                "C": "Obedience to God",
+                                "D": "Fear of the Romans"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 13,
+                              "question": "God's supremacy is shown in the story of:",
+                              "options": {
+                                "A": "Pharaoh and the plagues",
+                                "B": "David and Goliath",
+                                "C": "Jonah and the fish",
+                                "D": "All of the above"
+                              },
+                              "answer": "D",
+                              "image": null
+                            },
+                            {
+                              "id": 14,
+                              "question": "Religious reforms are necessary to:",
+                              "options": {
+                                "A": "Return to true worship",
+                                "B": "Introduce new gods",
+                                "C": "Please foreign rulers",
+                                "D": "Increase taxes"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 15,
+                              "question": "Nehemiah's patriotism was expressed through:",
+                              "options": {
+                                "A": "Prayer and action",
+                                "B": "Criticism only",
+                                "C": "Apathy",
+                                "D": "Rebellion"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 16,
+                              "question": "Faith is defined as:",
+                              "options": {
+                                "A": "The substance of things hoped for, the evidence of things not seen",
+                                "B": "Blind belief without reason",
+                                "C": "Fear of the unknown",
+                                "D": "Trust in man only"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 17,
+                              "question": "The book of Amos condemns:",
+                              "options": {
+                                "A": "Injustice and oppression",
+                                "B": "Worship of God",
+                                "C": "Helping the poor",
+                                "D": "Prayer and fasting"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 18,
+                              "question": "The baptism of Jesus symbolized:",
+                              "options": {
+                                "A": "His identification with sinners",
+                                "B": "His need for repentance",
+                                "C": "His superiority over John",
+                                "D": "His rejection of God's plan"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 19,
+                              "question": "The first temptation of Jesus was to turn stones into:",
+                              "options": {
+                                "A": "Bread",
+                                "B": "Gold",
+                                "C": "Water",
+                                "D": "Wine"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 20,
+                              "question": "When making decisions, a Christian should seek:",
+                              "options": {
+                                "A": "God's guidance through prayer",
+                                "B": "Only personal desire",
+                                "C": "Approval from friends only",
+                                "D": "Wealth as the main factor"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 21,
+                              "question": "The story of the rich fool teaches about the danger of:",
+                              "options": {
+                                "A": "Greed and materialism",
+                                "B": "Generosity",
+                                "C": "Hard work",
+                                "D": "Saving for the future"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 22,
+                              "question": "Which king acknowledged God's supremacy after living like a beast?",
+                              "options": {
+                                "A": "Nebuchadnezzar",
+                                "B": "Herod",
+                                "C": "Pharaoh",
+                                "D": "Ahab"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 23,
+                              "question": "Josiah's reforms began with the discovery of the:",
+                              "options": {
+                                "A": "Book of the Law",
+                                "B": "Ark of the Covenant",
+                                "C": "Temple treasures",
+                                "D": "Prophetic scroll"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 24,
+                              "question": "Nehemiah was cupbearer to which king?",
+                              "options": {
+                                "A": "Artaxerxes",
+                                "B": "Cyrus",
+                                "C": "Darius",
+                                "D": "Nebuchadnezzar"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 25,
+                              "question": "Abraham is called the father of faith because he:",
+                              "options": {
+                                "A": "Obeyed God without hesitation",
+                                "B": "Doubted God's promise",
+                                "C": "Stayed in his homeland",
+                                "D": "Refused to sacrifice Isaac"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 26,
+                              "question": "The prophet Micah said God requires us to:",
+                              "options": {
+                                "A": "Act justly, love mercy, walk humbly with God",
+                                "B": "Offer many sacrifices",
+                                "C": "Build great temples",
+                                "D": "Conquer nations"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 27,
+                              "question": "The voice from heaven at Jesus' baptism said:",
+                              "options": {
+                                "A": "\"This is my beloved Son, in whom I am well pleased\"",
+                                "B": "\"Repent, for the kingdom is at hand\"",
+                                "C": "\"You are my servant\"",
+                                "D": "\"Go and sin no more\""
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 28,
+                              "question": "Satan tempted Jesus to jump from the temple to prove:",
+                              "options": {
+                                "A": "God's protection",
+                                "B": "His own power",
+                                "C": "His divinity to people",
+                                "D": "His ability to fly"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 29,
+                              "question": "When faced with a difficult decision, Daniel:",
+                              "options": {
+                                "A": "Prayed to God for wisdom",
+                                "B": "Consulted magicians",
+                                "C": "Fled from the situation",
+                                "D": "Followed the king's order without question"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 30,
+                              "question": "Greed is a sin because it:",
+                              "options": {
+                                "A": "Places material wealth above God",
+                                "B": "Helps the poor",
+                                "C": "Promotes generosity",
+                                "D": "Encourages hard work"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 31,
+                              "question": "The story of Shadrach, Meshach, and Abednego shows God's supremacy over:",
+                              "options": {
+                                "A": "Fire and kings",
+                                "B": "Water and wind",
+                                "C": "Earth and mountains",
+                                "D": "Sun and moon"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 32,
+                              "question": "Hezekiah also carried out religious reforms by:",
+                              "options": {
+                                "A": "Destroying idols and restoring temple worship",
+                                "B": "Building altars to foreign gods",
+                                "C": "Persecuting priests",
+                                "D": "Closing the temple"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 33,
+                              "question": "Nehemiah's concern for Jerusalem made him:",
+                              "options": {
+                                "A": "Sad and prayerful",
+                                "B": "Angry and violent",
+                                "C": "Indifferent",
+                                "D": "Happy and content"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 34,
+                              "question": "By faith, Moses chose to:",
+                              "options": {
+                                "A": "Suffer with God's people rather than enjoy sin's pleasures",
+                                "B": "Become Pharaoh of Egypt",
+                                "C": "Lead the Israelites into idolatry",
+                                "D": "Reject God's call"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 35,
+                              "question": "Isaiah condemned the people for:",
+                              "options": {
+                                "A": "Empty rituals without justice",
+                                "B": "True worship",
+                                "C": "Helping the needy",
+                                "D": "Obeying God's laws"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 36,
+                              "question": "The baptism of Jesus marked the beginning of His:",
+                              "options": {
+                                "A": "Public ministry",
+                                "B": "Private life",
+                                "C": "Time of hiding",
+                                "D": "Reign as king"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 37,
+                              "question": "Jesus responded to temptation by quoting:",
+                              "options": {
+                                "A": "Scripture",
+                                "B": "Popular sayings",
+                                "C": "His own words",
+                                "D": "The words of prophets"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 38,
+                              "question": "The parable of the talents warns against:",
+                              "options": {
+                                "A": "Burying one's gifts",
+                                "B": "Using one's gifts",
+                                "C": "Sharing with others",
+                                "D": "Investing wisely"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 39,
+                              "question": "Ananias and Sapphira were punished for:",
+                              "options": {
+                                "A": "Lying about their donation",
+                                "B": "Giving too much",
+                                "C": "Praying too little",
+                                "D": "Preaching without permission"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 40,
+                              "question": "God's supremacy is seen in His creation of:",
+                              "options": {
+                                "A": "The heavens and the earth",
+                                "B": "Only man",
+                                "C": "Only animals",
+                                "D": "Only plants"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 41,
+                              "question": "The reforms of Josiah included:",
+                              "options": {
+                                "A": "Celebrating the Passover",
+                                "B": "Introducing foreign gods",
+                                "C": "Killing prophets",
+                                "D": "Burning the Scriptures"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 42,
+                              "question": "Nehemiah faced opposition from:",
+                              "options": {
+                                "A": "Sanballat and Tobiah",
+                                "B": "David and Solomon",
+                                "C": "Pharisees and Sadducees",
+                                "D": "Peter and John"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 43,
+                              "question": "Faith without works is:",
+                              "options": {
+                                "A": "Dead",
+                                "B": "Alive",
+                                "C": "Sufficient",
+                                "D": "Recommended"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 44,
+                              "question": "Amos was a prophet from:",
+                              "options": {
+                                "A": "Tekoa, a shepherd",
+                                "B": "Jerusalem, a priest",
+                                "C": "Babylon, a captive",
+                                "D": "Nineveh, a king"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 45,
+                              "question": "The Holy Spirit descended on Jesus at His baptism in the form of a:",
+                              "options": {
+                                "A": "Dove",
+                                "B": "Fire",
+                                "C": "Wind",
+                                "D": "Cloud"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 46,
+                              "question": "Jesus was tempted for:",
+                              "options": {
+                                "A": "Forty days and nights",
+                                "B": "Three days",
+                                "C": "Seven days",
+                                "D": "One day"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 47,
+                              "question": "The story of the widow's mite teaches:",
+                              "options": {
+                                "A": "Giving sacrificially",
+                                "B": "Giving only surplus",
+                                "C": "Not giving at all",
+                                "D": "Giving to be seen"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 48,
+                              "question": "The love of money is the root of:",
+                              "options": {
+                                "A": "All evil",
+                                "B": "All good",
+                                "C": "Happiness",
+                                "D": "Contentment"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 49,
+                              "question": "God's supremacy over life and death is shown in the resurrection of:",
+                              "options": {
+                                "A": "Lazarus",
+                                "B": "Moses",
+                                "C": "Elijah",
+                                "D": "Elisha"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 50,
+                              "question": "True religion according to James is:",
+                              "options": {
+                                "A": "Caring for orphans and widows",
+                                "B": "Attending church only",
+                                "C": "Speaking in tongues",
+                                "D": "Fasting often"
+                              },
+                              "answer": "A",
+                              "image": null
+                            }
 ];
 
 
         const staticTheoryQuestions = [
-
-
-                                                               {
-                                "id": 1,
-                                "question": "a. What is repentance? \n\n b. Narrate the story of David’s repentance as recorded in 2 Samuel 12:7–13. \n\n c. Mention two lessons Christians can learn from David’s repentance.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 2,
-                                "question": "a. Who was Jonah? \n\n b. Describe how the people of Nineveh responded to Jonah’s message (Jonah 3:1–10). \n\n c. State two importance of repentance in a Christian’s life.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 3,
-                                "question": "a. Define obedience. \n\n b. Outline God’s call to Abraham in Genesis 12:1–9. \n\n c. Explain two blessings Abraham received for his obedience.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 4,
-                                "question": "a. Who was Zacchaeus? \n\n b. How did Jesus’ visit change Zacchaeus’ life? (Luke 19:1–10) \n\n c. What are two consequences of refusing to repent?",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 5,
-                                "question": "a. What does 'call to service' mean? \n\n b. Using Joseph as an example, explain how faithfulness in service can lead to promotion. \n\n c. Identify two problems people face in serving God and others.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 6,
-                                "question": "a. Mention two qualities of Ruth that made her a good example of service. \n\n b. How did Boaz show kindness to Ruth? (Ruth 2) \n\n c. Give two reasons why Christians should serve one another.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 7,
-                                "question": "a. Relate the story of Abraham’s sacrifice of Isaac (Genesis 22:1–19). \n\n b. What two lessons can be learned from this story? \n\n c. How can a JSS 1 student show obedience at home and in school?",
-                                "marks": 10,
-                                "image": null
-                              }
-                                  
-      
+     {
+                "id": 1,
+                "question": "a. Mention three factors that influence decision-making for a Christian. \n\n b. Outline three biblical guidelines for making right decisions. \n\n c. Discuss the importance of seeking God's will in decision-making.",
+                "marks": 12.5,
+                "image": null
+              },
+              {
+                "id": 2,
+                "question": "a. Define greed. \n\n b. Using the stories of Achan and Judas Iscariot, explain two consequences of greed. \n\n c. Suggest three ways a Christian can overcome greed.",
+                "marks": 12.5,
+                "image": null
+              },
+              {
+                "id": 3,
+                "question": "a. Explain the term \"supremacy of God.\" \n\n b. Give two biblical examples that demonstrate God's supremacy over nature and rulers. \n\n c. How does the belief in God's supremacy affect a Christian's life?",
+                "marks": 12.5,
+                "image": null
+              },
+              {
+                "id": 4,
+                "question": "a. What are religious reforms? \n\n b. Describe the religious reforms carried out by King Josiah. \n\n c. State three lessons Christians can learn from Josiah's reforms.",
+                "marks": 12.5,
+                "image": null
+              },
+              {
+                "id": 5,
+                "question": "a. How did Nehemiah show concern for his nation? \n\n b. Identify three responsibilities of a Christian towards their nation. \n\n c. Explain why Christians should be involved in nation-building.",
+                "marks": 12.5,
+                "image": null
+              },
+              {
+                "id": 6,
+                "question": "a. Define faith according to Hebrews 11:1. \n\n b. Mention three characters in Hebrews 11 and state how they demonstrated faith. \n\n c. Discuss two benefits of having faith in God.",
+                "marks": 12.5,
+                "image": null
+              },
+              {
+                "id": 7,
+                "question": "a. What is true religion according to the prophet Amos? \n\n b. Explain two social injustices condemned by the prophets. \n\n c. Suggest three ways Christians can promote social justice in society today.",
+                "marks": 12.5,
+                "image": null
+              }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -1080,7 +1326,7 @@
                   
               
                 document.getElementById('userImage').src =
-              (sessionStorage.getItem('image') || 'img/default_user.jpg');
+               (sessionStorage.getItem('image') || 'img/default_user.jpg');
                 }
            
             // Load static questions

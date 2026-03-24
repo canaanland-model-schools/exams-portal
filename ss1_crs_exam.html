@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CHRISIAN RELIGIOUS STUDIES Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - CHRISTIAN RELIGIOUS STUDIES Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CHRISIAN RELIGIOUS STUDIES - JSS1 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  CHRISTIAN RELIGIOUS STUDIES - SS1 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,406 +624,652 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-                      {
-    "id": 1,
-    "question": "The smallest unit of society is the __.",
-    "options": { "A": "church", "B": "community", "C": "family", "D": "school" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "A family made up of father, mother, and children is called __.",
-    "options": { "A": "extended family", "B": "nuclear family", "C": "large family", "D": "royal family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A family that includes grandparents, uncles, and cousins is called __.",
-    "options": { "A": "nuclear family", "B": "extended family", "C": "compound family", "D": "village family" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "God created the first family with __.",
-    "options": { "A": "Abraham and Sarah", "B": "Adam and Eve", "C": "Isaac and Rebekah", "D": "Joseph and Mary" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "One importance of the family is to teach __.",
-    "options": { "A": "disobedience", "B": "bad habits", "C": "values and morals", "D": "fighting" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "According to Ephesians 6:1, children should __ their parents.",
-    "options": { "A": "insult", "B": "obey", "C": "avoid", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "The head of the family is usually the __.",
-    "options": { "A": "mother", "B": "father", "C": "teacher", "D": "pastor" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "Parents are expected to __ their children.",
-    "options": { "A": "abandon", "B": "train", "C": "ignore", "D": "hate" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A good family name means having a good __.",
-    "options": { "A": "reputation", "B": "house", "C": "job", "D": "clothes" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "According to Proverbs 22:1, a good name is better than __.",
-    "options": { "A": "silver", "B": "money", "C": "great riches", "D": "land" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "A place where teaching and learning take place is the __.",
-    "options": { "A": "market", "B": "church", "C": "school", "D": "village" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The head of a school is called the __.",
-    "options": { "A": "teacher", "B": "principal", "C": "prefect", "D": "student" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "Students in a school are also called __.",
-    "options": { "A": "workers", "B": "learners", "C": "traders", "D": "farmers" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "Choosing good friends in school helps students to __.",
-    "options": { "A": "misbehave", "B": "succeed", "C": "steal", "D": "cheat" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A good friend will always __.",
-    "options": { "A": "encourage good behavior", "B": "encourage stealing", "C": "encourage fighting", "D": "encourage cheating" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "A bad friend can lead someone into __.",
-    "options": { "A": "success", "B": "good behavior", "C": "trouble", "D": "blessings" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "According to the Bible, David was a friend of __.",
-    "options": { "A": "Saul", "B": "Jonathan", "C": "Peter", "D": "James" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "Friendship between David and Jonathan is found in __.",
-    "options": { "A": "1 Samuel 18:1–5", "B": "Genesis 1", "C": "Exodus 2", "D": "Matthew 5" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Good friends help us to __.",
-    "options": { "A": "do wrong", "B": "behave well", "C": "break rules", "D": "fight others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Students must respect their __ in school.",
-    "options": { "A": "teachers", "B": "enemies", "C": "strangers", "D": "neighbors" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "Friendship means __.",
-    "options": { "A": "hatred between people", "B": "love and understanding between people", "C": "quarrelling", "D": "cheating others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "A good friend will __ you when you are wrong.",
-    "options": { "A": "ignore", "B": "correct", "C": "insult", "D": "fight" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "One consequence of bad friends is __.",
-    "options": { "A": "good character", "B": "progress", "C": "punishment", "D": "success" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "Bad friends may lead someone into __.",
-    "options": { "A": "stealing", "B": "obedience", "C": "honesty", "D": "respect" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "The Bible advises us to avoid __ friends.",
-    "options": { "A": "good", "B": "wise", "C": "bad", "D": "helpful" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "A community is a group of people living in the same __.",
-    "options": { "A": "country", "B": "area", "C": "school", "D": "church" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "The leader of a community may be called a __.",
-    "options": { "A": "chief", "B": "teacher", "C": "doctor", "D": "student" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "One way of sustaining good relationships in the community is __.",
-    "options": { "A": "fighting", "B": "cooperation", "C": "stealing", "D": "hatred" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "Respecting community leaders helps to maintain __.",
-    "options": { "A": "disorder", "B": "peace", "C": "trouble", "D": "confusion" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "Community members should live in __.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "pride" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 31,
-    "question": "Helping one another in the community shows __.",
-    "options": { "A": "wickedness", "B": "selfishness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 32,
-    "question": "Fighting in the community can lead to __.",
-    "options": { "A": "peace", "B": "conflict", "C": "unity", "D": "joy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 33,
-    "question": "A good community encourages __.",
-    "options": { "A": "cooperation", "B": "hatred", "C": "jealousy", "D": "selfishness" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 34,
-    "question": "One duty of community members is to __ laws.",
-    "options": { "A": "break", "B": "obey", "C": "ignore", "D": "reject" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 35,
-    "question": "Peace in the community promotes __.",
-    "options": { "A": "development", "B": "poverty", "C": "confusion", "D": "destruction" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 36,
-    "question": "The church is a place where Christians __.",
-    "options": { "A": "trade", "B": "play", "C": "worship God", "D": "sleep" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 37,
-    "question": "Members of the church are called __.",
-    "options": { "A": "believers", "B": "strangers", "C": "enemies", "D": "traders" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 38,
-    "question": "Fellowship in the church means __.",
-    "options": { "A": "hatred among members", "B": "unity among believers", "C": "fighting in church", "D": "ignoring others" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 39,
-    "question": "The leader of a church may be called a __.",
-    "options": { "A": "teacher", "B": "pastor", "C": "student", "D": "driver" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 40,
-    "question": "Christians should live in __ with one another.",
-    "options": { "A": "hatred", "B": "jealousy", "C": "unity", "D": "anger" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 41,
-    "question": "One importance of fellowship in the church is to __.",
-    "options": { "A": "build faith", "B": "create division", "C": "cause quarrels", "D": "spread hatred" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 42,
-    "question": "Christians are expected to __ one another.",
-    "options": { "A": "hate", "B": "fight", "C": "love", "D": "avoid" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 43,
-    "question": "Helping members in the church shows __.",
-    "options": { "A": "selfishness", "B": "wickedness", "C": "love", "D": "hatred" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 44,
-    "question": "The church teaches people to __ God.",
-    "options": { "A": "ignore", "B": "disobey", "C": "worship", "D": "fight" },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 45,
-    "question": "Unity in the church promotes __.",
-    "options": { "A": "growth", "B": "confusion", "C": "hatred", "D": "jealousy" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 46,
-    "question": "A person who leads others spiritually in the church is a __.",
-    "options": { "A": "pastor", "B": "teacher", "C": "trader", "D": "farmer" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 47,
-    "question": "Respect for elders shows good __.",
-    "options": { "A": "behavior", "B": "pride", "C": "anger", "D": "disobedience" },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 48,
-    "question": "Children who obey their parents receive __.",
-    "options": { "A": "punishment", "B": "blessings", "C": "trouble", "D": "shame" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 49,
-    "question": "Living peacefully with others shows __.",
-    "options": { "A": "wickedness", "B": "good character", "C": "pride", "D": "jealousy" },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 50,
-    "question": "Christians should always show __ to others.",
-    "options": { "A": "hatred", "B": "anger", "C": "love", "D": "jealousy" },
-    "answer": "C",
-    "image": null
-  }
+       {
+          "id": 1,
+          "question": "\"If anyone is in Christ, he is a new creation\" is found in ______.",
+          "options": {
+            "A": "2 Corinthians 5:17",
+            "B": "Romans 6:11",
+            "C": "John 1:12",
+            "D": "Galatians 5:22"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 2,
+          "question": "According to Romans 6:1-11, baptism symbolizes ______.",
+          "options": {
+            "A": "Death and resurrection with Christ",
+            "B": "The giving of the Holy Spirit",
+            "C": "The birth of Jesus",
+            "D": "The Last Supper"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 3,
+          "question": "In John 1:12, those who receive Jesus are given the right to become ______.",
+          "options": {
+            "A": "Prophets",
+            "B": "Children of God",
+            "C": "Angels",
+            "D": "Disciples"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 4,
+          "question": "According to Romans 8:14-17, the Spirit we receive is one of ______.",
+          "options": {
+            "A": "Fear",
+            "B": "Slavery",
+            "C": "Adoption",
+            "D": "Condemnation"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 5,
+          "question": "James 2:14-26 teaches that faith without works is ______.",
+          "options": {
+            "A": "Alive",
+            "B": "Justified",
+            "C": "Dead",
+            "D": "Sufficient"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 6,
+          "question": "The example of Abraham in James 2 shows that he was justified by ______.",
+          "options": {
+            "A": "Faith only",
+            "B": "Works only",
+            "C": "Faith and works",
+            "D": "Sacrifices only"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "The fruit of the Spirit includes all except ______.",
+          "options": {
+            "A": "Love",
+            "B": "Joy",
+            "C": "Peace",
+            "D": "Anger"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 8,
+          "question": "How many fruit of the Spirit are listed in Galatians 5:22-23?",
+          "options": {
+            "A": "7",
+            "B": "9",
+            "C": "12",
+            "D": "3"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 9,
+          "question": "Spiritual gifts are given by ______.",
+          "options": {
+            "A": "The devil",
+            "B": "The Holy Spirit",
+            "C": "Human effort",
+            "D": "Angels"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 10,
+          "question": "According to 1 Corinthians 12:4-11, gifts are given for ______.",
+          "options": {
+            "A": "Self-glory",
+            "B": "The common good",
+            "C": "Showing off",
+            "D": "Personal gain"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 11,
+          "question": "Which of these is a spiritual gift?",
+          "options": {
+            "A": "Wisdom",
+            "B": "Hatred",
+            "C": "Jealousy",
+            "D": "Laziness"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 12,
+          "question": "Jesus taught about forgiveness in ______.",
+          "options": {
+            "A": "Matthew 6:14-15",
+            "B": "John 3:16",
+            "C": "Genesis 1:1",
+            "D": "Revelation 22:21"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 13,
+          "question": "In the Lord's Prayer, we ask God to forgive us as we ______.",
+          "options": {
+            "A": "Forgive others",
+            "B": "Punish others",
+            "C": "Ignore others",
+            "D": "Condemn others"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 14,
+          "question": "According to Luke 17:3-4, if your brother sins against you seven times in a day and repents, you should ______.",
+          "options": {
+            "A": "Forgive him",
+            "B": "Reject him",
+            "C": "Beat him",
+            "D": "Report him"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 15,
+          "question": "Humility is exemplified by ______.",
+          "options": {
+            "A": "Jesus",
+            "B": "Satan",
+            "C": "Herod",
+            "D": "Judas"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 16,
+          "question": "Philippians 2:3-8 encourages us to have the same attitude as ______.",
+          "options": {
+            "A": "Christ Jesus",
+            "B": "The Pharisees",
+            "C": "The Romans",
+            "D": "The Greeks"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 17,
+          "question": "According to Philippians 2:7, Jesus made himself ______.",
+          "options": {
+            "A": "A servant",
+            "B": "A king",
+            "C": "An angel",
+            "D": "A judge"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 18,
+          "question": "In Romans 6:4, we are buried with Christ through baptism into death so that we may live ______.",
+          "options": {
+            "A": "A new life",
+            "B": "In sin",
+            "C": "For ourselves",
+            "D": "In fear"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 19,
+          "question": "The spirit of sonship allows us to call God ______.",
+          "options": {
+            "A": "Abba, Father",
+            "B": "Master",
+            "C": "King",
+            "D": "Judge"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 20,
+          "question": "Rahab the prostitute was justified by ______.",
+          "options": {
+            "A": "Her beauty",
+            "B": "Her works",
+            "C": "Her wealth",
+            "D": "Her family"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 21,
+          "question": "Which fruit of the Spirit is about self-control?",
+          "options": {
+            "A": "Gentleness",
+            "B": "Goodness",
+            "C": "Faithfulness",
+            "D": "Temperance"
+          },
+          "answer": "D",
+          "image": null
+        },
+        {
+          "id": 22,
+          "question": "The gift of healing is listed in ______.",
+          "options": {
+            "A": "1 Corinthians 12:9",
+            "B": "Galatians 5:22",
+            "C": "James 2:14",
+            "D": "Romans 8:16"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 23,
+          "question": "The ability to speak in different tongues is a ______.",
+          "options": {
+            "A": "Fruit of the Spirit",
+            "B": "Spiritual gift",
+            "C": "Human talent",
+            "D": "Sin"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 24,
+          "question": "Jesus taught that if we do not forgive others, our Father will not ______.",
+          "options": {
+            "A": "Love us",
+            "B": "Forgive us",
+            "C": "Protect us",
+            "D": "Provide for us"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 25,
+          "question": "In the parable of the unmerciful servant, the servant was punished because he ______.",
+          "options": {
+            "A": "Refused to forgive",
+            "B": "Stole money",
+            "C": "Lied",
+            "D": "Ran away"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 26,
+          "question": "Humility involves considering others ______.",
+          "options": {
+            "A": "Worse than yourself",
+            "B": "Better than yourself",
+            "C": "Equal to yourself",
+            "D": "Unimportant"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 27,
+          "question": "Jesus humbled himself and became ______.",
+          "options": {
+            "A": "Obedient to death",
+            "B": "A rich man",
+            "C": "A political leader",
+            "D": "A famous teacher"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 28,
+          "question": "The new life in Christ means we should no longer live in ______.",
+          "options": {
+            "A": "Sin",
+            "B": "Righteousness",
+            "C": "Peace",
+            "D": "Joy"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 29,
+          "question": "According to Romans 8:17, if we are children, then we are ______.",
+          "options": {
+            "A": "Slaves",
+            "B": "Heirs",
+            "C": "Orphans",
+            "D": "Strangers"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 30,
+          "question": "James uses the example of ______ to show that faith without works is dead.",
+          "options": {
+            "A": "A dead body",
+            "B": "A living tree",
+            "C": "A rich man",
+            "D": "A poor man"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 31,
+          "question": "Which of these is NOT a fruit of the Spirit?",
+          "options": {
+            "A": "Patience",
+            "B": "Kindness",
+            "C": "Envy",
+            "D": "Gentleness"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 32,
+          "question": "The gift of prophecy is for ______.",
+          "options": {
+            "A": "Telling the future only",
+            "B": "Edifying the church",
+            "C": "Personal gain",
+            "D": "Entertainment"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 33,
+          "question": "Forgiveness should be given ______.",
+          "options": {
+            "A": "Only once",
+            "B": "Never",
+            "C": "Repeatedly",
+            "D": "Only to friends"
+          },
+          "answer": "C",
+          "image": null
+        },
+        {
+          "id": 34,
+          "question": "Humility is the opposite of ______.",
+          "options": {
+            "A": "Pride",
+            "B": "Love",
+            "C": "Faith",
+            "D": "Hope"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 35,
+          "question": "In Romans 6:6, our old self was crucified with Christ so that ______.",
+          "options": {
+            "A": "We might be slaves to sin",
+            "B": "The body of sin might be done away with",
+            "C": "We might become gods",
+            "D": "We might live as we like"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 36,
+          "question": "The word \"Abba\" means ______.",
+          "options": {
+            "A": "Father",
+            "B": "Lord",
+            "C": "King",
+            "D": "Master"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 37,
+          "question": "Abraham offered his son ______ as a demonstration of his faith.",
+          "options": {
+            "A": "Isaac",
+            "B": "Ishmael",
+            "C": "Jacob",
+            "D": "Esau"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 38,
+          "question": "The fruit of the Spirit that is about being reliable is ______.",
+          "options": {
+            "A": "Faithfulness",
+            "B": "Peace",
+            "C": "Joy",
+            "D": "Love"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 39,
+          "question": "The gift of miracles is ______.",
+          "options": {
+            "A": "A natural ability",
+            "B": "A spiritual gift",
+            "C": "A learned skill",
+            "D": "A human invention"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 40,
+          "question": "Jesus said we should forgive ______ times.",
+          "options": {
+            "A": "70 times 7",
+            "B": "7",
+            "C": "3",
+            "D": "12"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 41,
+          "question": "The humble person will be ______.",
+          "options": {
+            "A": "Exalted",
+            "B": "Humbled further",
+            "C": "Forgotten",
+            "D": "Punished"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 42,
+          "question": "In Christ, we are ______.",
+          "options": {
+            "A": "Condemned",
+            "B": "Justified",
+            "C": "Cursed",
+            "D": "Ignored"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 43,
+          "question": "The spirit we receive is not of fear but of ______.",
+          "options": {
+            "A": "Power and love",
+            "B": "Weakness and hate",
+            "C": "Doubt and confusion",
+            "D": "Anger and jealousy"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 44,
+          "question": "According to James, even demons believe and ______.",
+          "options": {
+            "A": "Shake",
+            "B": "Obey",
+            "C": "Pray",
+            "D": "Sing"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 45,
+          "question": "The fruit of the Spirit that is about being calm and content is ______.",
+          "options": {
+            "A": "Peace",
+            "B": "Longsuffering",
+            "C": "Meekness",
+            "D": "Temperance"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 46,
+          "question": "The gift of speaking in different kinds of tongues is for ______.",
+          "options": {
+            "A": "Personal prayer only",
+            "B": "The benefit of the church",
+            "C": "Showing off",
+            "D": "Confusing people"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 47,
+          "question": "In the Lord's Prayer, forgiveness is ______.",
+          "options": {
+            "A": "Optional",
+            "B": "Conditional",
+            "C": "Unnecessary",
+            "D": "Automatic"
+          },
+          "answer": "B",
+          "image": null
+        },
+        {
+          "id": 48,
+          "question": "Jesus washed his disciples' feet as an act of ______.",
+          "options": {
+            "A": "Humility",
+            "B": "Pride",
+            "C": "Show",
+            "D": "Magic"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 49,
+          "question": "According to Romans 6:11, we should consider ourselves dead to ______.",
+          "options": {
+            "A": "Sin",
+            "B": "Righteousness",
+            "C": "God",
+            "D": "The law"
+          },
+          "answer": "A",
+          "image": null
+        },
+        {
+          "id": 50,
+          "question": "The gift of distinguishing between spirits is a ______.",
+          "options": {
+            "A": "Human skill",
+            "B": "Spiritual gift",
+            "C": "Natural instinct",
+            "D": "Learned behavior"
+          },
+          "answer": "B",
+          "image": null
+        }
 ];
 
 
         const staticTheoryQuestions = [
-
-
-                                                               {
-                                "id": 1,
-                                "question": "a. What is repentance? \n\n b. Narrate the story of David’s repentance as recorded in 2 Samuel 12:7–13. \n\n c. Mention two lessons Christians can learn from David’s repentance.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 2,
-                                "question": "a. Who was Jonah? \n\n b. Describe how the people of Nineveh responded to Jonah’s message (Jonah 3:1–10). \n\n c. State two importance of repentance in a Christian’s life.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 3,
-                                "question": "a. Define obedience. \n\n b. Outline God’s call to Abraham in Genesis 12:1–9. \n\n c. Explain two blessings Abraham received for his obedience.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 4,
-                                "question": "a. Who was Zacchaeus? \n\n b. How did Jesus’ visit change Zacchaeus’ life? (Luke 19:1–10) \n\n c. What are two consequences of refusing to repent?",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 5,
-                                "question": "a. What does 'call to service' mean? \n\n b. Using Joseph as an example, explain how faithfulness in service can lead to promotion. \n\n c. Identify two problems people face in serving God and others.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 6,
-                                "question": "a. Mention two qualities of Ruth that made her a good example of service. \n\n b. How did Boaz show kindness to Ruth? (Ruth 2) \n\n c. Give two reasons why Christians should serve one another.",
-                                "marks": 10,
-                                "image": null
-                              },
-                              {
-                                "id": 7,
-                                "question": "a. Relate the story of Abraham’s sacrifice of Isaac (Genesis 22:1–19). \n\n b. What two lessons can be learned from this story? \n\n c. How can a JSS 1 student show obedience at home and in school?",
-                                "marks": 10,
-                                "image": null
-                              }
-                                  
-      
+      {
+                      "id": 1,
+                      "question": "a. Explain the meaning of \"If anyone is in Christ, he is a new creation\" (2 Corinthians 5:17). \n\n b. According to Romans 6:1-11, describe how baptism symbolizes our new life in Christ. \n\n c. Mention two practical ways a Christian can live out the new life in Christ.",
+                      "marks": 12.5,
+                      "image": null
+                    },
+                    {
+                      "id": 2,
+                      "question": "a. How does one become a child of God according to John 1:12? \n\n b. Explain the benefits of being children of God as stated in Romans 8:14-17. \n\n c. Differentiate between a slave and a son in the context of Romans 8.",
+                      "marks": 12.5,
+                      "image": null
+                    },
+                    {
+                      "id": 3,
+                      "question": "a. What is the relationship between faith and works according to James 2:14-26? \n\n b. Illustrate with two examples from James 2 how faith is demonstrated by works. \n\n c. Why is faith without works considered dead?",
+                      "marks": 12.5,
+                      "image": null
+                    },
+                    {
+                      "id": 4,
+                      "question": "a. List the nine fruit of the Spirit as stated in Galatians 5:22-23. \n\n b. Explain any three of these fruit and their importance in a Christian's life. \n\n c. How can a Christian cultivate the fruit of the Spirit?",
+                      "marks": 12.5,
+                      "image": null
+                    },
+                    {
+                      "id": 5,
+                      "question": "a. What are spiritual gifts? \n\n b. Mention five spiritual gifts listed in 1 Corinthians 12:4-11. \n\n c. Discuss the purpose of spiritual gifts in the church.",
+                      "marks": 12.5,
+                      "image": null
+                    },
+                    {
+                      "id": 6,
+                      "question": "a. Why is forgiveness important according to Matthew 6:14-15? \n\n b. Explain Jesus' teaching on forgiveness in Luke 17:3-4. \n\n c. Give two practical steps a Christian can take to forgive others.",
+                      "marks": 12.5,
+                      "image": null
+                    },
+                    {
+                      "id": 7,
+                      "question": "a. Define humility. \n\n b. Using Philippians 2:3-8, describe the humility of Jesus Christ. \n\n c. State three ways a Christian can demonstrate humility in daily life.",
+                      "marks": 12.5,
+                      "image": null
+                    }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
