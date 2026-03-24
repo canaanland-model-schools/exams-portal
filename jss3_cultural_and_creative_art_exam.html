@@ -468,6 +468,10 @@
             100% { opacity: 1; }
         }
 
+
+
+
+
          .marquee-container {
             width: 100%;
             overflow: hidden;
@@ -496,84 +500,6 @@
         }
 
 
-        /* Logo container - makes it a flex container for horizontal layout */
-#logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    padding: 20px 0;
-}
-
-/* Style for the center/main logo */
-#logo img:not(.logo-left img):not(.logo-right img) {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-/* Left logo container */
-.logo-left {
-    flex: 0 0 auto;
-    z-index: 1;
-    margin-left: 20px;
-}
-
-/* Right logo container */
-.logo-right {
-    flex: 0 0 auto;
-    z-index: 1;
-    margin-right: 20px;
-}
-
-/* Logo images inside left and right containers */
-.logo-left img,
-.logo-right img {
-    max-width: 100px;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-/* Hover effect for left and right logos */
-.logo-left img:hover,
-.logo-right img:hover {
-    transform: scale(1.1);
-}
-
-/* Responsive design for mobile */
-@media (max-width: 768px) {
-    #logo {
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px 0;
-    }
-    
-    #logo img:not(.logo-left img):not(.logo-right img) {
-        position: static;
-        transform: none;
-        margin: 10px auto;
-    }
-    
-    .logo-left, .logo-right {
-        margin: 5px 0;
-    }
-    
-    .logo-left img,
-    .logo-right img {
-        max-width: 80px;
-    }
-}
-
-
-
     </style>
 </head>
 <body oncontextmenu="return false">
@@ -586,19 +512,7 @@
         </div>
         <div id="logo">
             <img src="img/Ctemplogo.png" alt="COLLEGE CBT PORTAL">
-
-               <div class="logo-left">
-                <img src="img/9ja1.png" alt="Nigeria Logo" >
-            </div>
-
-            <div class="logo-right">
-                <img src="img/nappps1.png" alt="NAPPS Logo" >
-            </div>
         </div>
-
-           
-            
-
         <div id="student-info">
             <center><strong>ATTENTION! CLICK ON SUBMIT BUTTON BEFORE YOUR TIME IS UP TO SAVE YOUR SCORE</strong></center>
             <center><p id="datetime"></p></center>
@@ -611,7 +525,12 @@
           <h2 id="username">Student Name</h2>
            </div>
 
-     
+        <!--<img id="userImage" src="img/default_user.jpg" alt="Student Image" style="width:120px; height:120px; border-radius:50%; border:3px solid #008000; display:block; margin:0 auto;">
+      
+            <center><img id="userImage"><br><br></center>
+             <img id="userImage" src="img/default_user.jpg" alt="Student Image">
+            <center>Hello: <span id="userName"></span></center>
+        </div>-->
 
     
         <center><h3>CANAANLAND  GROUP OF SCHOOLS EKUTE QUARTERS  ADO EKITI </h3></center> 
@@ -624,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CULTURAL AND CREATIVE ART JSS3 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  CULTURAL AND CREATIVE ARTS  - JSS3 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,13 +609,12 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> CULTURAL AND CREATIVE ART JSS3  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
+        <span class="marquee-text">2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
         <p> &copy; cbt.<span style="color: red;">canaanlandmodelgroupof</span><span style="color: green;">schools</span>.org</p>
     </div>
-
 
 
     <script>
@@ -1354,7 +1272,7 @@
                   "image": null
                 }
 ];
-          // ================== APPLICATION VARIABLES ==================
+        // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1375,7 +1293,30 @@
                 localStorage.setItem('examClass', 'RESULT');
             }
             localStorage.setItem('examTerm', 'SECOND TERM 2025/2026');
-      
+             /*let username = sessionStorage.getItem('username');
+             const userImage = sessionStorage.getItem('image');
+            document.getElementById("usernameDisplay").innerText = "WELCOME:" + " " + username;
+            document.getElementById('userImage').src = "img/student.png";
+            document.getElementById('userName').innerText = username;
+            document.getElementById('userImage').src = userImage;
+
+
+            const username = sessionStorage.getItem('username') || 'Student';
+            const userImageFile = sessionStorage.getItem('image');
+            const userImagePath = userImageFile ? `img/${userImageFile}` : 'img/default_user.jpg';
+
+            // Set username
+            const usernameElements = [document.getElementById('userName'), document.getElementById('usernameDisplay')];
+            usernameElements.forEach(el => { if(el) el.innerText = username; });
+
+            // Set user image
+            const userImageElement = document.getElementById('userImage');
+            if(userImageElement){
+                userImageElement.src = userImagePath;
+                userImageElement.onerror = function(){
+                    this.src = 'img/default_user.jpg'; // fallback if image not found
+                };
+            }*/
              const username = sessionStorage.getItem('username');
                 const image = sessionStorage.getItem('image');
 
@@ -1385,10 +1326,9 @@
                   document.getElementById('username').innerText = username;
                   
               
-                /*document.getElementById('userImage').src =
-              'img/' + (sessionStorage.getItem('image') || 'default_user.jpg');*/
+                document.getElementById('userImage').src =
+              (sessionStorage.getItem('image') || 'img/default_user.jpg');
                 }
-            document.getElementById('userImage').src = sessionStorage.getItem('image') || 'img/default_user.jpg';
            
             // Load static questions
             questions = staticObjectivesQuestions;
@@ -1406,39 +1346,27 @@
             updateTheoryStatus();
         };
        
-                    // ================== TIMER ==================
-                let timeLeft = 60 * 90; // 90 minutes in seconds
-                const timerEl = document.getElementById('timer');
-                const timerInterval = setInterval(() => {
-                    const hours = Math.floor(timeLeft / 3600);
-                    const minutes = Math.floor((timeLeft % 3600) / 60);
-                    const seconds = timeLeft % 60;
-                    
-                    // Build display string
-                    let display = '';
-                    if (hours > 0) {
-                        display += `${hours} Hr:`;
-                    }
-                    if (minutes > 0 || hours > 0) { // show minutes if any hour or minute >0
-                        display += `${minutes} Min: `;
-                    }
-                    display += `${seconds} Sec`;
-                    
-                    timerEl.textContent = `Time Remaining: ${display}`;
-                    timeLeft--;
-                   
-                    // Change color when time is running out (less than 5 minutes)
-                    if (timeLeft < 300) { // 5 minutes = 300 seconds
-                        timerEl.style.color = 'red';
-                        timerEl.style.animation = 'pulse 1s infinite';
-                    }
-                   
-                    if (timeLeft < 0) {
-                        clearInterval(timerInterval);
-                        alert("Time is up! Your exam will be submitted automatically.");
-                        submitExam();
-                    }
-                }, 1000);
+        // ================== TIMER ==================
+        let timeLeft = 60 * 60; // 60 minutes
+        const timerEl = document.getElementById('timer');
+        const timerInterval = setInterval(() => {
+            let min = Math.floor(timeLeft / 60);
+            let sec = timeLeft % 60;
+            timerEl.textContent = `Time Remaining: ${min}:${sec < 10 ? '0' + sec : sec}`;
+            timeLeft--;
+           
+            // Change color when time is running out
+            if (timeLeft < 300) { // 5 minutes
+                timerEl.style.color = 'red';
+                timerEl.style.animation = 'pulse 1s infinite';
+            }
+           
+            if (timeLeft < 0) {
+                clearInterval(timerInterval);
+                alert("Time is up! Your exam will be submitted automatically.");
+                submitExam();
+            }
+        }, 1000);
        
         // ================== SECTION TOGGLE ==================
         function showSection(section) {
@@ -1603,86 +1531,164 @@
             document.getElementById("unansweredLabel").innerText = `Unanswered: ${unansweredCount}`;
         }
        
-
-   
+        /*function submitExam() {
+            saveAnswer();
+            let score = 0;
+            questions.forEach((q, i) => {
+                if (userAnswers[i] === q.answer) score++;
+            });
+           
+            clearInterval(timerInterval);
+            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
+        }*/
          function submitExam() {
             saveAnswer();
             showResult();
         }
        
+        /*function showResult() {
+            clearInterval(timerInterval);
+            let score = 0;
+            questions.forEach((q, i) => {
+                if (userAnswers[i] === q.answer) score++;
+            });
+           
+            const username = localStorage.getItem("username") || "Guest";
+            localStorage.setItem("examUser", username);
+            localStorage.setItem("examScore", score);
+            localStorage.setItem("totalQuestions", questions.length);
 
 
-                    function showResult() {
-                        clearInterval(timerInterval);
-                        let score = 0;
-                        questions.forEach((q, i) => {
-                            if (userAnswers[i] === q.answer) score++;
-                        });
-                        
-                        const username = sessionStorage.getItem('username') || "Guest";
-                        const cls = sessionStorage.getItem('class');
-                        const sub = sessionStorage.getItem('subject');
-                        
-                        localStorage.setItem("examUser", username);
-                        localStorage.setItem("examScore", score);
-                        localStorage.setItem("totalQuestions", questions.length);
-                        localStorage.setItem("pendingClass", cls);
-                        localStorage.setItem("pendingSubject", sub);
-                        localStorage.setItem("pendingUsername", username);
-                        
-                        const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
-                        localStorage.setItem("examInfo", examInfo);
-                        
-                        // Build the record
-                        const record = {
-                            username: username,
-                            class: cls,
-                            subject: sub,
-                            score: score,
-                            totalQuestions: questions.length,
-                            percentage: ((score / questions.length) * 100).toFixed(2) + '%',
-                            examInfo: examInfo,
-                            timestamp: new Date().toISOString()
-                        };
-                        
-                        // ------------------ 🌐 SEND TO GOOGLE SHEETS ------------------
-                        const API_URL = 'https://script.google.com/macros/s/AKfycbzW4zlbuW16fAFRcwg4ow8b6IAQEp4e2zIqLjL7zhdkkHvEDrDwwxT0PX46dwBIiXgm/exec'; // ← paste your web app URL here
-                        
-                        fetch(API_URL, {
-                            method: 'POST',
-                            mode: 'no-cors',        // required because Apps Script doesn't send CORS headers
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(record)
-                        }).catch(err => console.error('Failed to send to cloud:', err));
-                        // ---------------------------------------------------------------
-                        
-                        // (Optional) Keep local backup
-                        let records = JSON.parse(localStorage.getItem('examRecords') || '[]');
-                        records.push(record);
-                        localStorage.setItem('examRecords', JSON.stringify(records));
-                        
-                        // Download JSON (your existing code)
-                        const scoreDetails = {
-                            ...record,
-                            userAnswers: userAnswers,
-                            correctAnswers: questions.map(q => q.answer)
-                        };
-                        
-                        const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
-                        const url = URL.createObjectURL(blob);
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = `exam_results_${username}_${new Date().getTime()}.json`;
-                        a.style.display = 'none';
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                        URL.revokeObjectURL(url);
-                        
-                        console.log(`Exam completed. Waiting for confirmation.`);
-                        alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results.`);
-                        window.location.href = "results.html";
-                    }
+            // Save exam data before going to result page
+            localStorage.setItem("student_name", username);
+            localStorage.setItem("student_class", selectedClass);
+            localStorage.setItem("exam_subject", selectedSubject);
+            localStorage.setItem("student_image", studentImageURL);
+            localStorage.setItem("exam_score", score);
+            localStorage.setItem("total_questions", totalQuestions);
+
+                // Redirect to results page
+                window.location.href = "results.html";
+           
+            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
+            window.location.href = "results.html";
+        }*/
+        /*function showResult() {
+            clearInterval(timerInterval);
+            let score = 0;
+            questions.forEach((q, i) => {
+                if (userAnswers[i] === q.answer) score++;
+            });
+           
+            const username = localStorage.getItem("username") || "Guest";
+            const cls = sessionStorage.getItem("class");
+            const sub = sessionStorage.getItem("subject");
+           
+            localStorage.setItem("examUser", username);
+            localStorage.setItem("examScore", score);
+            localStorage.setItem("totalQuestions", questions.length);
+            localStorage.setItem("examInfo", document.getElementById('examInfo').textContent.trim());
+           
+            // ✅ Mark exam as completed
+            if (cls && sub) {
+                const attempts = getExamAttempts(cls);
+                if (!attempts[username]) {
+                    attempts[username] = {};
+                }
+                attempts[username][sub] = true;
+                saveExamAttempts(cls, attempts);
+            }
+           
+            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
+            window.location.href = "results.html";
+    }*/
+       /*function showResult() {
+                    clearInterval(timerInterval);
+                    let score = 0;
+                    questions.forEach((q, i) => {
+                        if (userAnswers[i] === q.answer) score++;
+                    });
+                   
+                    const username = sessionStorage.getItem('username') || "Guest";
+                    const cls = sessionStorage.getItem('class');
+                    const sub = sessionStorage.getItem('subject');
+                   
+                    localStorage.setItem("examUser", username);
+                    localStorage.setItem("examScore", score);
+                    localStorage.setItem("totalQuestions", questions.length);
+                    localStorage.setItem("pendingClass", cls);
+                    localStorage.setItem("pendingSubject", sub);
+                    localStorage.setItem("pendingUsername", username);
+                   
+                    // ✅ Get exam info from sessionStorage or use default
+                    const examInfo = sessionStorage.getItem('examInfo') || 'EXAMINATION - RERSULT (2ND TERM)';
+                    localStorage.setItem("examInfo", examInfo);
+                   
+                    // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
+                    console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
+                   
+                    alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
+                    window.location.href = "results.html";
+        }*/
+
+            function showResult() {
+				    clearInterval(timerInterval);
+				    let score = 0;
+				    questions.forEach((q, i) => {
+				        if (userAnswers[i] === q.answer) score++;
+				    });
+				    
+				    const username = sessionStorage.getItem('username') || "Guest";
+				    const cls = sessionStorage.getItem('class');
+				    const sub = sessionStorage.getItem('subject');
+				    
+				    localStorage.setItem("examUser", username);
+				    localStorage.setItem("examScore", score);
+				    localStorage.setItem("totalQuestions", questions.length);
+				    localStorage.setItem("pendingClass", cls);
+				    localStorage.setItem("pendingSubject", sub);
+				    localStorage.setItem("pendingUsername", username);
+				    
+				    // ✅ Get exam info from sessionStorage or use default
+				    const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
+				    localStorage.setItem("examInfo", examInfo);
+				    
+				    // ✅ Secretly download score details to downloads folder
+				    const scoreDetails = {
+				        username: username,
+				        class: cls,
+				        subject: sub,
+				        score: score,
+				        totalQuestions: questions.length,
+				        percentage: ((score / questions.length) * 100).toFixed(2) + '%',
+				        examInfo: examInfo,
+				        timestamp: new Date().toISOString(),
+				        userAnswers: userAnswers,
+				        correctAnswers: questions.map(q => q.answer)
+				    };
+				    
+				    // Create a blob with the data
+				    const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
+				    const url = URL.createObjectURL(blob);
+				    
+				    // Create a hidden anchor element and trigger download
+				    const a = document.createElement('a');
+				    a.href = url;
+				    a.download = `exam_results_${username}_${new Date().getTime()}.json`;
+				    a.style.display = 'none';
+				    document.body.appendChild(a);
+				    a.click();
+				    
+				    // Clean up
+				    document.body.removeChild(a);
+				    URL.revokeObjectURL(url);
+				    
+				    // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
+				    console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
+				    
+				    alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
+				    window.location.href = "results.html";
+				}
 
 
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelgroupofschools.org - CULTURAL AND CREATIVE ARTS Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - BUSINESS STUDIES Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -543,7 +543,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  CULTURAL AND CREATIVE ARTS - JSS2 (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  BUSINESS STUDIES - JSS1 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -624,652 +624,104 @@
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-        {
-          "id": 1,
-          "question": "What does CCA stand for?",
-          "options": {
-            "A": "Cultural and Creative Activities",
-            "B": "Cultural and Creative Arts",
-            "C": "Creative and Cultural Assignments",
-            "D": "Culture and Craft Arts"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 2,
-          "question": "Which of these is a component of CCA?",
-          "options": {
-            "A": "Mathematics",
-            "B": "Music",
-            "C": "Chemistry",
-            "D": "Geography"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 3,
-          "question": "The drawing of objects as they appear in real life is called ______.",
-          "options": {
-            "A": "still life drawing",
-            "B": "imaginative drawing",
-            "C": "abstract drawing",
-            "D": "cartooning"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 4,
-          "question": "Primary colours are ______.",
-          "options": {
-            "A": "red, yellow, blue",
-            "B": "green, orange, purple",
-            "C": "black, white, grey",
-            "D": "pink, brown, violet"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 5,
-          "question": "Which of these is a secondary colour?",
-          "options": {
-            "A": "Red",
-            "B": "Blue",
-            "C": "Green",
-            "D": "Yellow"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 6,
-          "question": "What is the name of the musical instrument family that includes the drum?",
-          "options": {
-            "A": "String",
-            "B": "Percussion",
-            "C": "Woodwind",
-            "D": "Brass"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 7,
-          "question": "How many lines does a musical staff have?",
-          "options": {
-            "A": "3",
-            "B": "4",
-            "C": "5",
-            "D": "6"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 8,
-          "question": "The element of art that refers to the way a surface feels or looks is ______.",
-          "options": {
-            "A": "line",
-            "B": "colour",
-            "C": "texture",
-            "D": "shape"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 9,
-          "question": "A play that is written to be performed on stage is called a ______.",
-          "options": {
-            "A": "novel",
-            "B": "poem",
-            "C": "drama",
-            "D": "biography"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 10,
-          "question": "Which of these is a type of drama?",
-          "options": {
-            "A": "Tragedy",
-            "B": "Sonnet",
-            "C": "Haiku",
-            "D": "Prose"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 11,
-          "question": "The person who writes a play is called a ______.",
-          "options": {
-            "A": "poet",
-            "B": "dramatist/playwright",
-            "C": "novelist",
-            "D": "composer"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 12,
-          "question": "In drama, the written text of the play is called the ______.",
-          "options": {
-            "A": "script",
-            "B": "cast",
-            "C": "stage",
-            "D": "prop"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 13,
-          "question": "The art of folding paper to create shapes is known as ______.",
-          "options": {
-            "A": "collage",
-            "B": "origami",
-            "C": "papier-mâché",
-            "D": "painting"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 14,
-          "question": "Craft involves making objects by ______.",
-          "options": {
-            "A": "singing",
-            "B": "writing",
-            "C": "hand skill",
-            "D": "dancing"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 15,
-          "question": "A traditional Nigerian fabric is ______.",
-          "options": {
-            "A": "jeans",
-            "B": "ankara",
-            "C": "polyester",
-            "D": "silk"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 16,
-          "question": "Which of these is a Nigerian musical instrument?",
-          "options": {
-            "A": "Piano",
-            "B": "Guitar",
-            "C": "Talking drum",
-            "D": "Violin"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 17,
-          "question": "The art of creating pictures using small pieces of coloured glass or stone is called ______.",
-          "options": {
-            "A": "mosaic",
-            "B": "sculpture",
-            "C": "drawing",
-            "D": "printing"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 18,
-          "question": "The Yoruba talking drum is called ______.",
-          "options": {
-            "A": "gangan",
-            "B": "sekere",
-            "C": "udu",
-            "D": "ogene"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 19,
-          "question": "The Igbo musical instrument made from a hollow pot is the ______.",
-          "options": {
-            "A": "ekwe",
-            "B": "udu",
-            "C": "ogene",
-            "D": "shekere"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 20,
-          "question": "A person who performs in a play is called an ______.",
-          "options": {
-            "A": "author",
-            "B": "actor",
-            "C": "artist",
-            "D": "audience"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 21,
-          "question": "Which of these is NOT a visual art?",
-          "options": {
-            "A": "Painting",
-            "B": "Sculpture",
-            "C": "Singing",
-            "D": "Textile design"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 22,
-          "question": "The repetition of a design to create a pattern is called ______.",
-          "options": {
-            "A": "motif",
-            "B": "texture",
-            "C": "tone",
-            "D": "form"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 23,
-          "question": "Which element of art refers to the lightness or darkness of a colour?",
-          "options": {
-            "A": "Value",
-            "B": "Line",
-            "C": "Shape",
-            "D": "Space"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 24,
-          "question": "The art of cutting and pasting paper or fabric to create a picture is called ______.",
-          "options": {
-            "A": "collage",
-            "B": "origami",
-            "C": "pottery",
-            "D": "weaving"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 25,
-          "question": "Which of these is a material used for modeling?",
-          "options": {
-            "A": "Clay",
-            "B": "Watercolour",
-            "C": "Pencil",
-            "D": "Ink"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 26,
-          "question": "A drawing that exaggerates features for humour is called a ______.",
-          "options": {
-            "A": "portrait",
-            "B": "landscape",
-            "C": "cartoon",
-            "D": "still life"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 27,
-          "question": "Music notes are written on a ______.",
-          "options": {
-            "A": "canvas",
-            "B": "staff",
-            "C": "palette",
-            "D": "script"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 28,
-          "question": "The four main voice types in choral music are soprano, alto, tenor, and ______.",
-          "options": {
-            "A": "bass",
-            "B": "mezzo",
-            "C": "baritone",
-            "D": "contralto"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 29,
-          "question": "Which of these is a string instrument?",
-          "options": {
-            "A": "Flute",
-            "B": "Trumpet",
-            "C": "Violin",
-            "D": "Drum"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 30,
-          "question": "The art of making pots from clay is called ______.",
-          "options": {
-            "A": "pottery",
-            "B": "weaving",
-            "C": "carving",
-            "D": "painting"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 31,
-          "question": "A play that ends happily is called a ______.",
-          "options": {
-            "A": "tragedy",
-            "B": "comedy",
-            "C": "melodrama",
-            "D": "satire"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 32,
-          "question": "The area where a play is performed is the ______.",
-          "options": {
-            "A": "auditorium",
-            "B": "stage",
-            "C": "gallery",
-            "D": "studio"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 33,
-          "question": "Props in drama refer to ______.",
-          "options": {
-            "A": "the actors",
-            "B": "the movable items used on stage",
-            "C": "the costumes",
-            "D": "the lighting"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 34,
-          "question": "The director of a play is responsible for ______.",
-          "options": {
-            "A": "writing the script",
-            "B": "guiding the actors",
-            "C": "selling tickets",
-            "D": "designing costumes"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 35,
-          "question": "Which of these is a principle of design?",
-          "options": {
-            "A": "Balance",
-            "B": "Red",
-            "C": "Circle",
-            "D": "Rough"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 36,
-          "question": "Symmetrical balance means both sides are ______.",
-          "options": {
-            "A": "different",
-            "B": "identical",
-            "C": "colourful",
-            "D": "textured"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 37,
-          "question": "A craftsman who works with wood is a ______.",
-          "options": {
-            "A": "potter",
-            "B": "weaver",
-            "C": "carpenter",
-            "D": "blacksmith"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 38,
-          "question": "The Eyo festival is celebrated in ______.",
-          "options": {
-            "A": "Lagos",
-            "B": "Enugu",
-            "C": "Kano",
-            "D": "Port Harcourt"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 39,
-          "question": "The famous Nigerian artist known for his paintings of bustling markets is ______.",
-          "options": {
-            "A": "Ben Enwonwu",
-            "B": "Yusuf Grillo",
-            "C": "Bruce Onobrakpeya",
-            "D": "Nike Davies-Okundaye"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 40,
-          "question": "The art of creating designs by tying and dyeing fabric is called ______.",
-          "options": {
-            "A": "batik",
-            "B": "embroidery",
-            "C": "knitting",
-            "D": "crocheting"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 41,
-          "question": "Which of these is a performing art?",
-          "options": {
-            "A": "Painting",
-            "B": "Dance",
-            "C": "Drawing",
-            "D": "Sculpture"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 42,
-          "question": "A group of singers performing together is a ______.",
-          "options": {
-            "A": "band",
-            "B": "choir",
-            "C": "orchestra",
-            "D": "quartet"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 43,
-          "question": "The art of telling a story through body movements is called ______.",
-          "options": {
-            "A": "drama",
-            "B": "mime",
-            "C": "poetry",
-            "D": "singing"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 44,
-          "question": "Safety in the art studio includes ______.",
-          "options": {
-            "A": "eating while working",
-            "B": "wearing protective clothing",
-            "C": "running around",
-            "D": "leaving tools scattered"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 45,
-          "question": "Which of these is a material for drawing?",
-          "options": {
-            "A": "Charcoal",
-            "B": "Clay",
-            "C": "Thread",
-            "D": "Beads"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 46,
-          "question": "The process of creating a print from a carved surface is called ______.",
-          "options": {
-            "A": "painting",
-            "B": "sculpture",
-            "C": "printmaking",
-            "D": "collage"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 47,
-          "question": "The three-dimensional representation of a person or object is a ______.",
-          "options": {
-            "A": "drawing",
-            "B": "painting",
-            "C": "sculpture",
-            "D": "sketch"
-          },
-          "answer": "C",
-          "image": null
-        },
-        {
-          "id": 48,
-          "question": "The traditional art of body painting and decoration in Nigeria is called ______.",
-          "options": {
-            "A": "tattooing",
-            "B": "uli",
-            "C": "weaving",
-            "D": "pottery"
-          },
-          "answer": "B",
-          "image": null
-        },
-        {
-          "id": 49,
-          "question": "The first step in creating an art work is usually ______.",
-          "options": {
-            "A": "sketching/planning",
-            "B": "framing",
-            "C": "selling",
-            "D": "criticizing"
-          },
-          "answer": "A",
-          "image": null
-        },
-        {
-          "id": 50,
-          "question": "The main purpose of CCA is to ______.",
-          "options": {
-            "A": "teach science only",
-            "B": "develop creative skills and cultural awareness",
-            "C": "prepare for engineering",
-            "D": "discourage local crafts"
-          },
-          "answer": "B",
-          "image": null
-        }
+                   { "id": 1, "question": "Business studies is the study of _____.", "options": { "A": "only buying", "B": "activities for making money", "C": "only selling", "D": "farming only" }, "answer": "B", "image": null },
+        { "id": 2, "question": "One importance of business studies is _____.", "options": { "A": "to waste time", "B": "to learn how to manage money", "C": "to avoid work", "D": "to sleep in class" }, "answer": "B", "image": null },
+        { "id": 3, "question": "An office is a place where _____.", "options": { "A": "cooking is done", "B": "administrative work is done", "C": "only sleeping", "D": "farming happens" }, "answer": "B", "image": null },
+        { "id": 4, "question": "Which is NOT an office equipment? _____.", "options": { "A": "Computer", "B": "Filing cabinet", "C": "Broom", "D": "Telephone" }, "answer": "C", "image": null },
+        { "id": 5, "question": "A typewriter is used for _____.", "options": { "A": "printing documents", "B": "calculating numbers", "C": "storing files", "D": "making calls" }, "answer": "A", "image": null },
+        { "id": 6, "question": "Trade means _____.", "options": { "A": "buying and selling", "B": "only buying", "C": "only giving", "D": "only producing" }, "answer": "A", "image": null },
+        { "id": 7, "question": "Home trade is trade within _____.", "options": { "A": "a country", "B": "between countries", "C": "in the ocean", "D": "in space" }, "answer": "A", "image": null },
+        { "id": 8, "question": "Foreign trade involves _____.", "options": { "A": "buying within your street", "B": "trading between countries", "C": "only giving gifts", "D": "exchanging with family" }, "answer": "B", "image": null },
+        { "id": 9, "question": "A retailer sells goods in _____.", "options": { "A": "large quantities", "B": "small quantities", "C": "only to exporters", "D": "only to manufacturers" }, "answer": "B", "image": null },
+        { "id": 10, "question": "A wholesaler buys from _____.", "options": { "A": "consumers", "B": "retailers", "C": "producers", "D": "teachers" }, "answer": "C", "image": null },
+        { "id": 11, "question": "Production means _____.", "options": { "A": "destroying goods", "B": "creating goods and services", "C": "only selling", "D": "only buying" }, "answer": "B", "image": null },
+        { "id": 12, "question": "Direct service involves _____.", "options": { "A": "selling products", "B": "personal services like teaching", "C": "making goods", "D": "trading goods" }, "answer": "B", "image": null },
+        { "id": 13, "question": "An example of direct service is _____.", "options": { "A": "a carpenter making a chair", "B": "a teacher teaching", "C": "a factory producing shoes", "D": "a shop selling sugar" }, "answer": "B", "image": null },
+        { "id": 14, "question": "Bookkeeping is _____.", "options": { "A": "recording business transactions", "B": "drawing pictures", "C": "singing songs", "D": "playing games" }, "answer": "A", "image": null },
+        { "id": 15, "question": "An asset is _____.", "options": { "A": "what a business owes", "B": "what a business owns", "C": "a loss", "D": "an expense" }, "answer": "B", "image": null },
+        { "id": 16, "question": "A liability is _____.", "options": { "A": "what a business owns", "B": "what a business owes", "C": "profit", "D": "income" }, "answer": "B", "image": null },
+        { "id": 17, "question": "Which is a source of capital? _____.", "options": { "A": "Personal savings", "B": "Spending all money", "C": "Borrowing from friends", "D": "A and C" }, "answer": "D", "image": null },
+        { "id": 18, "question": "Entrepreneurship is _____.", "options": { "A": "working for government only", "B": "starting and running a business", "C": "avoiding risks", "D": "only following instructions" }, "answer": "B", "image": null },
+        { "id": 19, "question": "An entrepreneur must be _____.", "options": { "A": "lazy", "B": "creative and risk-taking", "C": "dependent", "D": "shy" }, "answer": "B", "image": null },
+        { "id": 20, "question": "Commerce is the study of _____.", "options": { "A": "only production", "B": "trade and aids to trade", "C": "only farming", "D": "only teaching" }, "answer": "B", "image": null },
+        { "id": 21, "question": "Aids to trade include _____.", "options": { "A": "banking", "B": "fighting", "C": "sleeping", "D": "running" }, "answer": "A", "image": null },
+        { "id": 22, "question": "Banking helps business by _____.", "options": { "A": "keeping money safely", "B": "hiding money", "C": "wasting money", "D": "burning money" }, "answer": "A", "image": null },
+        { "id": 23, "question": "Insurance protects against _____.", "options": { "A": "profit", "B": "loss or damage", "C": "more sales", "D": "more customers" }, "answer": "B", "image": null },
+        { "id": 24, "question": "Communication in business is important for _____.", "options": { "A": "keeping secrets", "B": "sharing information", "C": "creating confusion", "D": "avoiding customers" }, "answer": "B", "image": null },
+        { "id": 25, "question": "Which is a form of communication? _____.", "options": { "A": "Letter", "B": "Telephone", "C": "Email", "D": "All of the above" }, "answer": "D", "image": null },
+        { "id": 26, "question": "Profit is _____.", "options": { "A": "total sales minus total cost", "B": "total cost only", "C": "total sales only", "D": "loss minus sales" }, "answer": "A", "image": null },
+        { "id": 27, "question": "Loss occurs when _____.", "options": { "A": "sales are more than cost", "B": "cost is more than sales", "C": "sales equal cost", "D": "no sales are made" }, "answer": "B", "image": null },
+        { "id": 28, "question": "A customer is a person who _____.", "options": { "A": "produces goods", "B": "buys goods or services", "C": "packs goods", "D": "advertises goods" }, "answer": "B", "image": null },
+        { "id": 29, "question": "Advertising is _____.", "options": { "A": "hiding products", "B": "promoting products", "C": "destroying products", "D": "stealing products" }, "answer": "B", "image": null },
+        { "id": 30, "question": "Market is where _____.", "options": { "A": "buyers and sellers meet", "B": "only buyers come", "C": "only sellers come", "D": "goods are produced" }, "answer": "A", "image": null },
+        { "id": 31, "question": "Which is a clerical staff duty? _____.", "options": { "A": "Typing letters", "B": "Managing the whole company", "C": "Cooking for staff", "D": "Driving trucks" }, "answer": "A", "image": null },
+        { "id": 32, "question": "Filing means _____.", "options": { "A": "tearing documents", "B": "arranging documents for easy access", "C": "burning documents", "D": "losing documents" }, "answer": "B", "image": null },
+        { "id": 33, "question": "A telephone is used for _____.", "options": { "A": "oral communication", "B": "written communication", "C": "visual communication", "D": "no communication" }, "answer": "A", "image": null },
+        { "id": 34, "question": "Which is a means of payment? _____.", "options": { "A": "Cash", "B": "Cheque", "C": "Credit card", "D": "All of the above" }, "answer": "D", "image": null },
+        { "id": 35, "question": "Capital is _____.", "options": { "A": "money used to start business", "B": "profit made", "C": "loss incurred", "D": "salary paid" }, "answer": "A", "image": null },
+        { "id": 36, "question": "Partnership is a business owned by _____.", "options": { "A": "one person", "B": "two or more people", "C": "the government", "D": "no one" }, "answer": "B", "image": null },
+        { "id": 37, "question": "Sole proprietorship is owned by _____.", "options": { "A": "one person", "B": "two people", "C": "government", "D": "many shareholders" }, "answer": "A", "image": null },
+        { "id": 38, "question": "Limited liability company is owned by _____.", "options": { "A": "shareholders", "B": "one person only", "C": "no one", "D": "only government" }, "answer": "A", "image": null },
+        { "id": 39, "question": "Which is a factor of production? _____.", "options": { "A": "Land", "B": "Labour", "C": "Capital", "D": "All of the above" }, "answer": "D", "image": null },
+        { "id": 40, "question": "Land as a factor refers to _____.", "options": { "A": "natural resources", "B": "money only", "C": "machines only", "D": "workers only" }, "answer": "A", "image": null },
+        { "id": 41, "question": "Labour means _____.", "options": { "A": "human effort", "B": "raw materials", "C": "money", "D": "buildings" }, "answer": "A", "image": null },
+        { "id": 42, "question": "Capital as a factor refers to _____.", "options": { "A": "money and assets used", "B": "raw materials only", "C": "workers only", "D": "land only" }, "answer": "A", "image": null },
+        { "id": 43, "question": "Entrepreneur as a factor _____.", "options": { "A": "brings other factors together", "B": "only works as labour", "C": "only provides land", "D": "only spends money" }, "answer": "A", "image": null },
+        { "id": 44, "question": "Goods are _____.", "options": { "A": "tangible products", "B": "intangible services", "C": "only ideas", "D": "only feelings" }, "answer": "A", "image": null },
+        { "id": 45, "question": "Services are _____.", "options": { "A": "tangible", "B": "intangible", "C": "only goods", "D": "only products" }, "answer": "B", "image": null },
+        { "id": 46, "question": "Which is an example of a service? _____.", "options": { "A": "Haircut", "B": "Textbook", "C": "Shoes", "D": "Bag" }, "answer": "A", "image": null },
+        { "id": 47, "question": "Business ethics means _____.", "options": { "A": "doing wrong in business", "B": "following moral principles in business", "C": "cheating customers", "D": "ignoring rules" }, "answer": "B", "image": null },
+        { "id": 48, "question": "Consumer protection is _____.", "options": { "A": "protecting sellers only", "B": "protecting buyers from exploitation", "C": "encouraging fake products", "D": "increasing prices" }, "answer": "B", "image": null },
+        { "id": 49, "question": "Which is a right of a consumer? _____.", "options": { "A": "Right to safety", "B": "Right to be heard", "C": "Right to choose", "D": "All of the above" }, "answer": "D", "image": null },
+        { "id": 50, "question": "Recycling in business helps to _____.", "options": { "A": "protect the environment", "B": "waste resources", "C": "increase pollution", "D": "destroy materials" }, "answer": "A", "image": null }
+      
+      
 ];
 
 
         const staticTheoryQuestions = [
-    {
-                    "id": 1,
-                    "question": "a. Define the term 'Still Life Drawing'. \n\n b. List four materials needed for drawing. \n\n c. Explain two importance of drawing in everyday life.",
-                    "marks": 12.5,
-                    "image": null
-                  },
-                  {
-                    "id": 2,
-                    "question": "a. What are primary colours? \n\n b. Using a colour wheel, explain how to obtain the secondary colour 'Green'. \n\n c. Differentiate between a tint and a shade.",
-                    "marks": 12.5,
-                    "image": null
-                  },
-                  {
-                    "id": 3,
-                    "question": "a. Define drama. \n\n b. List and explain three types of drama. \n\n c. Mention four people involved in staging a play and state one role of each.",
-                    "marks": 12.5,
-                    "image": null
-                  },
-                  {
-                    "id": 4,
-                    "question": "a. What is craft? \n\n b. Describe the process of making a simple papier-mâché bowl. \n\n c. State two importance of traditional crafts in Nigeria.",
-                    "marks": 12.5,
-                    "image": null
-                  },
-                  {
-                    "id": 5,
-                    "question": "a. What is music? \n\n b. Draw a treble clef and name the five lines of the musical staff. \n\n c. Mention three Nigerian traditional musical instruments and the ethnic group that uses each.",
-                    "marks": 12.5,
-                    "image": null
-                  },
-                  {
-                    "id": 6,
-                    "question": "a. Explain the term 'Elements of Art'. \n\n b. List and briefly explain any four elements of art. \n\n c. How does the element of 'Space' contribute to a good artwork?",
-                    "marks": 12.5,
-                    "image": null
-                  },
-                  {
-                    "id": 7,
-                    "question": "a. Who is an artist? \n\n b. Discuss the life and contribution of one notable Nigerian visual artist. \n\n c. Why is it important to promote Nigerian art and culture?",
-                    "marks": 12.5,
-                    "image": null
-                  }
+                        {
+                        id: 1,
+                        question: "a. What is Business Studies? \n b. List three importance of studying Business Studies. \n c. Mention two components of Business Studies.",
+                        marks: 10,
+                        image: null
+                      },
+                      {
+                        id: 2,
+                        question: "a. Define an office. \n b. Name four pieces of office equipment. \n c. State two functions of an office.",
+                        marks: 10,
+                        image: null
+                      },
+                      {
+                        id: 3,
+                        question: "a. What is trade? \n b. Differentiate between home trade and foreign trade. \n c. Give two examples each of a retailer and a wholesaler.",
+                        marks: 10,
+                        image: null
+                      },
+                      {
+                        id: 4,
+                        question: "a. Explain the term 'production.' \n b. Identify the three types of production. \n c. What is direct service? Give one example.",
+                        marks: 10,
+                        image: null
+                      },
+                      {
+                        id: 5,
+                        question: "a. What is bookkeeping? \n b. Differentiate between assets and liabilities. \n c. List two sources of capital for a small business.",
+                        marks: 10,
+                        image: null
+                      },
+                      {
+                        id: 6,
+                        question: "a. Who is an entrepreneur? \n b. Mention three qualities of a good entrepreneur. \n c. Explain one importance of entrepreneurship to the economy.",
+                        marks: 10,
+                        image: null
+                      },
+                      {
+                        id: 7,
+                        question: "a. What is commerce? \n b. List four aids to trade. \n c. Explain how banking aids trade.",
+                        marks: 10,
+                        image: null
+                      }
 ];
         // ================== APPLICATION VARIABLES ==================
         let questions = [];
@@ -1346,7 +798,7 @@
         };
        
         // ================== TIMER ==================
-        let timeLeft = 60 * 60; // 60 minutes
+        let timeLeft = 60 * 90; // 60 minutes
         const timerEl = document.getElementById('timer');
         const timerInterval = setInterval(() => {
             let min = Math.floor(timeLeft / 60);
