@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdom foundationschools.org - ENGLISH LITERATURE SS2  Exam</title>
+    <title>cbt.canaanlandmodelgroupofschools.org - LITERATURE IN ENGLISH SS2 Exam</title>
     <script>
          // Disable back navigation
     history.pushState(null, null, location.href);
@@ -106,7 +106,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('img/wisdom_logo1.png') no-repeat center center;
+            background: url('img/Ctemplogo.jpg') no-repeat center center;
             background-size: 300px 300px;
             opacity: 0.1;
             z-index: 0;
@@ -118,7 +118,7 @@
             background: #2c3e50;
         }
         #datetime {
-            color:gold;
+            color:blue;
             font-size: 18px;
             font-weight: bold;
             text-align: center;
@@ -135,7 +135,7 @@
         }
         #header {
             padding: 20px;
-            background: linear-gradient(to right, orange, purple);
+            background: linear-gradient(to right,blue, fuchsia);
             color: white;
             border-bottom: 5px solid #ff9800;
         }
@@ -472,14 +472,14 @@
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
-            background: rgb(150,125,150);
+            background: aqua;
             padding: 10px 0;
         }
     
         /* Moving text animation */
         .marquee-text {
             display: inline-block;
-            color: gold;
+            color: fuchsia;
             font-size: 24px;
             font-weight: bold;
             animation: marquee 10s linear infinite;
@@ -581,19 +581,19 @@
         <div id="logout-container">
             <button id="logout" onclick="logout()">Logout</button>
                  <div class="marquee-container">
-        <span class="marquee-text">WISDOM FOUNDATION SCHOOLS  :  GATEWAY TO THE UNIVERSITY</span>
+        <span class="marquee-text">CANAANLAND  GROUP OF SCHOOLS :  GOD IS OUR STRENGTH</span>
     </div>
         </div>
         <div id="logo">
-            <img src="img/wisdom_logo1.png" alt="image">
+            <img src="img/Ctemplogo.png" alt="COLLEGE CBT PORTAL">
 
-               <!--<div class="logo-left">
+               <div class="logo-left">
                 <img src="img/9ja1.png" alt="Nigeria Logo" >
             </div>
 
             <div class="logo-right">
                 <img src="img/nappps1.png" alt="NAPPS Logo" >
-            </div>-->
+            </div>
         </div>
 
            
@@ -614,7 +614,7 @@
      
 
     
-        <center><h3>WISDOM FOUNDATION SCHOOLS EGBEWA  ADO EKITI </h3></center> 
+        <center><h3>CANAANLAND  GROUP OF SCHOOLS EKUTE QUARTERS  ADO EKITI </h3></center> 
         <center><h3>SECOND TERM EXAMINATION 2025/2026 ACADEMIC SESSION</h3></center>
        
         <!-- SECTION TOGGLE BUTTONS -->
@@ -624,7 +624,7 @@
         </div>
        
         <div class="exam-info">
-            Exam: <span id="examInfo" style="color: lime;">  ENGLISH LITERATURE SS2  (SECOND TERM)</span>
+            Exam: <span id="examInfo" style="color: lime;">  LITERATURE IN ENGLISH SS2 (SECOND TERM)</span>
         </div>
        
         <div id="timer"></div>
@@ -690,417 +690,667 @@
         <p id="unansweredLabel">Unanswered: 5/5</p>
     </div>
              <div class="marquee-container">
-        <span class="marquee-text"> ENGLISH LITERATURE SS2   FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION HAPPY EASTER HOLIDAY CELEBRATION </span>
+        <span class="marquee-text"> LITERATURE IN ENGLISH SS2  FOR 2ND TERM EXAMINATIONS 2025/2026 ACADEMIC SESSION</span>
     </div>
    
     <div class="windows-activate">
-        <p> &copy; cbt.<span style="color: red;">wisdom foundation</span><span style="color: green;">schools</span>.org</p>
+        <p> &copy; cbt.<span style="color: red;">canaanlandmodelgroupof</span><span style="color: green;">schools</span>.org</p>
     </div>
 
 
     <script>
-           // Get stored username and image from sessionStorage
-       
-            
     
         // ================== STATIC QUESTIONS DATA ==================
    const staticObjectivesQuestions = [
-
-  {
-    "id": 1,
-    "question": "A poem that tell a story is _________",
-    "options": {
-      "A": "essay",
-      "B": "narrative poem",
-      "C": "dramatic poem",
-      "D": "lyrics"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 2,
-    "question": "My father's sister is my __________",
-    "options": {
-      "A": "uncle",
-      "B": "niece",
-      "C": "father",
-      "D": "aunt"
-    },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 3,
-    "question": "A person who writes play is _________",
-    "options": {
-      "A": "hero",
-      "B": "playwright",
-      "C": "comedy",
-      "D": "humour"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 4,
-    "question": "Literature has _________ genres",
-    "options": {
-      "A": "3",
-      "B": "4",
-      "C": "2",
-      "D": "0"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 5,
-    "question": "A _________ is a person who writes novel",
-    "options": {
-      "A": "fiction",
-      "B": "novelist",
-      "C": "poetry",
-      "D": "novel"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 6,
-    "question": "The mirror of life is __________",
-    "options": {
-      "A": "literature",
-      "B": "poetry",
-      "C": "prose",
-      "D": "drama"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 7,
-    "question": "A fourteen lines poem is _________",
-    "options": {
-      "A": "dirge",
-      "B": "sonnet",
-      "C": "elegy",
-      "D": "ode"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 8,
-    "question": "A poem of praise is _________",
-    "options": {
-      "A": "poetry",
-      "B": "dirge",
-      "C": "ode",
-      "D": "elegy"
-    },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 9,
-    "question": "A _______ is a song sing to baby to make him or her sleep",
-    "options": {
-      "A": "lullaby",
-      "B": "dirge",
-      "C": "ode",
-      "D": "poem"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 10,
-    "question": "A story of someone's life written by another person is __________",
-    "options": {
-      "A": "biography",
-      "B": "autobiography",
-      "C": "essay",
-      "D": "journal"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 11,
-    "question": "________ is a long speech by one action",
-    "options": {
-      "A": "dialogue",
-      "B": "monologue",
-      "C": "irony",
-      "D": "tragedy"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 12,
-    "question": "The lion and the Jewel is _________",
-    "options": {
-      "A": "drama",
-      "B": "poem",
-      "C": "poetry",
-      "D": "prose"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 13,
-    "question": "The figure of speech which involves a direct comparison between two unlike thing is _________",
-    "options": {
-      "A": "hyperbole",
-      "B": "personification",
-      "C": "simile",
-      "D": "poetry"
-    },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 14,
-    "question": "The figure of speech expressed more than once is ________",
-    "options": {
-      "A": "repetition",
-      "B": "simile",
-      "C": "exaggeration",
-      "D": "hyperbole"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 15,
-    "question": "A fourteen lines poem is ________",
-    "options": {
-      "A": "sonnet",
-      "B": "alliteration",
-      "C": "hyperbole",
-      "D": "lullaby"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 16,
-    "question": "My mother's sister is my ______",
-    "options": {
-      "A": "mother",
-      "B": "aunt",
-      "C": "nephew",
-      "D": "cousin"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 17,
-    "question": "A play that ends with laughter is",
-    "options": {
-      "A": "comedy",
-      "B": "tragedy",
-      "C": "hyperbole",
-      "D": "ode"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 18,
-    "question": "_________ devices are verbal structures eup by writers in their works.",
-    "options": {
-      "A": "literary devices",
-      "B": "literature",
-      "C": "poem",
-      "D": "poetry"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 19,
-    "question": "Literature is educating. True or false",
-    "options": {
-      "A": "True",
-      "B": "False"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 20,
-    "question": "Literature is enjoyable and entertaining",
-    "options": {
-      "A": "True",
-      "B": "False"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 21,
-    "question": "________ is the use of an opposite statement in conveying one real meaning",
-    "options": {
-      "A": "irony",
-      "B": "euphemism",
-      "C": "paradox",
-      "D": "oxymoron"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 22,
-    "question": "Poetry deals with the personal emotion of the poet. True or false",
-    "options": {
-      "A": "True",
-      "B": "False"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 23,
-    "question": "________ is a poem used in praising a person",
-    "options": {
-      "A": "epic",
-      "B": "lyric",
-      "C": "elegy",
-      "D": "ode"
-    },
-    "answer": "D",
-    "image": null
-  },
-  {
-    "id": 24,
-    "question": "A poem to mourn a dead is ________",
-    "options": {
-      "A": "ode",
-      "B": "elegy",
-      "C": "epic",
-      "D": "lyrics"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 25,
-    "question": "\"Whuff\" \"Whuff\" is an example of _________",
-    "options": {
-      "A": "repetition",
-      "B": "onomatopoeia",
-      "C": "prose",
-      "D": "drama"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 26,
-    "question": "The genres of literature are __________",
-    "options": {
-      "A": "four",
-      "B": "two",
-      "C": "three",
-      "D": "one"
-    },
-    "answer": "C",
-    "image": null
-  },
-  {
-    "id": 27,
-    "question": "Literature is enjoyable.",
-    "options": {
-      "A": "True",
-      "B": "False"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 28,
-    "question": "A play that ends in a sad mood is _________",
-    "options": {
-      "A": "sonnet",
-      "B": "tragedy",
-      "C": "comedy",
-      "D": "I don't know"
-    },
-    "answer": "B",
-    "image": null
-  },
-  {
-    "id": 29,
-    "question": "A poem that ends in a happy mood is _________",
-    "options": {
-      "A": "comedy",
-      "B": "tragic",
-      "C": "tragedy",
-      "D": "simile"
-    },
-    "answer": "A",
-    "image": null
-  },
-  {
-    "id": 30,
-    "question": "The genres of literature are __________",
-    "options": {
-      "A": "four",
-      "B": "two",
-      "C": "three",
-      "D": "one"
-    },
-    "answer": "C",
-    "image": null
-  }
+                                {
+                              "id": 1,
+                              "question": "Who is the author of Redemption Road?",
+                              "options": {
+                                "A": "Chinua Achebe",
+                                "B": "Elma Shaw",
+                                "C": "Wole Soyinka",
+                                "D": "Susanne Bellefaille"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 2,
+                              "question": "The novel Redemption Road is set in which country?",
+                              "options": {
+                                "A": "Ghana",
+                                "B": "Liberia",
+                                "C": "Nigeria",
+                                "D": "South Africa"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 3,
+                              "question": "The physical setting of Redemption Road prominently features…",
+                              "options": {
+                                "A": "Desert landscapes",
+                                "B": "Coastal cities",
+                                "C": "War-torn towns",
+                                "D": "Snowy mountains"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 4,
+                              "question": "In Redemption Road, the protagonist is primarily driven by the need for…",
+                              "options": {
+                                "A": "Wealth",
+                                "B": "Revenge",
+                                "C": "Political power",
+                                "D": "Redemption"
+                              },
+                              "answer": "D",
+                              "image": null
+                            },
+                            {
+                              "id": 5,
+                              "question": "The social setting in Redemption Road explores themes of…",
+                              "options": {
+                                "A": "Alien invasion",
+                                "B": "Post-war trauma and reconciliation",
+                                "C": "Royal succession",
+                                "D": "Space exploration"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 6,
+                              "question": "Susanne Bellefaille is the author of…",
+                              "options": {
+                                "A": "Things Fall Apart",
+                                "B": "Path of Lucas: The Journey He Endured",
+                                "C": "The Concubine",
+                                "D": "Animal Farm"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 7,
+                              "question": "A central theme in Path of Lucas is…",
+                              "options": {
+                                "A": "Magical realism",
+                                "B": "Perseverance and endurance",
+                                "C": "Gothic horror",
+                                "D": "Political satire"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 8,
+                              "question": "The narrative technique that involves a character recalling past events is called…",
+                              "options": {
+                                "A": "Foreshadowing",
+                                "B": "Flashback",
+                                "C": "Irony",
+                                "D": "Metaphor"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 9,
+                              "question": "Which of these is a major character in Redemption Road?",
+                              "options": {
+                                "A": "Macbeth",
+                                "B": "Bendu",
+                                "C": "Juliet",
+                                "D": "Okonkwo"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 10,
+                              "question": "The temporal setting of Redemption Road refers to its…",
+                              "options": {
+                                "A": "Geographical location",
+                                "B": "Time period or era",
+                                "C": "Weather conditions",
+                                "D": "Fictional universe"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 11,
+                              "question": "In literature, the term ‘protagonist’ refers to the…",
+                              "options": {
+                                "A": "Main opponent",
+                                "B": "Main character",
+                                "C": "Narrator",
+                                "D": "Author"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 12,
+                              "question": "The sequence of events in a story is called the…",
+                              "options": {
+                                "A": "Theme",
+                                "B": "Plot",
+                                "C": "Setting",
+                                "D": "Conflict"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 13,
+                              "question": "Which of these is NOT a prose form?",
+                              "options": {
+                                "A": "Novel",
+                                "B": "Short Story",
+                                "C": "Sonnet",
+                                "D": "Novella"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 14,
+                              "question": "The feeling or atmosphere created for the reader is the…",
+                              "options": {
+                                "A": "Mood",
+                                "B": "Plot",
+                                "C": "Climax",
+                                "D": "Dialogue"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 15,
+                              "question": "What literary device is used when an object represents an idea?",
+                              "options": {
+                                "A": "Simile",
+                                "B": "Symbolism",
+                                "C": "Onomatopoeia",
+                                "D": "Alliteration"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 16,
+                              "question": "The perspective from which a story is told is the…",
+                              "options": {
+                                "A": "Theme",
+                                "B": "Point of view",
+                                "C": "Conflict",
+                                "D": "Genre"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 17,
+                              "question": "In Path of Lucas, Lucas’s journey is primarily one of…",
+                              "options": {
+                                "A": "Physical and emotional endurance",
+                                "B": "Wealth accumulation",
+                                "C": "Academic pursuit",
+                                "D": "Military conquest"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 18,
+                              "question": "A character who undergoes significant change is called…",
+                              "options": {
+                                "A": "Static",
+                                "B": "Flat",
+                                "C": "Dynamic",
+                                "D": "Antagonist"
+                              },
+                              "answer": "b",
+                              "image": null
+                            },
+                            {
+                              "id": 19,
+                              "question": "The central message or insight about life in a literary work is the…",
+                              "options": {
+                                "A": "Plot",
+                                "B": "Setting",
+                                "C": "Theme",
+                                "D": "Character"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 20,
+                              "question": "The struggle between opposing forces in a story is the…",
+                              "options": {
+                                "A": "Resolution",
+                                "B": "Climax",
+                                "C": "Conflict",
+                                "D": "Exposition"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 21,
+                              "question": "The introductory part of a plot that provides background is the…",
+                              "options": {
+                                "A": "Rising action",
+                                "B": "Exposition",
+                                "C": "Falling action",
+                                "D": "Denouement"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 22,
+                              "question": "The turning point of greatest intensity in a story is the…",
+                              "options": {
+                                "A": "Climax",
+                                "B": "Conflict",
+                                "C": "Resolution",
+                                "D": "Introduction"
+                              },
+                              "answer": "c",
+                              "image": null
+                            },
+                            {
+                              "id": 23,
+                              "question": "The time and place of a narrative is its…",
+                              "options": {
+                                "A": "Plot",
+                                "B": "Setting",
+                                "C": "Theme",
+                                "D": "Style"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 24,
+                              "question": "A character that contrasts with another to highlight their qualities is a…",
+                              "options": {
+                                "A": "Protagonist",
+                                "B": "Foil",
+                                "C": "Narrator",
+                                "D": "Catalyst"
+                              },
+                              "answer": "a",
+                              "image": null
+                            },
+                            {
+                              "id": 25,
+                              "question": "The use of hints about events to come is called…",
+                              "options": {
+                                "A": "Flashback",
+                                "B": "Foreshadowing",
+                                "C": "Irony",
+                                "D": "Symbolism"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 26,
+                              "question": "The personality of a character as revealed in the story is…",
+                              "options": {
+                                "A": "Characterization",
+                                "B": "Plot",
+                                "C": "Setting",
+                                "D": "Point of view"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 27,
+                              "question": "Which element of prose deals with the author’s choice and arrangement of words?",
+                              "options": {
+                                "A": "Diction",
+                                "B": "Plot",
+                                "C": "Character",
+                                "D": "Theme"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 28,
+                              "question": "The final part of the plot where conflicts are resolved is the…",
+                              "options": {
+                                "A": "Climax",
+                                "B": "Rising action",
+                                "C": "Resolution/Denouement",
+                                "D": "Exposition"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 29,
+                              "question": "A prose narrative of considerable length portraying fictional characters and events is a…",
+                              "options": {
+                                "A": "Play",
+                                "B": "Poem",
+                                "C": "Novel",
+                                "D": "Short story"
+                              },
+                              "answer": "d",
+                              "image": null
+                            },
+                            {
+                              "id": 30,
+                              "question": "In Redemption Road, the theme of ‘redemption’ is closely tied to…",
+                              "options": {
+                                "A": "Winning a lottery",
+                                "B": "Overcoming guilt and past mistakes",
+                                "C": "Finding a hidden treasure",
+                                "D": "Inventing new technology"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 31,
+                              "question": "Which character in Redemption Road is a symbol of hope and resilience?",
+                              "options": {
+                                "A": "The antagonist",
+                                "B": "Bendu",
+                                "C": "The Mayor",
+                                "D": "The Judge"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 32,
+                              "question": "The author’s attitude towards the subject matter is the…",
+                              "options": {
+                                "A": "Mood",
+                                "B": "Tone",
+                                "C": "Style",
+                                "D": "Theme"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 33,
+                              "question": "Which of these is a likely theme in both Redemption Road and Path of Lucas?",
+                              "options": {
+                                "A": "Supernatural events",
+                                "B": "The human capacity for survival and change",
+                                "C": "Intergalactic travel",
+                                "D": "Comedy of errors"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 34,
+                              "question": "A literary work based on imagination rather than fact is…",
+                              "options": {
+                                "A": "Fiction",
+                                "B": "Non-fiction",
+                                "C": "Biography",
+                                "D": "Autobiography"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 35,
+                              "question": "The reason a character behaves in a certain way is their…",
+                              "options": {
+                                "A": "Motivation",
+                                "B": "Conflict",
+                                "C": "Resolution",
+                                "D": "Setting"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 36,
+                              "question": "The emotional relief felt by the audience after the climax is…",
+                              "options": {
+                                "A": "Catharsis",
+                                "B": "Suspense",
+                                "C": "Crisis",
+                                "D": "Foreshadowing"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 37,
+                              "question": "The use of descriptive language to create sensory impressions is…",
+                              "options": {
+                                "A": "Imagery",
+                                "B": "Dialogue",
+                                "C": "Exposition",
+                                "D": "Satire"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 38,
+                              "question": "A conversation between characters is called…",
+                              "options": {
+                                "A": "Monologue",
+                                "B": "Soliloquy",
+                                "C": "Dialogue",
+                                "D": "Narration"
+                              },
+                              "answer": "C",
+                              "image": null
+                            },
+                            {
+                              "id": 39,
+                              "question": "Which term describes the author’s unique way of writing?",
+                              "options": {
+                                "A": "Style",
+                                "B": "Plot",
+                                "C": "Genre",
+                                "D": "Conflict"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 40,
+                              "question": "In Path of Lucas, the ‘journey’ can be interpreted as…",
+                              "options": {
+                                "A": "Only a physical trip",
+                                "B": "Only an emotional experience",
+                                "C": "Both literal and metaphorical",
+                                "D": "A dream sequence"
+                              },
+                              "answer": "c",
+                              "image": null
+                            },
+                            {
+                              "id": 41,
+                              "question": "A character who is complex and multi-dimensional is described as…",
+                              "options": {
+                                "A": "Round",
+                                "B": "Flat",
+                                "C": "Static",
+                                "D": "Stock"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 42,
+                              "question": "The use of ‘I’ or ‘we’ in narration indicates the…",
+                              "options": {
+                                "A": "Third-person point of view",
+                                "B": "First-person point of view",
+                                "C": "Omniscient point of view",
+                                "D": "Objective point of view"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 43,
+                              "question": "The category of literature (e.g., prose, poetry, drama) is its…",
+                              "options": {
+                                "A": "Genre",
+                                "B": "Style",
+                                "C": "Theme",
+                                "D": "Tone"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 44,
+                              "question": "Which of these is a key event in the early chapters of Redemption Road?",
+                              "options": {
+                                "A": "Lucas winning a race",
+                                "B": "The protagonist’s return to his community",
+                                "C": "A spaceship landing",
+                                "D": "A royal coronation"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 45,
+                              "question": "The main opponent of the protagonist is the…",
+                              "options": {
+                                "A": "Antagonist",
+                                "B": "Narrator",
+                                "C": "Deuteragonist",
+                                "D": "Foil"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 46,
+                              "question": "An author’s choice of where and when to set a story directly affects the…",
+                              "options": {
+                                "A": "Mood and conflict",
+                                "B": "Publisher’s name",
+                                "C": "Number of chapters",
+                                "D": "Author’s biography"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 47,
+                              "question": "Which literary device is used in this sentence: “The road was a ribbon of moonlight”?",
+                              "options": {
+                                "A": "Simile",
+                                "B": "Metaphor",
+                                "C": "Personification",
+                                "D": "Hyperbole"
+                              },
+                              "answer": "B",
+                              "image": null
+                            },
+                            {
+                              "id": 48,
+                              "question": "The problem that triggers the plot’s action is the…",
+                              "options": {
+                                "A": "Inciting incident",
+                                "B": "Resolution",
+                                "C": "Climax",
+                                "D": "Falling action"
+                              },
+                              "answer": "d",
+                              "image": null
+                            },
+                            {
+                              "id": 49,
+                              "question": "A narrative that is not told in chronological order uses…",
+                              "options": {
+                                "A": "Nonlinear structure",
+                                "B": "Linear structure",
+                                "C": "Circular structure",
+                                "D": "Rhymed structure"
+                              },
+                              "answer": "A",
+                              "image": null
+                            },
+                            {
+                              "id": 50,
+                              "question": "The study, analysis, and evaluation of a literary work is called…",
+                              "options": {
+                                "A": "Literary criticism",
+                                "B": "Plot summary",
+                                "C": "Publishing",
+                                "D": "Narration"
+                              },
+                              "answer": "A",
+                              "image": null
+                             } 
 
 ];
 
 
         const staticTheoryQuestions = [
-     {
+      {
           "id": 1,
-          "question": "Identify and discuss the figures of speech used in the poem 'digging'",
-          "marks": 10,
+          "question": "a. Define the term ‘setting’ in prose literature. \n\n b. Identify and describe the three types of setting as presented in Redemption Road. \n\n c. Explain how the social setting of the novel contributes to one of its major themes.",
+          "marks": 12.5,
           "image": null
         },
         {
           "id": 2,
-          "question": "Examine the use of contrast to develop the theme of poem 'digging'",
-          "marks": 10,
+          "question": "a. Who is the protagonist of Path of Lucas: The Journey He Endured? \n\n b. Describe TWO major challenges faced by this character during his journey. \n\n c. How does the character’s response to these challenges illustrate the theme of perseverance?",
+          "marks": 12.5,
           "image": null
         },
         {
           "id": 3,
-          "question": "To what extent is the poem a narrative poem 'The Stone'",
-          "marks": 10,
+          "question": "a. List FOUR main characters in Redemption Road. \n\n b. For any TWO characters listed, describe their key roles in the plot. \n\n c. Show how one of these characters undergoes significant development (dynamic change).",
+          "marks": 12.5,
           "image": null
         },
         {
           "id": 4,
-          "question": "Discuss any three themes from the poem 'The Stone'",
-          "marks": 10,
+          "question": "a. What is ‘plot structure’? \n\n b. Using Path of Lucas as an example, outline the key stages of its plot structure. \n\n c. Discuss one narrative technique (e.g., flashback, foreshadowing) used by the author in developing this plot.",
+          "marks": 12.5,
           "image": null
         },
         {
           "id": 5,
-          "question": "Critically comment on the characters of the following individuals in the play (a) Anansewa (b) Ananse (c) Christie",
-          "marks": 10,
+          "question": "a. Differentiate between ‘African Prose’ and ‘Non-African Prose’. \n\n b. State ONE major theme from Redemption Road (African Prose) and ONE from Path of Lucas (Non-African Prose). \n\n c. Compare how the authors treat the theme of ‘endurance’ in both novels.",
+          "marks": 12.5,
           "image": null
         },
         {
           "id": 6,
-          "question": "Discuss the theme of poverty and ambition in the marriage of Anansewa",
-          "marks": 10,
+          "question": "a. What is ‘characterization’? \n\n b. Describe TWO methods of characterization used by Elma Shaw in Redemption Road. \n\n c. Using a specific character from the novel, show how these methods help to reveal their personality.",
+          "marks": 12.5,
+          "image": null
+        },
+        {
+          "id": 7,
+          "question": "a. Define ‘style’ in literature. \n\n b. Identify and explain TWO stylistic devices (e.g., symbolism, imagery, diction) found in Path of Lucas. \n\n c. How does the author’s style enhance the reader’s understanding of the novel’s central journey?",
+          "marks": 12.5,
           "image": null
         }
 ];
-        // ================== APPLICATION VARIABLES ==================
+      // ================== APPLICATION VARIABLES ==================
         let questions = [];
         let currentQuestion = 0;
         let userAnswers = [];
@@ -1349,14 +1599,233 @@
             document.getElementById("unansweredLabel").innerText = `Unanswered: ${unansweredCount}`;
         }
        
-
-   
+        /*function submitExam() {
+            saveAnswer();
+            let score = 0;
+            questions.forEach((q, i) => {
+                if (userAnswers[i] === q.answer) score++;
+            });
+           
+            clearInterval(timerInterval);
+            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
+        }*/
          function submitExam() {
             saveAnswer();
             showResult();
         }
        
+        /*function showResult() {
+            clearInterval(timerInterval);
+            let score = 0;
+            questions.forEach((q, i) => {
+                if (userAnswers[i] === q.answer) score++;
+            });
+           
+            const username = localStorage.getItem("username") || "Guest";
+            localStorage.setItem("examUser", username);
+            localStorage.setItem("examScore", score);
+            localStorage.setItem("totalQuestions", questions.length);
 
+
+            // Save exam data before going to result page
+            localStorage.setItem("student_name", username);
+            localStorage.setItem("student_class", selectedClass);
+            localStorage.setItem("exam_subject", selectedSubject);
+            localStorage.setItem("student_image", studentImageURL);
+            localStorage.setItem("exam_score", score);
+            localStorage.setItem("total_questions", totalQuestions);
+
+                // Redirect to results page
+                window.location.href = "results.html";
+           
+            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
+            window.location.href = "results.html";
+        }*/
+        /*function showResult() {
+            clearInterval(timerInterval);
+            let score = 0;
+            questions.forEach((q, i) => {
+                if (userAnswers[i] === q.answer) score++;
+            });
+           
+            const username = localStorage.getItem("username") || "Guest";
+            const cls = sessionStorage.getItem("class");
+            const sub = sessionStorage.getItem("subject");
+           
+            localStorage.setItem("examUser", username);
+            localStorage.setItem("examScore", score);
+            localStorage.setItem("totalQuestions", questions.length);
+            localStorage.setItem("examInfo", document.getElementById('examInfo').textContent.trim());
+           
+            // ✅ Mark exam as completed
+            if (cls && sub) {
+                const attempts = getExamAttempts(cls);
+                if (!attempts[username]) {
+                    attempts[username] = {};
+                }
+                attempts[username][sub] = true;
+                saveExamAttempts(cls, attempts);
+            }
+           
+            alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}`);
+            window.location.href = "results.html";
+    }*/
+       /*function showResult() {
+                    clearInterval(timerInterval);
+                    let score = 0;
+                    questions.forEach((q, i) => {
+                        if (userAnswers[i] === q.answer) score++;
+                    });
+                   
+                    const username = sessionStorage.getItem('username') || "Guest";
+                    const cls = sessionStorage.getItem('class');
+                    const sub = sessionStorage.getItem('subject');
+                   
+                    localStorage.setItem("examUser", username);
+                    localStorage.setItem("examScore", score);
+                    localStorage.setItem("totalQuestions", questions.length);
+                    localStorage.setItem("pendingClass", cls);
+                    localStorage.setItem("pendingSubject", sub);
+                    localStorage.setItem("pendingUsername", username);
+                   
+                    // ✅ Get exam info from sessionStorage or use default
+                    const examInfo = sessionStorage.getItem('examInfo') || 'EXAMINATION - RERSULT (2ND TERM)';
+                    localStorage.setItem("examInfo", examInfo);
+                   
+                    // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
+                    console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
+                   
+                    alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
+                    window.location.href = "results.html";
+        }*/
+
+            /*function showResult() {
+                    clearInterval(timerInterval);
+                    let score = 0;
+                    questions.forEach((q, i) => {
+                        if (userAnswers[i] === q.answer) score++;
+                    });
+                    
+                    const username = sessionStorage.getItem('username') || "Guest";
+                    const cls = sessionStorage.getItem('class');
+                    const sub = sessionStorage.getItem('subject');
+                    
+                    localStorage.setItem("examUser", username);
+                    localStorage.setItem("examScore", score);
+                    localStorage.setItem("totalQuestions", questions.length);
+                    localStorage.setItem("pendingClass", cls);
+                    localStorage.setItem("pendingSubject", sub);
+                    localStorage.setItem("pendingUsername", username);
+                    
+                    // ✅ Get exam info from sessionStorage or use default
+                    const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
+                    localStorage.setItem("examInfo", examInfo);
+                    
+                    // ✅ Secretly download score details to downloads folder
+                    const scoreDetails = {
+                        username: username,
+                        class: cls,
+                        subject: sub,
+                        score: score,
+                        totalQuestions: questions.length,
+                        percentage: ((score / questions.length) * 100).toFixed(2) + '%',
+                        examInfo: examInfo,
+                        timestamp: new Date().toISOString(),
+                        userAnswers: userAnswers,
+                        correctAnswers: questions.map(q => q.answer)
+                    };
+                    
+                    // Create a blob with the data
+                    const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
+                    const url = URL.createObjectURL(blob);
+                    
+                    // Create a hidden anchor element and trigger download
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `exam_results_${username}_${new Date().getTime()}.json`;
+                    a.style.display = 'none';
+                    document.body.appendChild(a);
+                    a.click();
+                    
+                    // Clean up
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    
+                    // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
+                    console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
+                    
+                    alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
+                    window.location.href = "results.html";
+                }*/
+
+                /*function showResult() {
+                        clearInterval(timerInterval);
+                        let score = 0;
+                        questions.forEach((q, i) => {
+                            if (userAnswers[i] === q.answer) score++;
+                        });
+                        
+                        const username = sessionStorage.getItem('username') || "Guest";
+                        const cls = sessionStorage.getItem('class');
+                        const sub = sessionStorage.getItem('subject');
+                        
+                        localStorage.setItem("examUser", username);
+                        localStorage.setItem("examScore", score);
+                        localStorage.setItem("totalQuestions", questions.length);
+                        localStorage.setItem("pendingClass", cls);
+                        localStorage.setItem("pendingSubject", sub);
+                        localStorage.setItem("pendingUsername", username);
+                        
+                        // Get exam info from sessionStorage or use default
+                        const examInfo = sessionStorage.getItem('examInfo') || 'TEST - RESULT (SECOND TERM)';
+                        localStorage.setItem("examInfo", examInfo);
+                        
+                        // ✅ Build a clean record for history (to be used by records.html)
+                        const record = {
+                            username: username,
+                            class: cls,
+                            subject: sub,
+                            score: score,
+                            totalQuestions: questions.length,
+                            percentage: ((score / questions.length) * 100).toFixed(2) + '%',
+                            examInfo: examInfo,
+                            timestamp: new Date().toISOString()
+                        };
+                        
+                        // ✅ Save this attempt to localStorage (creates/updates examRecords array)
+                        let records = JSON.parse(localStorage.getItem('examRecords') || '[]');
+                        records.push(record);
+                        localStorage.setItem('examRecords', JSON.stringify(records));
+                        
+                        // ✅ Secretly download score details to downloads folder
+                        const scoreDetails = {
+                            ...record,
+                            userAnswers: userAnswers,
+                            correctAnswers: questions.map(q => q.answer)
+                        };
+                        
+                        // Create a blob with the data
+                        const blob = new Blob([JSON.stringify(scoreDetails, null, 2)], { type: 'application/json' });
+                        const url = URL.createObjectURL(blob);
+                        
+                        // Create a hidden anchor element and trigger download
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = `exam_results_${username}_${new Date().getTime()}.json`;
+                        a.style.display = 'none';
+                        document.body.appendChild(a);
+                        a.click();
+                        
+                        // Clean up
+                        document.body.removeChild(a);
+                        URL.revokeObjectURL(url);
+                        
+                        // ✅ DO NOT mark exam as completed here - wait for confirmation on results page
+                        console.log(`Exam completed but not marked as attempted yet. Waiting for confirmation.`);
+                        
+                        alert(`Objective Exam Completed!\nYour Score: ${score} out of ${questions.length}\n\nClick OK to view your results and confirm your attempt.`);
+                        window.location.href = "results.html";
+                    }*/
 
                     function showResult() {
                         clearInterval(timerInterval);
