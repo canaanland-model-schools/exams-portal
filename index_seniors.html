@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.canaanlandmodelschools.org</title>
+    <title>cbt.wisdomschools.org</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Keep all your existing styles intact */
@@ -85,7 +85,7 @@
         }
        
         header {
-            background-color: blue;
+            background-color: lime;
             color: var(--header-text);
             padding: 20px;
             text-align: center;
@@ -152,7 +152,7 @@
         }
        
         .section-header {
-            background-color: blue;
+            background-color: lime;
             color: var(--header-text);
             padding: 15px 20px;
             font-size: 18px;
@@ -280,7 +280,7 @@
             <button class="logout-btn" onclick="logout()">Logout</button>
             <div class="logo-container">
                 <div class="logo">
-                    <img src="img/Ctemplogo.jpg" alt="School Logo">
+                    <img src="img/wisdom_logo1.png" alt="School Logo">
                 </div>
             </div>
             <p>2025/2026 SECOND TERM COMPUTER BASED TEST EXAMINATION</p>
@@ -320,7 +320,7 @@
                         <option value="biology">Biology</option>
                         <!--<option value="cultural_art">Cultural & Creative Art</option>-->
                         <option value="yoruba">Yoruba</option>
-                        <option value="citizenship_education">Citizenship | Civic Education</option>
+                        <option value="citizenship_education">Citizenship | Heritage Studies </option>
                         <option value="livestock_farming">Livestock Farming</option>
                         <option value="agricultural_science">Agricultural Science</option>
                         <option value="literature_in_english">Literature in English</option>  
@@ -330,17 +330,18 @@
                         <option value="economics">Economics</option>
                        
                       
-                        <!--<option value="geography">Geography</option>-->
+                        <option value="geography">Geography</option>
                       
-                        <!--<option value="account">Financial Acounting</option>-->
+                        <option value="account">Financial Acounting</option>
                         <option value="government">Government</option>
-                        <!--<option value="commerce">Commerce</option><!-->
+                        <option value="commerce">Commerce</option>
                        
-                        <!--<option value="marketing">Marketing</option>-->
-                        <!--<option value="fine_art">Fine Art</option>-->
-                        <!--<option value="further_mathematics">Further Mathematics</option>-->
-                        <!--<option value="history">Nigerian History</option>
-                        <option value="garment_making">Garment Making</option>-->
+                        <option value="marketing">Marketing</option>
+                        <option value="fine_art">Fine Art</option>
+                        <option value="further_mathematics">Further Mathematics</option>
+                        <option value="history">Nigerian History</option>
+                        <option value="phonetics">Phonetics</option>
+                        <!--<option value="garment_making">Garment Making</option>-->
                         <!--<option value="book_keeping">Book Keeping</option>-->
                         <!--<option value="office_practices">Office Practices</option>-->
                     </select>
@@ -374,7 +375,7 @@
         </center>
        
         <div class="windows-activate">
-            <p>&copy; 2026 cbt.canaanlandmodelschools.org</p>
+            <p>&copy; 2026 cbt.wisdomschools.org</p>
         </div>
     </div>
 
@@ -413,9 +414,9 @@
             account: "z6h9l5",
             government: "q3m7p2",
             commerce: "w1b4t8",
+            phonetics: "5h9c4b",
             literature_in_english: "k9j2r7",
             marketing: "f5v3n6",
-            agricultural_science: "f5h728",
             fine_art: "d7p4t2",
             book_keeping: "b3m8q6",
             further_mathematics: "g2n7k4",
@@ -442,9 +443,9 @@
             account: "c1m7t6",
             government: "v5r3k9",
             commerce: "n8d2w7",
+            phonetics: "8s3je1",
             literature_in_english: "p9h4q6",
             marketing: "k3s8b2",
-            agricultural_science: "v6n8m2",
             fine_art: "m2t7v1",
             book_keeping: "q6b4n9",
             further_mathematics: "w3j8k5",
@@ -471,9 +472,9 @@
             account: "z2p7q3",
             government: "c4h8t9",
             commerce: "q9b3n6",
+            phonetics: "y5v6x3",
             literature_in_english: "s5m1r8",
             marketing: "w7k4d2",
-            agricultural_science: "q5d6n4",
             fine_art: "g3p6t1",
             book_keeping: "j8m4w2",
             further_mathematics: "v5t9r3",
@@ -624,10 +625,9 @@
             'book_keeping': 'book_keeping',
             'further_mathematics': 'Further Mathematics',
             'garment_making': 'garment_making',
-            'agricultural_science': 'Agricultural Science',
             'history': 'Nigerian History',
+            'phonetics': 'Phonetics',
             'office_practices' : 'Office Practices'
-            'agricultural_science': 'Agricultural Science',
         };
         
         return subjectMap[subject] || subject.charAt(0).toUpperCase() + subject.slice(1).replace(/_/g, ' ');
